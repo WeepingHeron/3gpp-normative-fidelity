@@ -1,0 +1,74 @@
+{
+  "S001": {
+    "case_id": "PILOT-SN-001",
+    "condition": "C2"
+  },
+  "S002": {
+    "case_id": "PILOT-SN-001",
+    "condition": "C0"
+  },
+  "S003": {
+    "case_id": "PILOT-MAY-001",
+    "condition": "C2"
+  },
+  "S004": {
+    "case_id": "PILOT-CAN-001",
+    "condition": "C2"
+  },
+  "S005": {
+    "case_id": "PILOT-SDN-001",
+    "condition": "C1"
+  },
+  "S006": {
+    "case_id": "PILOT-SD-001",
+    "condition": "C0"
+  },
+  "S007": {
+    "case_id": "PILOT-SDN-001",
+    "condition": "C0"
+  },
+  "S008": {
+    "case_id": "PILOT-MAY-001",
+    "condition": "C1"
+  },
+  "S009": {
+    "case_id": "PILOT-SN-001",
+    "condition": "C1"
+  },
+  "S010": {
+    "case_id": "PILOT-MAY-001",
+    "condition": "C0"
+  },
+  "S011": {
+    "case_id": "PILOT-SD-001",
+    "condition": "C2"
+  },
+  "S012": {
+    "case_id": "PILOT-CAN-001",
+    "condition": "C0"
+  },
+  "S013": {
+    "case_id": "PILOT-SDN-001",
+    "condition": "C2"
+  },
+  "S014": {
+    "case_id": "PILOT-SH-001",
+    "condition": "C2"
+  },
+  "S015": {
+    "case_id": "PILOT-CAN-001",
+    "condition": "C1"
+  },
+  "S016": {
+    "case_id": "PILOT-SD-001",
+    "condition": "C1"
+  },
+  "S017": {
+    "case_id": "PILOT-SH-001",
+    "condition": "C1"
+  },
+  "S018": {
+    "case_id": "PILOT-SH-001",
+    "condition": "C0"
+  }
+}

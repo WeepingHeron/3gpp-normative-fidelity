@@ -1,0 +1,69 @@
+{
+  "comparison_type": "delayed_intra_rater_agreement",
+  "pass1_file": "blind_review_pass1.csv",
+  "pass2_file": "blind_review_pass2.csv",
+  "responses": 18,
+  "response_level_exact_agreement": {
+    "agreements": 18,
+    "total": 18,
+    "rate": 1
+  },
+  "field_level": {
+    "actor_preserved": {
+      "agreements": 18,
+      "total": 18,
+      "agreement_rate": 1,
+      "cohen_kappa": 1
+    },
+    "polarity_preserved": {
+      "agreements": 18,
+      "total": 18,
+      "agreement_rate": 1,
+      "cohen_kappa": 1
+    },
+    "condition_preserved": {
+      "agreements": 18,
+      "total": 18,
+      "agreement_rate": 1,
+      "cohen_kappa": 1
+    },
+    "action_preserved": {
+      "agreements": 18,
+      "total": 18,
+      "agreement_rate": 1,
+      "cohen_kappa": 1
+    },
+    "exception_preserved": {
+      "agreements": 18,
+      "total": 18,
+      "agreement_rate": 1,
+      "cohen_kappa": null
+    },
+    "complete_preservation": {
+      "agreements": 18,
+      "total": 18,
+      "agreement_rate": 1,
+      "cohen_kappa": 1
+    },
+    "unsupported_addition": {
+      "agreements": 18,
+      "total": 18,
+      "agreement_rate": 1,
+      "cohen_kappa": 1
+    },
+    "error_codes": {
+      "agreements": 18,
+      "total": 18,
+      "agreement_rate": 1,
+      "cohen_kappa": null
+    }
+  },
+  "aggregate_applicable_binary_decisions": {
+    "agreements": 105,
+    "total": 105,
+    "rate": 1,
+    "cohen_kappa": 1
+  },
+  "disagreement_count": 0,
+  "interpretation_note": "This is same-reviewer delayed agreement, not independent inter-rater reliability."
+}

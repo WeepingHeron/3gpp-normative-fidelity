@@ -1,0 +1,7 @@
+{
+  "review_type": "masked_row_level_same_reviewer_pass1",
+  "completed_at": "2026-09-02T04:25:54.806Z",
+  "rows": 54,
+  "condition_and_case_id_hidden_during_row_scoring": true,
+  "limitation": "Reviewer had prior exposure to aggregate condition results and one identified C1 mismatch before row-level scoring; this is not a fully independent blind review."
+}

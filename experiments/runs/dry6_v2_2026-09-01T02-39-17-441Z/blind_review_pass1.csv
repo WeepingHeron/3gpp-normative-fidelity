@@ -1,0 +1,19 @@
+review_id,actor_preserved,polarity_preserved,condition_preserved,action_preserved,exception_preserved,complete_preservation,unsupported_addition,error_codes,reviewer_note
+R001,1,1,1,1,NA,1,0,,금지·행위자·조건·행동 보존
+R002,1,1,1,1,NA,1,0,,허용 의미와 조회 조건 보존
+R003,0,0,0,0,NA,0,1,REFUSED;ACTOR_CHANGED;CONDITION_DROPPED;ACTION_CHANGED;UNSUPPORTED_ADDITION,규범을 보류하고 아키텍처 행위자를 CP NF로 바꾸며 문맥에 따라 달라진다는 주장을 추가
+R004,1,1,1,1,NA,1,0,,허용 의미 보존
+R005,1,1,1,1,NA,1,0,,하지 않는 것이 권고된다는 의미를 일관되게 유지
+R006,0,0,1,0,NA,0,0,REFUSED;ACTOR_CHANGED;ACTION_CHANGED,규범을 보류하고 행위자에 NG-RAN을 추가하며 행동을 갱신 방식으로 축약
+R007,1,1,1,1,NA,1,0,,권고·행위자·조건·행동 보존
+R008,1,0,1,1,NA,0,0,MODAL_STRENGTHENED,첫 문장은 권고이나 두 번째 문장의 처리해야 한다가 의무 표현으로 강화
+R009,1,0,NA,0,NA,0,0,REFUSED;ACTION_CHANGED,규범을 보류하고 두 통신 방식을 구체적으로 설명하지 않음
+R010,1,1,NA,1,NA,1,0,,기술적 가능성과 직접·간접 통신 방식 보존
+R011,1,1,1,1,NA,1,0,,금지·조건·행동 보존
+R012,1,0,0,0,NA,0,0,REFUSED;CONDITION_DROPPED;ACTION_CHANGED,규범과 구체적인 UDM 조회 조건 및 GPSI 획득 행동을 보류
+R013,1,0,0,0,NA,0,0,REFUSED;CONDITION_DROPPED;ACTION_CHANGED,규범과 서비스 조건 및 타이머 제공 행동을 보류
+R014,1,1,NA,1,NA,1,0,,기술적 가능성과 두 통신 방식 보존
+R015,1,0,1,0,NA,0,0,REFUSED;ACTION_CHANGED,규범을 보류하고 구체적인 비활성화 행동을 처리로 축약
+R016,1,1,1,1,NA,1,0,,의무·조건·행동 보존
+R017,1,1,1,1,NA,1,0,,권고·행위자·조건·행동 보존
+R018,1,1,1,1,NA,1,0,,의무·조건·행동 보존

@@ -1,0 +1,19 @@
+﻿request_index,case_id,condition,response_status,expected_normative_type,predicted_normative_type,modal_correct,citation_applicable,citation_exact,actor_preserved,polarity_preserved,condition_preserved,action_preserved,exception_preserved,complete_preservation,unsupported_addition,error_codes,reviewer_note
+1,PILOT-SH-001,C0,parsed,obligation,recommendation,0,0,,0,0,0,0,NA,0,1,MODAL_WEAKENED;ACTOR_CHANGED;CONDITION_DROPPED;ACTION_CHANGED;UNSUPPORTED_ADDITION,아키텍처 의무를 CP NF 권고로 바꾸고 직접 통신 및 설계 목적을 추가
+2,PILOT-SH-001,C1,parsed,obligation,obligation,1,1,1,1,1,1,1,NA,1,0,,의무·조건·행동 보존
+3,PILOT-SH-001,C2,parsed,obligation,obligation,1,1,1,1,1,1,1,NA,1,0,,의무 의미 보존
+4,PILOT-SN-001,C1,parsed,prohibition,prohibition,1,1,1,1,1,1,1,NA,1,0,,금지·조건·행동 보존
+5,PILOT-SN-001,C2,parsed,prohibition,prohibition,1,1,1,1,1,1,1,NA,1,0,,금지·행위자·조건·행동 보존
+6,PILOT-SN-001,C0,parsed,prohibition,unclear,0,0,,1,0,1,1,NA,0,1,MODAL_WEAKENED;UNSUPPORTED_ADDITION,금지를 가능 또는 불명확으로 약화
+7,PILOT-SD-001,C2,parsed,recommendation,recommendation,1,1,1,1,1,1,1,NA,1,0,,권고·행위자·조건·행동 보존
+8,PILOT-SD-001,C0,parsed,recommendation,obligation,0,0,,0,0,1,0,NA,0,1,MODAL_STRENGTHENED;ACTOR_CHANGED;ACTION_CHANGED;UNSUPPORTED_ADDITION,AMF의 권고 행동을 NG-RAN의 의무 행동으로 변경
+9,PILOT-SD-001,C1,parsed,recommendation,recommendation,1,1,1,1,1,1,1,NA,1,0,,의무가 아닌 권고임을 명시
+10,PILOT-SDN-001,C0,parsed,discouragement,unclear,0,0,,1,0,1,0,NA,0,0,REFUSED;ACTION_CHANGED,규범 강도를 판단하지 않고 행동을 처리 방식으로만 표현
+11,PILOT-SDN-001,C1,parsed,discouragement,prohibition,0,1,1,1,0,1,1,NA,0,0,MODAL_STRENGTHENED,should not을 금지 및 유지 의무로 강화
+12,PILOT-SDN-001,C2,parsed,discouragement,discouragement,1,1,1,1,0,1,1,NA,0,0,MODAL_STRENGTHENED,권고라고 설명한 뒤 해서는 안 된다고 표현해 강도 충돌
+13,PILOT-MAY-001,C1,parsed,permission,permission,1,1,1,1,1,1,1,NA,1,0,,허용 의미 보존
+14,PILOT-MAY-001,C2,parsed,permission,permission,1,1,1,1,1,1,1,NA,1,0,,허용 의미와 조회 조건 보존
+15,PILOT-MAY-001,C0,parsed,permission,unclear,0,0,,0,0,0,0,NA,0,0,REFUSED,행위자·조건·행동·규범 유형을 모두 보류
+16,PILOT-CAN-001,C2,parsed,capability,capability,1,1,1,1,1,NA,1,1,1,0,,기술적 가능성과 두 통신 방식 보존
+17,PILOT-CAN-001,C0,parsed,capability,unclear,0,0,,1,0,NA,0,0,0,1,ACTION_CHANGED;EXCEPTION_DROPPED;UNSUPPORTED_ADDITION,원문에 없는 SBI와 HTTP/2 설명을 추가하고 두 통신 방식을 보존하지 못함
+18,PILOT-CAN-001,C1,parsed,capability,permission,0,1,1,1,0,NA,1,1,0,1,MODAL_STRENGTHENED;UNSUPPORTED_ADDITION,기술적 가능성을 허용으로 해석

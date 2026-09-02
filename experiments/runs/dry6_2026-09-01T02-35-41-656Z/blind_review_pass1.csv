@@ -1,0 +1,19 @@
+review_id,actor_preserved,polarity_preserved,condition_preserved,action_preserved,exception_preserved,complete_preservation,unsupported_addition,error_codes,reviewer_note
+R001,1,1,1,1,NA,1,0,,금지·행위자·조건·행동 보존
+R002,1,0,1,1,NA,0,1,MODAL_WEAKENED;UNSUPPORTED_ADDITION,금지를 가능 또는 불명확으로 약화
+R003,1,1,1,1,NA,1,0,,허용 의미와 조회 조건 보존
+R004,1,0,1,1,NA,0,0,MODAL_STRENGTHENED,should not을 금지 및 유지 의무로 강화
+R005,1,0,1,1,NA,0,0,MODAL_STRENGTHENED,권고라고 설명한 뒤 해서는 안 된다고 표현해 강도 충돌
+R006,0,0,1,0,NA,0,1,MODAL_STRENGTHENED;ACTOR_CHANGED;ACTION_CHANGED;UNSUPPORTED_ADDITION,AMF의 권고 행동을 NG-RAN의 의무 행동으로 변경
+R007,1,1,1,1,NA,1,0,,허용 의미 보존
+R008,1,0,NA,1,1,0,1,MODAL_STRENGTHENED;UNSUPPORTED_ADDITION,기술적 가능성을 허용으로 해석
+R009,1,1,1,1,NA,1,0,,권고·행위자·조건·행동 보존
+R010,1,0,NA,0,0,0,1,ACTION_CHANGED;EXCEPTION_DROPPED;UNSUPPORTED_ADDITION,원문에 없는 SBI와 HTTP/2 설명을 추가하고 두 통신 방식을 보존하지 못함
+R011,1,0,1,0,NA,0,0,REFUSED;ACTION_CHANGED,규범 강도를 판단하지 않고 행동을 처리 방식으로만 표현
+R012,1,1,1,1,NA,1,0,,의무 의미 보존
+R013,0,0,0,0,NA,0,1,MODAL_WEAKENED;ACTOR_CHANGED;CONDITION_DROPPED;ACTION_CHANGED;UNSUPPORTED_ADDITION,아키텍처 의무를 CP NF 권고로 바꾸고 직접 통신 및 설계 목적을 추가
+R014,1,1,NA,1,1,1,0,,기술적 가능성과 두 통신 방식 보존
+R015,1,1,1,1,NA,1,0,,금지·조건·행동 보존
+R016,1,1,1,1,NA,1,0,,의무·조건·행동 보존
+R017,0,0,0,0,NA,0,0,REFUSED,행위자·조건·행동·규범 유형을 모두 보류
+R018,1,1,1,1,NA,1,0,,의무가 아닌 권고임을 명시

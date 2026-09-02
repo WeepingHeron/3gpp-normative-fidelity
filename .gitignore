@@ -1,0 +1,22 @@
+# Credentials and local environment
+.env
+.env.*
+!.env.example
+
+# macOS and editor files
+.DS_Store
+*.swp
+*.swo
+
+# Dependencies and caches
+node_modules/
+.cache/
+
+# Temporary renders and generated review artifacts
+tmp/
+outputs/
+
+# Official standards are referenced by URL and SHA-256 manifest.
+# Do not redistribute local PDF copies without a separate rights review.
+data/source/*.pdf
+

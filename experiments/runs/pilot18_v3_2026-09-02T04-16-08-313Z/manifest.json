@@ -1,0 +1,331 @@
+{
+  "run_id": "pilot18_v3_2026-09-02T04-16-08-313Z",
+  "purpose": "pilot_all_cases",
+  "research_use": "prompt/schema/scoring validation only; excluded from main results",
+  "created_at": "2026-09-02T04:16:08.314Z",
+  "provider": "OpenAI",
+  "api": "Responses API",
+  "model_requested": "gpt-5.4-mini-2026-03-17",
+  "model_snapshot_returned": "gpt-5.4-mini-2026-03-17",
+  "parameters": {
+    "temperature": 0,
+    "reasoning_effort": "none",
+    "max_output_tokens": 600,
+    "store": false
+  },
+  "dataset_path": "data/pilot_cases.csv",
+  "dataset_sha256": "8435e700f69c5661f1b62065651facfae9b4d89435d8f77ede7370a3122adbe2",
+  "selected_case_ids": [
+    "PILOT-SH-001",
+    "PILOT-SH-002",
+    "PILOT-SH-003",
+    "PILOT-SN-001",
+    "PILOT-SN-002",
+    "PILOT-SN-003",
+    "PILOT-SD-001",
+    "PILOT-SD-002",
+    "PILOT-SD-003",
+    "PILOT-SDN-001",
+    "PILOT-SDN-002",
+    "PILOT-SDN-003",
+    "PILOT-MAY-001",
+    "PILOT-MAY-002",
+    "PILOT-MAY-003",
+    "PILOT-CAN-001",
+    "PILOT-CAN-002",
+    "PILOT-CAN-003"
+  ],
+  "prompt_version": "v3",
+  "prompt_file_versions": {
+    "C0": "v3",
+    "C1": "v2",
+    "C2": "v2"
+  },
+  "conditions": [
+    "C0",
+    "C1",
+    "C2"
+  ],
+  "prompt_sha256": {
+    "C0": "e110fc93c65d15efe77f126fb2b66d4fd771a31b2eb20aa61aa778b3975025b4",
+    "C1": "f68bc297b94e2990a8a8149b9074b20c0a063848266ca305e30887a6c77647f7",
+    "C2": "938b9170432f4bb9061ff0665eeaeaa4505e39b3452c61dd89202f0eaaf3e1f2"
+  },
+  "response_schema_sha256": "d3424048a38123f234cd798fc10dcf65c5245b1ee5f03d7f96a35a43c98406e8",
+  "execution_order": [
+    {
+      "request_index": 1,
+      "case_id": "PILOT-SH-001",
+      "condition": "C0"
+    },
+    {
+      "request_index": 2,
+      "case_id": "PILOT-SH-001",
+      "condition": "C1"
+    },
+    {
+      "request_index": 3,
+      "case_id": "PILOT-SH-001",
+      "condition": "C2"
+    },
+    {
+      "request_index": 4,
+      "case_id": "PILOT-SH-002",
+      "condition": "C1"
+    },
+    {
+      "request_index": 5,
+      "case_id": "PILOT-SH-002",
+      "condition": "C2"
+    },
+    {
+      "request_index": 6,
+      "case_id": "PILOT-SH-002",
+      "condition": "C0"
+    },
+    {
+      "request_index": 7,
+      "case_id": "PILOT-SH-003",
+      "condition": "C2"
+    },
+    {
+      "request_index": 8,
+      "case_id": "PILOT-SH-003",
+      "condition": "C0"
+    },
+    {
+      "request_index": 9,
+      "case_id": "PILOT-SH-003",
+      "condition": "C1"
+    },
+    {
+      "request_index": 10,
+      "case_id": "PILOT-SN-001",
+      "condition": "C0"
+    },
+    {
+      "request_index": 11,
+      "case_id": "PILOT-SN-001",
+      "condition": "C1"
+    },
+    {
+      "request_index": 12,
+      "case_id": "PILOT-SN-001",
+      "condition": "C2"
+    },
+    {
+      "request_index": 13,
+      "case_id": "PILOT-SN-002",
+      "condition": "C1"
+    },
+    {
+      "request_index": 14,
+      "case_id": "PILOT-SN-002",
+      "condition": "C2"
+    },
+    {
+      "request_index": 15,
+      "case_id": "PILOT-SN-002",
+      "condition": "C0"
+    },
+    {
+      "request_index": 16,
+      "case_id": "PILOT-SN-003",
+      "condition": "C2"
+    },
+    {
+      "request_index": 17,
+      "case_id": "PILOT-SN-003",
+      "condition": "C0"
+    },
+    {
+      "request_index": 18,
+      "case_id": "PILOT-SN-003",
+      "condition": "C1"
+    },
+    {
+      "request_index": 19,
+      "case_id": "PILOT-SD-001",
+      "condition": "C0"
+    },
+    {
+      "request_index": 20,
+      "case_id": "PILOT-SD-001",
+      "condition": "C1"
+    },
+    {
+      "request_index": 21,
+      "case_id": "PILOT-SD-001",
+      "condition": "C2"
+    },
+    {
+      "request_index": 22,
+      "case_id": "PILOT-SD-002",
+      "condition": "C1"
+    },
+    {
+      "request_index": 23,
+      "case_id": "PILOT-SD-002",
+      "condition": "C2"
+    },
+    {
+      "request_index": 24,
+      "case_id": "PILOT-SD-002",
+      "condition": "C0"
+    },
+    {
+      "request_index": 25,
+      "case_id": "PILOT-SD-003",
+      "condition": "C2"
+    },
+    {
+      "request_index": 26,
+      "case_id": "PILOT-SD-003",
+      "condition": "C0"
+    },
+    {
+      "request_index": 27,
+      "case_id": "PILOT-SD-003",
+      "condition": "C1"
+    },
+    {
+      "request_index": 28,
+      "case_id": "PILOT-SDN-001",
+      "condition": "C0"
+    },
+    {
+      "request_index": 29,
+      "case_id": "PILOT-SDN-001",
+      "condition": "C1"
+    },
+    {
+      "request_index": 30,
+      "case_id": "PILOT-SDN-001",
+      "condition": "C2"
+    },
+    {
+      "request_index": 31,
+      "case_id": "PILOT-SDN-002",
+      "condition": "C1"
+    },
+    {
+      "request_index": 32,
+      "case_id": "PILOT-SDN-002",
+      "condition": "C2"
+    },
+    {
+      "request_index": 33,
+      "case_id": "PILOT-SDN-002",
+      "condition": "C0"
+    },
+    {
+      "request_index": 34,
+      "case_id": "PILOT-SDN-003",
+      "condition": "C2"
+    },
+    {
+      "request_index": 35,
+      "case_id": "PILOT-SDN-003",
+      "condition": "C0"
+    },
+    {
+      "request_index": 36,
+      "case_id": "PILOT-SDN-003",
+      "condition": "C1"
+    },
+    {
+      "request_index": 37,
+      "case_id": "PILOT-MAY-001",
+      "condition": "C0"
+    },
+    {
+      "request_index": 38,
+      "case_id": "PILOT-MAY-001",
+      "condition": "C1"
+    },
+    {
+      "request_index": 39,
+      "case_id": "PILOT-MAY-001",
+      "condition": "C2"
+    },
+    {
+      "request_index": 40,
+      "case_id": "PILOT-MAY-002",
+      "condition": "C1"
+    },
+    {
+      "request_index": 41,
+      "case_id": "PILOT-MAY-002",
+      "condition": "C2"
+    },
+    {
+      "request_index": 42,
+      "case_id": "PILOT-MAY-002",
+      "condition": "C0"
+    },
+    {
+      "request_index": 43,
+      "case_id": "PILOT-MAY-003",
+      "condition": "C2"
+    },
+    {
+      "request_index": 44,
+      "case_id": "PILOT-MAY-003",
+      "condition": "C0"
+    },
+    {
+      "request_index": 45,
+      "case_id": "PILOT-MAY-003",
+      "condition": "C1"
+    },
+    {
+      "request_index": 46,
+      "case_id": "PILOT-CAN-001",
+      "condition": "C0"
+    },
+    {
+      "request_index": 47,
+      "case_id": "PILOT-CAN-001",
+      "condition": "C1"
+    },
+    {
+      "request_index": 48,
+      "case_id": "PILOT-CAN-001",
+      "condition": "C2"
+    },
+    {
+      "request_index": 49,
+      "case_id": "PILOT-CAN-002",
+      "condition": "C1"
+    },
+    {
+      "request_index": 50,
+      "case_id": "PILOT-CAN-002",
+      "condition": "C2"
+    },
+    {
+      "request_index": 51,
+      "case_id": "PILOT-CAN-002",
+      "condition": "C0"
+    },
+    {
+      "request_index": 52,
+      "case_id": "PILOT-CAN-003",
+      "condition": "C2"
+    },
+    {
+      "request_index": 53,
+      "case_id": "PILOT-CAN-003",
+      "condition": "C0"
+    },
+    {
+      "request_index": 54,
+      "case_id": "PILOT-CAN-003",
+      "condition": "C1"
+    }
+  ],
+  "retry_policy": "At most 2 retries for transient HTTP 429 or 5xx and transport errors, with attempt metadata retained. No retry for insufficient_quota, parse, or semantic failure.",
+  "status": "completed",
+  "completed_at": "2026-09-02T04:17:29.999Z",
+  "block_reason": null
+}

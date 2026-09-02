@@ -1,0 +1,19 @@
+﻿request_index,case_id,condition,response_status,expected_normative_type,predicted_normative_type,modal_correct,citation_applicable,citation_exact,actor_preserved,polarity_preserved,condition_preserved,action_preserved,exception_preserved,complete_preservation,unsupported_addition,error_codes,reviewer_note
+1,PILOT-SH-001,C0,parsed,obligation,recommendation,0,0,,0,0,0,0,NA,0,1,MODAL_WEAKENED;ACTOR_CHANGED;CONDITION_DROPPED;ACTION_CHANGED;UNSUPPORTED_ADDITION,아키텍처 의무를 CP NF 권고로 바꾸고 직접 연계 및 설계 설명을 추가
+2,PILOT-SH-001,C1,parsed,obligation,obligation,1,1,1,1,1,1,1,NA,1,0,,의무·조건·행동 보존
+3,PILOT-SH-001,C2,parsed,obligation,obligation,1,1,1,1,1,1,1,NA,1,0,,의무·행위자·조건·행동 보존
+4,PILOT-SN-001,C1,parsed,prohibition,prohibition,1,1,1,1,1,1,1,NA,1,0,,금지·조건·행동 보존
+5,PILOT-SN-001,C2,parsed,prohibition,prohibition,1,1,1,1,1,1,1,NA,1,0,,금지·조건·행동 보존
+6,PILOT-SN-001,C0,parsed,prohibition,obligation,0,0,,1,0,1,1,NA,0,1,POLARITY_FLIPPED;MODAL_STRENGTHENED;UNSUPPORTED_ADDITION,타이머 제공 금지를 제공 의무로 반전하고 용도 설명을 추가
+7,PILOT-SD-001,C2,parsed,recommendation,recommendation,1,1,1,1,1,1,1,NA,1,0,,권고·행위자·조건·행동 보존
+8,PILOT-SD-001,C0,parsed,recommendation,obligation,0,0,,0,0,1,0,NA,0,1,MODAL_STRENGTHENED;ACTOR_CHANGED;ACTION_CHANGED;UNSUPPORTED_ADDITION,AMF 권고를 AMF 및 NG-RAN 의무로 바꾸고 구체 전송 행동을 일반 갱신 절차로 변경
+9,PILOT-SD-001,C1,parsed,recommendation,recommendation,1,1,1,1,1,1,1,NA,1,0,,권고·행위자·조건·행동 보존
+10,PILOT-SDN-001,C0,parsed,discouragement,obligation,0,0,,1,0,1,0,NA,0,1,MODAL_STRENGTHENED;ACTION_CHANGED;UNSUPPORTED_ADDITION,비권고를 연결 유지 의무로 바꾸고 재설정 행동을 추가
+11,PILOT-SDN-001,C1,parsed,discouragement,discouragement,1,1,1,1,1,1,1,NA,1,0,,비권고·행위자·조건·행동 보존
+12,PILOT-SDN-001,C2,parsed,discouragement,discouragement,1,1,1,1,1,1,1,NA,1,0,,금지가 아닌 비권고임을 명시
+13,PILOT-MAY-001,C1,parsed,permission,permission,1,1,1,1,1,1,1,NA,1,0,,허용 의미와 조회 조건 보존
+14,PILOT-MAY-001,C2,parsed,permission,permission,1,1,1,1,1,1,1,NA,1,0,,허용 의미와 UDM 조회 조건 보존
+15,PILOT-MAY-001,C0,parsed,permission,capability,0,0,,1,0,0,0,NA,0,1,MODAL_STRENGTHENED;CONDITION_DROPPED;ACTION_CHANGED;UNSUPPORTED_ADDITION,허용을 기능 가능성으로 바꾸고 IMSI 및 application port ID 조건을 SUPI 매핑으로 변경
+16,PILOT-CAN-001,C2,parsed,capability,capability,1,1,1,1,1,NA,1,NA,1,0,,기술적 가능성과 직접·간접 통신 방식 보존
+17,PILOT-CAN-001,C0,parsed,capability,permission,0,0,,1,0,NA,0,NA,0,1,MODAL_STRENGTHENED;ACTION_CHANGED;UNSUPPORTED_ADDITION,기술적 가능성을 허용으로 바꾸고 직접 또는 SCP 경유 방식 대신 HTTP/2 및 구독 방식을 추가
+18,PILOT-CAN-001,C1,parsed,capability,capability,1,1,1,1,1,NA,1,NA,1,0,,기술적 가능성과 두 통신 방식 보존

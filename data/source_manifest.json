@@ -1,0 +1,47 @@
+{
+  "status": "primary_selected_secondary_eligible",
+  "retrieved_at": "2026-09-01",
+  "selection_policy": {
+    "release": "Release 18",
+    "version": "18.12.0",
+    "publisher": "ETSI",
+    "format": "official PDF",
+    "primary_use": "English normative-statement sampling for Korean explanation evaluation",
+    "mixing_rule": "Do not mix sources in the final dataset until the per-spec sampling balance is fixed."
+  },
+  "sources": [
+    {
+      "role": "primary",
+      "spec_id": "3GPP TS 23.501",
+      "etsi_id": "ETSI TS 123 501",
+      "title": "System architecture for the 5G System (5GS)",
+      "release": "18",
+      "version": "18.12.0",
+      "publication_date": "2026-01",
+      "canonical_url": "https://www.etsi.org/deliver/etsi_ts/123500_123599/123501/18.12.00_60/ts_123501v181200p.pdf",
+      "specification_page": "https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3144",
+      "local_filename": "ts_123501v181200p.pdf",
+      "page_count": 723,
+      "file_size_bytes": 6643370,
+      "sha256": "2ef71f81a87c86967dc623741b5a3479338844661067a3bb13089fffe6fed2ac",
+      "candidate_scope": "Clauses 4-8; PDF pages 42-611; manually exclude notes, tables, quotations, and unclear fragments."
+    },
+    {
+      "role": "eligible_secondary",
+      "spec_id": "3GPP TS 24.501",
+      "etsi_id": "ETSI TS 124 501",
+      "title": "Non-Access-Stratum (NAS) protocol for 5G System (5GS); Stage 3",
+      "release": "18",
+      "version": "18.12.0",
+      "publication_date": "2025-10",
+      "canonical_url": "https://www.etsi.org/deliver/etsi_ts/124500_124599/124501/18.12.00_60/ts_124501v181200p.pdf",
+      "specification_page": "https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3370",
+      "local_filename": "ts_124501v181200p.pdf",
+      "page_count": 1204,
+      "file_size_bytes": 7896856,
+      "sha256": "fef06d660506abf6885d593e4129095c17140be4f2317e802daa8599233f1b06",
+      "candidate_scope": "Clauses 4-6; PDF pages 49-733; use only after fixing a balanced cross-spec sampling rule."
+    }
+  ],
+  "distribution_note": "The PDFs are stored locally for research. Verify ETSI/3GPP redistribution terms before publishing or uploading the source files."
+}

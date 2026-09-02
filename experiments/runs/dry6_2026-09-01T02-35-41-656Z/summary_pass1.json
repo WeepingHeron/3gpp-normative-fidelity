@@ -1,0 +1,27 @@
+{
+  "status": "single_annotator_pass1_only",
+  "warning": "Not final. A delayed second pass or independent reviewer is required before reporting research results.",
+  "conditions": {
+    "C0": {
+      "n": 6,
+      "modal_accuracy": 0,
+      "complete_preservation_rate_pass1": 0,
+      "unsupported_addition_rate_pass1": 0.6666666666666666,
+      "citation_exactness": null
+    },
+    "C1": {
+      "n": 6,
+      "modal_accuracy": 0.6666666666666666,
+      "complete_preservation_rate_pass1": 0.6666666666666666,
+      "unsupported_addition_rate_pass1": 0.16666666666666666,
+      "citation_exactness": 1
+    },
+    "C2": {
+      "n": 6,
+      "modal_accuracy": 1,
+      "complete_preservation_rate_pass1": 0.8333333333333334,
+      "unsupported_addition_rate_pass1": 0,
+      "citation_exactness": 1
+    }
+  }
+}

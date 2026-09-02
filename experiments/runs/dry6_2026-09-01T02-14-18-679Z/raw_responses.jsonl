@@ -1,0 +1,1 @@
+{"request_index":1,"case_id":"PILOT-SH-001","condition":"C0","attempt":1,"started_at":"2026-09-01T02:14:18.680Z","http_status":429,"response":{"error":{"message":"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.","type":"insufficient_quota","param":null,"code":"credit_balance_exhausted"}}}
