@@ -1,1 +1,1 @@
-case_id,spec_id,release,version,clause_id,source_text_en,modal_class,polarity,actor,condition,action,exception,question_ko,gold_summary_ko,source_sha256,split,review_status
+case_id,candidate_id,spec_id,release,version,clause_id,pdf_page,source_text_en,source_normalization_note,modal_class,polarity,actor,condition,action,exception,question_ko,gold_summary_ko,difficulty_tier,difficulty_basis,source_sha256,split,review_status

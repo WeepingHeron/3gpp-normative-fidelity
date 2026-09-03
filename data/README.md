@@ -33,4 +33,12 @@ PDF 원문을 저장소에 포함하거나 외부에 배포하기 전에는 배�
 
 `main_selection_draft.csv`는 gold dataset이 아니다. actor·condition·action·exception과 한국어 질문을 수동 검수해 `main_cases.csv`로 동결하기 전에는 API 본실험에 사용하지 않는다.
 
+## Main 동결 상태
+
+- `main_cases.csv`: 72개 최종 main case, 전부 `self_checked`
+- `main_dataset_audit.json`: 필드·분포·질문 누설·modal별 gold 강도 검사 결과
+- `main_freeze_manifest.json`: dataset·annotation·prompt·schema·채점 규칙의 SHA-256 동결값
+
+현재 동결은 `FROZEN_SINGLE_ANNOTATOR`다. 독립 2차 검토를 받았다는 뜻이 아니며, 이후 수정은 errata와 새 freeze manifest로 이력화한다.
+
 검토용 workbook은 `outputs/01a041cb-a998-76f0-abd3-65e557043a7a/pilot_cases_review.xlsx`에 있다. 단, dry run에서 `PILOT-CAN-001`의 대안 통신 방식이 exception이 아니라 action의 선택지임이 확인되어 canonical CSV의 exception을 빈 값으로 수정했다. 따라서 현재 workbook은 이 한 셀에 대해 pre-refinement 상태이며 재생성이 필요하다. Canonical source는 `pilot_cases.csv`다.

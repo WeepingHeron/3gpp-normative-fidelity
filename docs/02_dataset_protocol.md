@@ -15,7 +15,7 @@
 
 `cannot`은 `can`의 부정 표본으로 넣을 수 있지만 `can` 12개 중 부정 문장이 몇 개인지를 별도 기록한다.
 
-Main의 각 카테고리 12개는 TS 23.501에서 6개, TS 24.501에서 6개를 뽑는다. 이렇게 하면 특정 modal class와 특정 규격의 문체·절차 특성이 결합되는 교란을 줄일 수 있다.
+Main의 각 카테고리 12개는 원칙적으로 TS 23.501에서 6개, TS 24.501에서 6개를 뽑는다. 다만 모델 실행 전 확인한 적격 후보 부족 때문에 `should_not`은 8+4, `should`은 반대 방향의 4+8로 짝지어 조정한다. 전체 source 수는 36+36으로 유지한다. 상세 근거와 난도 배분은 `docs/06_main_difficulty_protocol.md`에 고정한다.
 
 | source | 고정 버전 | main 범주별 수 | 사용 조항 |
 |---|---|---:|---|
@@ -57,11 +57,14 @@ Main의 각 카테고리 12개는 TS 23.501에서 6개, TS 24.501에서 6개를 
 | 필드 | 정의 |
 |---|---|
 | `case_id` | 변경하지 않는 사례 ID |
+| `candidate_id` | 후보 추출·선정 로그와 연결되는 ID |
 | `spec_id` | 예: `3GPP TS 23.501` |
 | `release` | 표준 Release |
 | `version` | 문서 정확 버전 |
 | `clause_id` | 원문 조항 ID |
+| `pdf_page` | 고정 PDF의 1-based page 번호 |
 | `source_text_en` | 실험에 쓰는 영문 원문 |
+| `source_normalization_note` | PDF text extraction artifact를 교정한 경우 그 범위와 이유 |
 | `modal_class` | 6개 카테고리 중 하나 |
 | `polarity` | `positive` 또는 `negative` |
 | `actor` | 요구·권고·허용·능력의 주체 |
@@ -97,7 +100,7 @@ Main의 각 카테고리 12개는 TS 23.501에서 6개, TS 24.501에서 6개를 
 - 조항 ID와 원문이 공식 문서와 일치한다.
 - `question_ko`가 modal class를 질문 자체에서 직접 누설하지 않는다.
 - 표본 수가 카테고리별로 균형이다.
-- Main에서 각 modal 범주의 규격별 표본 수가 6개씩이다.
+- Main의 source가 전체 36+36이고, modal별 6+6 원칙 또는 사전 기록된 `should`/`should_not` 짝지은 예외와 일치한다.
 - exact/near duplicate가 pilot과 main 사이에 분리되지 않았다.
 - `docs/06_main_difficulty_protocol.md`의 난도 층화가 모델 실행 전에 확정됐다.
 

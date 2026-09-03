@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "audited_rows": 72,
+  "dataset_sha256": "46c5ad53d861c2bdf0542acfd74d376baa6e384425f705536034b03cf5d04a3f",
+  "review_status_counts": {
+    "self_checked": 72
+  },
+  "failures": []
+}

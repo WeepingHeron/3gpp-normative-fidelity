@@ -1,0 +1,194 @@
+{
+  "CAND-00028": {
+    "actor": "UE simultaneously connected to the same 5G Core Network over 3GPP and non-3GPP access",
+    "condition": "",
+    "action": "be served by a single AMF in that 5G Core Network",
+    "exception": "",
+    "question_ko": "동일한 5G Core Network에 3GPP access와 non-3GPP access로 동시에 연결된 UE의 AMF 구성을 설명해줘.",
+    "gold_summary_ko": "해당 UE는 그 5G Core Network에서 하나의 AMF에 의해 반드시 서비스되어야 한다."
+  },
+  "CAND-00026": {
+    "actor": "UE accessing the 5G Core Network over non-3GPP access",
+    "condition": "after UE registration",
+    "action": "support NAS signalling with 5G Core Network control-plane functions using the N1 reference point",
+    "exception": "",
+    "question_ko": "non-3GPP access로 5G Core Network에 접근하는 UE의 등록 후 NAS signalling 방식을 설명해줘.",
+    "gold_summary_ko": "UE는 등록 후 N1 reference point를 사용해 5G Core Network control-plane function과의 NAS signalling을 반드시 지원해야 한다."
+  },
+  "CAND-00108": {
+    "actor": "SUCI",
+    "condition": "if the UE does not include a 5G-GUTI",
+    "action": "be used for the new registration",
+    "exception": "",
+    "question_ko": "UE가 5G-GUTI를 포함하지 않은 경우 새 등록에 사용할 식별자를 설명해줘.",
+    "gold_summary_ko": "UE가 5G-GUTI를 포함하지 않으면 새 등록에는 SUCI를 반드시 사용해야 한다."
+  },
+  "CAND-00003": {
+    "actor": "network functions within the 5GC Control Plane",
+    "condition": "for interactions between those network functions",
+    "action": "use service-based interfaces",
+    "exception": "only service-based interfaces are permitted",
+    "question_ko": "5GC Control Plane 내부 Network Function 간 상호작용 인터페이스 원칙을 설명해줘.",
+    "gold_summary_ko": "5GC Control Plane 내부 Network Function은 서로 상호작용할 때 service-based interface만 반드시 사용해야 한다."
+  },
+  "CAND-00019": {
+    "actor": "each NF Service Consumer accessing the UDR via Nudr",
+    "condition": "when accessing the UDR via Nudr",
+    "action": "add, modify, update, or delete data",
+    "exception": "only data that the NF Service Consumer is authorized to change",
+    "question_ko": "Nudr를 통해 UDR에 접근하는 NF Service Consumer의 데이터 변경 범위를 설명해줘.",
+    "gold_summary_ko": "각 NF Service Consumer는 자신에게 변경 권한이 있는 데이터만 추가·수정·갱신·삭제해야 한다."
+  },
+  "CAND-00093": {
+    "actor": "AMF",
+    "condition": "when allocating a registration area for a UE registered for Disaster Roaming service",
+    "action": "consider TAIs covering the area with the Disaster Condition",
+    "exception": "only TAIs covering the Disaster Condition area",
+    "question_ko": "Disaster Roaming service에 등록된 UE의 registration area를 AMF가 할당할 때 고려할 TAI 범위를 설명해줘.",
+    "gold_summary_ko": "AMF는 해당 registration area를 할당할 때 Disaster Condition이 있는 지역을 포함하는 TAI만 반드시 고려해야 한다."
+  },
+  "CAND-03595": {
+    "actor": "AMF",
+    "condition": "",
+    "action": "include the message authentication code, selected NAS algorithms, NCC, and generated ngKSI in the S1 mode to N1 mode NAS transparent container IE",
+    "exception": "",
+    "question_ko": "S1 mode to N1 mode NAS transparent container IE에 AMF가 포함하는 보안 정보를 설명해줘.",
+    "gold_summary_ko": "AMF는 해당 IE에 message authentication code, 선택한 NAS algorithm, NCC, 생성한 ngKSI를 반드시 포함해야 한다."
+  },
+  "CAND-03578": {
+    "actor": "UE",
+    "condition": "during the initial registration procedure when K_AUSF is invalid",
+    "action": "delete the ngKSI",
+    "exception": "",
+    "question_ko": "initial registration 중 K_AUSF가 유효하지 않을 때 UE의 ngKSI 처리를 설명해줘.",
+    "gold_summary_ko": "initial registration 중 K_AUSF가 유효하지 않으면 UE는 ngKSI를 반드시 삭제해야 한다."
+  },
+  "CAND-03582": {
+    "actor": "UE operating in dual-registration mode",
+    "condition": "when performing an initial registration procedure",
+    "action": "take a 5G NAS security context into use and handle it as described in the specification",
+    "exception": "",
+    "question_ko": "dual-registration mode UE가 initial registration을 수행할 때 5G NAS security context를 어떻게 처리하는지 설명해줘.",
+    "gold_summary_ko": "해당 UE는 5G NAS security context를 반드시 사용하기 시작하고 규격에 기술된 방식으로 처리해야 한다."
+  },
+  "CAND-03577": {
+    "actor": "UE",
+    "condition": "when the UE is required to delete an ngKSI",
+    "action": "set the ngKSI to 'no key is available' and consider the associated K_AMF or K'_AMF, NAS ciphering key, and NAS integrity key invalid",
+    "exception": "",
+    "question_ko": "UE의 ngKSI 삭제 상황에서 ngKSI와 연관 키를 어떻게 처리하는지 설명해줘.",
+    "gold_summary_ko": "UE는 ngKSI를 'no key is available'로 반드시 설정하고 연관된 K_AMF 또는 K'_AMF와 NAS 암호화·무결성 키를 무효로 간주해야 한다."
+  },
+  "CAND-03594": {
+    "actor": "AMF",
+    "condition": "for the newly derived K'_AMF key",
+    "action": "define an ngKSI using the eKSI value field and mapped-context type field, and associate it with the new mapped 5G NAS security context",
+    "exception": "",
+    "question_ko": "새로 유도한 K'_AMF에 대해 AMF가 ngKSI를 정의하고 연결하는 방식을 설명해줘.",
+    "gold_summary_ko": "AMF는 eKSI의 value field와 mapped security context를 나타내는 type field로 ngKSI를 반드시 정의하고 새 mapped 5G NAS security context와 연결해야 한다."
+  },
+  "CAND-03600": {
+    "actor": "AMF",
+    "condition": "when a single-registration-mode UE in a network supporting N26 has an emergency-bearer PDN connection and no current EPS security context",
+    "action": "set 5G-IA0 and 5G-EA0 as the selected 5G NAS security algorithms in the S1 mode to N1 mode NAS transparent container IE",
+    "exception": "",
+    "question_ko": "N26 지원망의 single-registration mode UE가 emergency bearer PDN connection은 있지만 현재 EPS security context가 없을 때 AMF의 알고리즘 설정을 설명해줘.",
+    "gold_summary_ko": "그 조건에서 AMF는 해당 IE의 선택된 5G NAS security algorithm을 5G-IA0과 5G-EA0으로 반드시 설정해야 한다."
+  },
+  "CAND-00008": {
+    "actor": "each SMF",
+    "condition": "within a PDU Session",
+    "action": "control both a local UPF and a central UPF",
+    "exception": "",
+    "question_ko": "하나의 PDU Session에서 SMF가 local UPF와 central UPF를 제어하는 구성을 설명해줘.",
+    "gold_summary_ko": "각 SMF에는 하나의 PDU Session에서 local UPF와 central UPF를 모두 제어할 수 있는 권한이 있을 수 있다."
+  },
+  "CAND-00043": {
+    "actor": "N5CW device",
+    "condition": "when performing EAP-based access authentication to connect to a trusted WLAN access network",
+    "action": "simultaneously be registered to a 5GC of a PLMN or SNPN",
+    "exception": "",
+    "question_ko": "N5CW device가 trusted WLAN 연결을 위해 EAP 기반 access authentication을 수행할 때 5GC 등록 상태를 설명해줘.",
+    "gold_summary_ko": "그 과정에서 N5CW device는 PLMN 또는 SNPN의 5GC에 동시에 등록되어 있을 수 있다."
+  },
+  "CAND-00063": {
+    "actor": "SMF",
+    "condition": "for a given PDU Session during PDU Session establishment",
+    "action": "indicate the N6-interface network instance to the UPF",
+    "exception": "",
+    "question_ko": "PDU Session establishment 중 N6 interface의 network instance를 UPF에 전달하는 방식을 설명해줘.",
+    "gold_summary_ko": "SMF는 해당 PDU Session의 N6-interface network instance를 UPF에 표시할 수 있다."
+  },
+  "CAND-00024": {
+    "actor": "non-3GPP access network",
+    "condition": "",
+    "action": "advertise supported PLMNs or SNPNs and the supported trusted-connectivity type",
+    "exception": "only PLMNs or SNPNs for which trusted connectivity is supported",
+    "question_ko": "non-3GPP access network가 trusted connectivity 지원 정보를 광고하는 범위를 설명해줘.",
+    "gold_summary_ko": "non-3GPP access network는 trusted connectivity를 지원하는 PLMN 또는 SNPN과 그 connectivity 유형을 광고할 수 있다."
+  },
+  "CAND-00051": {
+    "actor": "UEs not subject to 5GS and EPC interworking",
+    "condition": "when not subject to 5GS and EPC interworking",
+    "action": "be served by a PGW or by an SMF/UPF not dedicated to interworking",
+    "exception": "",
+    "question_ko": "5GS와 EPC interworking 대상이 아닌 UE의 serving entity 구성을 설명해줘.",
+    "gold_summary_ko": "해당 UE는 interworking 전용이 아닌 PGW 또는 SMF/UPF에 의해 서비스될 수 있다."
+  },
+  "CAND-00097": {
+    "actor": "each N3IWF, TNGF, TWIF, and W-AGF",
+    "condition": "",
+    "action": "be configured with a TAI value different from or the same as the value of the other listed access functions",
+    "exception": "",
+    "question_ko": "N3IWF, TNGF, TWIF, W-AGF 사이의 TAI value 구성 관계를 설명해줘.",
+    "gold_summary_ko": "각 기능에는 다른 기능과 서로 다른 TAI value 또는 동일한 TAI value를 구성할 수 있다."
+  },
+  "CAND-03789": {
+    "actor": "HPLMN",
+    "condition": "in a PLMN for which the UE has neither a configured NSSAI nor an allowed NSSAI",
+    "action": "configure the UE with one default configured NSSAI and consider it valid in that PLMN",
+    "exception": "a single default configured NSSAI",
+    "question_ko": "UE에 configured NSSAI와 allowed NSSAI가 모두 없는 PLMN에서 HPLMN의 default configured NSSAI 처리를 설명해줘.",
+    "gold_summary_ko": "HPLMN은 UE에 하나의 default configured NSSAI를 구성하고 이를 해당 PLMN에서 유효한 것으로 간주할 수 있다."
+  },
+  "CAND-03573": {
+    "actor": "new 5G NAS security context",
+    "condition": "during an N1 mode to N1 mode handover",
+    "action": "be created",
+    "exception": "",
+    "question_ko": "N1 mode 간 handover 중 새로운 5G NAS security context의 생성 시점을 설명해줘.",
+    "gold_summary_ko": "N1 mode에서 N1 mode로 handover하는 동안 새로운 5G NAS security context가 생성될 수 있다."
+  },
+  "CAND-03818": {
+    "actor": "default configured NSSAI",
+    "condition": "during the NAS transport procedure",
+    "action": "be changed by sending a UE parameters update transparent container to the UE",
+    "exception": "",
+    "question_ko": "NAS transport procedure 중 default configured NSSAI를 변경하는 방법을 설명해줘.",
+    "gold_summary_ko": "NAS transport procedure 중 UE parameters update transparent container를 UE에 전송하여 default configured NSSAI를 변경할 수 있다."
+  },
+  "CAND-03703": {
+    "actor": "AMF",
+    "condition": "when the UE has an emergency PDU session and the integrity check fails",
+    "action": "skip authentication and proceed directly to security mode control",
+    "exception": "even if no 5G NAS security context is available",
+    "question_ko": "emergency PDU session이 있는 UE의 integrity check가 실패했을 때 AMF의 authentication 및 security mode control 처리를 설명해줘.",
+    "gold_summary_ko": "그 조건에서 AMF는 5G NAS security context가 없어도 authentication을 생략하고 security mode control로 바로 진행할 수 있다."
+  },
+  "CAND-03797": {
+    "actor": "UE",
+    "condition": "if T3526 was started for rejected S-NSSAI(s) due to the maximum number of UEs being reached and that timer expires",
+    "action": "remove the affected S-NSSAI(s) from the rejected NSSAI",
+    "exception": "only S-NSSAI(s) carrying the stated maximum-UE rejection cause",
+    "question_ko": "최대 UE 수 도달 사유의 S-NSSAI와 연관된 T3526이 만료될 때 UE의 처리를 설명해줘.",
+    "gold_summary_ko": "해당 T3526이 만료되면 UE는 'maximum number of UEs reached' 거절 사유를 가진 S-NSSAI를 rejected NSSAI에서 제거할 수 있다."
+  },
+  "CAND-03817": {
+    "actor": "configured NSSAI and rejected NSSAI",
+    "condition": "during the registration procedure or the generic UE configuration update procedure",
+    "action": "be changed",
+    "exception": "",
+    "question_ko": "configured NSSAI와 rejected NSSAI의 변경 절차를 설명해줘.",
+    "gold_summary_ko": "configured NSSAI와 rejected NSSAI는 registration procedure 또는 generic UE configuration update procedure 중 변경될 수 있다."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "status": "FROZEN_SINGLE_ANNOTATOR",
+  "frozen_at_utc": "2026-09-03T07:25:21.797343+00:00",
+  "dataset_path": "data/main_cases.csv",
+  "dataset_sha256": "46c5ad53d861c2bdf0542acfd74d376baa6e384425f705536034b03cf5d04a3f",
+  "case_count": 72,
+  "conditions": [
+    "C0",
+    "C1",
+    "C2"
+  ],
+  "planned_api_calls": 216,
+  "provider": "OpenAI",
+  "api": "Responses API",
+  "model_requested": "gpt-5.4-mini-2026-03-17",
+  "parameters": {
+    "temperature": 0,
+    "reasoning_effort": "none",
+    "max_output_tokens": 600,
+    "store": false
+  },
+  "prompt_file_versions": {
+    "C0": "v3",
+    "C1": "v2",
+    "C2": "v2"
+  },
+  "review_boundary": "single-annotator source-grounded self-check; not independently second-reviewed",
+  "file_sha256": {
+    "data/main_cases.csv": "46c5ad53d861c2bdf0542acfd74d376baa6e384425f705536034b03cf5d04a3f",
+    "data/main_selection_draft.csv": "528f134c3865e57207711705123dcf53f98422ba0f4399420a56be364067b888",
+    "data/main_selection_log.csv": "68ce9cdc3b5b660067b168189ca05ed580f74255139aef544e474e7fc430f857",
+    "data/main_selection_audit.json": "6c45c4ab6df501db16fd479b4d7daa7ce8aa86951bdc98ca0e12d20f32fe1236",
+    "data/main_dataset_audit.json": "6d00bf44abecff7fe48259aaaabca60b4e85f8dbaf81899dd8e876d71f4120f6",
+    "data/annotations/main_shall_may.json": "2b5eb78a4f7e748e71dd3be19166785b81000220929b316cc09a560790ad9ebb",
+    "data/annotations/main_can_shall_not.json": "a6a27bcc2d76138f01a7577870205a0595e1dd2eebe44dbd301eef41b2ebabeb",
+    "data/annotations/main_should_should_not.json": "e9347c70bbcfc87cadd4e9accd0be8a27ed3f25432078f398f7b1fba956544d0",
+    "docs/06_main_difficulty_protocol.md": "82a60615adcdefc6ad92707d9ff00c04fb81d85f69b00404525772ab87bf7c29",
+    "experiments/prompts/c0_v3.md": "e110fc93c65d15efe77f126fb2b66d4fd771a31b2eb20aa61aa778b3975025b4",
+    "experiments/prompts/c1_v2.md": "f68bc297b94e2990a8a8149b9074b20c0a063848266ca305e30887a6c77647f7",
+    "experiments/prompts/c2_v2.md": "938b9170432f4bb9061ff0665eeaeaa4505e39b3452c61dd89202f0eaaf3e1f2",
+    "experiments/response_schema.json": "9218fe5bd783f2f0fc01798334e9bfd69c117f8df854701c5fc34c42efa68c3c",
+    "experiments/scoring_v1.md": "bd54359740fbab8b6c953fd1613281ee8de36ea85c46558cf63f18142b282692"
+  }
+}

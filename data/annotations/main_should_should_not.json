@@ -1,0 +1,194 @@
+{
+  "CAND-00177": {
+    "actor": "Registration Area of a UE in a Non-Allowed Area",
+    "condition": "when the UE is in a Non-Allowed Area",
+    "action": "consist of a set of TAs belonging to a Non-Allowed Area of the UE",
+    "exception": "",
+    "question_ko": "Non-Allowed Area에 있는 UE의 Registration Area를 구성하는 TA 범위를 설명해줘.",
+    "gold_summary_ko": "해당 Registration Area는 UE의 Non-Allowed Area에 속하는 TA 집합으로 구성하는 것이 권고된다."
+  },
+  "CAND-00279": {
+    "actor": "Paging Policy",
+    "condition": "when the 5GS supports Paging Policy Differentiation, for a particular IP packet",
+    "action": "be selected for application according to the DSCP value set by the application",
+    "exception": "",
+    "question_ko": "5GS가 Paging Policy Differentiation을 지원할 때 특정 IP packet에 적용할 Paging Policy를 표시하는 방식을 설명해줘.",
+    "gold_summary_ko": "application이 설정한 DSCP value는 특정 IP packet에 어떤 Paging Policy를 적용하는 것이 권고되는지를 5GS에 나타낸다."
+  },
+  "CAND-00079": {
+    "actor": "NG-RAN node",
+    "condition": "if it decides to initiate UAC after receiving N2 OVERLOAD START messages",
+    "action": "initiate UAC",
+    "exception": "only if all relevant connected AMFs named by the request ask to restrict load for accessing UEs",
+    "question_ko": "N2 OVERLOAD START 수신으로 UAC를 시작하려는 NG-RAN node가 확인할 AMF 조건을 설명해줘.",
+    "gold_summary_ko": "NG-RAN node는 요청과 관련된 모든 연결 AMF가 UE load 제한을 요구할 때에만 UAC를 시작하는 것이 권고된다."
+  },
+  "CAND-00159": {
+    "actor": "radio access network",
+    "condition": "for 3GPP access in CM-CONNECTED state when selecting target RAT and target PLMN during handover or redirection",
+    "action": "take per-PLMN RAT restrictions into consideration",
+    "exception": "",
+    "question_ko": "CM-CONNECTED 상태의 3GPP access에서 handover 또는 redirection 중 target RAT·PLMN을 정할 때 고려할 제한을 설명해줘.",
+    "gold_summary_ko": "radio access network는 target RAT와 PLMN을 정할 때 PLMN별 RAT restriction을 고려하는 것이 권고된다."
+  },
+  "CAND-03822": {
+    "actor": "allowed NSSAI(s)",
+    "condition": "",
+    "action": "be stored in non-volatile memory in the ME",
+    "exception": "as specified in annex C",
+    "question_ko": "allowed NSSAI를 ME에 저장하는 위치와 방식을 설명해줘.",
+    "gold_summary_ko": "allowed NSSAI는 annex C에 따라 ME의 non-volatile memory에 저장하는 것이 권고된다."
+  },
+  "CAND-03982": {
+    "actor": "UE",
+    "condition": "where N1 mode capability for 3GPP access was disabled",
+    "action": "memorize the identity of the affected PLMNs or SNPNs",
+    "exception": "",
+    "question_ko": "3GPP access의 N1 mode capability가 비활성화된 경우 UE가 기억할 network identity를 설명해줘.",
+    "gold_summary_ko": "UE는 N1 mode capability가 비활성화된 PLMN 또는 SNPN의 identity를 기억하는 것이 권고된다."
+  },
+  "CAND-04789": {
+    "actor": "network",
+    "condition": "if the mapping from 5G-GUTI to SUPI in the network was incorrect",
+    "action": "send a new AUTHENTICATION REQUEST message to the UE",
+    "exception": "",
+    "question_ko": "network의 5G-GUTI와 SUPI mapping이 잘못된 경우 authentication 응답 절차를 설명해줘.",
+    "gold_summary_ko": "mapping이 잘못된 경우 network는 UE에 새 AUTHENTICATION REQUEST message를 보내는 것이 권고된다."
+  },
+  "CAND-04791": {
+    "actor": "network",
+    "condition": "if the mapping from 5G-GUTI to SUPI in the network was correct",
+    "action": "terminate the 5G AKA primary authentication and key agreement procedure by sending an AUTHENTICATION REJECT message",
+    "exception": "",
+    "question_ko": "network의 5G-GUTI와 SUPI mapping이 올바른 경우 진행 중인 5G AKA 절차 처리를 설명해줘.",
+    "gold_summary_ko": "mapping이 올바른 경우 network는 AUTHENTICATION REJECT message를 보내 5G AKA 기반 primary authentication and key agreement procedure를 종료하는 것이 권고된다."
+  },
+  "CAND-03986": {
+    "actor": "UE",
+    "condition": "if N1 mode capability for 3GPP access was disabled because no network slices were available",
+    "action": "memorize the identity of the affected PLMN or SNPN, or the affected SNPN list, respectively",
+    "exception": "the memorized identity or list follows the PLMN/SNPN case",
+    "question_ko": "사용 가능한 network slice가 없어 N1 mode가 비활성화된 경우 UE가 PLMN·SNPN 정보를 기억하는 방식을 설명해줘.",
+    "gold_summary_ko": "UE는 원인과 대상에 따라 N1 mode가 비활성화된 PLMN 또는 SNPN의 identity나 SNPN 목록을 각각 기억하는 것이 권고된다."
+  },
+  "CAND-04345": {
+    "actor": "UE",
+    "condition": "after completion of emergency services and before requesting MICO mode, to enable an emergency callback",
+    "action": "wait for a UE-implementation-specific duration",
+    "exception": "",
+    "question_ko": "emergency service 완료 후 emergency callback을 지원하기 위해 UE가 MICO mode를 요청하기 전 취할 동작을 설명해줘.",
+    "gold_summary_ko": "UE는 emergency service 완료 후 MICO mode를 요청하기 전에 구현별 시간 동안 기다리는 것이 권고된다."
+  },
+  "CAND-04552": {
+    "actor": "AMF",
+    "condition": "based on the unavailability-period duration and its start",
+    "action": "set the mobile reachable timer and implicit deregistration timer values",
+    "exception": "",
+    "question_ko": "AMF가 unavailability period 정보를 이용해 mobile reachable timer와 implicit deregistration timer를 설정하는 방식을 설명해줘.",
+    "gold_summary_ko": "AMF는 unavailability period의 duration과 시작 시점을 바탕으로 두 timer 값을 설정하는 것이 권고된다."
+  },
+  "CAND-04559": {
+    "actor": "UE",
+    "condition": "if the AMF omits the Unavailability configuration IE or sets EUPR to require an end-of-period report, when the unavailability duration ends",
+    "action": "trigger registration for mobility registration update",
+    "exception": "",
+    "question_ko": "Unavailability configuration IE가 없거나 EUPR이 종료 보고를 요구할 때 unavailability period 종료 후 UE 동작을 설명해줘.",
+    "gold_summary_ko": "해당 조건에서 unavailability period가 끝나면 UE는 mobility registration update를 위한 registration procedure를 시작하는 것이 권고된다."
+  },
+  "CAND-00160": {
+    "actor": "Forbidden Areas",
+    "condition": "for untrusted or trusted non-3GPP access",
+    "action": "be used",
+    "exception": "",
+    "question_ko": "Forbidden Area를 untrusted 또는 trusted non-3GPP access에 적용하는 정책을 설명해줘.",
+    "gold_summary_ko": "Forbidden Area는 untrusted 또는 trusted non-3GPP access에 사용하지 않는 것이 권고된다."
+  },
+  "CAND-00901": {
+    "actor": "98 percent of packets",
+    "condition": "in uncongested scenarios",
+    "action": "experience a delay exceeding the 5QI Packet Delay Budget",
+    "exception": "up to 2 percent of packets are outside the stated recommendation",
+    "question_ko": "혼잡하지 않은 상황에서 5QI Packet Delay Budget을 초과하는 packet delay 비율 기준을 설명해줘.",
+    "gold_summary_ko": "혼잡하지 않은 상황에서는 packet의 98%가 5QI PDB를 넘는 지연을 겪지 않는 것이 권고된다."
+  },
+  "CAND-00377": {
+    "actor": "AMF",
+    "condition": "when handling the request and the UE",
+    "action": "reject the request or deregister the UE",
+    "exception": "unless sufficiently accurate location information shows that the UE is in an area where the PLMN may not operate",
+    "question_ko": "PLMN 운용 제한 지역과 관련된 UE 요청을 AMF가 처리할 때 필요한 위치정보 조건을 설명해줘.",
+    "gold_summary_ko": "AMF는 UE가 PLMN 운용 금지 지역에 있다고 판단할 만큼 정확한 위치정보가 없는 한 요청을 reject하거나 UE를 deregister하지 않는 것이 권고된다."
+  },
+  "CAND-01727": {
+    "actor": "dual-registered UE",
+    "condition": "when connected to 5GS/NR",
+    "action": "send its E-UTRA-to-5GC and E-UTRAN radio capabilities to NR access",
+    "exception": "to avoid handover to 5GC-connected E-UTRA or E-UTRAN",
+    "question_ko": "dual-registered UE가 5GS/NR에 연결됐을 때 NR access로 전송할 E-UTRA·E-UTRAN radio capability 정책을 설명해줘.",
+    "gold_summary_ko": "해당 UE는 원치 않는 handover를 피하기 위해 그 radio capability를 NR access로 보내지 않는 것이 권고된다."
+  },
+  "CAND-01842": {
+    "actor": "network",
+    "condition": "as long as the selected PLMN or SNPN remains available at the UE location",
+    "action": "move the UE to another available PLMN or SNPN, including by handover",
+    "exception": "",
+    "question_ko": "선택된 PLMN 또는 SNPN이 UE 위치에서 계속 서비스를 제공하는 동안 다른 network로 이동시키는 정책을 설명해줘.",
+    "gold_summary_ko": "선택된 PLMN 또는 SNPN이 계속 서비스 가능하면 network는 UE를 다른 PLMN 또는 SNPN으로 이동시키지 않는 것이 권고된다."
+  },
+  "CAND-01886": {
+    "actor": "AMF",
+    "condition": "when a UE already in CM-CONNECTED performs a Registration Request for Mobility Registration Update",
+    "action": "reject the Registration Request",
+    "exception": "",
+    "question_ko": "이미 CM-CONNECTED인 UE가 Mobility Registration Update용 Registration Request를 보낼 때 AMF의 reject 정책을 설명해줘.",
+    "gold_summary_ko": "그 경우 AMF는 Registration Request를 reject하지 않는 것이 권고된다."
+  },
+  "CAND-02405": {
+    "actor": "UE",
+    "condition": "when redirecting the UE from 5GC to EPC after a Registration Request or Service Request",
+    "action": "use 5GC",
+    "exception": "the AMF conveys this in the EMM cause of a Registration Reject or Service Reject",
+    "question_ko": "UE를 5GC에서 EPC로 redirect할 때 AMF가 reject message의 EMM cause로 전달하는 5GC 사용 지침을 설명해줘.",
+    "gold_summary_ko": "AMF는 reject message의 EMM cause를 통해 UE가 5GC를 사용하지 않는 것이 권고된다는 뜻을 전달한다."
+  },
+  "CAND-02464": {
+    "actor": "AMF",
+    "condition": "when allocating Active Time, to avoid paging across the entire PLMN",
+    "action": "allocate an 'all PLMN' registration area to the UE",
+    "exception": "",
+    "question_ko": "전체 PLMN paging을 피하기 위해 AMF가 Active Time을 할당할 때 registration area를 정하는 정책을 설명해줘.",
+    "gold_summary_ko": "AMF는 Active Time 할당 시 UE에 'all PLMN' registration area를 할당하지 않는 것이 권고된다."
+  },
+  "CAND-04333": {
+    "actor": "AMF",
+    "condition": "if the AMF indicates an active-time value to the UE",
+    "action": "indicate 'all PLMN registration area allocated' in the MICO indication IE",
+    "exception": "",
+    "question_ko": "AMF가 UE에 active time value를 알릴 때 MICO indication IE의 all-PLMN 표시에 관한 정책을 설명해줘.",
+    "gold_summary_ko": "그 경우 AMF는 MICO indication IE에 'all PLMN registration area allocated'를 표시하지 않는 것이 권고된다."
+  },
+  "CAND-04388": {
+    "actor": "AMF",
+    "condition": "during 5GMM signalling congestion control",
+    "action": "reject emergency, emergency-fallback, high-priority, deregistration, mobile-terminated, emergency-indicated registration, or discontinuous-coverage update requests listed in the sentence",
+    "exception": "the non-rejection recommendation is limited to the seven listed request classes",
+    "question_ko": "5GMM signalling congestion 상황에서 AMF가 예외적으로 다루는 request 범주를 설명해줘.",
+    "gold_summary_ko": "AMF는 emergency·fallback·high-priority·deregistration·mobile-terminated service 및 명시된 emergency·discontinuous-coverage 관련 registration request를 reject하지 않는 것이 권고된다."
+  },
+  "CAND-05502": {
+    "actor": "AMF",
+    "condition": "if the UE is authorized for V2X communication over PC5 by the stated capability bits and subscription context",
+    "action": "immediately release the NAS signalling connection after registration completes",
+    "exception": "",
+    "question_ko": "UE가 capability bit와 subscription context에 따라 PC5 기반 V2X communication 권한을 가진 경우 registration 완료 후 NAS signalling connection 처리 정책을 설명해줘.",
+    "gold_summary_ko": "그 조건에서 AMF는 registration 완료 직후 NAS signalling connection을 해제하지 않는 것이 권고된다."
+  },
+  "CAND-07282": {
+    "actor": "UE",
+    "condition": "if the UE has valid MBS service-area information and neither the current TAI nor current-cell CGI is in the multicast session service area",
+    "action": "request to join the multicast MBS session for local MBS service",
+    "exception": "",
+    "question_ko": "현재 TAI와 cell CGI가 multicast MBS session service area에 없고 UE가 유효한 area 정보를 가진 경우 join request 정책을 설명해줘.",
+    "gold_summary_ko": "그 조건에서 UE는 local MBS service의 multicast MBS session 참가를 요청하지 않는 것이 권고된다."
+  }
+}

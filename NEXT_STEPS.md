@@ -74,17 +74,17 @@ Pass 1은 2026-09-02 13:25 KST, pass 2는 2026-09-03 15:04 KST 이후 새 ID·�
 - [x] 사전 제외 규칙과 문서 순서로 72개 source selection 초안 구성
 - [x] modal 12개씩, source 36+36, 난도 8/22/42 구조 검사
 - [x] 선언 PDF page·active clause·SHA-256 연결 및 pilot/main 중복 검사
-- [ ] modal class 6종×12개, 총 72개 source-grounded label 작성
+- [x] modal class 6종×12개, 총 72개 source-grounded label 작성
 - [x] pilot 18개와 exact/near duplicate가 없는지 검사
 - [x] 원문·clause·page·SHA-256 연결의 기계 감사
-- [ ] 72개 actor·condition·action·exception과 한국어 질문 수동 검수
-- [ ] main prompt·dataset 최종 동결
+- [x] 72개 actor·condition·action·exception과 한국어 질문 수동 검수
+- [x] main prompt·dataset 최종 동결
 
-현재 `data/main_selection_draft.csv`는 **source selection 초안**이다. `data/main_selection_audit.json`의 PASS는 구조·출처 추적 검사를 통과했다는 뜻이며 gold label 완성이나 독립 검토를 의미하지 않는다.
+`data/main_cases.csv`는 72개 source-grounded label의 단일 평가자 자체 검토를 마쳤고 `data/main_freeze_manifest.json`으로 동결했다. 이는 독립적인 2차 검토 완료를 의미하지 않는다. 동결 후 변경이 필요하면 파일을 조용히 덮어쓰지 말고 errata와 새 manifest를 만든다.
 
 ## Pilot 후에만 할 일
 
-- [ ] 본 데이터 72개 수집
+- [x] 본 데이터 72개 수집
 - [ ] 실행 스크립트 작성
 - [ ] 통계·그래프 자동화
 - [ ] ACK 양식에 맞춘 논문 초안

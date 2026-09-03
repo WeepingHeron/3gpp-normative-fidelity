@@ -1,0 +1,195 @@
+{
+  "CAND-00010": {
+    "actor": "N38 reference point",
+    "condition": "",
+    "action": "exist between V-SMFs in the same VPLMN or in different VPLMNs",
+    "exception": "the inter-VPLMN case enables inter-PLMN mobility",
+    "question_ko": "V-SMF 사이 N38 reference point의 VPLMN 배치 관계를 설명해줘.",
+    "gold_summary_ko": "N38 reference point는 같은 VPLMN의 V-SMF 사이 또는 서로 다른 VPLMN의 V-SMF 사이에 존재할 수 있다."
+  },
+  "CAND-00050": {
+    "actor": "events",
+    "condition": "for direct subscription to the UPF",
+    "action": "be subscribed to the UPF directly",
+    "exception": "not all events support direct UPF subscription",
+    "polarity": "negative",
+    "question_ko": "event를 UPF에 직접 subscribe하는 기능의 적용 범위를 설명해줘.",
+    "gold_summary_ko": "모든 event를 UPF에 직접 subscribe할 수 있는 것은 아니며, 일부 event에는 그 기능이 불가능하다."
+  },
+  "CAND-00066": {
+    "actor": "5GS architecture",
+    "condition": "when DS-TT in the device or NW-TT in the UPF is present",
+    "action": "co-exist with DS-TT and NW-TT functions",
+    "exception": "the architecture does not require those functions to be supported",
+    "question_ko": "5GS architecture와 DS-TT 또는 NW-TT function의 공존 관계를 설명해줘.",
+    "gold_summary_ko": "architecture가 DS-TT나 NW-TT 지원을 요구하지는 않지만, 해당 function이 있으면 이들과 공존할 수 있다."
+  },
+  "CAND-00015": {
+    "actor": "NFs authorized to access the data",
+    "condition": "if a UDSF is shared between NFs outside the same set or between multiple NF sets",
+    "action": "access the data",
+    "exception": "only authorized NFs can access the data; enforcement depends on UDSF implementation and deployment",
+    "question_ko": "여러 NF 또는 NF set이 UDSF를 공유할 때 데이터 접근 범위를 설명해줘.",
+    "gold_summary_ko": "UDSF가 여러 NF나 NF set에 공유되면 구현·배포에 따라 권한 있는 NF만 데이터에 접근할 수 있다."
+  },
+  "CAND-00037": {
+    "actor": "UE connected to a 5G-RG or FN-RG",
+    "condition": "where the 5G-RG/FN-RG, W-AGF, and serving UPF combination acts as the corresponding untrusted or trusted non-3GPP access network",
+    "action": "access the 5GC through the N3IWF or TNGF",
+    "exception": "the access path depends on whether the combination acts as untrusted or trusted non-3GPP access",
+    "question_ko": "5G-RG 또는 FN-RG에 연결된 UE의 5GC non-3GPP 접근 경로를 설명해줘.",
+    "gold_summary_ko": "해당 UE는 구성요소가 untrusted 또는 trusted non-3GPP access network로 동작하는 경우 각각 N3IWF 또는 TNGF를 통해 5GC에 접근할 수 있다."
+  },
+  "CAND-00069": {
+    "actor": "5GS",
+    "condition": "when the 5GS acts as a TSN network",
+    "action": "act as a sub-network",
+    "exception": "this is a special case based on the referenced TSN architecture",
+    "question_ko": "5GS가 TSN network로 동작할 때의 sub-network 역할을 설명해줘.",
+    "gold_summary_ko": "5GS가 TSN network로 동작하는 특수한 경우에는 sub-network로 동작할 수 있다."
+  },
+  "CAND-03554": {
+    "actor": "5GSM messages",
+    "condition": "for transmission via 5GMM transport messages",
+    "action": "be transmitted in an information element of the 5GMM transport messages",
+    "exception": "",
+    "question_ko": "5GSM message를 5GMM transport message로 전달하는 방식을 설명해줘.",
+    "gold_summary_ko": "5GSM message는 5GMM transport message의 information element 안에서 전송될 수 있다."
+  },
+  "CAND-03572": {
+    "actor": "security",
+    "condition": "after the AMF and UE establish a 5G NAS security context",
+    "action": "be activated",
+    "exception": "security cannot be activated before that context is established",
+    "question_ko": "5G NAS security를 활성화하기 전에 AMF와 UE가 충족해야 하는 전제조건을 설명해줘.",
+    "gold_summary_ko": "AMF와 UE가 5G NAS security context를 먼저 설정해야 하며, 그 전에는 security를 활성화할 수 없다."
+  },
+  "CAND-03727": {
+    "actor": "UE",
+    "condition": "during the registration procedure",
+    "action": "provide the SOR transparent container IE to the network in the REGISTRATION COMPLETE message",
+    "exception": "",
+    "question_ko": "registration procedure에서 UE가 SOR transparent container IE를 network에 전달하는 방법을 설명해줘.",
+    "gold_summary_ko": "UE는 registration procedure 중 REGISTRATION COMPLETE message에 SOR transparent container IE를 넣어 network에 제공할 수 있다."
+  },
+  "CAND-03575": {
+    "actor": "current 5G NAS security context",
+    "condition": "",
+    "action": "be either native or mapped",
+    "exception": "",
+    "question_ko": "current 5G NAS security context의 유형을 설명해줘.",
+    "gold_summary_ko": "current 5G NAS security context는 native 유형 또는 mapped 유형일 수 있다."
+  },
+  "CAND-03576": {
+    "actor": "5G NAS security context indicated by an ngKSI",
+    "condition": "when a new N1 NAS signalling connection is established without new primary authentication and key agreement, or when the AMF initiates security mode control",
+    "action": "be taken into use to establish secure NAS-message exchange",
+    "exception": "",
+    "question_ko": "ngKSI가 가리키는 5G NAS security context를 새 인증 없이 사용하는 상황을 설명해줘.",
+    "gold_summary_ko": "새 N1 NAS signalling connection을 새 primary authentication 없이 설정하거나 AMF가 security mode control을 시작할 때, 해당 context를 secure NAS exchange 설정에 사용할 수 있다."
+  },
+  "CAND-03579": {
+    "actor": "UE supporting both S1 mode and N1 mode",
+    "condition": "for interworking with E-UTRAN connected to EPC",
+    "action": "operate in either single-registration mode or dual-registration mode",
+    "exception": "",
+    "question_ko": "S1 mode와 N1 mode를 모두 지원하는 UE의 registration mode 운용 선택지를 설명해줘.",
+    "gold_summary_ko": "해당 UE는 EPC 연결 E-UTRAN과 interwork하기 위해 single-registration mode 또는 dual-registration mode로 동작할 수 있다."
+  },
+  "CAND-00170": {
+    "actor": "subscriber",
+    "condition": "to enforce all primary RAT restrictions when the related RAT is deployed in different Tracking Area Codes",
+    "action": "access the network in TAs using the restricted RAT",
+    "exception": "",
+    "question_ko": "primary RAT restriction을 적용할 때 subscriber의 해당 RAT 기반 TA 접근 제한을 설명해줘.",
+    "gold_summary_ko": "관련 RAT가 서로 다른 Tracking Area Code에 배치된 조건에서 subscriber는 그 RAT를 사용하는 TA의 network에 접근해서는 안 된다."
+  },
+  "CAND-00235": {
+    "actor": "subscriptions targeted to Any UE",
+    "condition": "due to UE mobility",
+    "action": "be moved to another AMF",
+    "exception": "",
+    "question_ko": "Any UE를 대상으로 하는 subscription을 UE mobility 때문에 다른 AMF로 이동하는 정책을 설명해줘.",
+    "gold_summary_ko": "Any UE 대상 subscription은 UE mobility를 이유로 다른 AMF로 이동되어서는 안 된다."
+  },
+  "CAND-00105": {
+    "actor": "UE",
+    "condition": "when already registering over one access and intending to register over the other access in the same PLMN",
+    "action": "initiate registration over the other access",
+    "exception": "not until registration over the first access is complete",
+    "question_ko": "UE가 같은 PLMN의 한 access에서 등록 중 다른 access 등록도 하려는 경우 시작 시점을 설명해줘.",
+    "gold_summary_ko": "UE는 첫 access의 registration procedure가 완료되기 전에는 다른 access의 등록을 시작해서는 안 된다."
+  },
+  "CAND-00161": {
+    "actor": "UE",
+    "condition": "when entering a Non-Allowed Area",
+    "action": "use that entry as a criterion for Cell Reselection or as a trigger for PLMN/Domain selection for UE-originating sessions or calls",
+    "exception": "",
+    "question_ko": "UE가 Non-Allowed Area에 진입한 사실을 cell·PLMN·domain 선택에 사용하는 정책을 설명해줘.",
+    "gold_summary_ko": "UE는 Non-Allowed Area 진입을 Cell Reselection 기준이나 UE-originating session/call의 PLMN 또는 Domain selection trigger로 사용해서는 안 된다."
+  },
+  "CAND-00229": {
+    "actor": "UE",
+    "condition": "if the UE has not received NSAG Information from the AMF",
+    "action": "use Network Slice based cell reselection and Random Access",
+    "exception": "",
+    "question_ko": "AMF에서 NSAG Information을 받지 못한 UE의 Network Slice 기반 cell reselection과 Random Access 처리를 설명해줘.",
+    "gold_summary_ko": "UE는 NSAG Information을 받지 못하면 Network Slice 기반 cell reselection과 Random Access를 전혀 사용해서는 안 된다."
+  },
+  "CAND-00256": {
+    "actor": "AMF",
+    "condition": "if the UE does not indicate a preference for MICO mode during registration",
+    "action": "activate MICO mode for that UE",
+    "exception": "",
+    "question_ko": "registration 중 UE가 MICO mode 선호를 표시하지 않았을 때 AMF의 MICO mode 처리를 설명해줘.",
+    "gold_summary_ko": "UE가 MICO mode 선호를 표시하지 않으면 AMF는 그 UE에 MICO mode를 활성화해서는 안 된다."
+  },
+  "CAND-03706": {
+    "actor": "emergency PDU session",
+    "condition": "",
+    "action": "be released",
+    "exception": "",
+    "question_ko": "emergency PDU session의 release 정책을 설명해줘.",
+    "gold_summary_ko": "emergency PDU session은 release되어서는 안 된다."
+  },
+  "CAND-03803": {
+    "actor": "number of S-NSSAIs in the partially allowed NSSAI or partially rejected NSSAI",
+    "condition": "",
+    "action": "exceed 7",
+    "exception": "maximum is 7",
+    "question_ko": "partially allowed 또는 partially rejected NSSAI의 S-NSSAI 개수 상한을 설명해줘.",
+    "gold_summary_ko": "해당 NSSAI에 포함되는 S-NSSAI 수는 7개를 초과해서는 안 된다."
+  },
+  "CAND-03612": {
+    "actor": "new K_AMF",
+    "condition": "when a new 5G NAS security context is derived using the same K_AMF",
+    "action": "be derived",
+    "exception": "the target AMF indicates this in the Intra N1 mode NAS transparent container IE",
+    "question_ko": "동일한 K_AMF로 새 5G NAS security context를 유도할 때 target AMF가 새 K_AMF 유도 여부를 어떻게 표시하는지 설명해줘.",
+    "gold_summary_ko": "그 경우 새로운 K_AMF는 유도되어서는 안 되며, target AMF는 그 사실을 container IE에 표시한다."
+  },
+  "CAND-03684": {
+    "actor": "receiving 5GMM entity in the UE",
+    "condition": "once secure NAS-message exchange has been established",
+    "action": "process NAS signalling messages",
+    "exception": "unless the messages have been successfully integrity checked by NAS",
+    "question_ko": "secure NAS message exchange가 설정된 뒤 UE receiving 5GMM entity의 NAS signalling message 처리 조건을 설명해줘.",
+    "gold_summary_ko": "secure exchange 설정 후 UE의 receiving 5GMM entity는 NAS 무결성 검사를 성공한 message가 아니면 처리해서는 안 된다."
+  },
+  "CAND-03792": {
+    "actor": "serving SNPN",
+    "condition": "if the UE is registering or registered for onboarding services in the SNPN",
+    "action": "provide a configured NSSAI to the UE",
+    "exception": "",
+    "question_ko": "UE가 SNPN onboarding service에 등록 중이거나 등록된 경우 serving SNPN의 configured NSSAI 제공 정책을 설명해줘.",
+    "gold_summary_ko": "그 경우 serving SNPN은 UE에 configured NSSAI를 제공해서는 안 된다."
+  },
+  "CAND-03857": {
+    "actor": "UE NAS layer",
+    "condition": "if the UE performs initial registration for onboarding services in an SNPN or is already registered for them",
+    "action": "provide the lower layers with an NSSAI",
+    "exception": "",
+    "question_ko": "SNPN onboarding service를 위해 initial registration을 수행하거나 이미 등록된 UE의 NAS layer가 lower layer에 NSSAI를 제공하는 정책을 설명해줘.",
+    "gold_summary_ko": "그 조건에서 UE NAS layer는 lower layer에 NSSAI를 제공해서는 안 된다."
+  }
+}
