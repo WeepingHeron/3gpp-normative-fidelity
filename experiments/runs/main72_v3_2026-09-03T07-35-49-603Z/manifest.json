@@ -1,0 +1,1206 @@
+{
+  "run_id": "main72_v3_2026-09-03T07-35-49-603Z",
+  "purpose": "main_frozen_experiment",
+  "research_use": "primary main experiment",
+  "created_at": "2026-09-03T07:35:49.616Z",
+  "provider": "OpenAI",
+  "api": "Responses API",
+  "model_requested": "gpt-5.4-mini-2026-03-17",
+  "model_snapshot_returned": "gpt-5.4-mini-2026-03-17",
+  "parameters": {
+    "temperature": 0,
+    "reasoning_effort": "none",
+    "max_output_tokens": 600,
+    "store": false
+  },
+  "dataset_path": "data/main_cases.csv",
+  "dataset_sha256": "46c5ad53d861c2bdf0542acfd74d376baa6e384425f705536034b03cf5d04a3f",
+  "selected_case_ids": [
+    "MAIN-SH-001",
+    "MAIN-SH-002",
+    "MAIN-SH-003",
+    "MAIN-SH-004",
+    "MAIN-SH-005",
+    "MAIN-SH-006",
+    "MAIN-SH-007",
+    "MAIN-SH-008",
+    "MAIN-SH-009",
+    "MAIN-SH-010",
+    "MAIN-SH-011",
+    "MAIN-SH-012",
+    "MAIN-MAY-001",
+    "MAIN-MAY-002",
+    "MAIN-MAY-003",
+    "MAIN-MAY-004",
+    "MAIN-MAY-005",
+    "MAIN-MAY-006",
+    "MAIN-MAY-007",
+    "MAIN-MAY-008",
+    "MAIN-MAY-009",
+    "MAIN-MAY-010",
+    "MAIN-MAY-011",
+    "MAIN-MAY-012",
+    "MAIN-CAN-001",
+    "MAIN-CAN-002",
+    "MAIN-CAN-003",
+    "MAIN-CAN-004",
+    "MAIN-CAN-005",
+    "MAIN-CAN-006",
+    "MAIN-CAN-007",
+    "MAIN-CAN-008",
+    "MAIN-CAN-009",
+    "MAIN-CAN-010",
+    "MAIN-CAN-011",
+    "MAIN-CAN-012",
+    "MAIN-SN-001",
+    "MAIN-SN-002",
+    "MAIN-SN-003",
+    "MAIN-SN-004",
+    "MAIN-SN-005",
+    "MAIN-SN-006",
+    "MAIN-SN-007",
+    "MAIN-SN-008",
+    "MAIN-SN-009",
+    "MAIN-SN-010",
+    "MAIN-SN-011",
+    "MAIN-SN-012",
+    "MAIN-SD-001",
+    "MAIN-SD-002",
+    "MAIN-SD-003",
+    "MAIN-SD-004",
+    "MAIN-SD-005",
+    "MAIN-SD-006",
+    "MAIN-SD-007",
+    "MAIN-SD-008",
+    "MAIN-SD-009",
+    "MAIN-SD-010",
+    "MAIN-SD-011",
+    "MAIN-SD-012",
+    "MAIN-SDN-001",
+    "MAIN-SDN-002",
+    "MAIN-SDN-003",
+    "MAIN-SDN-004",
+    "MAIN-SDN-005",
+    "MAIN-SDN-006",
+    "MAIN-SDN-007",
+    "MAIN-SDN-008",
+    "MAIN-SDN-009",
+    "MAIN-SDN-010",
+    "MAIN-SDN-011",
+    "MAIN-SDN-012"
+  ],
+  "prompt_version": "v3",
+  "prompt_file_versions": {
+    "C0": "v3",
+    "C1": "v2",
+    "C2": "v2"
+  },
+  "conditions": [
+    "C0",
+    "C1",
+    "C2"
+  ],
+  "prompt_sha256": {
+    "C0": "e110fc93c65d15efe77f126fb2b66d4fd771a31b2eb20aa61aa778b3975025b4",
+    "C1": "f68bc297b94e2990a8a8149b9074b20c0a063848266ca305e30887a6c77647f7",
+    "C2": "938b9170432f4bb9061ff0665eeaeaa4505e39b3452c61dd89202f0eaaf3e1f2"
+  },
+  "response_schema_sha256": "d3424048a38123f234cd798fc10dcf65c5245b1ee5f03d7f96a35a43c98406e8",
+  "execution_order": [
+    {
+      "request_index": 1,
+      "case_id": "MAIN-MAY-004",
+      "condition": "C1"
+    },
+    {
+      "request_index": 2,
+      "case_id": "MAIN-SN-011",
+      "condition": "C2"
+    },
+    {
+      "request_index": 3,
+      "case_id": "MAIN-SD-011",
+      "condition": "C1"
+    },
+    {
+      "request_index": 4,
+      "case_id": "MAIN-SH-009",
+      "condition": "C1"
+    },
+    {
+      "request_index": 5,
+      "case_id": "MAIN-SH-003",
+      "condition": "C1"
+    },
+    {
+      "request_index": 6,
+      "case_id": "MAIN-SH-008",
+      "condition": "C2"
+    },
+    {
+      "request_index": 7,
+      "case_id": "MAIN-SD-010",
+      "condition": "C0"
+    },
+    {
+      "request_index": 8,
+      "case_id": "MAIN-CAN-002",
+      "condition": "C0"
+    },
+    {
+      "request_index": 9,
+      "case_id": "MAIN-SN-004",
+      "condition": "C0"
+    },
+    {
+      "request_index": 10,
+      "case_id": "MAIN-SH-002",
+      "condition": "C2"
+    },
+    {
+      "request_index": 11,
+      "case_id": "MAIN-SD-003",
+      "condition": "C2"
+    },
+    {
+      "request_index": 12,
+      "case_id": "MAIN-SH-009",
+      "condition": "C0"
+    },
+    {
+      "request_index": 13,
+      "case_id": "MAIN-SN-003",
+      "condition": "C1"
+    },
+    {
+      "request_index": 14,
+      "case_id": "MAIN-SN-004",
+      "condition": "C2"
+    },
+    {
+      "request_index": 15,
+      "case_id": "MAIN-SDN-001",
+      "condition": "C2"
+    },
+    {
+      "request_index": 16,
+      "case_id": "MAIN-MAY-003",
+      "condition": "C1"
+    },
+    {
+      "request_index": 17,
+      "case_id": "MAIN-SN-003",
+      "condition": "C2"
+    },
+    {
+      "request_index": 18,
+      "case_id": "MAIN-SDN-011",
+      "condition": "C2"
+    },
+    {
+      "request_index": 19,
+      "case_id": "MAIN-CAN-004",
+      "condition": "C1"
+    },
+    {
+      "request_index": 20,
+      "case_id": "MAIN-SH-008",
+      "condition": "C1"
+    },
+    {
+      "request_index": 21,
+      "case_id": "MAIN-SN-006",
+      "condition": "C0"
+    },
+    {
+      "request_index": 22,
+      "case_id": "MAIN-CAN-002",
+      "condition": "C2"
+    },
+    {
+      "request_index": 23,
+      "case_id": "MAIN-SDN-010",
+      "condition": "C0"
+    },
+    {
+      "request_index": 24,
+      "case_id": "MAIN-SD-005",
+      "condition": "C1"
+    },
+    {
+      "request_index": 25,
+      "case_id": "MAIN-CAN-006",
+      "condition": "C0"
+    },
+    {
+      "request_index": 26,
+      "case_id": "MAIN-SH-005",
+      "condition": "C2"
+    },
+    {
+      "request_index": 27,
+      "case_id": "MAIN-CAN-005",
+      "condition": "C2"
+    },
+    {
+      "request_index": 28,
+      "case_id": "MAIN-CAN-001",
+      "condition": "C2"
+    },
+    {
+      "request_index": 29,
+      "case_id": "MAIN-CAN-010",
+      "condition": "C1"
+    },
+    {
+      "request_index": 30,
+      "case_id": "MAIN-CAN-010",
+      "condition": "C2"
+    },
+    {
+      "request_index": 31,
+      "case_id": "MAIN-SD-002",
+      "condition": "C1"
+    },
+    {
+      "request_index": 32,
+      "case_id": "MAIN-SH-003",
+      "condition": "C2"
+    },
+    {
+      "request_index": 33,
+      "case_id": "MAIN-SD-002",
+      "condition": "C2"
+    },
+    {
+      "request_index": 34,
+      "case_id": "MAIN-SDN-004",
+      "condition": "C1"
+    },
+    {
+      "request_index": 35,
+      "case_id": "MAIN-SH-007",
+      "condition": "C1"
+    },
+    {
+      "request_index": 36,
+      "case_id": "MAIN-MAY-009",
+      "condition": "C2"
+    },
+    {
+      "request_index": 37,
+      "case_id": "MAIN-MAY-010",
+      "condition": "C1"
+    },
+    {
+      "request_index": 38,
+      "case_id": "MAIN-SH-012",
+      "condition": "C0"
+    },
+    {
+      "request_index": 39,
+      "case_id": "MAIN-CAN-003",
+      "condition": "C1"
+    },
+    {
+      "request_index": 40,
+      "case_id": "MAIN-SDN-006",
+      "condition": "C0"
+    },
+    {
+      "request_index": 41,
+      "case_id": "MAIN-SD-003",
+      "condition": "C0"
+    },
+    {
+      "request_index": 42,
+      "case_id": "MAIN-SN-009",
+      "condition": "C2"
+    },
+    {
+      "request_index": 43,
+      "case_id": "MAIN-MAY-001",
+      "condition": "C0"
+    },
+    {
+      "request_index": 44,
+      "case_id": "MAIN-SH-002",
+      "condition": "C0"
+    },
+    {
+      "request_index": 45,
+      "case_id": "MAIN-SN-006",
+      "condition": "C1"
+    },
+    {
+      "request_index": 46,
+      "case_id": "MAIN-SH-008",
+      "condition": "C0"
+    },
+    {
+      "request_index": 47,
+      "case_id": "MAIN-SDN-004",
+      "condition": "C0"
+    },
+    {
+      "request_index": 48,
+      "case_id": "MAIN-SD-004",
+      "condition": "C0"
+    },
+    {
+      "request_index": 49,
+      "case_id": "MAIN-MAY-004",
+      "condition": "C2"
+    },
+    {
+      "request_index": 50,
+      "case_id": "MAIN-MAY-012",
+      "condition": "C1"
+    },
+    {
+      "request_index": 51,
+      "case_id": "MAIN-CAN-004",
+      "condition": "C0"
+    },
+    {
+      "request_index": 52,
+      "case_id": "MAIN-SH-009",
+      "condition": "C2"
+    },
+    {
+      "request_index": 53,
+      "case_id": "MAIN-SDN-006",
+      "condition": "C2"
+    },
+    {
+      "request_index": 54,
+      "case_id": "MAIN-SD-008",
+      "condition": "C0"
+    },
+    {
+      "request_index": 55,
+      "case_id": "MAIN-MAY-007",
+      "condition": "C1"
+    },
+    {
+      "request_index": 56,
+      "case_id": "MAIN-SN-012",
+      "condition": "C2"
+    },
+    {
+      "request_index": 57,
+      "case_id": "MAIN-SN-007",
+      "condition": "C0"
+    },
+    {
+      "request_index": 58,
+      "case_id": "MAIN-SDN-012",
+      "condition": "C2"
+    },
+    {
+      "request_index": 59,
+      "case_id": "MAIN-SH-011",
+      "condition": "C2"
+    },
+    {
+      "request_index": 60,
+      "case_id": "MAIN-SH-005",
+      "condition": "C0"
+    },
+    {
+      "request_index": 61,
+      "case_id": "MAIN-SDN-008",
+      "condition": "C0"
+    },
+    {
+      "request_index": 62,
+      "case_id": "MAIN-MAY-007",
+      "condition": "C0"
+    },
+    {
+      "request_index": 63,
+      "case_id": "MAIN-CAN-003",
+      "condition": "C2"
+    },
+    {
+      "request_index": 64,
+      "case_id": "MAIN-MAY-006",
+      "condition": "C1"
+    },
+    {
+      "request_index": 65,
+      "case_id": "MAIN-MAY-010",
+      "condition": "C0"
+    },
+    {
+      "request_index": 66,
+      "case_id": "MAIN-SDN-008",
+      "condition": "C2"
+    },
+    {
+      "request_index": 67,
+      "case_id": "MAIN-SH-010",
+      "condition": "C2"
+    },
+    {
+      "request_index": 68,
+      "case_id": "MAIN-SD-008",
+      "condition": "C2"
+    },
+    {
+      "request_index": 69,
+      "case_id": "MAIN-SH-003",
+      "condition": "C0"
+    },
+    {
+      "request_index": 70,
+      "case_id": "MAIN-SDN-011",
+      "condition": "C1"
+    },
+    {
+      "request_index": 71,
+      "case_id": "MAIN-CAN-007",
+      "condition": "C0"
+    },
+    {
+      "request_index": 72,
+      "case_id": "MAIN-CAN-001",
+      "condition": "C1"
+    },
+    {
+      "request_index": 73,
+      "case_id": "MAIN-SN-011",
+      "condition": "C0"
+    },
+    {
+      "request_index": 74,
+      "case_id": "MAIN-SD-007",
+      "condition": "C1"
+    },
+    {
+      "request_index": 75,
+      "case_id": "MAIN-CAN-009",
+      "condition": "C2"
+    },
+    {
+      "request_index": 76,
+      "case_id": "MAIN-MAY-001",
+      "condition": "C2"
+    },
+    {
+      "request_index": 77,
+      "case_id": "MAIN-CAN-012",
+      "condition": "C0"
+    },
+    {
+      "request_index": 78,
+      "case_id": "MAIN-CAN-010",
+      "condition": "C0"
+    },
+    {
+      "request_index": 79,
+      "case_id": "MAIN-SN-007",
+      "condition": "C2"
+    },
+    {
+      "request_index": 80,
+      "case_id": "MAIN-SD-001",
+      "condition": "C0"
+    },
+    {
+      "request_index": 81,
+      "case_id": "MAIN-SH-006",
+      "condition": "C1"
+    },
+    {
+      "request_index": 82,
+      "case_id": "MAIN-SN-010",
+      "condition": "C0"
+    },
+    {
+      "request_index": 83,
+      "case_id": "MAIN-SDN-001",
+      "condition": "C0"
+    },
+    {
+      "request_index": 84,
+      "case_id": "MAIN-MAY-002",
+      "condition": "C0"
+    },
+    {
+      "request_index": 85,
+      "case_id": "MAIN-MAY-010",
+      "condition": "C2"
+    },
+    {
+      "request_index": 86,
+      "case_id": "MAIN-MAY-002",
+      "condition": "C1"
+    },
+    {
+      "request_index": 87,
+      "case_id": "MAIN-SH-002",
+      "condition": "C1"
+    },
+    {
+      "request_index": 88,
+      "case_id": "MAIN-CAN-005",
+      "condition": "C0"
+    },
+    {
+      "request_index": 89,
+      "case_id": "MAIN-SDN-003",
+      "condition": "C2"
+    },
+    {
+      "request_index": 90,
+      "case_id": "MAIN-SN-008",
+      "condition": "C0"
+    },
+    {
+      "request_index": 91,
+      "case_id": "MAIN-SN-005",
+      "condition": "C1"
+    },
+    {
+      "request_index": 92,
+      "case_id": "MAIN-SD-010",
+      "condition": "C1"
+    },
+    {
+      "request_index": 93,
+      "case_id": "MAIN-SD-012",
+      "condition": "C1"
+    },
+    {
+      "request_index": 94,
+      "case_id": "MAIN-SDN-007",
+      "condition": "C2"
+    },
+    {
+      "request_index": 95,
+      "case_id": "MAIN-SN-009",
+      "condition": "C0"
+    },
+    {
+      "request_index": 96,
+      "case_id": "MAIN-SDN-002",
+      "condition": "C0"
+    },
+    {
+      "request_index": 97,
+      "case_id": "MAIN-CAN-007",
+      "condition": "C1"
+    },
+    {
+      "request_index": 98,
+      "case_id": "MAIN-SD-006",
+      "condition": "C0"
+    },
+    {
+      "request_index": 99,
+      "case_id": "MAIN-SD-005",
+      "condition": "C0"
+    },
+    {
+      "request_index": 100,
+      "case_id": "MAIN-CAN-012",
+      "condition": "C2"
+    },
+    {
+      "request_index": 101,
+      "case_id": "MAIN-SDN-010",
+      "condition": "C1"
+    },
+    {
+      "request_index": 102,
+      "case_id": "MAIN-SN-002",
+      "condition": "C2"
+    },
+    {
+      "request_index": 103,
+      "case_id": "MAIN-SH-012",
+      "condition": "C1"
+    },
+    {
+      "request_index": 104,
+      "case_id": "MAIN-MAY-001",
+      "condition": "C1"
+    },
+    {
+      "request_index": 105,
+      "case_id": "MAIN-CAN-008",
+      "condition": "C2"
+    },
+    {
+      "request_index": 106,
+      "case_id": "MAIN-SN-001",
+      "condition": "C1"
+    },
+    {
+      "request_index": 107,
+      "case_id": "MAIN-CAN-009",
+      "condition": "C1"
+    },
+    {
+      "request_index": 108,
+      "case_id": "MAIN-MAY-006",
+      "condition": "C2"
+    },
+    {
+      "request_index": 109,
+      "case_id": "MAIN-SN-008",
+      "condition": "C1"
+    },
+    {
+      "request_index": 110,
+      "case_id": "MAIN-SN-005",
+      "condition": "C2"
+    },
+    {
+      "request_index": 111,
+      "case_id": "MAIN-SN-002",
+      "condition": "C1"
+    },
+    {
+      "request_index": 112,
+      "case_id": "MAIN-SDN-007",
+      "condition": "C1"
+    },
+    {
+      "request_index": 113,
+      "case_id": "MAIN-MAY-003",
+      "condition": "C2"
+    },
+    {
+      "request_index": 114,
+      "case_id": "MAIN-SDN-010",
+      "condition": "C2"
+    },
+    {
+      "request_index": 115,
+      "case_id": "MAIN-SN-001",
+      "condition": "C2"
+    },
+    {
+      "request_index": 116,
+      "case_id": "MAIN-SH-004",
+      "condition": "C2"
+    },
+    {
+      "request_index": 117,
+      "case_id": "MAIN-SH-006",
+      "condition": "C0"
+    },
+    {
+      "request_index": 118,
+      "case_id": "MAIN-MAY-009",
+      "condition": "C1"
+    },
+    {
+      "request_index": 119,
+      "case_id": "MAIN-SH-010",
+      "condition": "C0"
+    },
+    {
+      "request_index": 120,
+      "case_id": "MAIN-SD-011",
+      "condition": "C0"
+    },
+    {
+      "request_index": 121,
+      "case_id": "MAIN-SD-001",
+      "condition": "C1"
+    },
+    {
+      "request_index": 122,
+      "case_id": "MAIN-SD-011",
+      "condition": "C2"
+    },
+    {
+      "request_index": 123,
+      "case_id": "MAIN-CAN-002",
+      "condition": "C1"
+    },
+    {
+      "request_index": 124,
+      "case_id": "MAIN-SH-011",
+      "condition": "C0"
+    },
+    {
+      "request_index": 125,
+      "case_id": "MAIN-MAY-011",
+      "condition": "C2"
+    },
+    {
+      "request_index": 126,
+      "case_id": "MAIN-SN-010",
+      "condition": "C2"
+    },
+    {
+      "request_index": 127,
+      "case_id": "MAIN-SN-009",
+      "condition": "C1"
+    },
+    {
+      "request_index": 128,
+      "case_id": "MAIN-SDN-009",
+      "condition": "C0"
+    },
+    {
+      "request_index": 129,
+      "case_id": "MAIN-SN-005",
+      "condition": "C0"
+    },
+    {
+      "request_index": 130,
+      "case_id": "MAIN-SD-012",
+      "condition": "C2"
+    },
+    {
+      "request_index": 131,
+      "case_id": "MAIN-SDN-008",
+      "condition": "C1"
+    },
+    {
+      "request_index": 132,
+      "case_id": "MAIN-SD-004",
+      "condition": "C1"
+    },
+    {
+      "request_index": 133,
+      "case_id": "MAIN-SD-003",
+      "condition": "C1"
+    },
+    {
+      "request_index": 134,
+      "case_id": "MAIN-CAN-009",
+      "condition": "C0"
+    },
+    {
+      "request_index": 135,
+      "case_id": "MAIN-SD-009",
+      "condition": "C2"
+    },
+    {
+      "request_index": 136,
+      "case_id": "MAIN-SN-004",
+      "condition": "C1"
+    },
+    {
+      "request_index": 137,
+      "case_id": "MAIN-SDN-012",
+      "condition": "C1"
+    },
+    {
+      "request_index": 138,
+      "case_id": "MAIN-SH-010",
+      "condition": "C1"
+    },
+    {
+      "request_index": 139,
+      "case_id": "MAIN-MAY-011",
+      "condition": "C0"
+    },
+    {
+      "request_index": 140,
+      "case_id": "MAIN-SD-009",
+      "condition": "C0"
+    },
+    {
+      "request_index": 141,
+      "case_id": "MAIN-CAN-006",
+      "condition": "C2"
+    },
+    {
+      "request_index": 142,
+      "case_id": "MAIN-SH-004",
+      "condition": "C1"
+    },
+    {
+      "request_index": 143,
+      "case_id": "MAIN-MAY-009",
+      "condition": "C0"
+    },
+    {
+      "request_index": 144,
+      "case_id": "MAIN-SDN-009",
+      "condition": "C2"
+    },
+    {
+      "request_index": 145,
+      "case_id": "MAIN-SD-005",
+      "condition": "C2"
+    },
+    {
+      "request_index": 146,
+      "case_id": "MAIN-MAY-011",
+      "condition": "C1"
+    },
+    {
+      "request_index": 147,
+      "case_id": "MAIN-SDN-012",
+      "condition": "C0"
+    },
+    {
+      "request_index": 148,
+      "case_id": "MAIN-MAY-006",
+      "condition": "C0"
+    },
+    {
+      "request_index": 149,
+      "case_id": "MAIN-MAY-012",
+      "condition": "C2"
+    },
+    {
+      "request_index": 150,
+      "case_id": "MAIN-SDN-009",
+      "condition": "C1"
+    },
+    {
+      "request_index": 151,
+      "case_id": "MAIN-SDN-003",
+      "condition": "C1"
+    },
+    {
+      "request_index": 152,
+      "case_id": "MAIN-SN-002",
+      "condition": "C0"
+    },
+    {
+      "request_index": 153,
+      "case_id": "MAIN-MAY-012",
+      "condition": "C0"
+    },
+    {
+      "request_index": 154,
+      "case_id": "MAIN-SDN-003",
+      "condition": "C0"
+    },
+    {
+      "request_index": 155,
+      "case_id": "MAIN-CAN-003",
+      "condition": "C0"
+    },
+    {
+      "request_index": 156,
+      "case_id": "MAIN-SDN-002",
+      "condition": "C2"
+    },
+    {
+      "request_index": 157,
+      "case_id": "MAIN-SH-012",
+      "condition": "C2"
+    },
+    {
+      "request_index": 158,
+      "case_id": "MAIN-SDN-004",
+      "condition": "C2"
+    },
+    {
+      "request_index": 159,
+      "case_id": "MAIN-MAY-002",
+      "condition": "C2"
+    },
+    {
+      "request_index": 160,
+      "case_id": "MAIN-SD-007",
+      "condition": "C0"
+    },
+    {
+      "request_index": 161,
+      "case_id": "MAIN-CAN-006",
+      "condition": "C1"
+    },
+    {
+      "request_index": 162,
+      "case_id": "MAIN-SH-001",
+      "condition": "C1"
+    },
+    {
+      "request_index": 163,
+      "case_id": "MAIN-CAN-008",
+      "condition": "C0"
+    },
+    {
+      "request_index": 164,
+      "case_id": "MAIN-MAY-008",
+      "condition": "C2"
+    },
+    {
+      "request_index": 165,
+      "case_id": "MAIN-CAN-012",
+      "condition": "C1"
+    },
+    {
+      "request_index": 166,
+      "case_id": "MAIN-SDN-002",
+      "condition": "C1"
+    },
+    {
+      "request_index": 167,
+      "case_id": "MAIN-MAY-003",
+      "condition": "C0"
+    },
+    {
+      "request_index": 168,
+      "case_id": "MAIN-CAN-004",
+      "condition": "C2"
+    },
+    {
+      "request_index": 169,
+      "case_id": "MAIN-SD-004",
+      "condition": "C2"
+    },
+    {
+      "request_index": 170,
+      "case_id": "MAIN-SH-007",
+      "condition": "C2"
+    },
+    {
+      "request_index": 171,
+      "case_id": "MAIN-MAY-008",
+      "condition": "C1"
+    },
+    {
+      "request_index": 172,
+      "case_id": "MAIN-SDN-006",
+      "condition": "C1"
+    },
+    {
+      "request_index": 173,
+      "case_id": "MAIN-SD-008",
+      "condition": "C1"
+    },
+    {
+      "request_index": 174,
+      "case_id": "MAIN-SDN-005",
+      "condition": "C1"
+    },
+    {
+      "request_index": 175,
+      "case_id": "MAIN-SN-007",
+      "condition": "C1"
+    },
+    {
+      "request_index": 176,
+      "case_id": "MAIN-SH-006",
+      "condition": "C2"
+    },
+    {
+      "request_index": 177,
+      "case_id": "MAIN-MAY-004",
+      "condition": "C0"
+    },
+    {
+      "request_index": 178,
+      "case_id": "MAIN-MAY-007",
+      "condition": "C2"
+    },
+    {
+      "request_index": 179,
+      "case_id": "MAIN-CAN-011",
+      "condition": "C0"
+    },
+    {
+      "request_index": 180,
+      "case_id": "MAIN-SD-001",
+      "condition": "C2"
+    },
+    {
+      "request_index": 181,
+      "case_id": "MAIN-SD-009",
+      "condition": "C1"
+    },
+    {
+      "request_index": 182,
+      "case_id": "MAIN-SN-003",
+      "condition": "C0"
+    },
+    {
+      "request_index": 183,
+      "case_id": "MAIN-SH-007",
+      "condition": "C0"
+    },
+    {
+      "request_index": 184,
+      "case_id": "MAIN-SN-012",
+      "condition": "C1"
+    },
+    {
+      "request_index": 185,
+      "case_id": "MAIN-SDN-005",
+      "condition": "C0"
+    },
+    {
+      "request_index": 186,
+      "case_id": "MAIN-SH-005",
+      "condition": "C1"
+    },
+    {
+      "request_index": 187,
+      "case_id": "MAIN-MAY-005",
+      "condition": "C1"
+    },
+    {
+      "request_index": 188,
+      "case_id": "MAIN-SN-011",
+      "condition": "C1"
+    },
+    {
+      "request_index": 189,
+      "case_id": "MAIN-CAN-011",
+      "condition": "C1"
+    },
+    {
+      "request_index": 190,
+      "case_id": "MAIN-SD-010",
+      "condition": "C2"
+    },
+    {
+      "request_index": 191,
+      "case_id": "MAIN-SD-007",
+      "condition": "C2"
+    },
+    {
+      "request_index": 192,
+      "case_id": "MAIN-SH-011",
+      "condition": "C1"
+    },
+    {
+      "request_index": 193,
+      "case_id": "MAIN-SD-002",
+      "condition": "C0"
+    },
+    {
+      "request_index": 194,
+      "case_id": "MAIN-SN-001",
+      "condition": "C0"
+    },
+    {
+      "request_index": 195,
+      "case_id": "MAIN-CAN-007",
+      "condition": "C2"
+    },
+    {
+      "request_index": 196,
+      "case_id": "MAIN-SD-006",
+      "condition": "C1"
+    },
+    {
+      "request_index": 197,
+      "case_id": "MAIN-CAN-008",
+      "condition": "C1"
+    },
+    {
+      "request_index": 198,
+      "case_id": "MAIN-SD-012",
+      "condition": "C0"
+    },
+    {
+      "request_index": 199,
+      "case_id": "MAIN-MAY-005",
+      "condition": "C0"
+    },
+    {
+      "request_index": 200,
+      "case_id": "MAIN-SH-001",
+      "condition": "C2"
+    },
+    {
+      "request_index": 201,
+      "case_id": "MAIN-SN-010",
+      "condition": "C1"
+    },
+    {
+      "request_index": 202,
+      "case_id": "MAIN-SN-006",
+      "condition": "C2"
+    },
+    {
+      "request_index": 203,
+      "case_id": "MAIN-SDN-001",
+      "condition": "C1"
+    },
+    {
+      "request_index": 204,
+      "case_id": "MAIN-SH-004",
+      "condition": "C0"
+    },
+    {
+      "request_index": 205,
+      "case_id": "MAIN-SH-001",
+      "condition": "C0"
+    },
+    {
+      "request_index": 206,
+      "case_id": "MAIN-SD-006",
+      "condition": "C2"
+    },
+    {
+      "request_index": 207,
+      "case_id": "MAIN-MAY-005",
+      "condition": "C2"
+    },
+    {
+      "request_index": 208,
+      "case_id": "MAIN-CAN-011",
+      "condition": "C2"
+    },
+    {
+      "request_index": 209,
+      "case_id": "MAIN-SN-008",
+      "condition": "C2"
+    },
+    {
+      "request_index": 210,
+      "case_id": "MAIN-SN-012",
+      "condition": "C0"
+    },
+    {
+      "request_index": 211,
+      "case_id": "MAIN-SDN-007",
+      "condition": "C0"
+    },
+    {
+      "request_index": 212,
+      "case_id": "MAIN-SDN-011",
+      "condition": "C0"
+    },
+    {
+      "request_index": 213,
+      "case_id": "MAIN-MAY-008",
+      "condition": "C0"
+    },
+    {
+      "request_index": 214,
+      "case_id": "MAIN-CAN-001",
+      "condition": "C0"
+    },
+    {
+      "request_index": 215,
+      "case_id": "MAIN-SDN-005",
+      "condition": "C2"
+    },
+    {
+      "request_index": 216,
+      "case_id": "MAIN-CAN-005",
+      "condition": "C1"
+    }
+  ],
+  "execution_seed": "main72-v1-2026-09-03",
+  "retry_policy": "At most 2 retries for transient HTTP 429 or 5xx and transport errors, with attempt metadata retained. No retry for insufficient_quota, parse, or semantic failure.",
+  "cost_guard": {
+    "max_estimated_token_cost_usd": 1,
+    "pricing_usd_per_million_tokens": {
+      "input": 0.75,
+      "cached_input": 0.075,
+      "output": 4.5
+    },
+    "semantics": "Post-response usage guard; stops before the next request once cumulative estimated token cost reaches the cap."
+  },
+  "status": "completed",
+  "completed_at": "2026-09-03T07:43:16.871Z",
+  "block_reason": null,
+  "cumulative_estimated_token_cost_usd": 0.25000125
+}

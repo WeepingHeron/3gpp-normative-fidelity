@@ -1,0 +1,24 @@
+{
+  "status": "FROZEN_API_OUTPUTS_DETERMINISTIC_SCORING_ONLY",
+  "frozen_at_utc": "2026-09-03T07:44:37Z",
+  "run_id": "main72_v3_2026-09-03T07-35-49-603Z",
+  "dataset_sha256": "46c5ad53d861c2bdf0542acfd74d376baa6e384425f705536034b03cf5d04a3f",
+  "request_count": 216,
+  "parsed_response_count": 216,
+  "conditions": {
+    "C0": 72,
+    "C1": 72,
+    "C2": 72
+  },
+  "human_review_status": "NOT_STARTED",
+  "reporting_boundary": "Modal accuracy and citation exactness are provisional deterministic metrics. Semantic preservation and unsupported additions require masked human review before research reporting.",
+  "file_sha256": {
+    "manifest.json": "d284601290ee5df0d2dafe7d226573f1a842f8eb5e4dee073dfddb54f8ba03b8",
+    "raw_responses.jsonl": "08f0c6730c807e37fa53cff877e3ab4af2c8b3fb97e977a88b6c15c13af1b516",
+    "parsed_responses.jsonl": "dc5048724023b602bc8244bb751cad3bfc17d9c8c74bf411f8bc687400bc2a73",
+    "scores.csv": "5707b3e8f57b6d6f00a908f1db689d767a7e7a3596127af7837d527b1971dbd9",
+    "summary.json": "74350ad94c0726c9b6a1179c12a0bb92547444879c28d12a81a9892cf399973d",
+    "blind_review.csv": "22949d6ffe74ffe49bc7ad8ee386d468df285468189d204dfb176f19b09fd50d",
+    "blind_key.json": "1b705485c07f950e8c1f48d146935791ed53f318a652f3e73731de646abec4e2"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "note": "Only schema, modal class, and exact citation are deterministic. Semantic component fields require blind human review.",
+  "C0": {
+    "n": 72,
+    "parsed": 72,
+    "modal_accuracy_provisional": 0.20833333333333334,
+    "citation_exactness_provisional": null
+  },
+  "C1": {
+    "n": 72,
+    "parsed": 72,
+    "modal_accuracy_provisional": 0.7777777777777778,
+    "citation_exactness_provisional": 1
+  },
+  "C2": {
+    "n": 72,
+    "parsed": 72,
+    "modal_accuracy_provisional": 1,
+    "citation_exactness_provisional": 1
+  }
+}
