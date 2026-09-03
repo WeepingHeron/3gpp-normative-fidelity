@@ -69,11 +69,18 @@ Pass 1은 2026-09-02 13:25 KST, pass 2는 2026-09-03 15:04 KST 이후 새 ID·�
 
 ## 다음: Main 72개 데이터셋
 
-- [ ] 모델 결과를 보기 전에 문장 난도 층화 기준 동결
+- [x] 모델 결과를 보기 전에 문장 난도 층화 기준 동결
+- [x] 공식 PDF에서 7,727개 modal 후보 추출
+- [x] 사전 제외 규칙과 문서 순서로 72개 source selection 초안 구성
+- [x] modal 12개씩, source 36+36, 난도 8/22/42 구조 검사
+- [x] 선언 PDF page·active clause·SHA-256 연결 및 pilot/main 중복 검사
 - [ ] modal class 6종×12개, 총 72개 source-grounded label 작성
-- [ ] pilot 18개와 exact/near duplicate가 없는지 검사
-- [ ] 원문·clause·page·SHA-256 연결과 자가 감사
+- [x] pilot 18개와 exact/near duplicate가 없는지 검사
+- [x] 원문·clause·page·SHA-256 연결의 기계 감사
+- [ ] 72개 actor·condition·action·exception과 한국어 질문 수동 검수
 - [ ] main prompt·dataset 최종 동결
+
+현재 `data/main_selection_draft.csv`는 **source selection 초안**이다. `data/main_selection_audit.json`의 PASS는 구조·출처 추적 검사를 통과했다는 뜻이며 gold label 완성이나 독립 검토를 의미하지 않는다.
 
 ## Pilot 후에만 할 일
 

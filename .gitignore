@@ -11,6 +11,8 @@
 # Dependencies and caches
 node_modules/
 .cache/
+__pycache__/
+*.py[cod]
 
 # Temporary renders and generated review artifacts
 tmp/
@@ -19,4 +21,3 @@ outputs/
 # Official standards are referenced by URL and SHA-256 manifest.
 # Do not redistribute local PDF copies without a separate rights review.
 data/source/*.pdf
-

@@ -73,6 +73,8 @@ Main의 각 카테고리 12개는 TS 23.501에서 6개, TS 24.501에서 6개를 
 | `source_sha256` | 원문 바이트 해시 |
 | `split` | `pilot`, `dev`, `test` |
 | `review_status` | `draft`, `self_checked`, `second_reviewed` |
+| `difficulty_tier` | `simple`, `conditional`, `compound` |
+| `difficulty_basis` | 난도 판정에 사용한 조건·한정·복합 행동 표지 |
 
 `gold_summary_ko`는 자연스러운 표현의 유일 정답이 아니다. actor, condition, modal class, polarity, action, exception을 채점하기 위한 참고 설명이다.
 
@@ -97,5 +99,6 @@ Main의 각 카테고리 12개는 TS 23.501에서 6개, TS 24.501에서 6개를 
 - 표본 수가 카테고리별로 균형이다.
 - Main에서 각 modal 범주의 규격별 표본 수가 6개씩이다.
 - exact/near duplicate가 pilot과 main 사이에 분리되지 않았다.
+- `docs/06_main_difficulty_protocol.md`의 난도 층화가 모델 실행 전에 확정됐다.
 
 2차 검토자를 구할 수 없으면 전문가 검토를 받았다고 쓰지 않고, `single-annotator, source-grounded labels`라는 한계를 논문에 명시한다.
