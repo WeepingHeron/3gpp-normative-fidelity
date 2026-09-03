@@ -20,7 +20,9 @@ const passArg = process.argv[3];
 if (!runArg || !/^pass[0-9]+$/.test(passArg || "")) throw new Error("Usage: node experiments/prepare_review_pass.mjs <run_directory> <passN>");
 const root = path.resolve(import.meta.dirname, "..");
 const runDir = path.resolve(runArg);
-const dataset = parseCsv(fs.readFileSync(path.join(root, "data", "pilot_cases.csv"), "utf8"));
+const manifest = JSON.parse(fs.readFileSync(path.join(runDir, "manifest.json"), "utf8"));
+if (!manifest.dataset_path) throw new Error("Run manifest is missing dataset_path");
+const dataset = parseCsv(fs.readFileSync(path.join(root, manifest.dataset_path), "utf8"));
 const gold = new Map(dataset.map(r => [r.case_id, r]));
 const parsed = fs.readFileSync(path.join(runDir, "parsed_responses.jsonl"), "utf8").trim().split("\n").filter(Boolean).map(JSON.parse);
 const seed = `${path.basename(runDir)}:${passArg}:2026-09-02`;
@@ -32,6 +34,7 @@ const key = {};
 const rows = shuffled.map(({ item }, index) => {
   const reviewId = `S${String(index + 1).padStart(3, "0")}`;
   const g = gold.get(item.case_id); const p = item.parsed;
+  if (!g) throw new Error(`No gold row for ${item.case_id} in ${manifest.dataset_path}`);
   key[reviewId] = { case_id: item.case_id, condition: item.condition };
   return {
     review_id: reviewId,

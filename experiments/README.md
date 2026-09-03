@@ -68,6 +68,22 @@ V3 dry run에서 C0는 6건 모두 답했지만 modal class와 complete preserva
 
 Masked pass 1에서 complete preservation은 C0 0/18, C1 18/18, C2 18/18이었고 unsupported addition은 C0 18/18, C1 0/18, C2 0/18이었다. C1의 `PILOT-CAN-001`은 자연어 설명이 통신 능력을 보존해 component score는 통과했지만 JSON normative type은 `permission`이어서 deterministic modal score에는 오류가 남는다.
 
+## Main 72-case 실행 준비
+
+API 호출 없는 preflight:
+
+```bash
+node experiments/run_pilot.mjs --main --prompt-version=v3 --preflight-only
+```
+
+실제 Main 실행은 동결 파일이 모두 일치해야 하며 명시적인 비용 중단선이 없으면 시작되지 않는다.
+
+```bash
+node experiments/run_pilot.mjs --main --prompt-version=v3 --max-cost-usd=1.00
+```
+
+`--max-cost-usd`는 응답 usage 기준 사후 중단선이다. 누적 추정 token 비용이 한도에 도달하면 다음 요청 전에 멈추며, 실제 청구액 자체를 보장하는 결제 한도는 아니다.
+
 24시간 이상 뒤 새 ID·새 순서로 수행한 pass 2는 응답 단위 54/54, 적용 가능한 이진 판정 324/324, 오류 코드 54/54가 pass 1과 일치했고 aggregate Cohen's κ는 1.0이었다. 불일치가 없어 adjudication으로 점수를 변경하지 않았다.
 
 행별 case ID와 조건은 두 pass에서 숨겼지만 검토자가 사전에 조건별 집계와 해당 C1 오류를 본 상태였으므로 완전 독립·완전 blind 검토는 아니다. 이 결과는 동일 평가자의 지연 재검토로만 해석한다. 또한 C1과 C2의 complete preservation이 모두 18/18이므로 C2 우월성은 관찰되지 않았고, main에서는 모델 결과를 보기 전에 정의한 문장 난도 층화로 ceiling risk를 줄인다. 전체 pilot은 main 결과에 포함하지 않는다.

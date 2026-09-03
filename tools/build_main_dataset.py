@@ -39,6 +39,10 @@ FROZEN_FILES = [
     "experiments/prompts/c2_v2.md",
     "experiments/response_schema.json",
     "experiments/scoring_v1.md",
+    "experiments/main_run_plan.json",
+    "experiments/run_pilot.mjs",
+    "experiments/score_run.mjs",
+    "experiments/prepare_review_pass.mjs",
 ]
 
 

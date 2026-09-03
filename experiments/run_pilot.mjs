@@ -58,21 +58,46 @@ function outputText(response) {
   return "";
 }
 function writeJsonl(filePath, value) { fs.appendFileSync(filePath, JSON.stringify(value) + "\n"); }
+function estimatedTokenCost(usage) {
+  const input = usage?.input_tokens || 0;
+  const cached = usage?.input_tokens_details?.cached_tokens || 0;
+  const output = usage?.output_tokens || 0;
+  return ((input - cached) * 0.75 + cached * 0.075 + output * 4.5) / 1_000_000;
+}
 
 const args = new Set(process.argv.slice(2));
 const fullPilot = args.has("--full-pilot");
+const mainRun = args.has("--main");
+const preflightOnly = args.has("--preflight-only");
+const maxCostArg = process.argv.slice(2).find(v => v.startsWith("--max-cost-usd="));
+const maxCostUsd = maxCostArg ? Number(maxCostArg.split("=", 2)[1]) : null;
+if (mainRun && fullPilot) throw new Error("--main and --full-pilot are mutually exclusive");
+if (mainRun && !preflightOnly && (!Number.isFinite(maxCostUsd) || maxCostUsd <= 0)) {
+  throw new Error("Live main runs require a positive --max-cost-usd=<amount> guard");
+}
 const promptVersionArg = process.argv.slice(2).find(v => v.startsWith("--prompt-version="));
 const promptVersion = promptVersionArg ? promptVersionArg.split("=", 2)[1] : "v1";
 if (!/^v[0-9]+$/.test(promptVersion)) throw new Error("Invalid prompt version");
 const model = process.env.OPENAI_MODEL || "gpt-5.4-mini-2026-03-17";
-const env = { ...parseEnvFile(path.join(ROOT, ".env.local")), ...process.env };
-if (!env.OPENAI_API_KEY) throw new Error("OPENAI_API_KEY is not configured");
-
-const datasetPath = path.join(ROOT, "data", "pilot_cases.csv");
+const datasetRelativePath = mainRun ? "data/main_cases.csv" : "data/pilot_cases.csv";
+const datasetPath = path.join(ROOT, datasetRelativePath);
 const datasetBytes = fs.readFileSync(datasetPath);
 const cases = parseCsv(datasetBytes.toString("utf8"));
-const selected = fullPilot ? cases : Object.keys(MODAL_TO_TYPE).map(modal => cases.find(r => r.modal_class === modal));
+const selected = mainRun || fullPilot ? cases : Object.keys(MODAL_TO_TYPE).map(modal => cases.find(r => r.modal_class === modal));
 if (selected.some(v => !v)) throw new Error("Dry-run selection is missing a modal class");
+if (mainRun) {
+  const freeze = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "main_freeze_manifest.json"), "utf8"));
+  if (freeze.status !== "FROZEN_SINGLE_ANNOTATOR") throw new Error("Main dataset is not frozen");
+  if (freeze.dataset_sha256 !== sha256(datasetBytes)) throw new Error("Main dataset SHA-256 differs from freeze manifest");
+  if (freeze.model_requested !== model) throw new Error(`Frozen model is ${freeze.model_requested}, requested ${model}`);
+  for (const [relative, expected] of Object.entries(freeze.file_sha256)) {
+    const actual = sha256(fs.readFileSync(path.join(ROOT, relative)));
+    if (actual !== expected) throw new Error(`Frozen file changed: ${relative}`);
+  }
+  if (selected.length !== 72 || selected.some(row => row.review_status !== "self_checked")) {
+    throw new Error("Main dataset must contain 72 self_checked cases");
+  }
+}
 
 const promptDir = path.join(ROOT, "experiments", "prompts");
 const promptFileVersions = promptVersion === "v3"
@@ -81,7 +106,8 @@ const promptFileVersions = promptVersion === "v3"
 const promptTemplates = Object.fromEntries(["C0", "C1", "C2"].map(c => [c, fs.readFileSync(path.join(promptDir, `${c.toLowerCase()}_${promptFileVersions[c]}.md`), "utf8")]));
 const schema = JSON.parse(fs.readFileSync(path.join(ROOT, "experiments", "response_schema.json"), "utf8"));
 const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
-const runId = `${fullPilot ? "pilot18" : "dry6"}_${promptVersion}_${timestamp}`;
+const runKind = mainRun ? "main72" : fullPilot ? "pilot18" : "dry6";
+const runId = `${runKind}_${promptVersion}_${timestamp}`;
 const runDir = path.join(ROOT, "experiments", "runs", runId);
 fs.mkdirSync(runDir, { recursive: true });
 const rawPath = path.join(runDir, "raw_responses.jsonl");
@@ -92,18 +118,50 @@ selected.forEach((row, index) => {
   const orders = [["C0", "C1", "C2"], ["C1", "C2", "C0"], ["C2", "C0", "C1"]];
   for (const condition of orders[index % orders.length]) executionPlan.push({ row, condition });
 });
+if (mainRun) {
+  const executionSeed = "main72-v1-2026-09-03";
+  executionPlan.sort((a, b) => {
+    const left = sha256(`${executionSeed}:${a.row.case_id}:${a.condition}`);
+    const right = sha256(`${executionSeed}:${b.row.case_id}:${b.condition}`);
+    return left.localeCompare(right);
+  });
+}
+
+if (preflightOnly) {
+  const preflightReport = {
+    status: "PASS",
+    mode: mainRun ? "main" : fullPilot ? "full_pilot" : "dry_run",
+    dataset_path: datasetRelativePath,
+    dataset_sha256: sha256(datasetBytes),
+    cases: selected.length,
+    planned_calls: executionPlan.length,
+    model,
+    prompt_file_versions: promptFileVersions,
+    execution_seed: mainRun ? "main72-v1-2026-09-03" : null,
+    max_cost_usd: maxCostUsd,
+    execution_order: executionPlan.map((v, i) => ({ request_index: i + 1, case_id: v.row.case_id, condition: v.condition })),
+  };
+  if (mainRun) {
+    fs.writeFileSync(path.join(ROOT, "experiments", "main_run_plan.json"), JSON.stringify(preflightReport, null, 2) + "\n");
+  }
+  console.log(JSON.stringify({ ...preflightReport, execution_order: preflightReport.execution_order.slice(0, 5) }, null, 2));
+  process.exit(0);
+}
+
+const env = { ...parseEnvFile(path.join(ROOT, ".env.local")), ...process.env };
+if (!env.OPENAI_API_KEY) throw new Error("OPENAI_API_KEY is not configured");
 
 const manifest = {
   run_id: runId,
-  purpose: fullPilot ? "pilot_all_cases" : "dry_run_one_case_per_modal_class",
-  research_use: "prompt/schema/scoring validation only; excluded from main results",
+  purpose: mainRun ? "main_frozen_experiment" : fullPilot ? "pilot_all_cases" : "dry_run_one_case_per_modal_class",
+  research_use: mainRun ? "primary main experiment" : "prompt/schema/scoring validation only; excluded from main results",
   created_at: new Date().toISOString(),
   provider: "OpenAI",
   api: "Responses API",
   model_requested: model,
   model_snapshot_returned: null,
   parameters: { temperature: 0, reasoning_effort: "none", max_output_tokens: 600, store: false },
-  dataset_path: "data/pilot_cases.csv",
+  dataset_path: datasetRelativePath,
   dataset_sha256: sha256(datasetBytes),
   selected_case_ids: selected.map(r => r.case_id),
   prompt_version: promptVersion,
@@ -112,12 +170,19 @@ const manifest = {
   prompt_sha256: Object.fromEntries(Object.entries(promptTemplates).map(([k, v]) => [k, sha256(v)])),
   response_schema_sha256: sha256(JSON.stringify(schema)),
   execution_order: executionPlan.map((v, i) => ({ request_index: i + 1, case_id: v.row.case_id, condition: v.condition })),
+  execution_seed: mainRun ? "main72-v1-2026-09-03" : null,
   retry_policy: "At most 2 retries for transient HTTP 429 or 5xx and transport errors, with attempt metadata retained. No retry for insufficient_quota, parse, or semantic failure.",
+  cost_guard: mainRun ? {
+    max_estimated_token_cost_usd: maxCostUsd,
+    pricing_usd_per_million_tokens: { input: 0.75, cached_input: 0.075, output: 4.5 },
+    semantics: "Post-response usage guard; stops before the next request once cumulative estimated token cost reaches the cap.",
+  } : null,
   status: "running",
 };
 fs.writeFileSync(path.join(runDir, "manifest.json"), JSON.stringify(manifest, null, 2) + "\n");
 
 let blockedReason = null;
+let cumulativeEstimatedCostUsd = 0;
 executionLoop: for (let index = 0; index < executionPlan.length; index++) {
   const { row, condition } = executionPlan[index];
   const values = { ...row, normative_type: MODAL_TO_TYPE[row.modal_class] };
@@ -172,9 +237,14 @@ executionLoop: for (let index = 0; index < executionPlan.length; index++) {
     usage: response?.usage || null,
     parsed,
   });
-  console.log(`${index + 1}/${executionPlan.length} ${row.case_id} ${condition} ${parsed ? "OK" : "FAILED"}`);
+  cumulativeEstimatedCostUsd += estimatedTokenCost(response?.usage);
+  console.log(`${index + 1}/${executionPlan.length} ${row.case_id} ${condition} ${parsed ? "OK" : "FAILED"} estimated_cost_usd=${cumulativeEstimatedCostUsd.toFixed(6)}`);
   if (response?.error?.code === "credit_balance_exhausted" || response?.error?.type === "insufficient_quota") {
     blockedReason = "OPENAI_API_CREDIT_BALANCE_EXHAUSTED";
+    break executionLoop;
+  }
+  if (mainRun && index < executionPlan.length - 1 && cumulativeEstimatedCostUsd >= maxCostUsd) {
+    blockedReason = "MAX_ESTIMATED_TOKEN_COST_REACHED";
     break executionLoop;
   }
 }
@@ -182,5 +252,6 @@ executionLoop: for (let index = 0; index < executionPlan.length; index++) {
 manifest.completed_at = new Date().toISOString();
 manifest.status = blockedReason ? "blocked" : "completed";
 manifest.block_reason = blockedReason;
+manifest.cumulative_estimated_token_cost_usd = Number(cumulativeEstimatedCostUsd.toFixed(8));
 fs.writeFileSync(path.join(runDir, "manifest.json"), JSON.stringify(manifest, null, 2) + "\n");
 console.log(`RUN_DIR=${runDir}`);

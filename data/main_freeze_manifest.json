@@ -1,6 +1,6 @@
 {
   "status": "FROZEN_SINGLE_ANNOTATOR",
-  "frozen_at_utc": "2026-09-03T07:25:21.797343+00:00",
+  "frozen_at_utc": "2026-09-03T07:31:31.944008+00:00",
   "dataset_path": "data/main_cases.csv",
   "dataset_sha256": "46c5ad53d861c2bdf0542acfd74d376baa6e384425f705536034b03cf5d04a3f",
   "case_count": 72,
@@ -39,6 +39,10 @@
     "experiments/prompts/c1_v2.md": "f68bc297b94e2990a8a8149b9074b20c0a063848266ca305e30887a6c77647f7",
     "experiments/prompts/c2_v2.md": "938b9170432f4bb9061ff0665eeaeaa4505e39b3452c61dd89202f0eaaf3e1f2",
     "experiments/response_schema.json": "9218fe5bd783f2f0fc01798334e9bfd69c117f8df854701c5fc34c42efa68c3c",
-    "experiments/scoring_v1.md": "bd54359740fbab8b6c953fd1613281ee8de36ea85c46558cf63f18142b282692"
+    "experiments/scoring_v1.md": "bd54359740fbab8b6c953fd1613281ee8de36ea85c46558cf63f18142b282692",
+    "experiments/main_run_plan.json": "be185dacd297101d95ce7b0a05e563af68994aefc150ef1223045505ef6673eb",
+    "experiments/run_pilot.mjs": "5362b9c278430822638353beb266caa180541bbf762b323c5efe07c6f9f08630",
+    "experiments/score_run.mjs": "64aae6fcd7c681ee6151d56abc05993e1436279e71124fc47a975a0e7a53859f",
+    "experiments/prepare_review_pass.mjs": "357889034035b8a4797424b1d629df9fce9515238ca974743a2ea65971b40ff9"
   }
 }

@@ -21,11 +21,14 @@ function writeCsv(file, rows, headers) { fs.writeFileSync(file, "\uFEFF" + [head
 const runArg = process.argv[2];
 if (!runArg) throw new Error("Usage: node experiments/score_run.mjs <run_directory>");
 const runDir = path.resolve(runArg);
-const dataset = parseCsv(fs.readFileSync(path.join(ROOT, "data", "pilot_cases.csv"), "utf8"));
+const manifest = JSON.parse(fs.readFileSync(path.join(runDir, "manifest.json"), "utf8"));
+if (!manifest.dataset_path) throw new Error("Run manifest is missing dataset_path");
+const dataset = parseCsv(fs.readFileSync(path.join(ROOT, manifest.dataset_path), "utf8"));
 const gold = new Map(dataset.map(r => [r.case_id, r]));
 const parsed = fs.readFileSync(path.join(runDir, "parsed_responses.jsonl"), "utf8").trim().split("\n").filter(Boolean).map(JSON.parse);
 const auto = parsed.map(item => {
   const g = gold.get(item.case_id); const p = item.parsed;
+  if (!g) throw new Error(`No gold row for ${item.case_id} in ${manifest.dataset_path}`);
   const citationApplicable = item.condition !== "C0";
   return {
     request_index: item.request_index, case_id: item.case_id, condition: item.condition, response_status: p ? "parsed" : "failed",
