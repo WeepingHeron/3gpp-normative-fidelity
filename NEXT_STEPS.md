@@ -60,10 +60,20 @@ Main은 각 modal 범주에서 TS 23.501 6개와 TS 24.501 6개를 사용한다.
 - [x] 동결된 v3 bundle로 18개×C0/C1/C2, 총 54개 응답 생성 및 54/54 파싱 확인
 - [x] 결정적 검사 수행: modal C0 5/18, C1 17/18, C2 18/18; C1·C2 citation 36/36
 - [x] `blind_review.csv`의 54개 응답에 대한 masked 의미 채점 pass 1 수행
-- [ ] 최소 24시간 후 재무작위화 blind 의미 채점 pass 2 수행
-- [ ] Pilot 결과에서 main 설계 수정 필요 여부 판단
+- [x] 최소 24시간 후 재무작위화 masked 의미 채점 pass 2 수행
+- [x] pass 1·2 비교: 응답 54/54, 적용 가능 이진 판정 324/324, 오류 코드 54/54 일치
+- [x] 불일치 0건 확인 및 adjudication 불필요 판정
+- [x] Pilot 결과에서 main 설계 수정 필요 여부 판단: C1·C2 ceiling을 고려한 난도 층화 필요
 
-Pass 1은 2026-09-02 13:25 KST에 완료했다. 행별 case ID와 조건은 가렸지만 검토자가 사전에 조건별 집계와 C1 오류 1건을 본 상태였으므로 완전 독립·완전 blind라고 부르지 않는다. 같은 평가자의 pass 2는 2026-09-03 13:25 KST 이후 수행한다.
+Pass 1은 2026-09-02 13:25 KST, pass 2는 2026-09-03 15:04 KST 이후 새 ID·새 순서로 완료했다. 행별 case ID와 조건은 가렸지만 검토자가 사전에 조건별 집계와 C1 오류 1건을 본 상태였으므로 완전 독립·완전 blind라고 부르지 않는다. 이는 동일 평가자의 지연 재검토 결과다.
+
+## 다음: Main 72개 데이터셋
+
+- [ ] 모델 결과를 보기 전에 문장 난도 층화 기준 동결
+- [ ] modal class 6종×12개, 총 72개 source-grounded label 작성
+- [ ] pilot 18개와 exact/near duplicate가 없는지 검사
+- [ ] 원문·clause·page·SHA-256 연결과 자가 감사
+- [ ] main prompt·dataset 최종 동결
 
 ## Pilot 후에만 할 일
 

@@ -1,0 +1,41 @@
+{
+  "status": "pilot_delayed_intra_rater_review_complete",
+  "research_use": "pilot validation only; excluded from main results",
+  "review_design": "same-reviewer masked row-level pass 1 and delayed reshuffled pass 2",
+  "agreement": {
+    "response_exact": "54/54",
+    "applicable_binary_decisions": "324/324",
+    "error_codes": "54/54",
+    "aggregate_cohen_kappa": 1.0,
+    "adjudication_count": 0
+  },
+  "conditions": {
+    "C0": {
+      "n": 18,
+      "modal_accuracy": "5/18",
+      "complete_preservation": "0/18",
+      "unsupported_addition": "18/18",
+      "citation_exactness": null
+    },
+    "C1": {
+      "n": 18,
+      "modal_accuracy": "17/18",
+      "complete_preservation": "18/18",
+      "unsupported_addition": "0/18",
+      "citation_exactness": "18/18"
+    },
+    "C2": {
+      "n": 18,
+      "modal_accuracy": "18/18",
+      "complete_preservation": "18/18",
+      "unsupported_addition": "0/18",
+      "citation_exactness": "18/18"
+    }
+  },
+  "interpretation": "Exact source evidence separated C1 and C2 from C0 in this pilot, but C2 did not outperform C1 on semantic component preservation. The one C1 modal mismatch was a structured normative_type label mismatch while the Korean explanation preserved the communication capability meaning.",
+  "limitations": [
+    "The reviewer had prior exposure to aggregate condition results and one identified C1 mismatch before row-level scoring.",
+    "This is intra-rater agreement, not independent human inter-rater reliability.",
+    "The 18-case pilot is too small and too easy to support inferential claims about C2 versus C1."
+  ]
+}
