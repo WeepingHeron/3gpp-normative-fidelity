@@ -1,0 +1,10 @@
+{
+  "review_type": "masked_row_level_codex_single_reviewer_pass1",
+  "completed_at": "2026-09-03T07:52:07.073Z",
+  "rows": 216,
+  "reviewed_range": "R001-R216",
+  "condition_and_case_id_hidden_during_row_scoring": true,
+  "semantic_source": "source_text_en and frozen gold fields compared against explanation_ko; JSON output fields used only as secondary context",
+  "limitation": "This is a Codex single-reviewer masked semantic pass, not an independent human expert review. The reviewer had already seen aggregate deterministic condition results before row-level scoring.",
+  "failed_complete_preservation_rows": 79
+}

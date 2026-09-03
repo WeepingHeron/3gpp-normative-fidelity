@@ -49,7 +49,7 @@ Main은 각 modal 범주에서 TS 23.501 6개와 TS 24.501 6개를 사용한다.
 - [x] C0를 closed-book forced-answer knowledge baseline으로 확정
 - [x] prompt bundle v3(C0 v3·C1 v2·C2 v2) dry run 및 최종 동결
 - [x] `PILOT-CAN-001` 라벨 수정이 반영된 검토 workbook v2 재생성
-- [ ] 최종 prompt bundle 동결 후 18개 전체 pilot 실행
+- [x] 최종 prompt bundle 동결 후 18개 전체 pilot 실행
 - [x] pass 1·2 비교: 응답 18/18, 적용 가능 이진 판정 105/105 일치, 불일치 0건
 - [x] 불일치 사례가 없어 rubric 수정 없이 v1 유지한 이력 기록
 
@@ -85,8 +85,14 @@ Pass 1은 2026-09-02 13:25 KST, pass 2는 2026-09-03 15:04 KST 이후 새 ID·�
 ## Pilot 후에만 할 일
 
 - [x] 본 데이터 72개 수집
-- [ ] 실행 스크립트 작성
-- [ ] 통계·그래프 자동화
+- [x] 실행 스크립트 작성
+- [x] 동결 main 72개×3조건, 총 216개 응답 생성 및 216/216 파싱 확인
+- [x] main API 원본·파싱 결과·결정적 채점 결과 해시 동결
+- [x] 216개 응답의 masked Codex 단일 평가자 의미 채점 pass 1
+- [x] pass 1 paired 통계와 신뢰구간 자동화
+- [ ] 최소 24시간 후 새 순서의 masked pass 2
+- [ ] pass 1·2 불일치와 predeclared gold-scope ambiguity 3건 adjudication
+- [ ] adjudicated 결과로 최종 통계·그래프 생성
 - [ ] ACK 양식에 맞춘 논문 초안
 
-Pilot이 안 닫혔는데 72개를 먼저 만들면 라벨과 prompt 오류를 대량으로 다시 고쳐야 한다. 따라서 원문 동결과 18개 pilot을 첫 마일스톤으로 본다.
+Main pass 1의 complete preservation은 C0 0/72, C1 65/72, C2 72/72로 나왔지만 아직 최종 결과가 아니다. pass 1은 조건과 case ID를 가린 Codex 단일 평가자 판정이며, 평가자는 사전에 조건별 결정적 집계를 본 상태였다. C2의 72/72 ceiling과 `MAIN-CAN-004`, `MAIN-SD-002`, `MAIN-CAN-008`의 gold modal-scope 애매성을 pass 2와 adjudication에서 우선 확인한다. API를 다시 호출하거나 원하는 결과가 나올 때까지 반복하지 않는다.
