@@ -1,0 +1,85 @@
+{
+  "status": "SENSITIVITY_ONLY_NOT_REPLACEMENT_GOLD",
+  "excluded_case_ids": [
+    "MAIN-CAN-004",
+    "MAIN-SD-002",
+    "MAIN-CAN-008"
+  ],
+  "primary_frozen": {
+    "C0": {
+      "complete_preservation": {
+        "successes": 0,
+        "n": 72,
+        "rate": 0
+      },
+      "unsupported_addition": {
+        "successes": 65,
+        "n": 72,
+        "rate": 0.9027777777777778
+      }
+    },
+    "C1": {
+      "complete_preservation": {
+        "successes": 65,
+        "n": 72,
+        "rate": 0.9027777777777778
+      },
+      "unsupported_addition": {
+        "successes": 7,
+        "n": 72,
+        "rate": 0.09722222222222222
+      }
+    },
+    "C2": {
+      "complete_preservation": {
+        "successes": 72,
+        "n": 72,
+        "rate": 1
+      },
+      "unsupported_addition": {
+        "successes": 0,
+        "n": 72,
+        "rate": 0
+      }
+    }
+  },
+  "excluding_predeclared_ambiguous_cases": {
+    "C0": {
+      "complete_preservation": {
+        "successes": 0,
+        "n": 69,
+        "rate": 0
+      },
+      "unsupported_addition": {
+        "successes": 63,
+        "n": 69,
+        "rate": 0.9130434782608695
+      }
+    },
+    "C1": {
+      "complete_preservation": {
+        "successes": 65,
+        "n": 69,
+        "rate": 0.9420289855072463
+      },
+      "unsupported_addition": {
+        "successes": 4,
+        "n": 69,
+        "rate": 0.057971014492753624
+      }
+    },
+    "C2": {
+      "complete_preservation": {
+        "successes": 69,
+        "n": 69,
+        "rate": 1
+      },
+      "unsupported_addition": {
+        "successes": 0,
+        "n": 69,
+        "rate": 0
+      }
+    }
+  },
+  "interpretation": "The frozen labels remain primary. Exclusion is reported only to show dependence on the three predeclared scope-ambiguous sentences."
+}

@@ -80,10 +80,15 @@ const report = {
     rate: binaryPairs.filter(([x, y]) => x === y).length / binaryPairs.length,
     cohen_kappa: kappa(binaryPairs),
   },
+  score_disagreement_count: disagreements.filter(r => r.field !== "error_codes").length,
+  error_code_taxonomy_disagreement_count: disagreements.filter(r => r.field === "error_codes").length,
   disagreement_count: disagreements.length,
   interpretation_note: "This is same-reviewer delayed agreement, not independent inter-rater reliability.",
 };
 fs.writeFileSync(path.join(runDir, "review_agreement.json"), JSON.stringify(report, null, 2) + "\n");
 const headers = ["case_id", "condition", "field", "pass1", "pass2", "adjudicated", "rationale"];
-fs.writeFileSync(path.join(runDir, "adjudication.csv"), "\uFEFF" + [headers.join(","), ...disagreements.map(r => headers.map(h => csvCell(r[h])).join(","))].join("\n") + "\n");
+const scoreDisagreements = disagreements.filter(r => r.field !== "error_codes");
+const taxonomyDisagreements = disagreements.filter(r => r.field === "error_codes");
+fs.writeFileSync(path.join(runDir, "adjudication.csv"), "\uFEFF" + [headers.join(","), ...scoreDisagreements.map(r => headers.map(h => csvCell(r[h])).join(","))].join("\n") + "\n");
+fs.writeFileSync(path.join(runDir, "error_code_comparison.csv"), "\uFEFF" + [headers.slice(0, 5).join(","), ...taxonomyDisagreements.map(r => headers.slice(0, 5).map(h => csvCell(r[h])).join(","))].join("\n") + "\n");
 console.log(JSON.stringify(report, null, 2));

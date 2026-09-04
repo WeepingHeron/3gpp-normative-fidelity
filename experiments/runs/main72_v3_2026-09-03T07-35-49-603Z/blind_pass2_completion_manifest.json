@@ -1,0 +1,10 @@
+{
+  "review_type": "delayed_masked_row_level_codex_single_reviewer_pass2",
+  "completed_at": "2026-09-04T08:11:36.803Z",
+  "rows": 216,
+  "reviewed_range": "S001-S216",
+  "condition_keys_and_pass1_row_scores_not_consulted_during_row_scoring": true,
+  "semantic_source": "source_text_en and frozen gold fields compared against explanation_ko; JSON output fields used only as secondary context",
+  "limitation": "This is delayed same-reviewer agreement, not an independent human expert review. The reviewer had prior-day exposure to the experiment and pass-1 aggregate results.",
+  "failed_complete_preservation_rows": 80
+}

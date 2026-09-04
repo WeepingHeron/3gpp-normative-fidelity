@@ -1,0 +1,9 @@
+{
+  "status": "ADJUDICATED_SAME_CODEX_REVIEWER",
+  "rows": 216,
+  "score_disagreements": 29,
+  "complete_preservation_pass1": 137,
+  "complete_preservation_pass2": 136,
+  "complete_preservation_adjudicated": 137,
+  "limitation": "Adjudication was performed by the same Codex reviewer. It is not independent human expert validation."
+}

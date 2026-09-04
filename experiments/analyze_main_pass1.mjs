@@ -52,8 +52,10 @@ function pairedBootstrap(a, b, iterations = 20000, seed = 20260903) {
 }
 
 const runDir = path.resolve(process.argv[2] || "");
-if (!process.argv[2]) throw new Error("Usage: node experiments/analyze_main_pass1.mjs <run_directory>");
-const rows = parseCsv(fs.readFileSync(path.join(runDir, "human_scores_pass1.csv"), "utf8"));
+if (!process.argv[2]) throw new Error("Usage: node experiments/analyze_main_pass1.mjs <run_directory> [score_file]");
+const scoreFile = process.argv[3] || "human_scores_pass1.csv";
+const isAdjudicated = scoreFile === "human_scores_adjudicated.csv";
+const rows = parseCsv(fs.readFileSync(path.join(runDir, scoreFile), "utf8"));
 if (rows.length !== 216) throw new Error(`Expected 216 rows, got ${rows.length}`);
 
 const byCase = new Map();
@@ -99,8 +101,10 @@ for (const [first, second] of [["C0", "C1"], ["C1", "C2"], ["C0", "C2"]]) {
 }
 
 const result = {
-  status: "PROVISIONAL_SINGLE_CODEX_REVIEWER_PASS1",
-  warning: "Do not use as a final paper result until delayed pass 2 or independent review and disagreement adjudication are complete.",
+  status: isAdjudicated ? "ADJUDICATED_SAME_CODEX_REVIEWER" : "PROVISIONAL_SINGLE_CODEX_REVIEWER_PASS1",
+  warning: isAdjudicated
+    ? "Pass-1/pass-2 disagreements were adjudicated, but all reviews were performed by the same Codex reviewer rather than independent human telecom experts."
+    : "Do not use as a final paper result until delayed pass 2 or independent review and disagreement adjudication are complete.",
   run_id: path.basename(runDir),
   cases: byCase.size,
   confidence_interval_methods: { rates: "Wilson score 95%", paired_rate_differences: "20,000 paired bootstrap resamples, fixed LCG seed 20260903" },
@@ -108,12 +112,14 @@ const result = {
   conditions: conditionSummary,
   comparisons
 };
-fs.writeFileSync(path.join(runDir, "analysis_pass1.json"), JSON.stringify(result, null, 2) + "\n");
+fs.writeFileSync(path.join(runDir, isAdjudicated ? "analysis_adjudicated.json" : "analysis_pass1.json"), JSON.stringify(result, null, 2) + "\n");
 
 const pct = v => `${(100 * v).toFixed(2)}%`;
 const lines = [
-  "# Provisional main-result analysis: masked pass 1", "",
-  "> **Not final.** This analysis uses a masked Codex single-reviewer pass 1. A delayed pass 2 or independent review and adjudication are required before paper reporting.", "",
+  isAdjudicated ? "# Main-result analysis: delayed review and adjudication" : "# Provisional main-result analysis: masked pass 1", "",
+  isAdjudicated
+    ? "> **Reviewer limitation.** Pass 1, delayed pass 2, and adjudication were all performed by the same Codex reviewer. These results are internally checked but are not independent human-expert validation."
+    : "> **Not final.** This analysis uses a masked Codex single-reviewer pass 1. A delayed pass 2 or independent review and adjudication are required before paper reporting.", "",
   "## Condition results", "",
   "| Condition | Modal accuracy | Complete preservation | Unsupported addition | Exact citation |", "|---|---:|---:|---:|---:|"
 ];
@@ -126,6 +132,6 @@ for (const label of ["C0_vs_C1", "C1_vs_C2", "C0_vs_C2"]) {
   const x = comparisons[label].complete_preservation;
   lines.push(`| ${label.replaceAll("_", " ")} | ${pct(x.rate_difference_second_minus_first)} | ${pct(x.paired_bootstrap_95[0])} to ${pct(x.paired_bootstrap_95[1])} | ${x.discordant_first_only} / ${x.discordant_second_only} | ${x.exact_mcnemar_two_sided_p.toPrecision(4)} |`);
 }
-lines.push("", "## Interpretation boundary", "", "- C2 reached 72/72 in this pass, so ceiling effects and reviewer/gold-label dependence require particular scrutiny.", "- The oracle-evidence design evaluates generation under supplied evidence, not retrieval quality or end-to-end RAG.", "- Three frozen cases use modal-bearing language inside broader descriptive sentences; their gold actor and modal scope should be independently reviewed without changing this frozen run.", "- No causal or general model-performance claim should be made from one model snapshot, one corpus version, and one reviewer pass.", "");
-fs.writeFileSync(path.join(runDir, "ANALYSIS_PASS1.md"), lines.join("\n"));
+lines.push("", "## Interpretation boundary", "", "- C2 reached 72/72, so ceiling effects and reviewer/gold-label dependence require particular scrutiny.", "- The oracle-evidence design evaluates generation under supplied evidence, not retrieval quality or end-to-end RAG.", "- Three frozen cases use modal-bearing language inside broader descriptive sentences; their gold actor and modal scope should be independently reviewed without changing this frozen run.", isAdjudicated ? "- No causal or general model-performance claim should be made from one model snapshot, one corpus version, and one same-reviewer pass-1/pass-2 adjudication." : "- No causal or general model-performance claim should be made from one model snapshot, one corpus version, and one reviewer pass.", "");
+fs.writeFileSync(path.join(runDir, isAdjudicated ? "ANALYSIS_ADJUDICATED.md" : "ANALYSIS_PASS1.md"), lines.join("\n"));
 console.log(JSON.stringify({ status: result.status, conditions: result.conditions, complete_preservation_comparisons: Object.fromEntries(Object.entries(result.comparisons).map(([k,v]) => [k,v.complete_preservation])) }, null, 2));

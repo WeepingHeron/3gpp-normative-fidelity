@@ -90,9 +90,11 @@ Pass 1은 2026-09-02 13:25 KST, pass 2는 2026-09-03 15:04 KST 이후 새 ID·�
 - [x] main API 원본·파싱 결과·결정적 채점 결과 해시 동결
 - [x] 216개 응답의 masked Codex 단일 평가자 의미 채점 pass 1
 - [x] pass 1 paired 통계와 신뢰구간 자동화
-- [ ] 최소 24시간 후 새 순서의 masked pass 2
-- [ ] pass 1·2 불일치와 predeclared gold-scope ambiguity 3건 adjudication
-- [ ] adjudicated 결과로 최종 통계·그래프 생성
+- [x] 최소 24시간 후 새 순서의 masked pass 2
+- [x] pass 1·2 점수 불일치 29건 adjudication
+- [x] predeclared gold-scope ambiguity 3건을 별도 sensitivity 문서로 고정
+- [x] adjudicated 결과로 최종 통계 생성
+- [ ] adjudicated 결과 그래프 생성
 - [ ] ACK 양식에 맞춘 논문 초안
 
-Main pass 1의 complete preservation은 C0 0/72, C1 65/72, C2 72/72로 나왔지만 아직 최종 결과가 아니다. pass 1은 조건과 case ID를 가린 Codex 단일 평가자 판정이며, 평가자는 사전에 조건별 결정적 집계를 본 상태였다. C2의 72/72 ceiling과 `MAIN-CAN-004`, `MAIN-SD-002`, `MAIN-CAN-008`의 gold modal-scope 애매성을 pass 2와 adjudication에서 우선 확인한다. API를 다시 호출하거나 원하는 결과가 나올 때까지 반복하지 않는다.
+Main delayed pass 2와 adjudication까지 완료했다. complete-preservation 행 판정은 216개 중 213개(98.61%, Cohen's kappa 0.970)가 일치했고, 전체 적용 가능 이진 판정은 1,348개 중 1,322개(98.07%, kappa 0.955)가 일치했다. adjudicated complete preservation은 C0 0/72, C1 65/72, C2 72/72이다. `MAIN-CAN-004`, `MAIN-SD-002`, `MAIN-CAN-008`은 동결 label을 바꾸지 않고 gold-scope sensitivity 대상으로 남겼다. 이 결과는 동일 Codex 평가자의 지연 재검토·자체 adjudication이지 독립 통신 전문가 검증은 아니다. API를 다시 호출하거나 원하는 결과가 나올 때까지 반복하지 않는다.

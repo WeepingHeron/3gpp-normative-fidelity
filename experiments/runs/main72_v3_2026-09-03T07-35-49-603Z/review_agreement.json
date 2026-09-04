@@ -1,0 +1,71 @@
+{
+  "comparison_type": "delayed_intra_rater_agreement",
+  "pass1_file": "blind_review_pass1.csv",
+  "pass2_file": "blind_review_pass2.csv",
+  "responses": 216,
+  "response_level_exact_agreement": {
+    "agreements": 140,
+    "total": 216,
+    "rate": 0.6481481481481481
+  },
+  "field_level": {
+    "actor_preserved": {
+      "agreements": 211,
+      "total": 216,
+      "agreement_rate": 0.9768518518518519,
+      "cohen_kappa": 0.8888888888888891
+    },
+    "polarity_preserved": {
+      "agreements": 215,
+      "total": 216,
+      "agreement_rate": 0.9953703703703703,
+      "cohen_kappa": 0.9885204081632653
+    },
+    "condition_preserved": {
+      "agreements": 211,
+      "total": 216,
+      "agreement_rate": 0.9768518518518519,
+      "cohen_kappa": 0.8245289988917622
+    },
+    "action_preserved": {
+      "agreements": 212,
+      "total": 216,
+      "agreement_rate": 0.9814814814814815,
+      "cohen_kappa": 0.9555966697502313
+    },
+    "exception_preserved": {
+      "agreements": 212,
+      "total": 216,
+      "agreement_rate": 0.9814814814814815,
+      "cohen_kappa": 0.9708737864077671
+    },
+    "complete_preservation": {
+      "agreements": 213,
+      "total": 216,
+      "agreement_rate": 0.9861111111111112,
+      "cohen_kappa": 0.970143752303723
+    },
+    "unsupported_addition": {
+      "agreements": 209,
+      "total": 216,
+      "agreement_rate": 0.9675925925925926,
+      "cohen_kappa": 0.9268292682926829
+    },
+    "error_codes": {
+      "agreements": 140,
+      "total": 216,
+      "agreement_rate": 0.6481481481481481,
+      "cohen_kappa": null
+    }
+  },
+  "aggregate_applicable_binary_decisions": {
+    "agreements": 1322,
+    "total": 1348,
+    "rate": 0.9807121661721068,
+    "cohen_kappa": 0.9547430212468137
+  },
+  "score_disagreement_count": 29,
+  "error_code_taxonomy_disagreement_count": 76,
+  "disagreement_count": 105,
+  "interpretation_note": "This is same-reviewer delayed agreement, not independent inter-rater reliability."
+}

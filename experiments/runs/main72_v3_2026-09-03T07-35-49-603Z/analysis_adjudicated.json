@@ -1,0 +1,217 @@
+{
+  "status": "ADJUDICATED_SAME_CODEX_REVIEWER",
+  "warning": "Pass-1/pass-2 disagreements were adjudicated, but all reviews were performed by the same Codex reviewer rather than independent human telecom experts.",
+  "run_id": "main72_v3_2026-09-03T07-35-49-603Z",
+  "cases": 72,
+  "confidence_interval_methods": {
+    "rates": "Wilson score 95%",
+    "paired_rate_differences": "20,000 paired bootstrap resamples, fixed LCG seed 20260903"
+  },
+  "hypothesis_test": "Exact two-sided McNemar test; descriptive/provisional, with no multiple-comparison correction applied.",
+  "conditions": {
+    "C0": {
+      "modal_correct": {
+        "successes": 15,
+        "n": 72,
+        "rate": 0.20833333333333334,
+        "wilson_95": [
+          0.13052054982100705,
+          0.3156926341935934
+        ]
+      },
+      "complete_preservation": {
+        "successes": 0,
+        "n": 72,
+        "rate": 0,
+        "wilson_95": [
+          0,
+          0.05065117259645781
+        ]
+      },
+      "unsupported_addition": {
+        "successes": 65,
+        "n": 72,
+        "rate": 0.9027777777777778,
+        "wilson_95": [
+          0.8126495420487314,
+          0.9521036800263443
+        ]
+      },
+      "citation_exact": null
+    },
+    "C1": {
+      "modal_correct": {
+        "successes": 56,
+        "n": 72,
+        "rate": 0.7777777777777778,
+        "wilson_95": [
+          0.6690904506199482,
+          0.858325564604242
+        ]
+      },
+      "complete_preservation": {
+        "successes": 65,
+        "n": 72,
+        "rate": 0.9027777777777778,
+        "wilson_95": [
+          0.8126495420487314,
+          0.9521036800263443
+        ]
+      },
+      "unsupported_addition": {
+        "successes": 7,
+        "n": 72,
+        "rate": 0.09722222222222222,
+        "wilson_95": [
+          0.047896319973655774,
+          0.1873504579512686
+        ]
+      },
+      "citation_exact": {
+        "successes": 72,
+        "n": 72,
+        "rate": 1,
+        "wilson_95": [
+          0.9493488274035422,
+          1
+        ]
+      }
+    },
+    "C2": {
+      "modal_correct": {
+        "successes": 72,
+        "n": 72,
+        "rate": 1,
+        "wilson_95": [
+          0.9493488274035422,
+          1
+        ]
+      },
+      "complete_preservation": {
+        "successes": 72,
+        "n": 72,
+        "rate": 1,
+        "wilson_95": [
+          0.9493488274035422,
+          1
+        ]
+      },
+      "unsupported_addition": {
+        "successes": 0,
+        "n": 72,
+        "rate": 0,
+        "wilson_95": [
+          0,
+          0.05065117259645781
+        ]
+      },
+      "citation_exact": {
+        "successes": 72,
+        "n": 72,
+        "rate": 1,
+        "wilson_95": [
+          0.9493488274035422,
+          1
+        ]
+      }
+    }
+  },
+  "comparisons": {
+    "C0_vs_C1": {
+      "modal_correct": {
+        "rate_difference_second_minus_first": 0.5694444444444444,
+        "paired_bootstrap_95": [
+          0.4444444444444444,
+          0.6805555555555556
+        ],
+        "discordant_first_only": 1,
+        "discordant_second_only": 42,
+        "exact_mcnemar_two_sided_p": 1.000444171950221e-11
+      },
+      "complete_preservation": {
+        "rate_difference_second_minus_first": 0.9027777777777778,
+        "paired_bootstrap_95": [
+          0.8333333333333334,
+          0.9722222222222222
+        ],
+        "discordant_first_only": 0,
+        "discordant_second_only": 65,
+        "exact_mcnemar_two_sided_p": 5.421010862427522e-20
+      },
+      "unsupported_addition": {
+        "rate_difference_second_minus_first": -0.8055555555555556,
+        "paired_bootstrap_95": [
+          -0.9027777777777778,
+          -0.7083333333333334
+        ],
+        "discordant_first_only": 59,
+        "discordant_second_only": 1,
+        "exact_mcnemar_two_sided_p": 1.0581813203458523e-16
+      }
+    },
+    "C1_vs_C2": {
+      "modal_correct": {
+        "rate_difference_second_minus_first": 0.2222222222222222,
+        "paired_bootstrap_95": [
+          0.125,
+          0.3194444444444444
+        ],
+        "discordant_first_only": 0,
+        "discordant_second_only": 16,
+        "exact_mcnemar_two_sided_p": 0.000030517578125
+      },
+      "complete_preservation": {
+        "rate_difference_second_minus_first": 0.09722222222222221,
+        "paired_bootstrap_95": [
+          0.027777777777777776,
+          0.16666666666666666
+        ],
+        "discordant_first_only": 0,
+        "discordant_second_only": 7,
+        "exact_mcnemar_two_sided_p": 0.015625
+      },
+      "unsupported_addition": {
+        "rate_difference_second_minus_first": -0.09722222222222222,
+        "paired_bootstrap_95": [
+          -0.16666666666666666,
+          -0.027777777777777776
+        ],
+        "discordant_first_only": 7,
+        "discordant_second_only": 0,
+        "exact_mcnemar_two_sided_p": 0.015625
+      }
+    },
+    "C0_vs_C2": {
+      "modal_correct": {
+        "rate_difference_second_minus_first": 0.7916666666666666,
+        "paired_bootstrap_95": [
+          0.6944444444444444,
+          0.875
+        ],
+        "discordant_first_only": 0,
+        "discordant_second_only": 57,
+        "exact_mcnemar_two_sided_p": 1.3877787807814457e-17
+      },
+      "complete_preservation": {
+        "rate_difference_second_minus_first": 1,
+        "paired_bootstrap_95": [
+          1,
+          1
+        ],
+        "discordant_first_only": 0,
+        "discordant_second_only": 72,
+        "exact_mcnemar_two_sided_p": 4.235164736271502e-22
+      },
+      "unsupported_addition": {
+        "rate_difference_second_minus_first": -0.9027777777777778,
+        "paired_bootstrap_95": [
+          -0.9583333333333334,
+          -0.8333333333333334
+        ],
+        "discordant_first_only": 65,
+        "discordant_second_only": 0,
+        "exact_mcnemar_two_sided_p": 5.421010862427522e-20
+      }
+    }
+  }
+}
