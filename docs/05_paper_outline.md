@@ -33,7 +33,7 @@
 
 ### 3.1 Dataset
 
-- 공식 3GPP TS 23.501 하나의 고정 버전
+- 공식 배포본과 대조 가능한 ETSI TS 123 501·TS 124 501(V18.12.0, Release 18) 고정 PDF
 - 6개 modal class × 12개 = 72 cases
 - source-grounded structured labels
 
@@ -55,7 +55,8 @@
 
 - 표 1: C0/C1/C2 전체 지표
 - 표 2: 오류 유형별 빈도
-- 그림 1: modal class별 complete preservation
+- 그림 1: modal class별 complete preservation heatmap
+- 전체 complete-preservation CI 막대와 구성요소 오류 그래프는 지면이 허용될 때만 사용
 - 성공 사례와 실패 사례 각 1개
 
 결과가 예상과 다르면 그대로 기술한다. C2가 개선하지 못했다면 구조화 오류, 한국어 표면형 모호성, 제약으로 인한 응답 누락을 분석한다.

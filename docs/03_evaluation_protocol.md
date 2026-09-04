@@ -67,7 +67,8 @@
 
 ## 4. 통계
 
-- C0/C1/C2의 비율과 95% bootstrap confidence interval을 보고한다.
+- C0/C1/C2의 개별 비율에는 Wilson score 95% confidence interval을 보고한다.
+- 조건 간 paired rate difference에는 고정 seed의 paired bootstrap 95% confidence interval을 보고한다.
 - 같은 case의 C1과 C2 이진 결과는 McNemar test로 비교한다.
 - 절대 차이와 상대 차이를 함께 보고한다.
 - 표본이 작으므로 p-value만으로 결론내지 않고 effect size와 case-level 오류를 함께 제시한다.
@@ -94,7 +95,7 @@
 
 ### 그림 1. 카테고리별 Complete Preservation Rate
 
-6개 modal class에 대한 C0/C1/C2 그룹 막대그래프를 사용한다. 2~3쪽 지면을 고려해 그림은 하나로 제한한다.
+6개 modal class × C0/C1/C2 heatmap을 사용한다. 각 셀의 성공 수/12와 비율을 직접 표기한다. 2~3쪽 지면을 고려해 본문 그림은 이 한 장을 우선하고, 전체 조건 막대와 의미 구성요소 오류 그래프는 발표·검토용 보조 산출물로 둔다.
 
 ## 6. 판정 경계
 
