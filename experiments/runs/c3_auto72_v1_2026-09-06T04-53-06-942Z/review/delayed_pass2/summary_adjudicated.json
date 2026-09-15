@@ -1,0 +1,247 @@
+{
+  "status": "CODEX_DELAYED_ADJUDICATED_NOT_INDEPENDENT_EXPERT_VALIDATION",
+  "created_at": "2026-09-07T05:48:47.215311+00:00",
+  "explanation_complete_agreement": {
+    "n": 216,
+    "agree": 216,
+    "agreement_pct": 100.0,
+    "cohen_kappa": 1.0
+  },
+  "applicable_binary_agreement": {
+    "n": 1131,
+    "agree": 1128,
+    "agreement_pct": 99.73474801061008,
+    "cohen_kappa": 0.991800168685006
+  },
+  "rows_with_component_disagreement": 2,
+  "component_disagreements": 3,
+  "conditions": {
+    "C1": {
+      "n": 72,
+      "complete": 61,
+      "complete_pct": 84.72222222222223,
+      "wilson_95ci_pct": [
+        74.67771063249945,
+        91.2492912705243
+      ],
+      "unsupported_additions": 9,
+      "components": {
+        "actor_preserved": {
+          "success": 71,
+          "denominator": 72
+        },
+        "polarity_preserved": {
+          "success": 62,
+          "denominator": 72
+        },
+        "condition_preserved": {
+          "success": 63,
+          "denominator": 63
+        },
+        "action_preserved": {
+          "success": 71,
+          "denominator": 72
+        },
+        "exception_preserved": {
+          "success": 25,
+          "denominator": 26
+        }
+      },
+      "failed_case_ids": [
+        "MAIN-CAN-007",
+        "MAIN-CAN-009",
+        "MAIN-CAN-011",
+        "MAIN-MAY-001",
+        "MAIN-SD-002",
+        "MAIN-SD-009",
+        "MAIN-SDN-003",
+        "MAIN-SDN-005",
+        "MAIN-SDN-007",
+        "MAIN-SDN-009",
+        "MAIN-SDN-010"
+      ]
+    },
+    "C2": {
+      "n": 72,
+      "complete": 71,
+      "complete_pct": 98.61111111111111,
+      "wilson_95ci_pct": [
+        92.54339785252385,
+        99.75440481170943
+      ],
+      "unsupported_additions": 0,
+      "components": {
+        "actor_preserved": {
+          "success": 72,
+          "denominator": 72
+        },
+        "polarity_preserved": {
+          "success": 72,
+          "denominator": 72
+        },
+        "condition_preserved": {
+          "success": 63,
+          "denominator": 63
+        },
+        "action_preserved": {
+          "success": 71,
+          "denominator": 72
+        },
+        "exception_preserved": {
+          "success": 25,
+          "denominator": 26
+        }
+      },
+      "failed_case_ids": [
+        "MAIN-SDN-010"
+      ]
+    },
+    "C3": {
+      "n": 72,
+      "complete": 65,
+      "complete_pct": 90.27777777777777,
+      "wilson_95ci_pct": [
+        81.26495420487313,
+        95.21036800263443
+      ],
+      "unsupported_additions": 5,
+      "components": {
+        "actor_preserved": {
+          "success": 69,
+          "denominator": 72
+        },
+        "polarity_preserved": {
+          "success": 66,
+          "denominator": 72
+        },
+        "condition_preserved": {
+          "success": 61,
+          "denominator": 63
+        },
+        "action_preserved": {
+          "success": 70,
+          "denominator": 72
+        },
+        "exception_preserved": {
+          "success": 25,
+          "denominator": 26
+        }
+      },
+      "failed_case_ids": [
+        "MAIN-CAN-001",
+        "MAIN-CAN-008",
+        "MAIN-CAN-011",
+        "MAIN-MAY-001",
+        "MAIN-SD-002",
+        "MAIN-SDN-007",
+        "MAIN-SH-007"
+      ]
+    }
+  },
+  "archived_main_discrepancies_rechecked": 9,
+  "primary_C1_C3_all72": {
+    "first": "C1",
+    "second": "C3",
+    "n": 72,
+    "first_successes": 61,
+    "second_successes": 65,
+    "second_minus_first_pp": 5.555555555555555,
+    "paired_bootstrap_95ci_pp": [
+      -2.7777777777777777,
+      13.88888888888889
+    ],
+    "first_only": 3,
+    "second_only": 7,
+    "exact_McNemar_two_sided_p": 0.34375
+  },
+  "primary_C1_C3_excluding_original3": {
+    "first": "C1",
+    "second": "C3",
+    "n": 69,
+    "first_successes": 59,
+    "second_successes": 64,
+    "second_minus_first_pp": 7.246376811594203,
+    "paired_bootstrap_95ci_pp": [
+      -1.4492753623188406,
+      15.942028985507246
+    ],
+    "first_only": 2,
+    "second_only": 7,
+    "exact_McNemar_two_sided_p": 0.1796875
+  },
+  "secondary_C3_C2_all72": {
+    "first": "C3",
+    "second": "C2",
+    "n": 72,
+    "first_successes": 65,
+    "second_successes": 71,
+    "second_minus_first_pp": 8.333333333333334,
+    "paired_bootstrap_95ci_pp": [
+      1.3888888888888888,
+      16.666666666666668
+    ],
+    "first_only": 1,
+    "second_only": 7,
+    "exact_McNemar_two_sided_p": 0.0703125
+  },
+  "secondary_C3_C2_excluding_original3": {
+    "first": "C3",
+    "second": "C2",
+    "n": 69,
+    "first_successes": 64,
+    "second_successes": 68,
+    "second_minus_first_pp": 5.797101449275362,
+    "paired_bootstrap_95ci_pp": [
+      0.0,
+      13.043478260869565
+    ],
+    "first_only": 1,
+    "second_only": 5,
+    "exact_McNemar_two_sided_p": 0.21875
+  },
+  "exploratory_excluding_scope5": {
+    "excluded_case_ids": [
+      "MAIN-CAN-004",
+      "MAIN-CAN-008",
+      "MAIN-MAY-001",
+      "MAIN-SD-002",
+      "MAIN-SD-009"
+    ],
+    "C1_C3": {
+      "first": "C1",
+      "second": "C3",
+      "n": 67,
+      "first_successes": 59,
+      "second_successes": 63,
+      "second_minus_first_pp": 5.970149253731344,
+      "paired_bootstrap_95ci_pp": [
+        -1.492537313432836,
+        14.925373134328359
+      ],
+      "first_only": 2,
+      "second_only": 6,
+      "exact_McNemar_two_sided_p": 0.2890625
+    },
+    "C3_C2": {
+      "first": "C3",
+      "second": "C2",
+      "n": 67,
+      "first_successes": 63,
+      "second_successes": 66,
+      "second_minus_first_pp": 4.477611940298507,
+      "paired_bootstrap_95ci_pp": [
+        -1.492537313432836,
+        11.940298507462687
+      ],
+      "first_only": 1,
+      "second_only": 4,
+      "exact_McNemar_two_sided_p": 0.375
+    }
+  },
+  "caveats": [
+    "Same Codex with prior knowledge; agreement measures within-reviewer stability only.",
+    "Original frozen main results are preserved; newer judgments do not rewrite them.",
+    "Extraction structure diagnostics remain first-pass exploratory observations.",
+    "Five-case exclusion is post-hoc sensitivity; it does not replace the primary 72-case denominator."
+  ]
+}

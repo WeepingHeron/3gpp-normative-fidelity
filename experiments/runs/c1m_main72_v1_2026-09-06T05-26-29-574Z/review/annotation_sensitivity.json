@@ -1,0 +1,38 @@
+{
+  "status": "POST_HOC_ANNOTATION_STRESS_TEST_NOT_REPLACEMENT_SCORES",
+  "case_ids": [
+    "MAIN-MAY-001",
+    "MAIN-CAN-008"
+  ],
+  "rationale": "Two first-pass scope-flagged successes have potentially conflicting wording; force both to fail to expose interpretation sensitivity. Primary scores remain unchanged.",
+  "conservative_C1_C1M": {
+    "first": "C1",
+    "second": "C1M",
+    "n": 72,
+    "first_successes": 61,
+    "second_successes": 66,
+    "second_minus_first_pp": 6.944444444444445,
+    "paired_bootstrap_95ci_pp": [
+      -1.3888888888888888,
+      16.666666666666668
+    ],
+    "first_only": 3,
+    "second_only": 8,
+    "exact_McNemar_two_sided_p": 0.2265625
+  },
+  "conservative_C1M_C2": {
+    "first": "C1M",
+    "second": "C2",
+    "n": 72,
+    "first_successes": 66,
+    "second_successes": 71,
+    "second_minus_first_pp": 6.944444444444445,
+    "paired_bootstrap_95ci_pp": [
+      0.0,
+      13.88888888888889
+    ],
+    "first_only": 1,
+    "second_only": 6,
+    "exact_McNemar_two_sided_p": 0.125
+  }
+}

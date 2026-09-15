@@ -1,0 +1,40 @@
+{
+  "status": "ELIGIBILITY_REVIEW_COMPLETE_WITH_HOLDS_NOT_RESCORED",
+  "created_at": "2026-09-08T00:09:28.729488+00:00",
+  "base": "project_root",
+  "independent_expert_validation": false,
+  "new_model_api_calls": 0,
+  "model_response_rescoring": false,
+  "input_data_modified": false,
+  "prior_frozen_files_unchanged": 51,
+  "decision_counts": {
+    "ELIGIBLE": 50,
+    "INELIGIBLE": 10,
+    "HOLD": 11,
+    "ELIGIBLE_WITH_RECORDED_EXCEPTION": 1
+  },
+  "strict_no_list_counts": {
+    "ELIGIBLE": 50,
+    "INELIGIBLE": 12,
+    "HOLD": 10
+  },
+  "source_pages_visually_reviewed": 51,
+  "browser_qa": "structural_only; no compatible Chromium found",
+  "notebook_code_cells_executed": 3,
+  "file_sha256": {
+    "docs/21_main72_eligibility_audit_2026-09-08.md": "4ef0f5c4e021968685c22aedb20bf060215aabf733aceb060a10fdf52a31ce56",
+    "outputs/analysis/main72_eligibility_20260908/artifact.json": "c53c4320ecc23fb1f3686bece3dd580f6d3c4da0e9090c7a82c429593776e13d",
+    "outputs/analysis/main72_eligibility_20260908/decisions.tsv": "de67b23e2889924f5f73c8f708db081568ba0ecedd5c12aa5f010ee5c5a5c665",
+    "outputs/analysis/main72_eligibility_20260908/eligibility_audit.csv": "6074ad2b88e566309051d0068a90a024e271e3e45a0863d06ee2a76111b400ab",
+    "outputs/analysis/main72_eligibility_20260908/eligibility_audit.json": "3c37cb971530b1a90b7707d086e1ce49a561cfe3ddf500b0a46fb5563eba8713",
+    "outputs/analysis/main72_eligibility_20260908/report.html": "f552a613204edaff2dbc1242219161871e5009da8896f1c24ea700b2fae1ae64",
+    "outputs/analysis/main72_eligibility_20260908/report_audit.sqlite": "473510c1decfcdaaf29f21ce0868394bcea5175be41a84f6795cbc8511e5f779",
+    "outputs/analysis/main72_eligibility_20260908/report_delivery_receipt.json": "37c5f80334a8d33bd3b165ea7db5885c13e70c651384602e5bd23db2419b53c1",
+    "outputs/analysis/main72_eligibility_20260908/report_queries.sql": "ac270f91e8a11f6e80dfc266c27a6b1641957b8f748113b2e8e9985563842b49",
+    "outputs/analysis/main72_eligibility_20260908/report_source_notes.json": "622bb8ff25018170079c737a3bd3217552577c0f092960166f7973a06e4c49cf",
+    "outputs/analysis/main72_eligibility_20260908/reproduce_checks.ipynb": "2e50c8351ab834ec84becea8b70fb86956f781b742b43626f2a40a14f7e41e00",
+    "outputs/analysis/main72_eligibility_20260908/reviewed_pages.json": "546023ced03fc3bf2a42a6a947e995716df2aa5bba7cc078383accda1ad5a499",
+    "outputs/analysis/main72_eligibility_20260908/validation.json": "3272f92be604a245ddb9884709cea8af3af37de1dc3f1eb2e20727867ff7bf2f",
+    "tools/audit_main72_eligibility_20260908.py": "3148578c14d510b06a4da67d703b7392521e3f7a04127eb83e2a8bc612a9c510"
+  }
+}

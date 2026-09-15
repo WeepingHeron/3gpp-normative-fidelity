@@ -1,0 +1,79 @@
+{
+  "status": "PASS_ARTIFACT_INTEGRITY_AND_INDEPENDENT_ARITHMETIC",
+  "created_at": "2026-09-07T06:17:33.440493+00:00",
+  "freeze_checks": [
+    {
+      "manifest": "data/main_freeze_manifest.json",
+      "verified_files": 18
+    },
+    {
+      "manifest": "experiments/runs/main72_v3_2026-09-03T07-35-49-603Z/output_freeze_manifest.json",
+      "verified_files": 7
+    },
+    {
+      "manifest": "experiments/runs/c3_auto72_v1_2026-09-06T04-53-06-942Z/input_freeze_manifest.json",
+      "verified_files": 11
+    },
+    {
+      "manifest": "experiments/runs/c3_auto72_v1_2026-09-06T04-53-06-942Z/output_freeze_manifest.json",
+      "verified_files": 8
+    },
+    {
+      "manifest": "experiments/runs/c1m_main72_v1_2026-09-06T05-26-29-574Z/input_freeze_manifest.json",
+      "verified_files": 9
+    },
+    {
+      "manifest": "experiments/runs/c1m_main72_v1_2026-09-06T05-26-29-574Z/output_freeze_manifest.json",
+      "verified_files": 7
+    },
+    {
+      "manifest": "experiments/runs/c3_auto72_v1_2026-09-06T04-53-06-942Z/review/pass1_freeze_manifest.json",
+      "verified_files": 5
+    },
+    {
+      "manifest": "experiments/runs/c3_auto72_v1_2026-09-06T04-53-06-942Z/review/delayed_pass2/preparation_manifest.json",
+      "verified_files": 3
+    },
+    {
+      "manifest": "experiments/runs/c3_auto72_v1_2026-09-06T04-53-06-942Z/review/delayed_pass2/pass2_freeze_manifest.json",
+      "verified_files": 3
+    },
+    {
+      "manifest": "experiments/runs/c3_auto72_v1_2026-09-06T04-53-06-942Z/review/delayed_pass2/adjudicated_freeze_manifest.json",
+      "verified_files": 9
+    },
+    {
+      "manifest": "experiments/runs/c1m_main72_v1_2026-09-06T05-26-29-574Z/review/review_manifest.json",
+      "verified_files": 2
+    },
+    {
+      "manifest": "experiments/runs/c1m_main72_v1_2026-09-06T05-26-29-574Z/review/pass1_freeze_manifest.json",
+      "verified_files": 3
+    },
+    {
+      "manifest": "experiments/runs/c1m_main72_v1_2026-09-06T05-26-29-574Z/review/delayed_pass2/preparation_manifest.json",
+      "verified_files": 3
+    },
+    {
+      "manifest": "experiments/runs/c3_auto72_v1_2026-09-06T04-53-06-942Z/review/pass1_package_manifest.json",
+      "verified_files": 9
+    }
+  ],
+  "review_rows_checked": 432,
+  "raw_response_links": "PASS",
+  "complete_score_conjunction": "PASS",
+  "C3_vs_C1": {
+    "gain": 7,
+    "loss": 3,
+    "exact_two_sided_p": 0.34375
+  },
+  "C1M_vs_C1": {
+    "gain": 9,
+    "loss": 2,
+    "exact_two_sided_p": 0.0654296875
+  },
+  "C1M_delayed_blank_rows": 216,
+  "C1M_pass2_not_before": "2026-09-08T05:56:15.827828+00:00",
+  "semantic_independent_expert_validation": false,
+  "new_model_calls": 0
+}

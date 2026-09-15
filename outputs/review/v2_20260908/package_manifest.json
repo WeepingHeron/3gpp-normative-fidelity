@@ -1,0 +1,34 @@
+{
+  "status": "IMMUTABLE_PREPARATION_SNAPSHOT",
+  "version": "v2_review_package_20260908",
+  "freeze_manifest_sha256": "271c9718049be10a7ef6422c8d08a0a6edc672cc4a6051d7a9bf957338b4bfa5",
+  "file_sha256": {
+    "REVIEW_GUIDE.md": "02ca5ddb88258f3397835642cba9845dca09c22d599079cb0254a2ee0deedb48",
+    "coordinator/cohorts.json": "fd26c00bbc806281b9d2906f843da5fc7175f2c6c0a1b0a04fb1cf803dd1cb0b",
+    "coordinator/input_availability.json": "c0c844855625215cffafccd9dc81a30afafba288d87a5da712d61f87bb75cd71",
+    "coordinator/keys.json": "e52678ee55b0296a88e29a0eb97d87b4e63283973b5a95ff5c8cd4fc344308fa",
+    "coordinator/reference_key.json": "3e8f5860a73ff6fc04da27463c135261c417fb2238a1535cf409630f31c23469",
+    "coordinator/response_records.jsonl": "aa936a2a1a9bd871f8f04bbdde548685a5d1770f06af1e1595fa56cd400fcfd4",
+    "package_state.json": "fc4df2b001f6f777c08b3e84fd1d9b7556d4921e95a4d89a1f1561950eb9c879",
+    "preflight/judgments_blank.csv": "6d87fb8dcaf58e6e19d3927ac90a94b9aaa16594966b4117c1f3e9e95e616492",
+    "preflight/judgments_blank.jsonl": "0ff5651124e8174ddc7a6e6ba11f9fff1411035c34449e2de80952e279a928b4",
+    "preflight/readable/batch_01.md": "0166d71594c7885b4913f8f5d8b9028f9101de113b64660bf355028dc57b4ab9",
+    "preflight/readable/batch_02.md": "b1c1449e5bc0555c6e4e7782c23a2f4900498e67410ee5d82953ccff3dedab3d",
+    "preflight/readable/batch_03.md": "5d818bd4a3b2ff82bab3b5be7499b5731db81a741123be070b4466f0c999de89",
+    "preflight/references.jsonl": "975bb38cb994651394e83a4b9d1dab57b75965c4dd9564fd66076a4e8393c10a",
+    "reviewer/pass1/judgments_blank.csv": "50d028749d18473c88cc54e9e391d77f8b588bb217ed16243acfff6b0b890e0d",
+    "reviewer/pass1/judgments_blank.jsonl": "dc76189c2f2d48eda8905c3cf804c8b35f4493ae09c9d30e7f842ba40f85d4f4",
+    "reviewer/pass1/packets.jsonl": "6fd5da1e87e5d658711ba2dff56d4ef4313eaa7561d18648b4feb642f317123a",
+    "reviewer/pass1/readable/batch_01.md": "fed265e5bd3a394e106ca6983d2d449ab8f2343cc54965703b0bc6ce8b28c2b0",
+    "reviewer/pass1/readable/batch_02.md": "7f5b71a957d9455afb4da7b29ccbc7468cb47cbf0e98bfb0dfb5fbfb7b68c241",
+    "reviewer/pass1/readable/batch_03.md": "3920cc7c79d1333412fd58ab1cb6aa2e0187b843acef1075801e0cbab44efb72",
+    "reviewer/pass1/readable/batch_04.md": "ed02d1d318d7625d04614b05a158ff94932187186fb68bf871f3bc37e42ad899",
+    "reviewer/pass1/readable/batch_05.md": "786cff5bba1309bdae517c018c0db8788057a9401b6dfd28b67c840e0521f9b5",
+    "reviewer/pass1/readable/batch_06.md": "6c19cc50ec2c33e906b9960d60d5ed01c70095d8641a45cec60f377e5ddb9796"
+  },
+  "support_file_sha256": {
+    "tools/prepare_v2_review_package_20260908.py": "a06b7f47d91cf8ba368001c0294875f4ce9b0d37b7a1acac4aaffa3978e24499",
+    "docs/23_v2_review_package_2026-09-08.md": "ab231ee213499d0e5a07ace49aba066bb4d63dbfd64e74bdca066f50a848c815"
+  },
+  "mutable_work_copies": "Write completed preflight/reviews outside this package; never edit blank templates or frozen inputs."
+}

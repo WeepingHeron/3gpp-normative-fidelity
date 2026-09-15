@@ -1,0 +1,249 @@
+{
+  "review_id": "CONTEXT_MICROSTUDY_SOURCE_DESIGN_PREFLIGHT_20260909",
+  "reviewed_at_utc": "2026-09-09T06:10:42.667236+00:00",
+  "reviewer": "separate AI reviewer /root/context_design_preflight",
+  "verdict": "CAUTION",
+  "source_verdict": "OK",
+  "execution_approved": true,
+  "blocking_findings_count": 0,
+  "approval_scope": "Hashed source/gold/design for 24-call descriptive selected-requirement experiment. C01-C03 interpretation limits apply. Runner and API credential/cost audit excluded.",
+  "findings": [
+    {
+      "id": "O01",
+      "severity": "OK",
+      "title": "원문과 추가 문맥 경계 확인",
+      "detail": "두 원본 PDF와 모든 context TXT의 SHA-256이 cases 선언과 일치한다. 3개 target와 7개 context block은 공백 정규화 후 원본 PDF 및 연결 TXT에서 확인됐다. 여섯 연결 PNG로 제목·문단·쪽을 대조했다. C.1은 PDF p1089에서 시작하여 p1091의 C.2 직전까지 이어지며 emergency/eCall 문단은 C.1 안에 있다. CTX-003은 NR 위성 접속 및 설정된 위치검증 문맥을 보존한다. 현재 9개 요구사항을 반박하거나 해석에 필요한 문맥이 부족한 사례는 확인되지 않았다."
+    },
+    {
+      "id": "O02",
+      "severity": "OK",
+      "title": "최초 B01 판정 범위 불명확성 해소",
+      "initial_severity": "BLOCKING",
+      "resolution": "최초 draft의 판정 면과 단일 metadata 범위가 불명확해 root에 실행 전 수정을 요청했다. 최종 protocol/prompt를 재독했다. 두 semantic outcome과 coverage는 explanation_ko만 판정하며 metadata는 target text 기준 별도 audit, 필드 모순은 JSON_EXPLANATION_INCONSISTENCY로 기록한다. 각 conjunct와 삭제 trigger 전부 충족, 0 우선/null 보존 규칙도 고정됐다. 이 평가 대상 선택은 허용 가능하며 B01은 해소됐다.",
+      "exact_design_quotes": [
+        "Both semantic outcomes and per-requirement coverage use explanation_ko only. Metadata fields are audited separately against target text; a correct label cannot repair the explanation, and an incorrect metadata label alone does not change explanation completeness. Cross-field contradiction is reported separately as JSON_EXPLANATION_INCONSISTENCY.",
+        "Each enumerated conjunct and exception/deletion trigger in a requirement must be preserved for coverage=1; explicit contradiction or omission yields 0; genuinely ambiguous language yields null. Overall target completeness is 0 if any requirement is 0 or an unsupported/distorted claim is confirmed; otherwise null if any unresolved coverage/claim remains; else 1. Exact wording is not required.",
+        "normative_type, actor, condition, action, exception 메타데이터는 대상 영문 문장을 기준으로 작성한다."
+      ]
+    },
+    {
+      "id": "O03",
+      "severity": "OK",
+      "title": "공통 완전성과 입력 충실성 분리 타당",
+      "detail": "미제공 문맥을 SHORT에서 생략하는 것은 shared target completeness=0/INPUT_CONTEXT_GAP일 수 있으나 그 이유만으로 왜곡은 아니다. 부족함을 명시한 설명은 faithful/incomplete일 수 있다. 원문상 맞는 세부라도 실제 입력 밖에서 단정했다면 source truth와 supplied-input support를 구분해야 한다. 현 프로토콜이 이를 보존한다."
+    },
+    {
+      "id": "O04",
+      "severity": "OK",
+      "title": "24회 기술적 비교 설계 정합",
+      "detail": "3×2×2×2=24. 동일 case/hint의 SHORT/FULL 비교, 고정 모델·파라미터·질문·출력 한도, 사전 순서 seed, 재시도 금지, 사례별 paired descriptive summary는 정합적이다. 두 repeat는 독립 사례가 아니며 development selection과 CTX-001 control이 명시됐다. runner 자체 및 실제 전송 prompt/order 검증은 이 검토 밖이다."
+    },
+    {
+      "id": "C01",
+      "severity": "CAUTION",
+      "title": "CTX-002 저장 권고와 저장 후 조건 분리",
+      "detail": "IDENTITY_BINDING의 함께 저장한다는 표현을 무조건 저장 의무로 채점하면 target should와 충돌한다. 저장 자체의 should/can, SUPI 결합, 일치 시에만 사용, 불일치 시 삭제는 각각 보존해야 한다. 비-SNPN은 이번 질문과 C.1의 적용 범위이며 4.6.2.2 문장 자체가 비-SNPN만 대상으로 한다는 뜻은 아니다.",
+      "source_pdf": "data/source/ts_124501v181200p.pdf",
+      "pdf_pages": [
+        1090,
+        1091
+      ],
+      "exact_source_quotes": [
+        "The following 5GMM parameters should be stored in a non-volatile memory in the ME together with the SUPI from the \nUSIM: \n- allowed NSSAI(s); and \n- partially allowed NSSAI(s).",
+        "The allowed NSSAI(s) can be stored in a non-volatile memory in the ME together with the SUPI from the USIM. \nAllowed NSSAI consists of S-NSSAI(s) stored together with a PLMN identity, if it is associated with a PLMN. If the \nallowed NSSAI is stored, then the UE shall store the S-NSSAI(s) of the HPLMN. If the UE is in the VPLMN, the UE \nshall also store the allowed NSSAI for the serving PLMN and any necessary mapping of the allowed NSSAI for the \nserving PLMN to the S-NSSAI(s) of the HPLMN. The allowed NSSAI(s) can only be used if the SUPI from the USIM \nmatches the SUPI stored in the non-volatile memory of the ME; else the UE shall delete the allowed NSSAI(s)."
+      ],
+      "action": "STORAGE_RECOMMENDATION과 함께 읽어 저장 자체를 의무로 요구하지 말 것. SUPI 결합/일치/삭제를 개별 확인하며 두 검토자에게 같은 사전 주의사항을 전달할 것. 추가 설계 수정은 필수 아님."
+    },
+    {
+      "id": "C02",
+      "severity": "CAUTION",
+      "title": "NONE/MODAL 및 FULL 효과 해석 제한",
+      "detail": "NONE에도 generic modal guidance가 있다. MODAL은 protocol에 명시된 사례별 normative_type/polarity label 추가효과다. CTX-001·003 FULL은 target를 context에서 반복하므로 추가 근거·반복·입력 길이가 함께 변한다.",
+      "action": "FULL을 selected supporting-context package로 설명하고 target 중복을 공개할 것. 순수 길이·검색·규범교육 전체 효과로 확대 해석하지 말 것."
+    },
+    {
+      "id": "C03",
+      "severity": "CAUTION",
+      "title": "완전성은 frozen selected requirements로 한정",
+      "detail": "CTX-002 FULL에는 PLMN identity/HPLMN/VPLMN 매핑도 있지만 frozen requirements는 해당 세부를 요구하지 않는다. CTX-003도 절 전체 후속 처리와 NOTE를 포함하지 않는다. 현재 선택된 requirements 검증에는 충분하지만 Annex C 또는 전체 절의 완전한 설명 평가는 아니다. 2~4문장/900 output token은 CTX-002 FULL에 상대적으로 부담이 클 수 있다.",
+      "source_pdf": "data/source/ts_124501v181200p.pdf",
+      "pdf_pages": [
+        1091
+      ],
+      "exact_source_quotes": [
+        "If the allowed NSSAI is stored, then the UE shall store the S-NSSAI(s) of the HPLMN.",
+        "If the UE is in the VPLMN, the UE shall also store the allowed NSSAI for the serving PLMN and any necessary mapping of the allowed NSSAI for the serving PLMN to the S-NSSAI(s) of the HPLMN."
+      ],
+      "action": "선택된 요구사항 완전성으로 명명하고 생성 후 새 요구사항을 추가하지 말 것. 출력 잘림/전송 불완전은 의미 누락과 별도 기록할 것."
+    }
+  ],
+  "requirement_source_checks": [
+    {
+      "case_id": "CTX-001",
+      "requirement_id": "CAPABILITY_POSSESSION",
+      "verdict": "SUPPORTED",
+      "source_pdf": "data/source/ts_123501v181200p.pdf",
+      "pdf_page": 45,
+      "source_quote": "However, each SMF may also have the capability to control both a local and a central UPF within a PDU Session."
+    },
+    {
+      "case_id": "CTX-001",
+      "requirement_id": "BOTH_WITHIN_ONE_SESSION",
+      "verdict": "SUPPORTED",
+      "source_pdf": "data/source/ts_123501v181200p.pdf",
+      "pdf_page": 45,
+      "source_quote": "However, each SMF may also have the capability to control both a local and a central UPF within a PDU Session."
+    },
+    {
+      "case_id": "CTX-002",
+      "requirement_id": "STORAGE_RECOMMENDATION",
+      "verdict": "SUPPORTED",
+      "source_pdf": "data/source/ts_124501v181200p.pdf",
+      "pdf_page": 98,
+      "source_quote": "The allowed NSSAI(s) should be stored in a non-volatile memory in the ME as specified in annex C."
+    },
+    {
+      "case_id": "CTX-002",
+      "requirement_id": "IDENTITY_BINDING",
+      "verdict": "SUPPORTED",
+      "source_pdf": "data/source/ts_124501v181200p.pdf",
+      "pdf_page": 1091,
+      "source_quote": "The allowed NSSAI(s) can be stored in a non-volatile memory in the ME together with the SUPI from the USIM. \nAllowed NSSAI consists of S-NSSAI(s) stored together with a PLMN identity, if it is associated with a PLMN. If the \nallowed NSSAI is stored, then the UE shall store the S-NSSAI(s) of the HPLMN. If the UE is in the VPLMN, the UE \nshall also store the allowed NSSAI for the serving PLMN and any necessary mapping of the allowed NSSAI for the \nserving PLMN to the S-NSSAI(s) of the HPLMN. The allowed NSSAI(s) can only be used if the SUPI from the USIM \nmatches the SUPI stored in the non-volatile memory of the ME; else the UE shall delete the allowed NSSAI(s)."
+    },
+    {
+      "case_id": "CTX-002",
+      "requirement_id": "EMERGENCY_EXCEPTION",
+      "verdict": "SUPPORTED",
+      "source_pdf": "data/source/ts_124501v181200p.pdf",
+      "pdf_page": 1091,
+      "source_quote": "If the UE is registered for emergency services, the UE shall not store the 5GMM parameters described in this annex on \nthe USIM or in non-volatile memory. Instead the UE shall temporarily store these parameters locally in the ME and the \nUE shall delete these parameters when the UE is deregistered from emergency services (e.g. before registering for \nnormal service)."
+    },
+    {
+      "case_id": "CTX-002",
+      "requirement_id": "ECALL_EXCEPTION",
+      "verdict": "SUPPORTED",
+      "source_pdf": "data/source/ts_124501v181200p.pdf",
+      "pdf_page": 1091,
+      "source_quote": "If the UE is configured for eCall only mode as specified in 3GPP TS 31.102 [22], the UE shall not store the 5GMM \nparameters described in this annex on the USIM or in non-volatile memory. Instead the UE shall temporarily store these \nparameters locally in the ME and the UE shall delete these parameters when the UE enters 5GMM-\nDEREGISTERED.eCALL-INACTIVE state, the UE is switched-off or the USIM is removed."
+    },
+    {
+      "case_id": "CTX-003",
+      "requirement_id": "LOCATION_UNLESS_RECOMMENDATION",
+      "verdict": "SUPPORTED",
+      "source_pdf": "data/source/ts_123501v181200p.pdf",
+      "pdf_page": 133,
+      "source_quote": "The AMF should not reject the request or deregister the UE unless it has sufficiently accurate UE location information to determine that the UE is located in a geographical area where the PLMN is not allowed to operate."
+    },
+    {
+      "case_id": "CTX-003",
+      "requirement_id": "SATELLITE_SCOPE",
+      "verdict": "SUPPORTED",
+      "source_pdf": "data/source/ts_123501v181200p.pdf",
+      "pdf_page": 133,
+      "source_quote": "5.4.11 Support for integrating NR satellite access into 5GS \n5.4.11.1 General \nThis clause describes the specific aspects for NR satellite access."
+    },
+    {
+      "case_id": "CTX-003",
+      "requirement_id": "CONFIGURED_VERIFICATION",
+      "verdict": "SUPPORTED",
+      "source_pdf": "data/source/ts_123501v181200p.pdf",
+      "pdf_page": 133,
+      "source_quote": "5.4.11.4 Verification of UE location \nIn order to ensure that the regulatory requirements are met, the network may be configured to enforce that the selected \nPLMN is allowed to operate in the current UE location by verifying the UE location during Mobility Management and \nSession Management procedures."
+    }
+  ],
+  "input_hashes": [
+    {
+      "path": "experiments/context_microstudy_v1_20260909/protocol.json",
+      "sha256": "0f1d759430202a0dcf0b6f015bbf2b45c593c88d988c9961e2856b6cdb79ae0b"
+    },
+    {
+      "path": "experiments/context_microstudy_v1_20260909/cases.json",
+      "sha256": "ad9922f924141cb0b8a5b5f2931ca3b42ae77052513d37e6ee7ffe20f64e623e"
+    },
+    {
+      "path": "experiments/context_microstudy_v1_20260909/prompt_template.md",
+      "sha256": "a8fa79390a9a10ff48ef4d6f006a6bac291465476a03b5a1ebee0696a82f054b"
+    },
+    {
+      "path": "experiments/context_microstudy_v1_20260909/response_schema.json",
+      "sha256": "9218fe5bd783f2f0fc01798334e9bfd69c117f8df854701c5fc34c42efa68c3c"
+    },
+    {
+      "path": "data/source/ts_123501v181200p.pdf",
+      "sha256": "2ef71f81a87c86967dc623741b5a3479338844661067a3bb13089fffe6fed2ac"
+    },
+    {
+      "path": "data/source/ts_124501v181200p.pdf",
+      "sha256": "fef06d660506abf6885d593e4129095c17140be4f2317e802daa8599233f1b06"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_123501v181200p_p45.txt",
+      "sha256": "8116c4448a873c14f1216460bdb1f042baf446731bc5495d31c1e05147ccef10"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_123501v181200p_p45.png",
+      "sha256": "ec35676b9147d3f310f4bfb6a5d177219e95c6a969450a974953c96160fed63c"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_123501v181200p_p133.txt",
+      "sha256": "0b0005c9bdec8a49020eba4c1828c258a04c36325cbf9c139d3a2cb26b9794bf"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_123501v181200p_p133.png",
+      "sha256": "d4b66e727b8e7c3dc05db5724629822b07e5a2b922320047b369ac35f96e50d5"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_124501v181200p_p98.txt",
+      "sha256": "1d3d145674724579029a0dbb1183116211f2bf669d47dfcab5084403b58c65df"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_124501v181200p_p98.png",
+      "sha256": "9604b923dfe47782216a482b8cf9a196114f56ba8878d31d8aba939e69b657f5"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_124501v181200p_p1089.txt",
+      "sha256": "1341a64e3c7575326f3797740a81768484dca5ff1ca748aee0ced0f717b8aa94"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_124501v181200p_p1089.png",
+      "sha256": "6d1a05015d410e620a4c9117d5e2b7cb2bd9749f6682e66525ff2f570bd162a7"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_124501v181200p_p1090.txt",
+      "sha256": "c60eda6780f8ba61e64af9495582bd0002c4361f7e8691a6ebbaf07923c582f3"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_124501v181200p_p1090.png",
+      "sha256": "0047975305b1d13bf832cbb3f039241069b7dab6acbc4cc2aca8c0cffd23c6fe"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_124501v181200p_p1091.txt",
+      "sha256": "eac36deb753e2ce85567afef07a405fb52eb8d213bac0d794ebf749fcceab0e9"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_124501v181200p_p1091.png",
+      "sha256": "c084846188ff9ca3fc06217a47de1b34864208752d99eb53338e37816bef8e62"
+    }
+  ],
+  "experiment_input_sha256": {
+    "protocol.json": "0f1d759430202a0dcf0b6f015bbf2b45c593c88d988c9961e2856b6cdb79ae0b",
+    "cases.json": "ad9922f924141cb0b8a5b5f2931ca3b42ae77052513d37e6ee7ffe20f64e623e",
+    "prompt_template.md": "a8fa79390a9a10ff48ef4d6f006a6bac291465476a03b5a1ebee0696a82f054b",
+    "response_schema.json": "9218fe5bd783f2f0fc01798334e9bfd69c117f8df854701c5fc34c42efa68c3c"
+  },
+  "provenance_checks": {
+    "pdf_sha_match": true,
+    "context_txt_sha_match": true,
+    "targets_in_pdf_count": 3,
+    "context_blocks_in_pdf_count": 7,
+    "source_png_count": 6,
+    "normalization": "whitespace only"
+  },
+  "scope_limits": [
+    "No previous model responses, judgment files, README or result reports opened.",
+    "Substantive judgments use four new experiment inputs, two PDFs at cited pages and six linked TXT/PNG pages only.",
+    "No API calls by this reviewer. Zero experiment API calls at handoff is parent-reported, not independently audited.",
+    "No code or experiment inputs edited by this reviewer.",
+    "Separate AI preflight, not human expert validation, frozen v2 rescoring, held-out performance or full-spec audit."
+  ]
+}

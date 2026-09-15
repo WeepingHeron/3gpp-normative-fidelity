@@ -1,0 +1,11 @@
+{
+  "status": "CODEX_DELAYED_PASS2_COMPLETE_BEFORE_UNMASKING",
+  "completed_at": "2026-09-07T05:45:06.237871+00:00",
+  "rows": 216,
+  "independent_expert_validation": false,
+  "file_sha256": {
+    "PASS2_METHOD.md": "74c3bd92c4371a7a3331d4319461400ea2ec757bf0d1f64b8cdf9cbca77ca490",
+    "pass2_decisions.tsv": "d0afb56d83a2937f8ed49fdc627ee2c34f2143ca36084b847efe54729138d314",
+    "blind_explanations_pass2.csv": "1f112b60f234e6cc9e42387dc48d42a6523f56a3d5390ce5258ca1e0bcf6b200"
+  }
+}

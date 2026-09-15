@@ -1,0 +1,15 @@
+{
+  "status": "PROVISIONAL_CODEX_PASS1_COMPLETE_BEFORE_UNMASKING",
+  "completed_at": "2026-09-06T05:08:17.013111+00:00",
+  "pass2_not_before": "2026-09-07T05:08:17.013111+00:00",
+  "explanation_rows": 216,
+  "extraction_rows": 72,
+  "reviewer": "Codex in current task; prior experiment knowledge; not an independent human expert",
+  "file_sha256": {
+    "PASS1_METHOD.md": "ebca12364660234cb1c7984dc252d653652bcc0c884de2abba290111a36fea2e",
+    "pass1_decisions.tsv": "22c72be6e5e097b77d5490cb3486d84a9faa7e237364e967d511bd8d5af2cca0",
+    "blind_explanations_pass1.csv": "8e8016b7edd564bcad77ee7ad138998d0fc780349445317405a3164a92a833fb",
+    "extraction_pass1_decisions.tsv": "336f308d26a9dd06bdcb783d6293dff56aa9e7f376ac6c2e156d3f3b6cc452ff",
+    "extraction_review_pass1.csv": "4afeef05d6a34832b3a534c7348156068256eb3b75bc607fe307787a007be9ef"
+  }
+}

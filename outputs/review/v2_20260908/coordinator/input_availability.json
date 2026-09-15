@@ -1,0 +1,37 @@
+{
+  "basis": "Frozen runner/prompt routing; source availability does not mean the response preserved it.",
+  "C0": {
+    "source": false,
+    "question": true,
+    "structured_gold": false
+  },
+  "C1": {
+    "source": true,
+    "question": true,
+    "structured_gold": false
+  },
+  "C2": {
+    "source": true,
+    "question": true,
+    "structured_gold": "original unchanged fields; not corrected overlay"
+  },
+  "C1M": {
+    "source": true,
+    "question": true,
+    "structured_gold": "modal and polarity only"
+  },
+  "C3": {
+    "extractor": {
+      "source": true,
+      "question": false,
+      "gold": false
+    },
+    "generator_if_extraction_usable": {
+      "source": true,
+      "question": true,
+      "structure": "automatically extracted"
+    }
+  },
+  "extra_pdf_context": "adjudication_only_context; not supplied to original model",
+  "warning": "Keep coordinator materials out of masked semantic review. Resolve case-specific provenance after blind judgments."
+}

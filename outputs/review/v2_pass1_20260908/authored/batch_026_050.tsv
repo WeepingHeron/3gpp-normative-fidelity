@@ -1,0 +1,26 @@
+review_id	semantic_judgment	reason_codes	rationale	response_evidence
+V2-P1-026	PASS	PRESERVED	Disaster Roaming 등록 UE의 영역 할당 시 Disaster Condition 영역을 덮는 TAI만 고려해야 한다는 제한을 보존한다. 그 안의 모든 TAI 할당 의무는 추가하지 않는다.	TAI만 고려해야 한다.
+V2-P1-027	PASS	PRESERVED	TSN network 동작 사례의 sub-network 역할 가능성과 4.4.8.2 기반 규격 지원을 보존한다. 지원 근거를 예외로 바꾸지 않는다.	이는 4.4.8.2절의 아키텍처를 바탕으로 한 3GPP 규격에서 지원된다.
+V2-P1-028	PASS	PRESERVED	전체 PLMN paging 회피 목적 아래 Active Time 할당 시 all-PLMN 영역을 할당하지 않는 권고를 보존한다.	할당하지 않는 것이 권고된다.
+V2-P1-029	NOT_SCORED	PIPELINE_NOT_GENERATED	패키지에 원본 레코드가 있으나 설명 생성이 보류된 NOT_GENERATED 슬롯이다. 설명 의미의 오역으로 채점하지 않고 동결 계약에 따라 pipeline 결과만 0으로 기록한다.	NOT_GENERATED; explanation_ko=null
+V2-P1-030	PASS	PRESERVED	최대 UE 수 사유의 rejected NSSAI 수신으로 관련 T3526이 시작되고 만료된 두 조건을 유지하며 해당 S-NSSAI 제거의 선택성을 보존한다.	제거하도록 허용된다.
+V2-P1-031	FAIL	CONDITION_DETAIL_OMISSION	즉시 NAS 연결 해제를 피하라는 권고, bit의 현재 설정 또는 과거 저장, subscription 결합은 남겼다. 그러나 어떤 bit의 어떤 지원 값이어야 하는지와 E-UTRA-PC5 또는 NR-PC5 지원 중 최소 하나라는 필수 선택 조건을 단순 비트로 축약하여 잃었다.	UE가 설정한 비트 또는 이전 등록 절차 동안 AMF의 5GMM context에 이미 저장된 비트
+V2-P1-032	PASS	PRESERVED	같은 VPLMN 및 서로 다른 VPLMN의 V-SMF 간 두 배치 가능성을 보존하고 inter-PLMN mobility를 다른 망 배치의 목적으로 올바르게 연결한다.	inter-PLMN mobility를 가능하게 하기 위한 것이다.
+V2-P1-033	PASS	PRESERVED|R4	서로 다른 TAC 배치 요구와 해당 RAT 사용 TA에서 subscriber 접근 금지의 결합을 함께 보존한다. 배치되어야 한다고 명시하여 기존 배치 여부에만 적용되는 선택 조건으로 축소하지 않았다.	관련 RAT는 서로 다른 Tracking Area Codes에 배치되어야 한다.
+V2-P1-034	PASS	PRESERVED	current NAS security context의 native 또는 mapped 유형과 각각의 유래를 정확히 보존한다.	native 또는 mapped 유형일 수 있다.
+V2-P1-035	PASS	PRESERVED	두 NSSAI 유형 모두의 변경 가능성을 registration 또는 generic UE configuration update 절차에 연결하고 변경 의무가 아님을 명시한다.	반드시 변경해야 한다는 뜻은 아니다.
+V2-P1-036	FAIL	POLARITY_REVERSAL|UNSUPPORTED_ACTION	dual-registration 초기 등록 시 5G NAS security context를 사용하기 시작해야 한다는 요구를 사용하지 말고 무효화·초기화하라는 동작으로 뒤집었다. 뒤 부연도 원래 처리 의무를 복원하지 않는다.	5G NAS security context를 사용하지 않고
+V2-P1-037	PASS	PRESERVED	single-registration, N26 지원, emergency PDN 보유 및 current EPS context 부재 조건과 AMF의 두 알고리즘을 특정 S1→N1 container에 설정하는 의무를 모두 유지한다.	5G-IA0과 5G-EA0을 반드시 설정해야 한다.
+V2-P1-038	PASS	PRESERVED	S1 및 N1을 모두 지원하는 UE가 EPC 연결 E-UTRAN 상호동작을 위해 두 registration mode 중 하나로 동작할 가능성을 보존한다.	단일 등록 모드 또는 이중 등록 모드로 동작할 수 있다.
+V2-P1-039	PASS	PRESERVED	secure 교환 수립 후 NAS integrity 검사 성공을 메시지 처리의 필요조건으로 보존한다. 성공했으면 반드시 처리한다는 충분조건 주장은 없다.	NAS 무결성 검사가 성공한 경우에만 처리할 수 있다.
+V2-P1-040	FAIL	POLARITY_REVERSAL|MODAL_STRENGTHENING	해당 PLMN/SNPN 식별자를 기억하라는 권고를 기억·저장·유지하지 말라는 요구로 뒤집었다.	기억하지 않는 것이 요구된다.
+V2-P1-041	PASS	PRESERVED|R1	하나의 session에서 local과 central UPF 모두를 제어할 능력이 있을 수 있다고 하여 능력 보유의 선택성을 남겼다. 기술적 가능성이라는 부연도 모든 SMF의 능력 보유나 제어 행동 자체의 허가를 확정하지 않는다.	제어할 수 있는 능력이 있을 수 있다.
+V2-P1-042	PASS	PRESERVED|R4	모든 primary RAT restriction 집행을 위한 TAC 분리 배치 요구와 subscriber의 해당 RAT TA 접근 금지를 함께 유지한다.	배치되어야 하며, 가입자는 해당 특정 RAT를 사용하는 TA에서 네트워크에 접근해서는 안 된다.
+V2-P1-043	FAIL	AUXILIARY_PROPOSITION_OMISSION|R4	subscriber 접근 제한은 남아 있으나 관련 RAT를 서로 다른 Tracking Area Code에 배치해야 한다는 원문의 별도 필수 명제가 설명 전체에서 빠졌다. 질문의 초점만으로 동결 기준의 원문 명제를 생략할 수 없다.	그 RAT에 대해 주 RAT 기반 TA 접근이 차단되는 방향으로 동작한다.
+V2-P1-044	PASS	PRESERVED	네 기능 각각이 다른 기능과 같은 또는 다른 TAI로 구성될 수 있다는 선택성을 보존한다.	동일한 TAI 값으로 구성되도록 허용된다.
+V2-P1-045	PASS	PRESERVED	secure 교환 이후 성공적인 NAS integrity 검사 없이는 어떤 NAS signalling message도 처리해서는 안 된다는 금지와 예외 필요조건을 보존한다.	무결성 검사를 받은 경우를 제외하고 어떤 NAS 시그널링 메시지도 처리해서는 안 된다.
+V2-P1-046	PASS	PRESERVED|R2	security 활성화 전에 AMF와 UE의 실제 context 확립이 반드시 필요함을 두 문장으로 분명히 보존한다. 확립만으로 활성화가 충분하다고 주장하지 않는다.	반드시 확립해야 한다.
+V2-P1-047	PASS	PRESERVED	특정 PDU Session establishment 중 SMF의 N6 network instance를 UPF에 표시하는 선택 사항을 유지한다.	선택적으로 수행할 수 있는 동작이다.
+V2-P1-048	FAIL	MODAL_SCOPE_OMISSION|CONDITION_OMISSION|R4	UE의 Registration/Service Request 조건과 대응 reject 종류가 빠지고, 핵심인 UE의 5GC 사용 비권고를 일반적인 EPC 유도 용도로만 표현했다. AMF가 전달해야 한다는 진술만으로 전달 내용의 규범 강도는 복원되지 않는다.	5GC 대신 EPC를 사용하도록 유도하는 용도이다.
+V2-P1-049	PASS	PRESERVED	trusted WLAN 연결을 위한 EAP 인증 중 PLMN 또는 SNPN의 5GC에 동시에 등록될 수 있다는 허용과 병존 관계를 보존한다.	5GC에 동시에 등록될 수 있도록 허용된다.
+V2-P1-050	FAIL	ALTERNATIVE_OMISSION	같은 VPLMN 내부의 V-SMF 상호연결만 설명하고 다른 VPLMN 간 배치 가능성 및 그 inter-PLMN mobility 목적을 누락했다.	VPLMN 내에서 서로 다른 V-SMF 배치 간의 연동

@@ -1,0 +1,16 @@
+{
+  "status": "CODEX_DELAYED_ADJUDICATED",
+  "created_at": "2026-09-07T05:49:23.383888+00:00",
+  "independent_expert_validation": false,
+  "file_sha256": {
+    "adjudication_decisions.tsv": "a7ad45b4720253b3122f66b9b4ba2f3f4815e8aeeafbe218222f53abae3eea5b",
+    "adjudicated_decisions.tsv": "3480e56a2e52e1932fd12f0e74a5964fadaef44424fe8cf6b318bbe3be99b768",
+    "blind_explanations_adjudicated.csv": "045c436528d65fd288a5e9a9b654a1c7e4e3af563419a00b6d87be7b1d3b9d97",
+    "scores_pass2_unmasked.csv": "a86e4ce7bbb41c4c83bdceaa1ce611897d5d05a5de5dd0e7978ca8ba7d8717be",
+    "scores_adjudicated.csv": "3b1dc823be827ffb7060c0ef521c6015c9e0b7ee31c258b36419effbc8acf053",
+    "adjudication_log.csv": "df3616db2dcf296e5f35fb42b262b6f869f1b9fc22561a603abb26eaa0467c9e",
+    "archived_main_discrepancies_rechecked.csv": "bbab5e2fa9bfc0befe69a1c79af038f2520d2683892fd69a5ca1b99a33bb5876",
+    "summary_adjudicated.json": "84eac45af85d83a6827e4c5e0c60c6e610fd3f2b61f243e420577f83eca67279",
+    "pass2_freeze_manifest.json": "f0c361e989b52388af9df8d0c074d57d5ac441e844751893cf0c8dbe13b4e86b"
+  }
+}

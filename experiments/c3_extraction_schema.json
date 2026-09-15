@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "actor": {"type": "string"},
+    "condition": {"type": "string"},
+    "normative_type": {"type": "string", "enum": ["obligation", "prohibition", "recommendation", "discouragement", "permission", "capability", "unclear"]},
+    "polarity": {"type": "string", "enum": ["positive", "negative", "unclear"]},
+    "action": {"type": "string"},
+    "exception": {"type": "string"}
+  },
+  "required": ["actor", "condition", "normative_type", "polarity", "action", "exception"]
+}

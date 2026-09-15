@@ -1,0 +1,15 @@
+{
+  "status": "BLANK_NOT_REVIEWED",
+  "created_at": "2026-09-06T05:30:21.386365+00:00",
+  "rows": 216,
+  "conditions": [
+    "C1",
+    "C2",
+    "C1M"
+  ],
+  "limitation": "Current Codex knows previous experiment results; masked rows are not independent expert validation.",
+  "file_sha256": {
+    "blind_explanations_blank.csv": "98638bc66205d4205d1476dbc6b952e1aea9f706cba2c113e4b8e5fa0c91701d",
+    "blind_key.json": "10439f15c771241157ffedf9c894dada3f3dc2fe586947e25dbadf04ff498367"
+  }
+}

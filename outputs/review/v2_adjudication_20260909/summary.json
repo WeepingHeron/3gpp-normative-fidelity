@@ -1,0 +1,47 @@
+{
+  "status": "DISAGREEMENT_ADJUDICATION_COMPLETE_WITH_UNRESOLVED",
+  "assembled_at": "2026-09-09T05:06:06.794748+00:00",
+  "disagreement_slots": 5,
+  "disagreements_with_disposition": 5,
+  "unprocessed_disagreements": 0,
+  "adjudication_outcomes": {
+    "PASS": 2,
+    "FAIL": 2,
+    "UNRESOLVED": 1
+  },
+  "targeted_scope_slots": 60,
+  "targeted_scope_references": 12,
+  "additional_agreed_slots_checked": 55,
+  "additional_agreed_states_changed": 0,
+  "merged_slots": 255,
+  "merged_workflow_counts": {
+    "PASS": 167,
+    "FAIL": 79,
+    "UNRESOLVED": 8,
+    "NOT_SCORED": 1
+  },
+  "unresolved_by_reference": {
+    "G028": 3,
+    "G023": 4,
+    "G010": 1
+  },
+  "changes_from_pass2": [
+    "V2-P2-019",
+    "V2-P2-070"
+  ],
+  "original_pass_agreement_count": 250,
+  "original_pass_agreement_denominator": 255,
+  "rubric_changed": false,
+  "independent_reviewer": false,
+  "full_third_pass_performed": false,
+  "cohort_denominators_unchanged": [
+    49,
+    50,
+    50,
+    51
+  ],
+  "new_model_generation_calls": 0,
+  "condition_metrics_computed": false,
+  "paper_numbers_updated": false,
+  "remaining_requirement": "Preserve unresolved bounds in downstream cohort reporting; defer definitive statistical tests for affected comparisons."
+}

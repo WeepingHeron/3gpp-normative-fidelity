@@ -1,0 +1,23 @@
+{
+  "status": "CURRENT_REPORT_RECORDED_FOLLOWUP_NO_SCORE_CHANGE",
+  "recorded_at": "2026-09-09T05:38:41.691979+00:00",
+  "current_report": "docs/28_v2_cohort_results_2026-09-09.md",
+  "reported_analysis_manifest_sha256": "d9f025a73f5d07f9f5ed07ec3415b611f0d5afda7ea1356f2e0ffac92ad651b9",
+  "current_union_counts": {
+    "PASS": 167,
+    "FAIL": 79,
+    "UNRESOLVED": 8,
+    "NOT_SCORED": 1
+  },
+  "followup_unresolved_slots": 8,
+  "references": 3,
+  "pdf_pages_checked": 10,
+  "archived_requests_directly_verified": 9,
+  "next_review_packets": 15,
+  "next_review_completed": false,
+  "independent_expert_review_completed": false,
+  "current_scores_changed": 0,
+  "new_model_generation_calls": 0,
+  "paper_updated": false,
+  "new_information": "Expanded page context and direct archived-request provenance; no new semantic basis that resolves the frozen uncertainty."
+}

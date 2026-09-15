@@ -1,0 +1,102 @@
+{
+  "type": "object",
+  "properties": {
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "proposition_id": {
+            "type": "string"
+          },
+          "source_support": {
+            "type": "string",
+            "enum": [
+              "SUPPORTED",
+              "CONFLICT",
+              "UNRESOLVED"
+            ]
+          },
+          "explanation_status": {
+            "type": "string",
+            "enum": [
+              "PRESERVED",
+              "OMITTED",
+              "DISTORTED",
+              "UNRESOLVED"
+            ]
+          },
+          "source_quote": {
+            "type": "string"
+          },
+          "explanation_quote": {
+            "type": "string"
+          },
+          "required_change": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "proposition_id",
+          "source_support",
+          "explanation_status",
+          "source_quote",
+          "explanation_quote",
+          "required_change"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "additional_source_findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "proposition_id": {
+            "type": "string"
+          },
+          "source_support": {
+            "type": "string",
+            "enum": [
+              "SUPPORTED",
+              "CONFLICT",
+              "UNRESOLVED"
+            ]
+          },
+          "explanation_status": {
+            "type": "string",
+            "enum": [
+              "PRESERVED",
+              "OMITTED",
+              "DISTORTED",
+              "UNRESOLVED"
+            ]
+          },
+          "source_quote": {
+            "type": "string"
+          },
+          "explanation_quote": {
+            "type": "string"
+          },
+          "required_change": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "proposition_id",
+          "source_support",
+          "explanation_status",
+          "source_quote",
+          "explanation_quote",
+          "required_change"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "checks",
+    "additional_source_findings"
+  ],
+  "additionalProperties": false
+}

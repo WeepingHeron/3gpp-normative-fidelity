@@ -1,0 +1,109 @@
+{
+  "role": "EVALUATOR_ONLY_DO_NOT_INCLUDE_IN_REQUESTS",
+  "rules": {
+    "assessment_surface": "Both semantic outcomes and per-requirement coverage use explanation_ko only. Metadata fields are audited separately against target text; a correct label cannot repair the explanation, and an incorrect metadata label alone does not change explanation completeness. Cross-field contradiction is reported separately as JSON_EXPLANATION_INCONSISTENCY.",
+    "compound_requirement_rule": "Each enumerated conjunct and exception/deletion trigger in a requirement must be preserved for coverage=1; explicit contradiction or omission yields 0; genuinely ambiguous language yields null. Overall target completeness is 0 if any requirement is 0 or an unsupported/distorted claim is confirmed; otherwise null if any unresolved coverage/claim remains; else 1. Exact wording is not required.",
+    "ambiguity_policy": "Unresolved semantics remain null; no forced binary. Refusal/empty/incomplete generation counts 0 for pipeline task completeness with separate delivery status."
+  },
+  "cases": [
+    {
+      "case_id": "CTX-001",
+      "source": {
+        "spec_id": "3GPP TS 23.501",
+        "version": "18.12.0",
+        "clause_id": "4.2.3",
+        "source_text_en": "However, each SMF may also have the capability to control both a local and a central UPF within a PDU Session.",
+        "source_sha256": "2ef71f81a87c86967dc623741b5a3479338844661067a3bb13089fffe6fed2ac"
+      },
+      "pdf": {
+        "path": "data/source/ts_123501v181200p.pdf",
+        "sha256": "2ef71f81a87c86967dc623741b5a3479338844661067a3bb13089fffe6fed2ac",
+        "pdf_page": 45,
+        "printed_page": 44
+      },
+      "requirements": [
+        {
+          "id": "CAPABILITY_POSSESSION",
+          "description_ko": "각 SMF의 능력 보유 여부가 선택적임을 보존한다. 이미 모든 SMF가 능력을 보유한다거나 제어 행동의 허용으로 바꾸지 않는다.",
+          "evidence_role": "target"
+        },
+        {
+          "id": "BOTH_WITHIN_ONE_SESSION",
+          "description_ko": "능력의 대상은 하나의 PDU Session에서 local UPF와 central UPF 모두를 제어하는 것이다.",
+          "evidence_role": "target"
+        }
+      ]
+    },
+    {
+      "case_id": "CTX-002",
+      "source": {
+        "spec_id": "3GPP TS 24.501",
+        "version": "18.12.0",
+        "clause_id": "4.6.2.2",
+        "source_text_en": "The allowed NSSAI(s) should be stored in a non-volatile memory in the ME as specified in annex C.",
+        "source_sha256": "fef06d660506abf6885d593e4129095c17140be4f2317e802daa8599233f1b06"
+      },
+      "pdf": {
+        "path": "data/source/ts_124501v181200p.pdf",
+        "sha256": "fef06d660506abf6885d593e4129095c17140be4f2317e802daa8599233f1b06",
+        "pdf_page": 98,
+        "printed_page": 97
+      },
+      "requirements": [
+        {
+          "id": "STORAGE_RECOMMENDATION",
+          "description_ko": "비-SNPN 모드에서 allowed NSSAI를 ME 비휘발성 메모리에 저장하는 권고 및 Annex C 연결을 보존한다. should를 무조건 의무로 바꾸지 않는다.",
+          "evidence_role": "target"
+        },
+        {
+          "id": "IDENTITY_BINDING",
+          "description_ko": "SUPI와 함께 저장하고 일치할 때만 allowed NSSAI를 사용하며 불일치하면 삭제한다는 조건을 보존한다.",
+          "evidence_role": "context"
+        },
+        {
+          "id": "EMERGENCY_EXCEPTION",
+          "description_ko": "긴급 서비스 등록 시 USIM/비휘발성 저장은 금지되고 ME에 임시 저장하며 긴급 서비스 등록 해제 시 삭제한다.",
+          "evidence_role": "context"
+        },
+        {
+          "id": "ECALL_EXCEPTION",
+          "description_ko": "eCall only 시 USIM/비휘발성 저장은 금지되고 ME에 임시 저장하며 eCALL-INACTIVE 진입, 전원 꺼짐 또는 USIM 제거 시 삭제한다.",
+          "evidence_role": "context"
+        }
+      ]
+    },
+    {
+      "case_id": "CTX-003",
+      "source": {
+        "spec_id": "3GPP TS 23.501",
+        "version": "18.12.0",
+        "clause_id": "5.4.11.4",
+        "source_text_en": "The AMF should not reject the request or deregister the UE unless it has sufficiently accurate UE location information to determine that the UE is located in a geographical area where the PLMN is not allowed to operate.",
+        "source_sha256": "2ef71f81a87c86967dc623741b5a3479338844661067a3bb13089fffe6fed2ac"
+      },
+      "pdf": {
+        "path": "data/source/ts_123501v181200p.pdf",
+        "sha256": "2ef71f81a87c86967dc623741b5a3479338844661067a3bb13089fffe6fed2ac",
+        "pdf_page": 133,
+        "printed_page": 132
+      },
+      "requirements": [
+        {
+          "id": "LOCATION_UNLESS_RECOMMENDATION",
+          "description_ko": "PLMN 운용 불가 지역에 UE가 있음을 판단할 충분히 정확한 위치정보가 없는 한 AMF의 요청 거절 또는 UE 등록 해제를 하지 않는 권고를 보존한다.",
+          "evidence_role": "target"
+        },
+        {
+          "id": "SATELLITE_SCOPE",
+          "description_ko": "NR 위성 접속의 위치 검증 문맥으로 범위를 한정한다. 모든 NR 접속에 무조건 확장하지 않는다.",
+          "evidence_role": "context"
+        },
+        {
+          "id": "CONFIGURED_VERIFICATION",
+          "description_ko": "망이 PLMN 운용 가능 여부를 검증하도록 설정된 위치 검증 문맥임을 설명한다. 위치 검증 자체를 항상 의무로 바꾸지 않는다.",
+          "evidence_role": "context"
+        }
+      ]
+    }
+  ]
+}

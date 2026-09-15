@@ -1,0 +1,8 @@
+{
+  "completed_at": "2026-09-09T09:19:52.828561+00:00",
+  "file_sha256": {
+    "outputs/review/generation_preservation_freeze_completion_20260909/verification.json": "722c91dcb0a26b8498914abfc6b6fba68d20946aa37de25d6b7d258bdc5a05d5",
+    "docs/32_generation_preservation_design_review_and_freeze_2026-09-09.md": "542a7627ed085dd69c9478b60467e482c2e3e6297ee687d6e23cd6f9edee51e3",
+    "experiments/generation_preservation_v1_20260909/input_freeze_manifest.json": "6c3c9955339d6f812f3a2a52ba5bf8615035cc1aa9326752fe515c3aa7f9de06"
+  }
+}

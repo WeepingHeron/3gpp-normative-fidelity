@@ -1,0 +1,11 @@
+{
+  "status": "PASS2_READY_NOT_REVIEWED",
+  "released_at": "2026-09-09T04:41:29.277481+00:00",
+  "pass1_completion_manifest_sha256": "798b99adbfb6e8a287c0d6450ba2d2aa175d221df74de92c478427b0106fe45c",
+  "package_manifest_sha256": "6e34c03a58dfe3e87407b80e1a10059408496c305b6fd316b449eafa53325051",
+  "file_sha256": {
+    "judgments_blank.csv": "b191951a7d22f3cfd1dfecd40a96a8c71c70343691ef694811c35f6f2da30d6d",
+    "judgments_blank.jsonl": "1ea30505cb1bf91fcfdad58734d775066ec4d43b2ec087d843efcaea409a4e35",
+    "packets.jsonl": "87a8e1d3bd51ce736ce22f5d9e88ef028ca52a26fe3f8fb83bd833b8092295f0"
+  }
+}

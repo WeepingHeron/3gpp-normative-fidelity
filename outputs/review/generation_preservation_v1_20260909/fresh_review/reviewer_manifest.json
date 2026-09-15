@@ -1,0 +1,55 @@
+{
+  "reviewer": "fresh_ai",
+  "status": "SEALED",
+  "started_at": "2026-09-13T13:55:39+00:00",
+  "started_at_note": "UTC clock observation at initial input-read completion; subsequent manual assessment began at this recorded time.",
+  "completed_at": "2026-09-13T13:59:25.381143+00:00",
+  "input_files": [
+    {
+      "path": "/Users/taehoon/Desktop/졸업논문/experiments/generation_preservation_v1_20260909/reviewer_instructions.md",
+      "sha256": "53c77fa7c70e4f57278193b980b80d39036748e474601996eca2b1ac01e9b7f7"
+    },
+    {
+      "path": "/Users/taehoon/Desktop/졸업논문/experiments/generation_preservation_v1_20260909/evaluation_reference.json",
+      "sha256": "787c3877312ac3048bab8af8d8593ea4410663facb29650483b6502c740cf8b5"
+    },
+    {
+      "path": "/Users/taehoon/Desktop/졸업논문/outputs/review/generation_preservation_v1_20260909/reviewer/packets_18.jsonl",
+      "sha256": "cc6dc286ea9297f736e4301a876cc8c633e330c10cd064be962c5f4525d34d23"
+    }
+  ],
+  "actual_read_paths": [
+    "/Users/taehoon/Desktop/졸업논문/experiments/generation_preservation_v1_20260909/reviewer_instructions.md",
+    "/Users/taehoon/Desktop/졸업논문/experiments/generation_preservation_v1_20260909/evaluation_reference.json",
+    "/Users/taehoon/Desktop/졸업논문/outputs/review/generation_preservation_v1_20260909/reviewer/packets_18.jsonl",
+    "/Users/taehoon/Desktop/졸업논문/outputs/review/generation_preservation_v1_20260909/fresh_review/judgments_18.jsonl"
+  ],
+  "output_files": [
+    {
+      "path": "/Users/taehoon/Desktop/졸업논문/outputs/review/generation_preservation_v1_20260909/fresh_review/judgments_18.jsonl",
+      "sha256": "8cda241f08669b4abd9e0d1ffb0fd93a48d30f56ef3f279d6a60d2373666c251"
+    },
+    {
+      "path": "/Users/taehoon/Desktop/졸업논문/outputs/review/generation_preservation_v1_20260909/fresh_review/review_notes.md",
+      "sha256": "5f8efc18231b583d034af6f9f25baa946ec15fa56fd5e5475d3cfc787c491178"
+    }
+  ],
+  "manifest_self_hash_policy": "Manifest SHA256 is reported externally after final serialization; a recursive self-hash is not embedded.",
+  "prior_knowledge_boundary": {
+    "known": "General conversation system/developer/user instructions, Korean style and workspace environment, and parent assignment describing a two-AI frozen review. No original substantive user task or design history was supplied.",
+    "not_read": "Protocol, generation prompts, condition keys, run responses, README, docs, memories, old judgments, root review, original PDFs or source-page files linked in packets.",
+    "source_boundary": "Only supplied target/source and reference_context_blocks in the three authorized input files.",
+    "parent_exchange_before_seal": "Progress counts only; no semantic results or scores.",
+    "independence_limit": "AI review in a fresh task context, not blinded human expert review and not an independent generation sample."
+  },
+  "method": "Manual per-item and per-requirement semantic judgment, manually selected evidence and rationales; deterministic overall reduction and literal quote validation only.",
+  "validation": {
+    "judgment_count": 18,
+    "review_ids_match": true,
+    "all_literal_quotes_verified": true,
+    "all_requirement_ids_match": true,
+    "overall_rule_verified": true,
+    "repeated_context_blocks_identical": true
+  },
+  "seal_permissions": "0444 on all three output files after serialization"
+}

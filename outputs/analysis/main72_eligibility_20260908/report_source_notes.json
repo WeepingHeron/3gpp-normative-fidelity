@@ -1,0 +1,47 @@
+{
+  "delivery_mode": "portable HTML; Codex desktop local research audit",
+  "audience": "technical; requested work is source eligibility and research-method validation",
+  "required_structure_mapping": {
+    "title": "title",
+    "technical_summary": "summary",
+    "findings": "definitions/count-chart/hard-exclusions/holds/exceptions/balance",
+    "scope_definitions": "definitions (before first chart)",
+    "methodology": "method",
+    "limitations": "limits",
+    "next_steps": "next",
+    "further_questions": "next final paragraph"
+  },
+  "chart_contract": {
+    "question": "How are all 72 reviewed cases classified?",
+    "takeaway": "50 ordinary eligible; 1 recorded exception; 10 ineligible; 11 hold",
+    "family": "bar",
+    "data_grain": "one disjoint review state, 4 rows",
+    "measure": "unique case count, denominator 72",
+    "scale": "absolute count, zero baseline",
+    "palette": "single-root blue, explicit category labels and values, no legend-dependent distinction",
+    "surface": "canonical portable report; full width",
+    "no_additional_chart_reason": "modal and case evidence need exact lookup, so native tables are more appropriate than repeated charts"
+  },
+  "qa": {
+    "artifact_validation": "passed",
+    "portable_payload_and_fallback": "passed",
+    "browser_visual_and_interaction": "not run; compatible Chromium not found",
+    "notebook_execution": "3 code cells executed through Python; not a Jupyter kernel",
+    "sql_snapshot_comparison": "all 3 datasets equal real SQLite query results"
+  },
+  "sources": [
+    "data/main_cases.csv",
+    "docs/02_dataset_protocol.md",
+    "docs/06_main_difficulty_protocol.md",
+    "data/main_selection_draft.csv",
+    "data/source/ts_123501v181200p.pdf",
+    "data/source/ts_124501v181200p.pdf",
+    "outputs/analysis/main72_eligibility_20260908/report_audit.sqlite",
+    "outputs/analysis/main72_eligibility_20260908/report_queries.sql"
+  ],
+  "limits": [
+    "Source/gold/response scoring are separate",
+    "Manual review is not independent expert validation",
+    "Local report not published to Sites"
+  ]
+}

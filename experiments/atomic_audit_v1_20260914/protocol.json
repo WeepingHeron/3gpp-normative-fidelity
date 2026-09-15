@@ -1,0 +1,35 @@
+{
+  "experiment_id": "ATOMIC_AUDIT_V1_20260914",
+  "status": "READY_TO_FREEZE",
+  "model": "gpt-5.4-mini-2026-03-17",
+  "parameters": {
+    "temperature": 0,
+    "max_output_tokens": 6000,
+    "reasoning_effort": "none"
+  },
+  "planned_calls": 12,
+  "pricing_usd_per_million": {
+    "input": 0.75,
+    "cached_input": 0.075,
+    "output": 4.5
+  },
+  "pricing_checked_date": "2026-09-14",
+  "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+  "generation_cost_cap_usd": 0.5,
+  "reservation_usd": 0.428268,
+  "runtime_policy": {
+    "request_timeout_ms": 60000
+  },
+  "comparison": "Fresh coarse vs atomic audits on all six fixed prior P1 seeds; no new explanations or repair. Both capped at 6000 output tokens to accommodate atomic rows; coarse input identical to previous audit, cap differs from historical 3000. Same model/temperature/reasoning/source/extraction/draft; changes are audit granularity, evidence and consistency instructions and schema, a bundled intervention.",
+  "evaluation": "Coordinator manually maps audits to the same nine requirements over six seed explanations, including partial detection, contradictory diagnosis and erroneous repair advice. Compare to sealed prior primary labels without changing them; these are AI development references, not human gold. No automated semantic grading.",
+  "reference_policy": "Full requirement match includes strength, compound components, evidence and unresolved labels; detection of one missing component must not be inflated to perfect diagnosis. Coverage and evidence diagnostics separate.",
+  "primary_metric": "Number of seed-requirement defects (reference=0) explicitly and correctly identified with source/draft grounding, per arm. Report missed or contradictory flags separately. Also count false alarms on reference=1 and adjudication errors on unresolved claims. No unseen promotion based on this audit-only test.",
+  "candidate_gate": [
+    "All 12 responses usable and sealed",
+    "Atomic detects more known requirement defects than coarse",
+    "Atomic introduces no additional false alarms on preserved requirements",
+    "Atomic introduces no additional erroneous repair-advice cases",
+    "Report exact quote, per-proposition coverage and contradiction diagnostics without treating them as semantic proof"
+  ],
+  "limits": "Post-hoc test on three known sources/six known drafts, one coordinator reviewer; not new clause efficacy, not independent expert audit, no p-values/CI. No iterative tuning or automatic final-generation experiment."
+}

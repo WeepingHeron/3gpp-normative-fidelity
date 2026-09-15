@@ -1,0 +1,72 @@
+{
+  "version": "gold_overlay_v1_20260908",
+  "status": "FROZEN_FOR_FUTURE_SCORING_NOT_APPLIED",
+  "patches": [
+    {
+      "id": "MAY001_CAPABILITY_STATE",
+      "case_id": "MAIN-MAY-001",
+      "source_text_en": "However, each SMF may also have the capability to control both a local and a central UPF within a PDU Session.",
+      "source_reference": {
+        "spec_id": "3GPP TS 23.501",
+        "version": "18.12.0",
+        "clause_id": "4.2.3",
+        "pdf_page": 45,
+        "sha256": "2ef71f81a87c86967dc623741b5a3479338844661067a3bb13089fffe6fed2ac"
+      },
+      "fields": {
+        "action": {
+          "before": "control both a local UPF and a central UPF",
+          "after": "have the capability to control both a local and a central UPF within a PDU Session"
+        },
+        "gold_summary_ko": {
+          "before": "각 SMF에는 하나의 PDU Session에서 local UPF와 central UPF를 모두 제어할 수 있는 권한이 있을 수 있다.",
+          "after": "각 SMF가 하나의 PDU Session에서 local UPF와 central UPF를 모두 제어할 수 있는 능력을 갖추는 것은 선택 사항이다."
+        }
+      },
+      "apply_to_conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "changes_original_generation_input": false,
+      "input_contamination": "C2 received original incorrect gold; corrected scoring cannot repair generation input.",
+      "required_propositions": [
+        "each SMF",
+        "optional possession of capability",
+        "control both a local and a central UPF",
+        "within one PDU Session"
+      ],
+      "forbidden_inferences": [
+        "permission replaces capability",
+        "every SMF already possesses the capability",
+        "may directly applies only to performing the control action"
+      ],
+      "past_response_judgments_preassigned": false
+    }
+  ],
+  "relation_guidance": [
+    {
+      "case_id": "MAIN-CAN-008",
+      "rule": "Actual establishment of 5G NAS security context by AMF and UE is a prior necessary condition; capability alone is insufficient; do not infer sufficiency. Read full explanation."
+    },
+    {
+      "case_id": "MAIN-SH-005",
+      "rule": "shall be able requires capability limited to authorized data; does not require actual performance of every CRUD action."
+    },
+    {
+      "case_id": "MAIN-SD-002",
+      "rule": "should scopes over applying the Paging Policy, not application DSCP-setting as a recommendation."
+    },
+    {
+      "case_id": "MAIN-CAN-002",
+      "rule": "not all does not license all-capable, all-impossible, or an asserted particular/minimum successful event."
+    }
+  ],
+  "held_guidance_not_inclusion": {
+    "MAIN-SDN-002": "98% with Non-GBR context provenance; no mandatory 2% restatement.",
+    "MAIN-SDN-010": "congestion is supplied question/prior context, not extractor source; keep HOLD.",
+    "MAIN-SD-009": "respectively unresolved; keep HOLD."
+  }
+}

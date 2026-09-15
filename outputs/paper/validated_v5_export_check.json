@@ -1,0 +1,15 @@
+{
+  "output": "/Users/taehoon/Desktop/졸업논문/outputs/paper/ACK2026_3GPP_normative_fidelity_validated_v5.pdf",
+  "pages": 2,
+  "source_v4_hashes_unchanged": {
+    "ACK2026_3GPP_normative_fidelity_draft_v4.docx": "cf1a36a8a4deff6af047539d9c4e954c12d24011cce56011a86ad02a77dd6dc8",
+    "ACK2026_3GPP_normative_fidelity_draft_v4.pdf": "75ff995e24be23a2eb96e95ed3849efaac0a1a96119b7e994e30e5945933546f",
+    "ACK2026_3GPP_normative_fidelity_draft_v4.md": "e962b1b97c606d30a72c63eff5bfbfc98fffea078f710ec49c119f0c1a782276",
+    "modal_preservation_paper_v4.png": "99db3115767e22e2214acd87e729b5d3630ab50afbb6639c091d04a1326887b4"
+  },
+  "section_geometry_identical_to_v4": true,
+  "primary_table_matches_sealed_counts": true,
+  "all_pages_visually_inspected": true,
+  "limitations": "Logical unresolved bounds, not confidence intervals; no independent semantic validation.",
+  "pdf_sha256": "c93fbeee38fe54bf6d0d62850fc52ae471b1448d8addb5a5c0d1726c29accdfe"
+}

@@ -1,0 +1,16 @@
+{
+  "experiment_id": "PROPOSITION_PIPELINE_V1_20260913",
+  "provenance": "LIVE_API",
+  "status": "GENERATION_COMPLETE_SEMANTICS_PENDING",
+  "started_at": "2026-09-13T14:24:05.637Z",
+  "input_freeze_sha256": "76947af8f991e5bd911139ae5a43de66cff0279e030bdadadc34200f185f3606",
+  "input_frozen_at": "2026-09-13T14:23:44.367618+00:00",
+  "planned_calls": 18,
+  "planned_explanations": 12,
+  "attempts": 18,
+  "returned": 18,
+  "explanations": 12,
+  "known_cost_usd": 0.05711624999999999,
+  "cost_complete": true,
+  "finished_at": "2026-09-13T14:25:10.304Z"
+}

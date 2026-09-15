@@ -1,0 +1,6 @@
+{"case_id": "CTX-001", "replicate": 1, "A2_review_id": "PPR-008", "P1_review_id": "PPR-006", "A2_complete": null, "P1_complete": 1}
+{"case_id": "CTX-001", "replicate": 2, "A2_review_id": "PPR-011", "P1_review_id": "PPR-002", "A2_complete": null, "P1_complete": null}
+{"case_id": "CTX-002", "replicate": 1, "A2_review_id": "PPR-005", "P1_review_id": "PPR-009", "A2_complete": 0, "P1_complete": 0}
+{"case_id": "CTX-002", "replicate": 2, "A2_review_id": "PPR-010", "P1_review_id": "PPR-001", "A2_complete": 0, "P1_complete": 0}
+{"case_id": "CTX-003", "replicate": 1, "A2_review_id": "PPR-004", "P1_review_id": "PPR-012", "A2_complete": 0, "P1_complete": 0}
+{"case_id": "CTX-003", "replicate": 2, "A2_review_id": "PPR-007", "P1_review_id": "PPR-003", "A2_complete": 0, "P1_complete": 0}

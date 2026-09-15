@@ -1,0 +1,22 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import {run,compose,extractionDelivery} from './run_proposition_pipeline_20260913.mjs';
+const b='experiments/proposition_pipeline_v1_20260913';
+const p=JSON.parse(fs.readFileSync(b+'/protocol.json'));const plan=fs.readFileSync(b+'/request_recipe_12.jsonl','utf8').trim().split('\n').map(JSON.parse);
+const row=plan.find(x=>x.extraction_request);const suffix=fs.readFileSync(b+'/composition_suffix.md','utf8');
+const ex={propositions:[]};assert.ok(compose(row,ex,suffix,24000).input.endsWith(JSON.stringify(ex)));
+assert.throws(()=>compose(row,ex,suffix,1),/SIZE_LIMIT/);
+const body=(data,status='completed')=>({model:p.model,status,id:'synthetic-id',output:[{type:'message',content:[{type:'output_text',text:JSON.stringify(data)}]}],usage:{input_tokens:10,output_tokens:10,total_tokens:20}});
+assert.equal(extractionDelivery(body(ex),row.extraction_request.text.format.schema).status,'EXTRACTION');
+assert.equal(extractionDelivery(body({propositions:[{id:'bad'}]}),row.extraction_request.text.format.schema).status,'SCHEMA_INVALID');
+assert.equal(extractionDelivery(body(ex,'incomplete'),row.extraction_request.text.format.schema).parsed,null);
+const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'proposition-pipeline-test-'));
+async function trial(name,transport){return run({protocol:p,plan:[row],suffix,freezeHash:'synthetic',freeze:{frozen_at:'synthetic'},runDir:path.join(tmp,name),transport,provenance:'SYNTHETIC_TEST'});}
+let calls=0;let m=await trial('transport',async()=>{calls++;throw Error('simulated');});assert.equal(calls,1);assert.equal(m.cost_complete,false);assert.equal(m.explanations,0);
+calls=0;m=await trial('schema',async()=>{calls++;return {http_status:200,body:body({propositions:[{id:'bad'}]})};});assert.equal(calls,1);assert.equal(m.status,'STOPPED');
+calls=0;const final=Object.fromEntries(row.baseline_request.text.format.schema.required.map(k=>[k,k==='normative_type'?'unclear':'synthetic']));
+m=await trial('binding',async request=>{calls++;if(calls===1)return {http_status:200,body:body(ex)};assert.deepEqual(request,compose(row,ex,suffix,24000));return {http_status:200,body:body(final)};});assert.equal(calls,2);assert.equal(m.explanations,1);
+await assert.rejects(()=>trial('binding',async()=>{}),/RUN_EXISTS/);
+console.log(JSON.stringify({status:'PASS',checks:['dynamic_binding','size_guard','nested_schema','empty_list_preserved','incomplete','no_retry_transport','no_compose_on_bad_extraction','no_replay'],live_calls:0}));

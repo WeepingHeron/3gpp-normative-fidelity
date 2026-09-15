@@ -1,0 +1,18 @@
+{
+  "experiment_id": "ERROR_REPLICATION_V1_20260914",
+  "status": "STOPPED",
+  "provenance": "LIVE_API",
+  "started_at": "2026-09-14T03:50:37.904Z",
+  "input_freeze_sha256": "75f45796fe99dcf85aea572c19df958814e11486f441ed1020e0b96017b1713c",
+  "input_frozen_at": "2026-09-14T03:50:37.820Z",
+  "model": "gpt-5.4-mini-2026-03-17",
+  "planned_slots": 9,
+  "attempts": 1,
+  "returned_responses": 0,
+  "usable_explanations": 0,
+  "known_cost_usd": 0,
+  "cost_complete": false,
+  "evaluator_status": "NOT_EVALUATED",
+  "stop_reason": "TRANSPORT_UNCERTAIN_NO_RETRY",
+  "finished_at": "2026-09-14T03:50:37.972Z"
+}

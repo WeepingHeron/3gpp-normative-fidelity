@@ -1,0 +1,25 @@
+{
+  "status": "DISAGREEMENT_ADJUDICATION_COMPLETE_WITH_UNRESOLVED",
+  "completed_at": "2026-09-09T05:08:02.574109+00:00",
+  "file_sha256": {
+    "adjudicated_view_255.jsonl": "6d9c8e76129d2806da4f02a2743c0e3d55de4114c593fee274249bbf7ca71796",
+    "adjudication_index.csv": "f809e805c73696cd193cb323847f071e6eaa13e0d4ef57d067e91352c70a059c",
+    "adjudication_readable.md": "c2984d14b11e0b6279090383619a7b5d20db4dd22a21e9fa0afef7d54da7989a",
+    "adjudications.jsonl": "e928d7417e8a87f9b6fb2e99dcc2512940c825b860635305ef51847f29da1487",
+    "manual_scope_review.tsv": "7f660ff0fb693a71a0e840b0ed2ee2eba54119892f20c7db1422e3eb88561b3e",
+    "scope_review_60.jsonl": "45b61fe9e4d41313ad9b5aed49db17f0a271f9683106c81c6d60391c8ee07d5e",
+    "scope_review_index.csv": "b14306ce28172ccd8a61b1ab4f29d806620d5f7ee5cc4006756d29c55f8e69f7",
+    "summary.json": "ece4903b059b4d1379c85a977163958fa99e5f21844407e446d0eed45e7a992b",
+    "unresolved_register.jsonl": "91ee79d4999cecd47490337d041fe633d19d0a3c008ed415407a7e4b65da1e14",
+    "verification_receipt.json": "80fdfdd21f6b837403954f89d48987eb04b4630816965d43f43c04d4515e9247"
+  },
+  "support_file_sha256": {
+    "tools/adjudicate_v2_disagreements_20260909.py": "353845dab64e308f0a42a3fa71cdd6b0f4a62ee356d15f4bd39d184c814b7676",
+    "docs/27_v2_disagreement_adjudication_2026-09-09.md": "258f9c3bb918ca2e914efab197ae8b3f403c1aa7b5ea10ed79708495f75fa0a8"
+  },
+  "prior_manifest_sha256": {
+    "outputs/review/v2_pass1_20260908/completion_manifest.json": "3f208e42dc3846ddf26062eef5ae434cdbbdaf5b4446f94d2e4f839c48b2a163",
+    "outputs/review/v2_pass2_completed_20260909/completion_manifest.json": "992624af244dd5e213c1db8cef3ba63ed13fe6ecb87a77c9cd18bbd15237a241",
+    "outputs/review/v2_pass2_completed_20260909/seal/completion_manifest.json": "7cd7185a1dff5b471fd862bd432cf8410dbecf6b11e5defad03628765d987ad8"
+  }
+}

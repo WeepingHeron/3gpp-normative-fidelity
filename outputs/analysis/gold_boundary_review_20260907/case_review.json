@@ -1,0 +1,356 @@
+[
+  {
+    "case_id": "MAIN-MAY-001",
+    "review_status": "GOLD_CORRECTION_PROPOSED",
+    "document_region": "본문 Figure 설명",
+    "applicable_rules": [
+      "R1"
+    ],
+    "rationale_ko": "능력 보유의 선택성을 보존하고 capability를 권한으로 옮기지 않는다.",
+    "frozen_gold": {
+      "case_id": "MAIN-MAY-001",
+      "candidate_id": "CAND-00008",
+      "spec_id": "3GPP TS 23.501",
+      "release": "18",
+      "version": "18.12.0",
+      "clause_id": "4.2.3",
+      "pdf_page": "45",
+      "source_text_en": "However, each SMF may also have the capability to control both a local and a central UPF within a PDU Session.",
+      "source_normalization_note": "",
+      "modal_class": "may",
+      "polarity": "positive",
+      "actor": "each SMF",
+      "condition": "within a PDU Session",
+      "action": "control both a local UPF and a central UPF",
+      "exception": "",
+      "question_ko": "하나의 PDU Session에서 SMF가 local UPF와 central UPF를 제어하는 구성을 설명해줘.",
+      "gold_summary_ko": "각 SMF에는 하나의 PDU Session에서 local UPF와 central UPF를 모두 제어할 수 있는 권한이 있을 수 있다.",
+      "difficulty_tier": "simple",
+      "difficulty_basis": "coordination=1",
+      "source_sha256": "2ef71f81a87c86967dc623741b5a3479338844661067a3bb13089fffe6fed2ac",
+      "split": "test",
+      "review_status": "self_checked"
+    },
+    "proposed_sidecar_fields": {
+      "action": "have the capability to control both a local and a central UPF within a PDU Session",
+      "gold_summary_ko": "각 SMF가 하나의 PDU Session에서 local UPF와 central UPF를 모두 제어할 수 있는 능력을 갖추는 것은 선택 사항이다."
+    },
+    "semantic_score_under_candidate": null,
+    "semantic_score_status": "NOT_SCORED_UNDER_CANDIDATE"
+  },
+  {
+    "case_id": "MAIN-CAN-004",
+    "review_status": "INELIGIBLE_UNDER_ORIGINAL_PROTOCOL",
+    "document_region": "NOTE 2 두 번째 문장",
+    "applicable_rules": [
+      "eligibility"
+    ],
+    "rationale_ko": "원본 NOTE 영역 소속을 확인했다. 모든 조건에서 같은 적격성 결정을 적용한다.",
+    "frozen_gold": {
+      "case_id": "MAIN-CAN-004",
+      "candidate_id": "CAND-00015",
+      "spec_id": "3GPP TS 23.501",
+      "release": "18",
+      "version": "18.12.0",
+      "clause_id": "4.2.5",
+      "pdf_page": "51",
+      "source_text_en": "If a UDSF is shared between several NFs not part of the same set or is shared between several NF sets, it is up to UDSF implementation and deployment to make sure that only NFs that are authorized can access the data.",
+      "source_normalization_note": "",
+      "modal_class": "can",
+      "polarity": "positive",
+      "actor": "NFs authorized to access the data",
+      "condition": "if a UDSF is shared between NFs outside the same set or between multiple NF sets",
+      "action": "access the data",
+      "exception": "only authorized NFs can access the data; enforcement depends on UDSF implementation and deployment",
+      "question_ko": "여러 NF 또는 NF set이 UDSF를 공유할 때 데이터 접근 범위를 설명해줘.",
+      "gold_summary_ko": "UDSF가 여러 NF나 NF set에 공유되면 구현·배포에 따라 권한 있는 NF만 데이터에 접근할 수 있다.",
+      "difficulty_tier": "compound",
+      "difficulty_basis": "markers=if;hard_limit;negative_modal;coordination=2",
+      "source_sha256": "2ef71f81a87c86967dc623741b5a3479338844661067a3bb13089fffe6fed2ac",
+      "split": "test",
+      "review_status": "self_checked"
+    },
+    "proposed_sidecar_fields": {},
+    "semantic_score_under_candidate": null,
+    "semantic_score_status": "NOT_SCORED_UNDER_CANDIDATE"
+  },
+  {
+    "case_id": "MAIN-MAY-005",
+    "review_status": "INELIGIBLE_UNDER_ORIGINAL_PROTOCOL",
+    "document_region": "NOTE 2 두 번째 문장",
+    "applicable_rules": [
+      "eligibility"
+    ],
+    "rationale_ko": "NOTE 제외 규약 위반이며 CAND-00051의 자동 선별·선정 이력을 확인했다.",
+    "frozen_gold": {
+      "case_id": "MAIN-MAY-005",
+      "candidate_id": "CAND-00051",
+      "spec_id": "3GPP TS 23.501",
+      "release": "18",
+      "version": "18.12.0",
+      "clause_id": "4.3.1",
+      "pdf_page": "76",
+      "source_text_en": "UEs that are not subject to 5GS and EPC interworking may be served by entities not dedicated for interworking, i.e. by either by PGW or SMF/UPF.",
+      "source_normalization_note": "",
+      "modal_class": "may",
+      "polarity": "positive",
+      "actor": "UEs not subject to 5GS and EPC interworking",
+      "condition": "when not subject to 5GS and EPC interworking",
+      "action": "be served by a PGW or by an SMF/UPF not dedicated to interworking",
+      "exception": "",
+      "question_ko": "5GS와 EPC interworking 대상이 아닌 UE의 serving entity 구성을 설명해줘.",
+      "gold_summary_ko": "해당 UE는 interworking 전용이 아닌 PGW 또는 SMF/UPF에 의해 서비스될 수 있다.",
+      "difficulty_tier": "compound",
+      "difficulty_basis": "coordination=2",
+      "source_sha256": "2ef71f81a87c86967dc623741b5a3479338844661067a3bb13089fffe6fed2ac",
+      "split": "test",
+      "review_status": "self_checked"
+    },
+    "proposed_sidecar_fields": {},
+    "semantic_score_under_candidate": null,
+    "semantic_score_status": "NOT_SCORED_UNDER_CANDIDATE"
+  },
+  {
+    "case_id": "MAIN-CAN-008",
+    "review_status": "GOLD_RELATION_CLARIFICATION",
+    "document_region": "본문",
+    "applicable_rules": [
+      "R2",
+      "R3"
+    ],
+    "rationale_ko": "AMF/UE의 실제 context 수립이 security 활성화에 필요한 선행 조건임을 보존한다. 두 문장의 전체 의미로 평가한다.",
+    "frozen_gold": {
+      "case_id": "MAIN-CAN-008",
+      "candidate_id": "CAND-03572",
+      "spec_id": "3GPP TS 24.501",
+      "release": "18",
+      "version": "18.12.0",
+      "clause_id": "4.4.2.1.1",
+      "pdf_page": "53",
+      "source_text_en": "Before security can be activated, the AMF and the UE need to establish a 5G NAS security context.",
+      "source_normalization_note": "",
+      "modal_class": "can",
+      "polarity": "positive",
+      "actor": "security",
+      "condition": "after the AMF and UE establish a 5G NAS security context",
+      "action": "be activated",
+      "exception": "security cannot be activated before that context is established",
+      "question_ko": "5G NAS security를 활성화하기 전에 AMF와 UE가 충족해야 하는 전제조건을 설명해줘.",
+      "gold_summary_ko": "AMF와 UE가 5G NAS security context를 먼저 설정해야 하며, 그 전에는 security를 활성화할 수 없다.",
+      "difficulty_tier": "conditional",
+      "difficulty_basis": "markers=before;coordination=1",
+      "source_sha256": "fef06d660506abf6885d593e4129095c17140be4f2317e802daa8599233f1b06",
+      "split": "test",
+      "review_status": "self_checked"
+    },
+    "proposed_sidecar_fields": {
+      "relation": "activation of security requires prior actual establishment of a 5G NAS security context by AMF and UE; no sufficiency claim",
+      "gold_summary_ko": "5G NAS security 활성화 전에 AMF와 UE가 5G NAS security context를 실제로 수립해야 한다."
+    },
+    "semantic_score_under_candidate": null,
+    "semantic_score_status": "NOT_SCORED_UNDER_CANDIDATE"
+  },
+  {
+    "case_id": "MAIN-SD-002",
+    "review_status": "GOLD_RELATION_CLARIFICATION",
+    "document_region": "본문",
+    "applicable_rules": [
+      "R4"
+    ],
+    "rationale_ko": "should는 Paging Policy의 적용에 걸린다. application의 DSCP 설정에 권고를 옮기지 않는다.",
+    "frozen_gold": {
+      "case_id": "MAIN-SD-002",
+      "candidate_id": "CAND-00279",
+      "spec_id": "3GPP TS 23.501",
+      "release": "18",
+      "version": "18.12.0",
+      "clause_id": "5.4.3.2",
+      "pdf_page": "119",
+      "source_text_en": "When the 5GS supports the Paging Policy Differentiation (PPD) feature, the DSCP value (TOS in IPv4 / TC in IPv6) is set by the application to indicate to the 5GS which Paging Policy should be applied for a certain IP packet.",
+      "source_normalization_note": "",
+      "modal_class": "should",
+      "polarity": "positive",
+      "actor": "Paging Policy",
+      "condition": "when the 5GS supports Paging Policy Differentiation, for a particular IP packet",
+      "action": "be selected for application according to the DSCP value set by the application",
+      "exception": "",
+      "question_ko": "5GS가 Paging Policy Differentiation을 지원할 때 특정 IP packet에 적용할 Paging Policy를 표시하는 방식을 설명해줘.",
+      "gold_summary_ko": "application이 설정한 DSCP value는 특정 IP packet에 어떤 Paging Policy를 적용하는 것이 권고되는지를 5GS에 나타낸다.",
+      "difficulty_tier": "conditional",
+      "difficulty_basis": "markers=when",
+      "source_sha256": "2ef71f81a87c86967dc623741b5a3479338844661067a3bb13089fffe6fed2ac",
+      "split": "test",
+      "review_status": "self_checked"
+    },
+    "proposed_sidecar_fields": {
+      "modal_scope": "which Paging Policy should be applied for a certain IP packet",
+      "supporting_proposition": "the DSCP value is set by the application to indicate the policy to the 5GS"
+    },
+    "semantic_score_under_candidate": null,
+    "semantic_score_status": "NOT_SCORED_UNDER_CANDIDATE"
+  },
+  {
+    "case_id": "MAIN-SD-009",
+    "review_status": "UNRESOLVED_SOURCE_MAPPING",
+    "document_region": "본문",
+    "applicable_rules": [
+      "R6"
+    ],
+    "rationale_ko": "원문의 respectively 대응은 확인한 전후 문맥만으로 하나로 확정하지 않는다. 명시적 대상 목록과 대응 불확실성을 분리한다.",
+    "frozen_gold": {
+      "case_id": "MAIN-SD-009",
+      "candidate_id": "CAND-03986",
+      "spec_id": "3GPP TS 24.501",
+      "release": "18",
+      "version": "18.12.0",
+      "clause_id": "4.9.2",
+      "pdf_page": "133",
+      "source_text_en": "If the disabling of N1 mode capability for 3GPP access was due to no network slices available, the UE should memorize the identity of the PLMN or SNPN where N1 mode is disabled due to no available network slices or the list of SNPNs where N1 mode is disabled due to no available network slices, respectively.",
+      "source_normalization_note": "",
+      "modal_class": "should",
+      "polarity": "positive",
+      "actor": "UE",
+      "condition": "if N1 mode capability for 3GPP access was disabled because no network slices were available",
+      "action": "memorize the identity of the affected PLMN or SNPN, or the affected SNPN list, respectively",
+      "exception": "the memorized identity or list follows the PLMN/SNPN case",
+      "question_ko": "사용 가능한 network slice가 없어 N1 mode가 비활성화된 경우 UE가 PLMN·SNPN 정보를 기억하는 방식을 설명해줘.",
+      "gold_summary_ko": "UE는 원인과 대상에 따라 N1 mode가 비활성화된 PLMN 또는 SNPN의 identity나 SNPN 목록을 각각 기억하는 것이 권고된다.",
+      "difficulty_tier": "compound",
+      "difficulty_basis": "markers=if+where+where;coordination=2",
+      "source_sha256": "fef06d660506abf6885d593e4129095c17140be4f2317e802daa8599233f1b06",
+      "split": "test",
+      "review_status": "self_checked"
+    },
+    "proposed_sidecar_fields": {
+      "mapping_status": "UNRESOLVED",
+      "explicit_targets": [
+        "PLMN identity",
+        "SNPN identity",
+        "SNPN list"
+      ]
+    },
+    "semantic_score_under_candidate": null,
+    "semantic_score_status": "NOT_SCORED_UNDER_CANDIDATE"
+  },
+  {
+    "case_id": "MAIN-SDN-002",
+    "review_status": "QUANTIFIER_CLARIFICATION",
+    "document_region": "본문",
+    "applicable_rules": [
+      "R5"
+    ],
+    "rationale_ko": "98% 보존은 필요하나 파생된 2% 부연은 필수가 아니다. 실제 성능·정확한 초과율·초과 허용으로 바꾸지 않는다.",
+    "frozen_gold": {
+      "case_id": "MAIN-SDN-002",
+      "candidate_id": "CAND-00901",
+      "spec_id": "3GPP TS 23.501",
+      "release": "18",
+      "version": "18.12.0",
+      "clause_id": "5.7.3.4",
+      "pdf_page": "192",
+      "source_text_en": "In uncongested scenarios, 98 percent of the packets should not experience a delay exceeding the 5QI's PDB.",
+      "source_normalization_note": "",
+      "modal_class": "should_not",
+      "polarity": "negative",
+      "actor": "98 percent of packets",
+      "condition": "in uncongested scenarios",
+      "action": "experience a delay exceeding the 5QI Packet Delay Budget",
+      "exception": "up to 2 percent of packets are outside the stated recommendation",
+      "question_ko": "혼잡하지 않은 상황에서 5QI Packet Delay Budget을 초과하는 packet delay 비율 기준을 설명해줘.",
+      "gold_summary_ko": "혼잡하지 않은 상황에서는 packet의 98%가 5QI PDB를 넘는 지연을 겪지 않는 것이 권고된다.",
+      "difficulty_tier": "conditional",
+      "difficulty_basis": "negative_modal",
+      "source_sha256": "2ef71f81a87c86967dc623741b5a3479338844661067a3bb13089fffe6fed2ac",
+      "split": "test",
+      "review_status": "self_checked"
+    },
+    "proposed_sidecar_fields": {
+      "quantifier": "98 percent of the packets",
+      "exception_status": "no separate explicit exception in supplied sentence; preserve quantifier without requiring duplicate 2 percent explanation",
+      "context_note": "Non-GBR QoS Flow context is in previous sentence, not supplied source text"
+    },
+    "semantic_score_under_candidate": null,
+    "semantic_score_status": "NOT_SCORED_UNDER_CANDIDATE"
+  },
+  {
+    "case_id": "MAIN-SDN-010",
+    "review_status": "INPUT_CONTEXT_GAP",
+    "document_region": "본문 및 a-g 목록",
+    "applicable_rules": [
+      "provenance",
+      "R8"
+    ],
+    "rationale_ko": "congestion 조건은 상위 문맥과 생성 질문에 있고 추출 입력 문장에는 없다. 추출 누락과 입력 문맥 부족을 구분한다.",
+    "frozen_gold": {
+      "case_id": "MAIN-SDN-010",
+      "candidate_id": "CAND-04388",
+      "spec_id": "3GPP TS 24.501",
+      "release": "18",
+      "version": "18.12.0",
+      "clause_id": "5.3.9",
+      "pdf_page": "197",
+      "source_text_en": "The AMF should not reject the following: a) requests for emergency services; b) requests for emergency services fallback; c) requests from UEs configured for high priority access in selected PLMN or SNPN; d) DEREGISTRATION REQUEST message; e) requests for mobile terminated services, triggered by paging or a notification procedure; f) requests for initial registration or mobility and periodic registration update, when emergency is indicated by lower layers; and g) requests for mobility registration update when the UE is reporting unavailability information due to discontinuous coverage.",
+      "source_normalization_note": "PDF text-extraction intra-word space removed after visual/source-line check",
+      "modal_class": "should_not",
+      "polarity": "negative",
+      "actor": "AMF",
+      "condition": "during 5GMM signalling congestion control",
+      "action": "reject emergency, emergency-fallback, high-priority, deregistration, mobile-terminated, emergency-indicated registration, or discontinuous-coverage update requests listed in the sentence",
+      "exception": "the non-rejection recommendation is limited to the seven listed request classes",
+      "question_ko": "5GMM signalling congestion 상황에서 AMF가 예외적으로 다루는 request 범주를 설명해줘.",
+      "gold_summary_ko": "AMF는 emergency·fallback·high-priority·deregistration·mobile-terminated service 및 명시된 emergency·discontinuous-coverage 관련 registration request를 reject하지 않는 것이 권고된다.",
+      "difficulty_tier": "compound",
+      "difficulty_basis": "markers=when+when;negative_modal;coordination=11",
+      "source_sha256": "fef06d660506abf6885d593e4129095c17140be4f2317e802daa8599233f1b06",
+      "split": "test",
+      "review_status": "self_checked"
+    },
+    "proposed_sidecar_fields": {
+      "condition_provenance": {
+        "origin": "preceding paragraph and supplied Korean question",
+        "available_to_extractor": false,
+        "available_to_generator": true
+      }
+    },
+    "semantic_score_under_candidate": null,
+    "semantic_score_status": "NOT_SCORED_UNDER_CANDIDATE"
+  },
+  {
+    "case_id": "MAIN-CAN-002",
+    "review_status": "QUANTIFIER_CLARIFICATION",
+    "document_region": "NOTE 2 다음 별도 본문 단락",
+    "applicable_rules": [
+      "R5"
+    ],
+    "rationale_ko": "NOTE 영역 밖임을 시각 확인했다. not all의 부정 범위를 보존하며 구독 가능한 event의 존재나 종류를 단정하지 않는다.",
+    "frozen_gold": {
+      "case_id": "MAIN-CAN-002",
+      "candidate_id": "CAND-00050",
+      "spec_id": "3GPP TS 23.501",
+      "release": "18",
+      "version": "18.12.0",
+      "clause_id": "4.2.16",
+      "pdf_page": "75",
+      "source_text_en": "Not all events can be subscribed to UPF directly.",
+      "source_normalization_note": "",
+      "modal_class": "can",
+      "polarity": "negative",
+      "actor": "events",
+      "condition": "for direct subscription to the UPF",
+      "action": "be subscribed to the UPF directly",
+      "exception": "not all events support direct UPF subscription",
+      "question_ko": "event를 UPF에 직접 subscribe하는 기능의 적용 범위를 설명해줘.",
+      "gold_summary_ko": "모든 event를 UPF에 직접 subscribe할 수 있는 것은 아니며, 일부 event에는 그 기능이 불가능하다.",
+      "difficulty_tier": "conditional",
+      "difficulty_basis": "negative_modal",
+      "source_sha256": "2ef71f81a87c86967dc623741b5a3479338844661067a3bb13089fffe6fed2ac",
+      "split": "test",
+      "review_status": "self_checked"
+    },
+    "proposed_sidecar_fields": {
+      "quantifier_scope": "not all events can be subscribed to UPF directly"
+    },
+    "semantic_score_under_candidate": null,
+    "semantic_score_status": "NOT_SCORED_UNDER_CANDIDATE"
+  }
+]

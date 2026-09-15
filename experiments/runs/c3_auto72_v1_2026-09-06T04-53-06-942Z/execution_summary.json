@@ -1,0 +1,10 @@
+{
+  "status": "generation_complete_semantics_pending",
+  "processed_cases": 72,
+  "planned_cases": 72,
+  "extracted_json": 72,
+  "parsed_generations": 71,
+  "semantic_preservation": "NOT_EVALUATED",
+  "estimated_cost_usd": 0.13229325000000008,
+  "stop_reason": null
+}

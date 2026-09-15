@@ -1,0 +1,1851 @@
+{
+  "version": "posthoc_treatment_v1_20260908",
+  "rows": [
+    {
+      "case_id": "MAIN-SH-001",
+      "candidate_id": "CAND-00028",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "동일 5GC·동시 3GPP/non-3GPP 접속 조건과 single AMF 의무가 한 문장에 있다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "9680e397fbeafdd90e1cabb1639d3217fe7a32a50098c4630914ca8385692155",
+      "past_source_clause": "4.2.8.1",
+      "audited_source_clause": "4.2.8.1"
+    },
+    {
+      "case_id": "MAIN-SH-002",
+      "candidate_id": "CAND-00026",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "non-3GPP 접속·등록 이후 조건과 N1 NAS signalling 지원 의무를 함께 포함한다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "43e2c3cc3b234935a6ee84a7f31658ae80f132e9f056087c079b5763f5997408",
+      "past_source_clause": "4.2.8.1",
+      "audited_source_clause": "4.2.8.1"
+    },
+    {
+      "case_id": "MAIN-SH-003",
+      "candidate_id": "CAND-00108",
+      "audit_status": "INELIGIBLE",
+      "treatment": "EXCLUDE_INELIGIBLE",
+      "reason_codes": [
+        "LIST_EXCLUDED",
+        "OUTER_CONDITION_MISSING"
+      ],
+      "rationale_ko": "PDF 100쪽의 두 번째 access가 다른 PLMN인 경우라는 상위 bullet 안이다. 그 조건은 원문 입력과 질문에서 빠졌다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [],
+      "gold_overlay_id": null,
+      "source_text_sha256": "6daca704760679ea3ef9669c7e123696468300eddd984892870f14b8bd320770",
+      "past_source_clause": "5.3.2.4",
+      "audited_source_clause": "5.3.2.4"
+    },
+    {
+      "case_id": "MAIN-SH-004",
+      "candidate_id": "CAND-00003",
+      "audit_status": "HOLD",
+      "treatment": "HOLD_ALL_COHORTS",
+      "reason_codes": [
+        "PILOT_SEMANTIC_OVERLAP_REVIEW"
+      ],
+      "rationale_ko": "PILOT-SH-001과 5GC CP NF의 service-based interaction이라는 핵심 actor/action이 겹친다. only와 where identified 차이가 있어 동일 표본으로 단정하지 않고 의미 중복 여부를 보류한다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [],
+      "gold_overlay_id": null,
+      "source_text_sha256": "156374e37d884fe82a0211c03c0ed3aca6bfc49c7205a5229c9a413389739b56",
+      "past_source_clause": "4.2.1",
+      "audited_source_clause": "4.2.1"
+    },
+    {
+      "case_id": "MAIN-SH-005",
+      "candidate_id": "CAND-00019",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED",
+        "NESTED_CAPABILITY_SCOPE"
+      ],
+      "rationale_ko": "NOTE 6 뒤의 별도 본문이다. shall be able은 허가된 데이터만 변경할 수 있는 능력 요구이며 모든 변경 행동의 실제 수행 의무로 읽으면 안 된다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "bf93f6b56793d05216f376bb44cd90d82b9552aba7df8163f8bb2acabdd335cb",
+      "past_source_clause": "4.2.5",
+      "audited_source_clause": "4.2.5"
+    },
+    {
+      "case_id": "MAIN-SH-006",
+      "candidate_id": "CAND-00093",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "Disaster Roaming registration area 할당과 Disaster Condition 지역의 TAI만 고려한다는 범위가 명시돼 있다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "4a3b69f576b4e400e8672087d631366d6644ccf5b0957e2e76aac67a33b3d99a",
+      "past_source_clause": "5.3.2.3",
+      "audited_source_clause": "5.3.2.3"
+    },
+    {
+      "case_id": "MAIN-SH-007",
+      "candidate_id": "CAND-03595",
+      "audit_status": "HOLD",
+      "treatment": "HOLD_ALL_COHORTS",
+      "reason_codes": [
+        "OUTER_CONDITION_MISSING"
+      ],
+      "rationale_ko": "then은 같은 문단의 single-registration·N26 지원·S1→N1·5GMM-CONNECTED mapped context 생성 과정을 잇는다. 현 입력/질문은 그 적용 조건을 충분히 담지 않는다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [],
+      "gold_overlay_id": null,
+      "source_text_sha256": "65855cd23796ce51b7870ab6d5bbf1fa68a85226d6b4083b651ce6c498a70d3f",
+      "past_source_clause": "4.4.2.2",
+      "audited_source_clause": "4.4.2.2"
+    },
+    {
+      "case_id": "MAIN-SH-008",
+      "candidate_id": "CAND-03578",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "initial registration 및 K_AUSF invalid 조건이 ngKSI 삭제와 함께 있다. 키의 PDF 공백은 영숫자 연결 대조와 시각 확인으로 구분했다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "6161d228790b10ad3cdd4e462454ba15b68e75e5d2a3b51b4a0fdb133712e6fc",
+      "past_source_clause": "4.4.2.1.1",
+      "audited_source_clause": "4.4.2.1.1"
+    },
+    {
+      "case_id": "MAIN-SH-009",
+      "candidate_id": "CAND-03582",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "dual-registration UE의 initial registration이라는 조건, context 사용과 해당 context 처리라는 결합 동작을 포함한다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "c595a8038ddedf9d3fa9d641dbdf1f56fcabddfd582d4ee4d3c974d0621e9253",
+      "past_source_clause": "4.4.2.1.1",
+      "audited_source_clause": "4.4.2.1.1"
+    },
+    {
+      "case_id": "MAIN-SH-010",
+      "candidate_id": "CAND-03577",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "ngKSI 삭제 시 no key is available 설정 및 연관 키 무효화는 한 삭제 처리의 결합 효과로 분리 불가능한 독립 요구의 혼합이 아니다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "e98ec1a56264123774018a2a9833cf82edd3034c83ef0acd671564d8c870153e",
+      "past_source_clause": "4.4.2.1.1",
+      "audited_source_clause": "4.4.2.1.1"
+    },
+    {
+      "case_id": "MAIN-SH-011",
+      "candidate_id": "CAND-03594",
+      "audit_status": "HOLD",
+      "treatment": "HOLD_ALL_COHORTS",
+      "reason_codes": [
+        "OUTER_CONDITION_MISSING"
+      ],
+      "rationale_ko": "PDF 56쪽 첫 mapped-context 생성 문단의 후속 문장이다. newly derived K'_AMF의 도출 조건인 single-registration·N26·S1→N1·5GMM-CONNECTED 범위 보충이 필요하다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [],
+      "gold_overlay_id": null,
+      "source_text_sha256": "979c2f02b27510eead2dcb534749e69ba92280c898ddf982d083e43cdbd88cde",
+      "past_source_clause": "4.4.2.2",
+      "audited_source_clause": "4.4.2.2"
+    },
+    {
+      "case_id": "MAIN-SH-012",
+      "candidate_id": "CAND-03600",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "single-registration·N26·emergency bearer PDN·현재 EPS context 부재 조건을 알고리즘 설정과 함께 추출했다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "fdb2ced0635ab91d13101853de8bc5f3ebb56b133c3200cfb9ed0363ffd0df7a",
+      "past_source_clause": "4.4.2.2",
+      "audited_source_clause": "4.4.2.2"
+    },
+    {
+      "case_id": "MAIN-MAY-001",
+      "candidate_id": "CAND-00008",
+      "audit_status": "ELIGIBLE",
+      "treatment": "SENSITIVITY_ONLY_GOLD_INPUT_CONTAMINATION",
+      "reason_codes": [
+        "SELF_CONTAINED",
+        "GOLD_CORRECTION_REQUIRED"
+      ],
+      "rationale_ko": "NOTE 밖 본문이며 each SMF의 두 UPF 제어 능력 보유라는 선택을 담는다. capability를 권한으로 바꾼 기존 gold 오류는 표본 적격성과 별도다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "SENS_GOLD_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": "MAY001_CAPABILITY_STATE",
+      "source_text_sha256": "f90b0d5d785f0235f80606832a00e890ed9c68d129f952073afa9817fddee97f",
+      "past_source_clause": "4.2.3",
+      "audited_source_clause": "4.2.3"
+    },
+    {
+      "case_id": "MAIN-MAY-002",
+      "candidate_id": "CAND-00043",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "N5CW의 EAP-based trusted WLAN 인증과 5GC 동시 등록 조건을 함께 포함한다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "c4ab6f41e12ddc1656bfb7738bfb63c736ce52641d659180f3e43502c66ac2a6",
+      "past_source_clause": "4.2.8.5.1",
+      "audited_source_clause": "4.2.8.5.1"
+    },
+    {
+      "case_id": "MAIN-MAY-003",
+      "candidate_id": "CAND-00063",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED",
+        "CONTEXT_ADVISORY"
+      ],
+      "rationale_ko": "4.4.8.3 시간 민감 통신 문맥의 본문이다. N6 network instance·SMF→UPF·해당 PDU Session·establishment 시점을 명시하며 주변 NW-TT 구조 그림은 이 전달 허용 자체의 해석에 필수는 아니다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "1b615c06c5bd1436653268febeef077394d9b16196084870b409eec4d084f1fc",
+      "past_source_clause": "4.4.8.3",
+      "audited_source_clause": "4.4.8.3"
+    },
+    {
+      "case_id": "MAIN-MAY-004",
+      "candidate_id": "CAND-00024",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "non-3GPP network의 지원 PLMN/SNPN과 trusted connectivity 종류 광고라는 주체·행동·대상이 명확하다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "273ca4310fbd7d19784c308b33de17bd0e9c783dab272cc783fc9abac02b3389",
+      "past_source_clause": "4.2.8.1",
+      "audited_source_clause": "4.2.8.1"
+    },
+    {
+      "case_id": "MAIN-MAY-005",
+      "candidate_id": "CAND-00051",
+      "audit_status": "INELIGIBLE",
+      "treatment": "EXCLUDE_INELIGIBLE",
+      "reason_codes": [
+        "NOTE_EXCLUDED"
+      ],
+      "rationale_ko": "PDF 76쪽 4.3.1 NOTE 2 내부 문장이다. 모델 실행 전 NOTE 제외 규약을 위반한다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [],
+      "gold_overlay_id": null,
+      "source_text_sha256": "13ab0ea24bb84a53dabbfbe634f7e3408e345900efd9a672f3d3b43b234a77b5",
+      "past_source_clause": "4.3.1",
+      "audited_source_clause": "4.3.1"
+    },
+    {
+      "case_id": "MAIN-MAY-006",
+      "candidate_id": "CAND-00097",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "N3IWF/TNGF/TWIF/W-AGF의 TAI를 같게 또는 다르게 구성하는 선택지가 문장 안에 있다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "bc751288e8ef6c57b9d2c35ae79ae6b454acad23a1878ecb69f3ee9a3e2ef1c2",
+      "past_source_clause": "5.3.2.3",
+      "audited_source_clause": "5.3.2.3"
+    },
+    {
+      "case_id": "MAIN-MAY-007",
+      "candidate_id": "CAND-03789",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "두 NSSAI가 모두 없는 PLMN이라는 조건을 포함한 HPLMN의 default configured NSSAI 구성·유효 취급 문장이다. 목록 종료 뒤 본문이다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "ef9732dd0833c27bb18b5017a56458147d6a80fe431417017bd869d79c57afbb",
+      "past_source_clause": "4.6.1",
+      "audited_source_clause": "4.6.1"
+    },
+    {
+      "case_id": "MAIN-MAY-008",
+      "candidate_id": "CAND-03573",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "N1→N1 handover 중 새 security context 생성 가능 시점을 명시한다. 표 및 앞선 NOTE 밖이다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "a244180350770a8c2f1d526d5abb650da3bcb897027a822a6c365ce630f1c0e4",
+      "past_source_clause": "4.4.2.1.1",
+      "audited_source_clause": "4.4.2.1.1"
+    },
+    {
+      "case_id": "MAIN-MAY-009",
+      "candidate_id": "CAND-03818",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "default configured NSSAI 변경용 container 및 NAS transport procedure를 함께 명시한다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "ab404da9153907345876eab7c6d667f7defa2b6ec387e8b085111797d89d5189",
+      "past_source_clause": "4.6.2.1",
+      "audited_source_clause": "4.6.2.1"
+    },
+    {
+      "case_id": "MAIN-MAY-010",
+      "candidate_id": "CAND-03703",
+      "audit_status": "HOLD",
+      "treatment": "HOLD_ALL_COHORTS",
+      "reason_codes": [
+        "OUTER_CONDITION_MISSING"
+      ],
+      "rationale_ko": "같은 문단은 SERVICE REQUEST 또는 CONTROL PLANE SERVICE REQUEST의 integrity failure 처리다. 발췌는 emergency PDU session과 integrity failure만 남겨 대상 메시지 범위를 잃었다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [],
+      "gold_overlay_id": null,
+      "source_text_sha256": "11a222b019cbb1635dd3983c864c7cb84e06c33170cb148ecc103589be66be5b",
+      "past_source_clause": "4.4.4.3",
+      "audited_source_clause": "4.4.4.3"
+    },
+    {
+      "case_id": "MAIN-MAY-011",
+      "candidate_id": "CAND-03797",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "maximum UEs reached 사유·해당 S-NSSAI의 T3526 시작과 만료·제거 대상을 함께 포함한다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "38971bed09770a83b3a1ba63edd7111fa408e36941f2149ab5e9b4669554a75a",
+      "past_source_clause": "4.6.1",
+      "audited_source_clause": "4.6.1"
+    },
+    {
+      "case_id": "MAIN-MAY-012",
+      "candidate_id": "CAND-03817",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "configured/rejected NSSAI와 registration/generic UE configuration update라는 변경 대상·절차를 명시한다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "b25e57f29f939397c2936de90b131996923e9a66a8897e95b1fd45b0df955289",
+      "past_source_clause": "4.6.2.1",
+      "audited_source_clause": "4.6.2.1"
+    },
+    {
+      "case_id": "MAIN-CAN-001",
+      "candidate_id": "CAND-00010",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "PDF 49쪽 그림 caption 뒤, 50쪽 NOTE 10 앞의 본문이다. N38의 same/different VPLMN 배치 가능성은 그림 없이 해석된다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "e3d8bd0fcf183dabc61a557d282d0d92c6e88970a480d609e0465eccdf38df3c",
+      "past_source_clause": "4.2.4",
+      "audited_source_clause": "4.2.4"
+    },
+    {
+      "case_id": "MAIN-CAN-002",
+      "candidate_id": "CAND-00050",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "PDF 75쪽 NOTE 2가 끝난 뒤의 별도 본문이다. not all의 부분 부정과 UPF 직접 subscription 대상이 명확하다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "498eda2a8c6494e90b5b657f28968cda4fa886aeccc8e9bfbc35bbd2f48138c6",
+      "past_source_clause": "4.2.16",
+      "audited_source_clause": "4.2.16"
+    },
+    {
+      "case_id": "MAIN-CAN-003",
+      "candidate_id": "CAND-00066",
+      "audit_status": "HOLD",
+      "treatment": "HOLD_ALL_COHORTS",
+      "reason_codes": [
+        "UNRESOLVED_REFERENT_SCOPE"
+      ],
+      "rationale_ko": "The architecture는 4.4.8.4의 IETF DetNet 통합 구조를 가리킨다. 발췌와 질문의 일반적인 5GS architecture만으로 그 범위를 확정하기 어렵다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [],
+      "gold_overlay_id": null,
+      "source_text_sha256": "854e6e4c26ea8c8ba1b839043aed994b0a8354790b03f79c6b17887edb12937d",
+      "past_source_clause": "4.4.8.4",
+      "audited_source_clause": "4.4.8.4"
+    },
+    {
+      "case_id": "MAIN-CAN-004",
+      "candidate_id": "CAND-00015",
+      "audit_status": "INELIGIBLE",
+      "treatment": "EXCLUDE_INELIGIBLE",
+      "reason_codes": [
+        "NOTE_EXCLUDED"
+      ],
+      "rationale_ko": "PDF 51쪽 4.2.5 NOTE 2 내부다. only authorized NFs 문장이라는 의미와 별개로 사전 NOTE 제외 규칙 위반이다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [],
+      "gold_overlay_id": null,
+      "source_text_sha256": "bed816e4fe3abc59a8ebf4cffc72e51756a2f0f7fe3554293175f5fd39addb06",
+      "past_source_clause": "4.2.5",
+      "audited_source_clause": "4.2.5"
+    },
+    {
+      "case_id": "MAIN-CAN-005",
+      "candidate_id": "CAND-00037",
+      "audit_status": "HOLD",
+      "treatment": "HOLD_ALL_COHORTS",
+      "reason_codes": [
+        "CLAUSE_ID_MISMATCH"
+      ],
+      "rationale_ko": "PDF 58쪽에서 4.2.8.1A가 시작되고 해당 문장은 59쪽 4.2.8.2 이전에 있다. 동결 clause_id 4.2.8.1과 실제 4.2.8.1A가 다르다. 문장 자체의 조건은 충분하다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [],
+      "gold_overlay_id": null,
+      "source_text_sha256": "1268ed5a2a36a0888eacad976d5c625266e001117a02f1f9a69348f8c270ca91",
+      "past_source_clause": "4.2.8.1",
+      "audited_source_clause": "4.2.8.1A"
+    },
+    {
+      "case_id": "MAIN-CAN-006",
+      "candidate_id": "CAND-00069",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "5GS가 TSN network로 동작하는 특수 경우라는 조건과 sub-network 역할을 포함한다. 내부 조항 참조는 직접 인용이나 필수 그림 의존이 아니다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "4f352eaed11ab0ea467f6f21031a868817c7daa62c97e4bd8de9165766ffef89",
+      "past_source_clause": "4.4.8.4",
+      "audited_source_clause": "4.4.8.4"
+    },
+    {
+      "case_id": "MAIN-CAN-007",
+      "candidate_id": "CAND-03554",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "To this purpose의 앞 문장은 5GSM piggyback을 설명한다. 발췌 자체에 5GMM transport IE를 통한 전송 주체·방식이 있어 적용 조건이 사라지지 않는다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "022f6b862a7951c5c1f4e519c2827f8ca3311888947aa4f315e45156aa4aa04b",
+      "past_source_clause": "4.2",
+      "audited_source_clause": "4.2"
+    },
+    {
+      "case_id": "MAIN-CAN-008",
+      "candidate_id": "CAND-03572",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED",
+        "NECESSITY_IN_FULL_SENTENCE"
+      ],
+      "rationale_ko": "보안 활성화 전 AMF/UE의 context 설정 필요조건이 완전한 문장에 있다. can이라는 단어만으로 문장 전체의 실제 설정 필요성을 약화하지 않는다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "381ce8a9f410ac0f27d07ae9e534d46c1fd5a123507ca909168d0be047f08cd3",
+      "past_source_clause": "4.4.2.1.1",
+      "audited_source_clause": "4.4.2.1.1"
+    },
+    {
+      "case_id": "MAIN-CAN-009",
+      "candidate_id": "CAND-03727",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "registration 중 UE가 SOR transparent container IE를 REGISTRATION COMPLETE에 제공하는 행동이 완결돼 있다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "06059aab03665f53326e9c4f385694d7d1875c3b563ad8ed0e777d852267295b",
+      "past_source_clause": "4.4.7",
+      "audited_source_clause": "4.4.7"
+    },
+    {
+      "case_id": "MAIN-CAN-010",
+      "candidate_id": "CAND-03575",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "This가 있어도 current 5G NAS security context라는 대상과 native/mapped 유형이 발췌 자체에 명시된다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "e1063139e0c673fbab79eeff806d6d19191926e9537b2378fec13a65cced4d14",
+      "past_source_clause": "4.4.2.1.1",
+      "audited_source_clause": "4.4.2.1.1"
+    },
+    {
+      "case_id": "MAIN-CAN-011",
+      "candidate_id": "CAND-03576",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "동일 context 사용이라는 하나의 행동에 두 when 대안이 연결된다. 독립 요구의 혼합이 아니며 두 분기 모두 보존해야 한다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "75c514e997fbd7d5b253dd69bff3184f0ec9bf383c1c5134a818c8c3a7546ae3",
+      "past_source_clause": "4.4.2.1.1",
+      "audited_source_clause": "4.4.2.1.1"
+    },
+    {
+      "case_id": "MAIN-CAN-012",
+      "candidate_id": "CAND-03579",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "S1/N1 동시 지원 및 EPC 연결 E-UTRAN interwork 목적과 두 registration mode 선택을 포함한다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "541e0b9e37dba367c295bcd77d284babcdc845fd02929f2d797999dfd7020bc6",
+      "past_source_clause": "4.4.2.1.1",
+      "audited_source_clause": "4.4.2.1.1"
+    },
+    {
+      "case_id": "MAIN-SN-001",
+      "candidate_id": "CAND-00170",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "PDF 108쪽 RAT 목록 다음 109쪽에서 본문 여백으로 복귀한다. primary RAT restriction 목적과 해당 RAT TA의 접근 금지가 문장에 있다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "676cdd5b3ab6278fff79a19f664cde3331acfa1970f9381817c3661c08ab0258",
+      "past_source_clause": "5.3.4.1.1",
+      "audited_source_clause": "5.3.4.1.1"
+    },
+    {
+      "case_id": "MAIN-SN-002",
+      "candidate_id": "CAND-00235",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "Any UE를 대상으로 하는 subscription 및 UE mobility 때문에 AMF를 옮기는 행동의 금지를 명시한다. 앞 목록과 분리된 본문이다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "5dfce67c62fbeeedee9a48545b8ef2f29185437214ef21a0d7a828263a894a2a",
+      "past_source_clause": "5.3.4.4",
+      "audited_source_clause": "5.3.4.4"
+    },
+    {
+      "case_id": "MAIN-SN-003",
+      "candidate_id": "CAND-00105",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "같은 PLMN·한 access 등록 중·다른 access 등록 의도·첫 등록 완료 전이라는 조건을 모두 포함한다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "659d430475efcc7f9045f3cf525bf35d679e288bf7b67f8b80768137068b6ca2",
+      "past_source_clause": "5.3.2.4",
+      "audited_source_clause": "5.3.2.4"
+    },
+    {
+      "case_id": "MAIN-SN-004",
+      "candidate_id": "CAND-00161",
+      "audit_status": "INELIGIBLE",
+      "treatment": "EXCLUDE_INELIGIBLE",
+      "reason_codes": [
+        "LIST_EXCLUDED"
+      ],
+      "rationale_ko": "5.3.4.1.1 Service Area Restrictions의 Non-Allowed Area 하위 bullet에 속한다. 자체 의미가 완결돼도 문서화된 개별 예외가 없다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [],
+      "gold_overlay_id": null,
+      "source_text_sha256": "398bfa0425367d025d2434e6fab1ba2c04ea5be05469d599d2e1477a69b0248d",
+      "past_source_clause": "5.3.4.1.1",
+      "audited_source_clause": "5.3.4.1.1"
+    },
+    {
+      "case_id": "MAIN-SN-005",
+      "candidate_id": "CAND-00229",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "NOTE 2 뒤 본문이다. AMF에서 NSAG 정보를 받지 못했다는 조건과 두 기능 모두 사용 금지를 포함한다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "dcaa38cd9152d64b8ed13b6474a858350c831748333f691b3b1b74113f34c818",
+      "past_source_clause": "5.3.4.3.4",
+      "audited_source_clause": "5.3.4.3.4"
+    },
+    {
+      "case_id": "MAIN-SN-006",
+      "candidate_id": "CAND-00256",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "registration 중 UE의 MICO preference 부재와 AMF 활성화 금지가 함께 있다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "0861b4d8f4745849234566bfedc56b4cae88c4f490e0380a93426ddf719e7d0c",
+      "past_source_clause": "5.4.1.3",
+      "audited_source_clause": "5.4.1.3"
+    },
+    {
+      "case_id": "MAIN-SN-007",
+      "candidate_id": "CAND-03706",
+      "audit_status": "HOLD",
+      "treatment": "HOLD_ALL_COHORTS",
+      "reason_codes": [
+        "OUTER_CONDITION_MISSING"
+      ],
+      "rationale_ko": "SERVICE/CONTROL PLANE SERVICE REQUEST integrity failure 후 성공한 service request 처리 문단의 마지막 문장이다. 현 질문과 발췌는 emergency session 일반 해제 금지처럼 범위를 넓힌다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [],
+      "gold_overlay_id": null,
+      "source_text_sha256": "800c6170d8e582ba191e3f8f74502c2468f861ee12d110cb18b51c82c8a95fe5",
+      "past_source_clause": "4.4.4.3",
+      "audited_source_clause": "4.4.4.3"
+    },
+    {
+      "case_id": "MAIN-SN-008",
+      "candidate_id": "CAND-03803",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "partially allowed 또는 partially rejected NSSAI 각각의 S-NSSAI 개수 상한 7을 직접 명시한다. 인접 합계 상한 8과 구분되는 완결 명제다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "65386fdf1a20f88ce8adafae8c702e4c12f697fd5cb3d6a06369c77b9c6fd59a",
+      "past_source_clause": "4.6.1",
+      "audited_source_clause": "4.6.1"
+    },
+    {
+      "case_id": "MAIN-SN-009",
+      "candidate_id": "CAND-03612",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "same K_AMF에서 새 context를 도출하는 조건과 target AMF가 새 KAMF 비도출을 표시하는 행동을 포함한다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "2f34cdf3f31a294ce388146ba59527686d0db12011d27b3488fc095c54163e64",
+      "past_source_clause": "4.4.2.3",
+      "audited_source_clause": "4.4.2.3"
+    },
+    {
+      "case_id": "MAIN-SN-010",
+      "candidate_id": "CAND-03684",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "secure NAS exchange 설정 이후라는 조건 및 integrity check 성공 없이는 UE entity가 처리하지 않는다는 unless 범위가 명시된다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "529231dbcb6390f479462eed804d49af38fe867ceb87715b35230be4857f14af",
+      "past_source_clause": "4.4.4.2",
+      "audited_source_clause": "4.4.4.2"
+    },
+    {
+      "case_id": "MAIN-SN-011",
+      "candidate_id": "CAND-03792",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "SNPN onboarding 등록 중/등록됨의 두 조건 및 configured NSSAI 제공 금지를 함께 포함한다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "a59ce61566340d2f1c57d90cab553dcac79caf53f971e7a64e8fbc44a5140ecd",
+      "past_source_clause": "4.6.1",
+      "audited_source_clause": "4.6.1"
+    },
+    {
+      "case_id": "MAIN-SN-012",
+      "candidate_id": "CAND-03857",
+      "audit_status": "INELIGIBLE",
+      "treatment": "EXCLUDE_INELIGIBLE",
+      "reason_codes": [
+        "NOTE_EXCLUDED",
+        "TABLE_REGION_EXCLUDED"
+      ],
+      "rationale_ko": "PDF 106쪽 Table 4.6.2.3.1의 테두리 안 NOTE 2 마지막 문장이다. 본문 NOTE와 달리 표 NOTE라는 사실을 기록하되 연구의 표·NOTE 제외 규칙을 적용한다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [],
+      "gold_overlay_id": null,
+      "source_text_sha256": "8c751a3dd382879cbb68a6d9ebf999b95408f658e9beba1f6531a20b5f4407b0",
+      "past_source_clause": "4.6.2.3",
+      "audited_source_clause": "4.6.2.3"
+    },
+    {
+      "case_id": "MAIN-SD-001",
+      "candidate_id": "CAND-00177",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "UE가 Non-Allowed Area에 있을 때 Registration Area에 포함할 TA 범위를 직접 명시한다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "7917ba7427413a3688172a81c963fc22fcee07bf0e72360d3ae652ac99bb7384",
+      "past_source_clause": "5.3.4.1.2",
+      "audited_source_clause": "5.3.4.1.2"
+    },
+    {
+      "case_id": "MAIN-SD-002",
+      "candidate_id": "CAND-00279",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED",
+        "NESTED_MODAL_SCOPE"
+      ],
+      "rationale_ko": "PPD 지원 조건과 application DSCP가 표시하는 Paging Policy를 포함한다. should는 policy 적용에 걸리며 DSCP 설정 행위 자체와 구분한다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "60be233cd3be43e9db4184127df251d42fdaefb938c366f870ffe9114df82bdc",
+      "past_source_clause": "5.4.3.2",
+      "audited_source_clause": "5.4.3.2"
+    },
+    {
+      "case_id": "MAIN-SD-003",
+      "candidate_id": "CAND-00079",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "앞 UAC trigger bullet 목록 뒤 본문이다. OVERLOAD START 수신 및 모든 관련 연결 AMF의 load 제한 요구라는 한정을 함께 포함한다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "099efa8a4e3a53a63a995d0ad8f2bafe191671f9dcb50c75ede26fa22b79832f",
+      "past_source_clause": "5.2.5",
+      "audited_source_clause": "5.2.5"
+    },
+    {
+      "case_id": "MAIN-SD-004",
+      "candidate_id": "CAND-00159",
+      "audit_status": "INELIGIBLE",
+      "treatment": "EXCLUDE_INELIGIBLE",
+      "reason_codes": [
+        "LIST_EXCLUDED"
+      ],
+      "rationale_ko": "PDF 106쪽 RAT restriction bullet 내부 문단이다. 조건은 충분하지만 연구의 목록 제외 규약에 대한 사전 개별 예외가 없다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [],
+      "gold_overlay_id": null,
+      "source_text_sha256": "9c1bc3ac1f7c29a5ae8510065d76b6d69f22f55161bc4d7778e9fb5ca2e9a8e4",
+      "past_source_clause": "5.3.4.1.1",
+      "audited_source_clause": "5.3.4.1.1"
+    },
+    {
+      "case_id": "MAIN-SD-005",
+      "candidate_id": "CAND-03822",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "allowed NSSAI의 ME 비휘발성 메모리 저장 권고를 명시한다. annex C는 추가 저장 사양 참조로 이 핵심 명제의 해석을 막지 않는다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "ca725b25d3317eb820d4721278a26b46e6abd6897172ad864d330c8fb302d4d7",
+      "past_source_clause": "4.6.2.2",
+      "audited_source_clause": "4.6.2.2"
+    },
+    {
+      "case_id": "MAIN-SD-006",
+      "candidate_id": "CAND-03982",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED",
+        "CONTEXT_ADVISORY"
+      ],
+      "rationale_ko": "구현 선택 timer를 소개하는 문단의 기억 권고다. 같은 페이지 첫 본문에도 PLMN/SNPN identity 기억을 독립적으로 요구하므로 현재 질문의 기억 행동 범위와 충돌하지 않는다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "3295ac04a321587c6e12f6af4c43acf9b25dd7ca0af1e6c883fe7ccce7658fbb",
+      "past_source_clause": "4.9.2",
+      "audited_source_clause": "4.9.2"
+    },
+    {
+      "case_id": "MAIN-SD-007",
+      "candidate_id": "CAND-04789",
+      "audit_status": "INELIGIBLE",
+      "treatment": "EXCLUDE_INELIGIBLE",
+      "reason_codes": [
+        "LIST_EXCLUDED",
+        "OUTER_CONDITION_MISSING"
+      ],
+      "rationale_ko": "PDF 254쪽에서 시작하는 5.4.1.3.7 c) MAC failure 하위 문단이다. 발췌·질문에는 선행 AUTHENTICATION FAILURE cause #20 후 mapping 점검이라는 문맥이 없다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [],
+      "gold_overlay_id": null,
+      "source_text_sha256": "22c17e460187666ff4e9791341f7cf5ce31f0ef2642e0008f72eddc2eea8ccf7",
+      "past_source_clause": "5.4.1.3.7",
+      "audited_source_clause": "5.4.1.3.7"
+    },
+    {
+      "case_id": "MAIN-SD-008",
+      "candidate_id": "CAND-04791",
+      "audit_status": "INELIGIBLE",
+      "treatment": "EXCLUDE_INELIGIBLE",
+      "reason_codes": [
+        "LIST_EXCLUDED",
+        "OUTER_CONDITION_MISSING"
+      ],
+      "rationale_ko": "PDF 254~255쪽 5.4.1.3.7 c) MAC failure 안의 올바른 mapping 분기다. 정상 authentication 전반의 correct mapping에 reject하라는 규칙이 아니다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [],
+      "gold_overlay_id": null,
+      "source_text_sha256": "4794b5b202ea29abcf1d3659ed0c6e766318882961a9ab0f926322e47846594a",
+      "past_source_clause": "5.4.1.3.7",
+      "audited_source_clause": "5.4.1.3.7"
+    },
+    {
+      "case_id": "MAIN-SD-009",
+      "candidate_id": "CAND-03986",
+      "audit_status": "HOLD",
+      "treatment": "HOLD_ALL_COHORTS",
+      "reason_codes": [
+        "AMBIGUOUS_RESPECTIVELY"
+      ],
+      "rationale_ko": "no available slices 조건은 포함하지만 PLMN/SNPN identity와 SNPN list 사이 respectively 대응은 전후 문맥만으로 단일 연결을 확정하지 못했다. 불명확한 gold를 확정하지 않는다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [],
+      "gold_overlay_id": null,
+      "source_text_sha256": "31ecd04ac784265413d4dfe96e21dd2a181e4b92ecb3a314fb689991d0cd0f53",
+      "past_source_clause": "4.9.2",
+      "audited_source_clause": "4.9.2"
+    },
+    {
+      "case_id": "MAIN-SD-010",
+      "candidate_id": "CAND-04345",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "emergency services 완료 후 callback을 가능하게 하기 위한 MICO 요청 전 구현별 대기를 명시한다. 이미 MICO가 활성화됐던 주변 절차를 일반적인 서비스 해제 금지로 바꾸지 않는다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "0ce759e4d20d6275cfe62301243ae4c46fab88d74d2869dd636652f8a0f263d7",
+      "past_source_clause": "5.3.6",
+      "audited_source_clause": "5.3.6"
+    },
+    {
+      "case_id": "MAIN-SD-011",
+      "candidate_id": "CAND-04552",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "unavailability period의 duration/start 정보로 두 timer 값을 정하는 한 설정 원칙이다. 질문도 동일 정보가 주어진 상황을 지정한다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "f1a22403e0c02b55a09b3e85ef9d7e8b9aba8c1b47e011e1308778d027a2d8d7",
+      "past_source_clause": "5.3.26",
+      "audited_source_clause": "5.3.26"
+    },
+    {
+      "case_id": "MAIN-SD-012",
+      "candidate_id": "CAND-04559",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "IE 부재 또는 EUPR의 종료 보고 요구와 period 종료 시 registration update라는 두 조건·행동을 함께 담는다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "12a78f96cedb6e8707799b875d547180433f20694920a03e57e250be40831603",
+      "past_source_clause": "5.3.26",
+      "audited_source_clause": "5.3.26"
+    },
+    {
+      "case_id": "MAIN-SDN-001",
+      "candidate_id": "CAND-00160",
+      "audit_status": "INELIGIBLE",
+      "treatment": "EXCLUDE_INELIGIBLE",
+      "reason_codes": [
+        "LIST_EXCLUDED"
+      ],
+      "rationale_ko": "PDF 106쪽 Forbidden Area bullet 안의 후속 문장이다. 사전에 기록된 목록 예외가 없다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [],
+      "gold_overlay_id": null,
+      "source_text_sha256": "817f05e0a1edbcc784b19b1397e061fb7aa3ed457ad7b231af5c7fb760f5e77d",
+      "past_source_clause": "5.3.4.1.1",
+      "audited_source_clause": "5.3.4.1.1"
+    },
+    {
+      "case_id": "MAIN-SDN-002",
+      "candidate_id": "CAND-00901",
+      "audit_status": "HOLD",
+      "treatment": "HOLD_ALL_COHORTS",
+      "reason_codes": [
+        "OUTER_CONDITION_MISSING"
+      ],
+      "rationale_ko": "같은 문단 첫 문장은 Services using Non-GBR QoS Flows이다. 추출 문장·질문·gold의 packets만으로는 98% 기준의 Non-GBR 적용 범위를 보존하지 못한다. 기존 2% 부연 쟁점과 별개다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [],
+      "gold_overlay_id": null,
+      "source_text_sha256": "54267bdbfdc454c61d6803993daefb58ec5b5a9d5842d9ef5ccd29900fb3c2f5",
+      "past_source_clause": "5.7.3.4",
+      "audited_source_clause": "5.7.3.4"
+    },
+    {
+      "case_id": "MAIN-SDN-003",
+      "candidate_id": "CAND-00377",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "PLMN 운용 불가 지역임을 판단할 충분히 정확한 위치정보라는 unless 조건을 포함한다. 주변 문맥은 NR NTN UE 위치 검증이며 질문도 운용 제한 지역 요청으로 한정한다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "e213a0982bff959d48c7d9f5d7e51698fa506b8ed71b22d85bc2290ea2e04875",
+      "past_source_clause": "5.4.11.4",
+      "audited_source_clause": "5.4.11.4"
+    },
+    {
+      "case_id": "MAIN-SDN-004",
+      "candidate_id": "CAND-01727",
+      "audit_status": "INELIGIBLE",
+      "treatment": "EXCLUDE_INELIGIBLE",
+      "reason_codes": [
+        "LIST_EXCLUDED"
+      ],
+      "rationale_ko": "PDF 315쪽 dual-registration mode bullet의 후속 문장이다. UE mode와 접속 조건이 완전해도 사전 목록 제외 규칙을 위반한다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [],
+      "gold_overlay_id": null,
+      "source_text_sha256": "1c170f0fefb838ceb79dbeacfd668d87abe1d891b5b701330440e128edff6aea",
+      "past_source_clause": "5.17.2.1",
+      "audited_source_clause": "5.17.2.1"
+    },
+    {
+      "case_id": "MAIN-SDN-005",
+      "candidate_id": "CAND-01842",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "선택된 PLMN/SNPN이 UE 위치를 서비스할 수 있는 동안이라는 as long as 조건과 network 이동 비권고가 포함된다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "ffea4bd0b6bbf7497e9467bee491481e95bcfefdc8be92eb687bcb58c32b5960",
+      "past_source_clause": "5.18.4",
+      "audited_source_clause": "5.18.4"
+    },
+    {
+      "case_id": "MAIN-SDN-006",
+      "candidate_id": "CAND-01886",
+      "audit_status": "HOLD",
+      "treatment": "HOLD_ALL_COHORTS",
+      "reason_codes": [
+        "OUTER_CONDITION_MISSING"
+      ],
+      "rationale_ko": "5.19.7.2는 NAS Mobility Management congestion control에만 적용된다고 명시한다. 발췌와 질문은 CM-CONNECTED 조건만 담아 congestion 처리 범위 확인이 필요하다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [],
+      "gold_overlay_id": null,
+      "source_text_sha256": "71884c0508bae149c79ded185e9163c79059bbbe73dc92470c5e03f05955e9a2",
+      "past_source_clause": "5.19.7.2",
+      "audited_source_clause": "5.19.7.2"
+    },
+    {
+      "case_id": "MAIN-SDN-007",
+      "candidate_id": "CAND-02405",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "5GC→EPC redirection 목적·Registration/Service Request 시점·EMM cause의 5GC 비사용 지침이라는 구문 범위가 있다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "7ee56d212698bc8b8a8dd01a2fee0a637c04ff5b7419addb6331a3e6813a33dc",
+      "past_source_clause": "5.31.3",
+      "audited_source_clause": "5.31.3"
+    },
+    {
+      "case_id": "MAIN-SDN-008",
+      "candidate_id": "CAND-02464",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "Active Time 할당 시 all PLMN registration area 비할당과 paging 회피 목적을 포함한다. SDN-009와 주제상 관련되므로 독립 표본으로 일반화하지 않는다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "645d80315f1e9009776bc98afad9b9bf8d09a28d1d1ece2c1024809160e72749",
+      "past_source_clause": "5.31.7.4",
+      "audited_source_clause": "5.31.7.4"
+    },
+    {
+      "case_id": "MAIN-SDN-009",
+      "candidate_id": "CAND-04333",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "active time value 알림 조건과 MICO IE의 all-PLMN 표시 비권고가 포함된다. SDN-008의 할당 원칙과 연관되나 메시지 표시 행동은 다르다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "a4bc40d09ccf3404d67000ceda52adb94e312365d8c5436382de28a3b0095702",
+      "past_source_clause": "5.3.6",
+      "audited_source_clause": "5.3.6"
+    },
+    {
+      "case_id": "MAIN-SDN-010",
+      "candidate_id": "CAND-04388",
+      "audit_status": "HOLD",
+      "treatment": "HOLD_ALL_COHORTS",
+      "reason_codes": [
+        "RECORDED_LIST_EXCEPTION",
+        "QUESTION_ONLY_CONTEXT"
+      ],
+      "rationale_ko": "CAND-04388의 완전 목록 예외가 동결 selection에 기록돼 있어 무기록 목록과 구분한다. 7개 항목은 완전하지만 congestion은 앞 문맥·질문에만 있고 source_text_en에는 없어 추출 단위 보완 여부를 보류한다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [],
+      "gold_overlay_id": null,
+      "source_text_sha256": "404dcaa02415a8585d7d920ef5294daba66cb0bde69d1faa19e4ed5580e979ad",
+      "past_source_clause": "5.3.9",
+      "audited_source_clause": "5.3.9"
+    },
+    {
+      "case_id": "MAIN-SDN-011",
+      "candidate_id": "CAND-05502",
+      "audit_status": "ELIGIBLE_WITH_RECORDED_EXCEPTION",
+      "treatment": "SENSITIVITY_ONLY_RECORDED_EXCEPTION",
+      "reason_codes": [
+        "RECORDED_LIST_EXCEPTION"
+      ],
+      "rationale_ko": "CAND-05502의 self-contained V2X 문장 예외가 모델 실행 전 동결 selection에 기록돼 있다. capability 두 대안 중 하나 AND UDM subscription이라는 조건 전체를 포함한다. 일반 목록 제외 문구와의 차이는 공개해야 한다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "2a5f6da4b7fee3e9d37056c43b584538f9f72c34636e53701845b90ae108801c",
+      "past_source_clause": "5.5.1.2.4",
+      "audited_source_clause": "5.5.1.2.4"
+    },
+    {
+      "case_id": "MAIN-SDN-012",
+      "candidate_id": "CAND-07282",
+      "audit_status": "ELIGIBLE",
+      "treatment": "INCLUDE_PRIMARY",
+      "reason_codes": [
+        "SELF_CONTAINED"
+      ],
+      "rationale_ko": "목록 종료 뒤, NOTE 4 앞의 본문이다. 유효한 MBS area 정보 보유 및 현재 TAI/CGI 모두 area 밖이라는 조건을 포함한다.",
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C1M"
+      ],
+      "cohorts": [
+        "PRIMARY_STRICT_49",
+        "SENS_GOLD_50",
+        "SENS_EXCEPTION_50",
+        "SENS_GOLD_EXCEPTION_51"
+      ],
+      "gold_overlay_id": null,
+      "source_text_sha256": "cce89f7c0180e86fd7a00a7b27ece37c3ae64ceadd63f45a2d21af00564f5494",
+      "past_source_clause": "6.4.1.2",
+      "audited_source_clause": "6.4.1.2"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{"review_id":"PRR-001","slot_id":"CTX-001-R1_AUDIT_REPAIR-R1","case_id":"CTX-001","arm":"R1_AUDIT_REPAIR","replicate":1}
+{"review_id":"PRR-002","slot_id":"CTX-002-R0_REWRITE-R1","case_id":"CTX-002","arm":"R0_REWRITE","replicate":1}
+{"review_id":"PRR-003","slot_id":"CTX-002-R1_AUDIT_REPAIR-R1","case_id":"CTX-002","arm":"R1_AUDIT_REPAIR","replicate":1}
+{"review_id":"PRR-004","slot_id":"CTX-003-R0_REWRITE-R1","case_id":"CTX-003","arm":"R0_REWRITE","replicate":1}
+{"review_id":"PRR-005","slot_id":"CTX-001-R0_REWRITE-R2","case_id":"CTX-001","arm":"R0_REWRITE","replicate":2}
+{"review_id":"PRR-006","slot_id":"CTX-002-R1_AUDIT_REPAIR-R2","case_id":"CTX-002","arm":"R1_AUDIT_REPAIR","replicate":2}
+{"review_id":"PRR-007","slot_id":"CTX-001-R0_REWRITE-R1","case_id":"CTX-001","arm":"R0_REWRITE","replicate":1}
+{"review_id":"PRR-008","slot_id":"CTX-002-R0_REWRITE-R2","case_id":"CTX-002","arm":"R0_REWRITE","replicate":2}
+{"review_id":"PRR-009","slot_id":"CTX-001-R1_AUDIT_REPAIR-R2","case_id":"CTX-001","arm":"R1_AUDIT_REPAIR","replicate":2}
+{"review_id":"PRR-010","slot_id":"CTX-003-R1_AUDIT_REPAIR-R1","case_id":"CTX-003","arm":"R1_AUDIT_REPAIR","replicate":1}
+{"review_id":"PRR-011","slot_id":"CTX-003-R0_REWRITE-R2","case_id":"CTX-003","arm":"R0_REWRITE","replicate":2}
+{"review_id":"PRR-012","slot_id":"CTX-003-R1_AUDIT_REPAIR-R2","case_id":"CTX-003","arm":"R1_AUDIT_REPAIR","replicate":2}

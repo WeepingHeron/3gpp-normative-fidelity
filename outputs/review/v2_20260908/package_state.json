@@ -1,0 +1,17 @@
+{
+  "status": "PREPARED_PREFLIGHT_PENDING",
+  "treatment_version": "posthoc_treatment_v1_20260908",
+  "freeze_manifest_sha256": "271c9718049be10a7ef6422c8d08a0a6edc672cc4a6051d7a9bf957338b4bfa5",
+  "rubric_sha256": "a81a590659d18fc6784802438d337731837f820bc8f45b5fd070a1d7e751efb5",
+  "case_count": 51,
+  "review_slots_per_pass": 255,
+  "delivery_counts": {
+    "EXPLANATION": 254,
+    "NOT_GENERATED": 1
+  },
+  "gold_preflight_completed": 0,
+  "semantic_reviews_completed": 0,
+  "new_model_calls": 0,
+  "pass2": "ORDER_STAGED_NOT_RELEASED",
+  "masking": "Condition/old-score/key masked; not independent or fully blind."
+}

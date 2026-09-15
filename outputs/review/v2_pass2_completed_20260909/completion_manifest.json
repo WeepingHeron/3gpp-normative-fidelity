@@ -1,0 +1,32 @@
+{
+  "status": "PASS2_SEALED_ADJUDICATION_PENDING",
+  "manifested_at": "2026-09-09T04:56:30.438032+00:00",
+  "file_sha256": {
+    "disagreements_index.csv": "042a2d7fedcf7c536795c4e391eb0d77519ebac3d8045d0fddffe72e4b85f9f3",
+    "disagreements_pending.jsonl": "c1d6e5d10720d74a1403f947030b433cb6d7b31fc4497bdc7f0ac60e32b97911",
+    "disagreements_pending.md": "9a6f9283a816154183b6a3d132609bb583ccefa512ad777eb238e9756c472fb5",
+    "input_provenance_bindings.jsonl": "eda19afe6f95889ad507883c142a84465af1cf5258dcf3ceb983de8d8d557ff0",
+    "judgments_index.csv": "88eccd5bcefc42da55364939c9a1a886dc26f503c0c3c23df5ff1a2389405eb5",
+    "judgments_working.jsonl": "0b6aa6b31b4798bc75f97b1caa0d48ceba63bcf7a06e1e919c9e9e063ecf7279",
+    "pass_comparison.jsonl": "150f8c3ef3572edc6617fe5d0d0e08f4de2d7d1c91da3ee1129b96e9304caa84",
+    "readable/review_001_043.md": "35bab2f17575cfd223b80c2e51b81f1e163fe8f9197d6c719d2a54368c257abd",
+    "readable/review_044_086.md": "941eb7c7352939d4a88b3f5d9d3ee10b6e2cc0f668c44be68c1ddbcd0e6268e3",
+    "readable/review_087_129.md": "e670202f3490aefcbdf6effadd17643775ae5db8976147c6896991463750a0bb",
+    "readable/review_130_172.md": "27a2f8db01e55c1c686e21a2955c6700f0826b8d1e491444c1104c25f18f1541",
+    "readable/review_173_215.md": "e31974c58e9d10d4beb456fa36879b03b12f28274ded0ef913cfb1c1cb82dcf9",
+    "readable/review_216_255.md": "f1a68d4af2b72c25a55f5f88a2bc955dbb1f88d951af4d0d582736d19ab439a4",
+    "seal/completion_manifest.json": "7cd7185a1dff5b471fd862bd432cf8410dbecf6b11e5defad03628765d987ad8",
+    "seal/pass2_completed.jsonl": "381d9d08b420a9bd598fc56222a80a9790630c2194cc5c4c79219cb9c70c89ce",
+    "seal/preflight_completed.jsonl": "572a4c7efc0f72c192af68b585ca0a0edf44f979995e72c161cab898ba322ff4",
+    "summary.json": "e9268bebd766572d579733b76e2cbe022ff3ee6a7d81ff2e91cee7085c6ccb9c",
+    "verification_receipt.json": "21d50e9f567a562d55e3d0c89996ccdfca21e9d407e0925f24532aab610a10eb"
+  },
+  "support_file_sha256": {
+    "docs/26_v2_semantic_review_pass2_2026-09-09.md": "3e0aedbea953eb951794a932485baac47dcb66f472261e01d64517c7de1e7300",
+    "tools/compare_v2_review_passes_20260909.py": "8d7b7857c554a6a2e1f43f51c33aed4e4f3c5f39c4fb7c938a9e0c96ab05b456",
+    "tools/finalize_v2_pass2_20260909.py": "2a6793097a65e7ba5cf8ce66c188f1d04934b63530972e0ef366c067c0dad118",
+    "tools/v2_pass2_workbench_20260909.py": "2a92690b6968490cca0a5a150b4fa24f0b0d982a7242efbd5dcba2a4766d9353"
+  },
+  "pass1_full_completion_manifest_sha256": "3f208e42dc3846ddf26062eef5ae434cdbbdaf5b4446f94d2e4f839c48b2a163",
+  "release_manifest_sha256": "68d054e628b0ecf4a33865658aba2d8ff25cf935f5358d7d6ac8d95bdaba6cee"
+}

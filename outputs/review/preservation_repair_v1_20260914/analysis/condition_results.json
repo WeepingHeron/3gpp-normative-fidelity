@@ -1,0 +1,30 @@
+[
+  {
+    "arm": "R0_REWRITE",
+    "n": 6,
+    "complete": 1,
+    "incomplete": 4,
+    "unresolved": 1,
+    "complete_bounds": [
+      1,
+      2
+    ],
+    "distorted": 2,
+    "not_distorted": 1,
+    "claim_unresolved": 3
+  },
+  {
+    "arm": "R1_AUDIT_REPAIR",
+    "n": 6,
+    "complete": 2,
+    "incomplete": 3,
+    "unresolved": 1,
+    "complete_bounds": [
+      2,
+      3
+    ],
+    "distorted": 2,
+    "not_distorted": 3,
+    "claim_unresolved": 1
+  }
+]

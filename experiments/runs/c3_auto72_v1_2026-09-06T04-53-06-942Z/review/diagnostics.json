@@ -1,0 +1,17 @@
+{
+  "status": "DETERMINISTIC_DIAGNOSTICS_ONLY_SEMANTICS_NOT_EVALUATED",
+  "all_72": {
+    "n": 72,
+    "extraction_JSON_modal_correct": 65,
+    "extraction_polarity_correct": 69,
+    "explanation_JSON_modal_correct": 65
+  },
+  "excluding_scope_ambiguous": {
+    "n": 69,
+    "extraction_JSON_modal_correct": 64,
+    "extraction_polarity_correct": 67,
+    "explanation_JSON_modal_correct": 64
+  },
+  "review_rows": 216,
+  "warning": "No semantic preservation rate until fresh review. JSON matches do not validate Korean meaning."
+}

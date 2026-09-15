@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "checked_at": "2026-09-13T13:51:48.492Z",
+  "generated": 18,
+  "classified_as_explanation": 18,
+  "all_raw_to_ledger_match": true,
+  "run_inventory_exact": true,
+  "input_tokens": 19668,
+  "cached_input_tokens": 2560,
+  "output_tokens": 6688,
+  "generation_cost_usd": 0.04311900000000001,
+  "semantic_evaluation_performed": false
+}

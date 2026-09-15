@@ -1,0 +1,15 @@
+{
+  "status": "DRAFT_REVIEW_SNAPSHOT_NOT_EXECUTION_FREEZE",
+  "file_sha256": {
+    "experiments/generation_preservation_v1_20260909/protocol.json": "7b08072837f2ed4a59d41327b64e9640243b239ad86ce33e3fccda08e474067c",
+    "experiments/generation_preservation_v1_20260909/modality_instruction.md": "6467e648bc50f78bf2b1dfdfcc7d309f883df8746f53e42bfb8934881ab81020",
+    "experiments/generation_preservation_v1_20260909/checklist_instruction.md": "afcf4eac4f03483e4ee799ec4a085ee0f66ec4e663ca1c4791a8c9da89cb9e07",
+    "tools/prepare_generation_preservation_plan_20260909.py": "b63b6ee74374adfab2dfbfe552ca0adff45422eb1b4a0a54bfb8e7cfcef560fa",
+    "docs/31_generation_preservation_experiment_plan_2026-09-09.md": "21042069ba50149d3e5f4fb71cbabe8704545c02aff361be127fb8c0086cef96",
+    "experiments/generation_preservation_v1_20260909/request_plan.preview.jsonl": "35c21d750970a098230a73ed778cdf3ba1b756194f2df7a5dd0b04dc23c0c22c",
+    "experiments/generation_preservation_v1_20260909/generator_inputs.json": "1d135cbd2d553d9c7f7dae304b77fd1aa25f6cf247c2d141239cf59c4b6ecc18",
+    "experiments/generation_preservation_v1_20260909/evaluation_reference.json": "787c3877312ac3048bab8af8d8593ea4410663facb29650483b6502c740cf8b5",
+    "experiments/generation_preservation_v1_20260909/response_schema.json": "9218fe5bd783f2f0fc01798334e9bfd69c117f8df854701c5fc34c42efa68c3c",
+    "experiments/generation_preservation_v1_20260909/validation_report.json": "198db6849d58758f3e64ee9edb1ac4fd11b23a24efd4df368ab15aea50d6369c"
+  }
+}

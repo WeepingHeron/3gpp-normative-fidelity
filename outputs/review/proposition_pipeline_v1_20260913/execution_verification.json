@@ -1,0 +1,12 @@
+{
+  "verified_at": "2026-09-13T14:25:15.591479+00:00",
+  "status": "PASS",
+  "actual_requests": 18,
+  "final_explanations": 12,
+  "all_dynamic_bindings_exact": true,
+  "raw_parsed_final_equal": true,
+  "all_seals_valid": true,
+  "cost_recomputed_usd": 0.05711624999999999,
+  "input_tokens": 26445,
+  "output_tokens": 9053
+}

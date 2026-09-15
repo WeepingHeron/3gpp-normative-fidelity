@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "status": "PASS1_SEALED_PASS2_PENDING",
+  "checks": {
+    "complete_255_unique_in_frozen_order": true,
+    "exactly_five_slots_for_each_of_51_references": true,
+    "manual_tsv_matches_completed_records": true,
+    "all_254_response_quotes_verbatim": true,
+    "all_255_packet_hashes_match": true,
+    "all_255_original_response_record_hashes_match": true,
+    "preflight_provenance_and_propositions_unchanged": true,
+    "unresolved_gold_contract_passes": true,
+    "all_review_times_after_full_preflight": true,
+    "identical_text_same_reference_same_state": true,
+    "sealed_copy_and_hashes_match": true,
+    "preflight_eight_files_and_two_support_hashes_unchanged": true,
+    "earliest_pass2_equals_seal_plus_24_hours": true
+  },
+  "preserved_package": {
+    "ok": true,
+    "status": "PREPARED_PREFLIGHT_PENDING",
+    "references": 51,
+    "slots": 255,
+    "delivery_counts": {
+      "EXPLANATION": 254,
+      "NOT_GENERATED": 1
+    },
+    "package_files_verified": 22,
+    "support_files_verified": 2,
+    "frozen_files_unchanged": 119,
+    "gold_preflight_completed": 0,
+    "semantic_reviews_completed": 0,
+    "new_model_calls": 0
+  },
+  "judgment_counts": {
+    "PASS": 169,
+    "FAIL": 78,
+    "NOT_SCORED": 1,
+    "UNRESOLVED": 7
+  },
+  "semantic_truth_automatically_verified": false,
+  "new_model_api_calls": 0,
+  "seal_manifest_sha256": "798b99adbfb6e8a287c0d6450ba2d2aa175d221df74de92c478427b0106fe45c"
+}

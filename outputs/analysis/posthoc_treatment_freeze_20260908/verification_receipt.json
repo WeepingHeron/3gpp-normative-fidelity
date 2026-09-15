@@ -1,0 +1,75 @@
+{
+  "ok": true,
+  "status": "FROZEN_NOT_APPLIED",
+  "frozen_files": 119,
+  "prior_manifests_verified": 9,
+  "checks": {
+    "frozen_not_applied": true,
+    "five_conditions": true,
+    "four_prespecified_cohorts": true,
+    "cohort_ids_counts_symmetry": true,
+    "72_unique_case_policies": true,
+    "unchanged_audit_dispositions_and_membership": true,
+    "10_ineligible_11_hold_not_reintroduced": true,
+    "cohort_composition_matches_source": true,
+    "one_gold_patch_only": true,
+    "gold_patch_exact_before_after": true,
+    "360_response_slots_bound": true,
+    "response_file_per_condition": true,
+    "application_not_started": true
+  },
+  "self_tests": [
+    {
+      "name": "missing_case",
+      "passed": true
+    },
+    {
+      "name": "condition_asymmetry",
+      "passed": true
+    },
+    {
+      "name": "hold_reintroduced",
+      "passed": true
+    },
+    {
+      "name": "gold_input_contamination_in_primary",
+      "passed": true
+    },
+    {
+      "name": "extra_gold_field_patch",
+      "passed": true
+    },
+    {
+      "name": "gold_before_value_changed",
+      "passed": true
+    },
+    {
+      "name": "response_record_hash_changed",
+      "passed": true
+    },
+    {
+      "name": "unknown_not_zero",
+      "passed": true
+    },
+    {
+      "name": "unknown_null_allowed",
+      "passed": true
+    },
+    {
+      "name": "refusal_counts_pipeline_zero",
+      "passed": true
+    },
+    {
+      "name": "excluded_not_model_failure",
+      "passed": true
+    },
+    {
+      "name": "missing_research_record_not_model_failure",
+      "passed": true
+    }
+  ],
+  "new_model_calls": 0,
+  "rescored_slots": 0,
+  "verified_at_utc": "2026-09-08T00:30:52.986379+00:00",
+  "freeze_manifest_sha256": "271c9718049be10a7ef6422c8d08a0a6edc672cc4a6051d7a9bf957338b4bfa5"
+}

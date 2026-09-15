@@ -1,0 +1,10 @@
+﻿review_id,case_id,condition,archived_complete,fresh_pass1_complete,fresh_reason,archived_note
+E005,MAIN-CAN-009,C1,1,0,can의 기술적 가능성을 명시적으로 '허용 사항'으로 바꿨다. UE·등록 시점·메시지·IE와 전달 대상은 정확.,의미 보존
+E029,MAIN-CAN-011,C1,1,0,두 활성화 조건과 보안 NAS 교환은 정확하지만 사용 가능성을 명시적 허용으로 분류. 동결 can 기준 실패; can 자체의 허용 독해 여지는 별도 표시.,의미 보존
+E038,MAIN-CAN-008,C1,0,1,Before can ... need to ...의 필요조건을 '활성화 전에 context 수립해야'로 정확히 표현. 보안 활성화 의무나 context만 있으면 충분하다는 주장은 추가하지 않음. gold가 can을 독립 가능성으로 분리한 범위는 주의.,security 활성화의 전제조건을 AMF와 UE의 의무로 재구성함
+E052,MAIN-CAN-007,C1,1,0,5GMM IE를 통한 5GSM 전송 경로는 맞지만 마지막 문장에서 가능성을 명시적 허용으로 바꿈.,의미 보존
+E102,MAIN-MAY-001,C1,1,0,동결 may 허용 기준과 달리 '기술적 가능성'으로 명시. actor/한 session/두 UPF 제어는 보존. 원문의 may have capability는 선택적 능력 보유라 gold의 단일 허용 분류 자체도 재검토 필요.,의미 보존
+E127,MAIN-SDN-007,C1,1,0,UE의 5GC 비사용을 두 번 '않아야 한다'로 표현하고 권고 한정이 없어 should_not을 강화. redirect·요청·EMM cause 전달은 유지.,의미 보존
+E133,MAIN-SD-009,C1,1,0,원문/gold의 PLMN 또는 SNPN 식별자 또는 SNPN 목록 중 SNPN 식별자 선택지가 빠지고 PLMN 식별자 대 SNPN 목록만 남음. respectively의 모호성이 있어 후속 대조 필요.,의미 보존
+E183,MAIN-CAN-004,C1,0,1,UDSF의 공유 조건에서 권한 NF만 접근 가능하도록 구현·배포가 보장한다는 원문 책임을 유지. '반드시 보장'은 NF 접근을 의무화한 것이 아니라 make sure에 대응.,authorized NF의 접근 가능성을 구현·배포 의무로 바꿈
+E190,MAIN-SDN-010,C2,1,0,7종을 열거하지만 mobile terminated services를 '이동 종료 서비스'로 오역해 착신 서비스를 다른 대상으로 읽게 함. paging/notification 수식은 남으나 범주명 보존 실패로 잠정 판정.,의미 보존

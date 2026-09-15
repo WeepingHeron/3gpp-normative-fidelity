@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "assessment": "Share with caveats",
+  "checks": [
+    "prior sealed artifacts and frozen protocol hashes",
+    "255 unique response-record joins with no drop or expansion",
+    "four exact case masks applied to all five conditions",
+    "independent SQLite counts for all 20 result rows",
+    "all 16 pair bounds verified by exhaustive unresolved assignments",
+    "NOT_SCORED counted in denominator and U retained null",
+    "case-paired trace for 800 overlapping memberships",
+    "all affected inferential outputs withheld"
+  ],
+  "semantic_truth_automatically_verified": false,
+  "verified_at": "2026-09-09T05:19:38.682344+00:00"
+}

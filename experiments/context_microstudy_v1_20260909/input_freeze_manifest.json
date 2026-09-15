@@ -1,0 +1,19 @@
+{
+  "experiment_id": "CONTEXT_MICROSTUDY_V1_20260909",
+  "frozen_at": "2026-09-09T06:11:26.953Z",
+  "source_review_received": true,
+  "planned_calls": 24,
+  "file_sha256": {
+    "experiments/context_microstudy_v1_20260909/cases.json": "ad9922f924141cb0b8a5b5f2931ca3b42ae77052513d37e6ee7ffe20f64e623e",
+    "experiments/context_microstudy_v1_20260909/preflight.json": "34ee87bf67a92ccd66d8eb441be485a7ea4f04cb6cf13d48f939feb1ae864d02",
+    "experiments/context_microstudy_v1_20260909/prompt_template.md": "a8fa79390a9a10ff48ef4d6f006a6bac291465476a03b5a1ebee0696a82f054b",
+    "experiments/context_microstudy_v1_20260909/protocol.json": "0f1d759430202a0dcf0b6f015bbf2b45c593c88d988c9961e2856b6cdb79ae0b",
+    "experiments/context_microstudy_v1_20260909/request_plan.jsonl": "c8e66730f471ba8052c295c6ba801169e20bdd477608ae9215dee9b3f3299bd7",
+    "experiments/context_microstudy_v1_20260909/response_schema.json": "9218fe5bd783f2f0fc01798334e9bfd69c117f8df854701c5fc34c42efa68c3c",
+    "experiments/run_context_microstudy_20260909.mjs": "052279ae6ba62531f577dfd59311687e70c30f221f7d4f64f12d01668e85c076",
+    "experiments/c3_lib.mjs": "b9493af34faaa9839bcb0e194501df4ce27741d875a8f22181abddda897c72f2",
+    "tools/prepare_context_microstudy_20260909.py": "973fa4f545f03e2dd119a908737304ede699d32a9fc978eda7b381e8f710875b",
+    "outputs/review/context_microstudy_preflight_20260909/review.json": "365ec3b9c215cd1b217b4c87bcd4388370f3f7a8e79692140c9d53c83439754f",
+    "outputs/review/context_microstudy_preflight_20260909/review.md": "9ff5d7f7b6ba275587c7ef8daf5d1be3eb2bfeeb174a5855e06d70acda0405be"
+  }
+}

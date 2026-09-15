@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "explanation_ko": {
+      "type": "string"
+    },
+    "normative_type": {
+      "type": "string",
+      "enum": [
+        "obligation",
+        "prohibition",
+        "recommendation",
+        "discouragement",
+        "permission",
+        "capability",
+        "unclear"
+      ]
+    },
+    "actor": {
+      "type": "string"
+    },
+    "condition": {
+      "type": "string"
+    },
+    "action": {
+      "type": "string"
+    },
+    "exception": {
+      "type": "string"
+    },
+    "citation_spec": {
+      "type": "string"
+    },
+    "citation_version": {
+      "type": "string"
+    },
+    "citation_clause": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "explanation_ko",
+    "normative_type",
+    "actor",
+    "condition",
+    "action",
+    "exception",
+    "citation_spec",
+    "citation_version",
+    "citation_clause"
+  ]
+}

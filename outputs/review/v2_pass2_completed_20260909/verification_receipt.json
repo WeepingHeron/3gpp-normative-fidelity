@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "verified_at": "2026-09-09T04:54:57.765954+00:00",
+  "checks": [
+    "24-hour release gate",
+    "255 unique rows in frozen pass2 order",
+    "51 references times five slots",
+    "254 verbatim response evidence quotes plus one not-generated sentinel",
+    "treatment and rubric hash",
+    "source propositions and provenance equal preflight",
+    "packet and original response record hashes",
+    "gold unresolved state restriction",
+    "UNRESOLVED=null and pipeline NOT_SCORED=0",
+    "review timestamps after release and monotonic",
+    "same reference and exact explanation state consistency",
+    "pass1 and pass2 seal hashes",
+    "119 original frozen files and 22 package files plus two support files",
+    "comparison by unique original response record hash only after pass2 seal"
+  ],
+  "semantic_truth_automatically_verified": false
+}

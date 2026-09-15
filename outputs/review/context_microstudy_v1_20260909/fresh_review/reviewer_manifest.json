@@ -1,0 +1,85 @@
+{
+  "reviewer_id": "/root/microstudy_fresh_review_24",
+  "review_kind": "fresh-context manual AI semantic review",
+  "recorded_at_utc": "2026-09-09T06:25:14.928174+00:00",
+  "reviewed_at_meaning": "Actual per-record serialization time; MCR-010 timestamp updated at manual pre-seal self-review.",
+  "input_sha256": {
+    "experiments/context_microstudy_v1_20260909/protocol.json": "0f1d759430202a0dcf0b6f015bbf2b45c593c88d988c9961e2856b6cdb79ae0b",
+    "experiments/context_microstudy_v1_20260909/cases.json": "ad9922f924141cb0b8a5b5f2931ca3b42ae77052513d37e6ee7ffe20f64e623e",
+    "experiments/context_microstudy_v1_20260909/prompt_template.md": "a8fa79390a9a10ff48ef4d6f006a6bac291465476a03b5a1ebee0696a82f054b",
+    "experiments/context_microstudy_v1_20260909/response_schema.json": "9218fe5bd783f2f0fc01798334e9bfd69c117f8df854701c5fc34c42efa68c3c",
+    "experiments/context_microstudy_v1_20260909/input_freeze_manifest.json": "5cf197871d852f6300e1bda00291afeb0da806261a815960445ea47810e36e64",
+    "outputs/review/context_microstudy_v1_20260909/reviewer/REVIEW_GUIDE.md": "7d791c82ef40d0d303c06038b9560f7bf91246fc57edfe294428fd02b34821ab",
+    "outputs/review/context_microstudy_v1_20260909/reviewer/packets_24.jsonl": "c8a781933c9e9bc3170a70d0469e5ea777695496d0378ed05da5335350727335",
+    "outputs/review/context_microstudy_v1_20260909/reviewer/judgments_blank_24.jsonl": "2d792408746f11a9247f13784c3b08bd4912891783dd4613996c824e794a421f",
+    "outputs/review/context_microstudy_preflight_20260909/review.json": "365ec3b9c215cd1b217b4c87bcd4388370f3f7a8e79692140c9d53c83439754f",
+    "outputs/review/context_microstudy_preflight_20260909/review.md": "9ff5d7f7b6ba275587c7ef8daf5d1be3eb2bfeeb174a5855e06d70acda0405be"
+  },
+  "frozen_input_hash_checks": {
+    "experiments/context_microstudy_v1_20260909/cases.json": true,
+    "experiments/context_microstudy_v1_20260909/prompt_template.md": true,
+    "experiments/context_microstudy_v1_20260909/protocol.json": true,
+    "experiments/context_microstudy_v1_20260909/response_schema.json": true,
+    "outputs/review/context_microstudy_preflight_20260909/review.json": true,
+    "outputs/review/context_microstudy_preflight_20260909/review.md": true
+  },
+  "output_sha256": {
+    "outputs/review/context_microstudy_v1_20260909/fresh_review/judgments_24.jsonl": "5e9334a42c08d295c4279ce8a48e64e67a1878575234c81c7592bb9fb1439c60",
+    "outputs/review/context_microstudy_v1_20260909/fresh_review/review_notes.md": "de0c8642401b2116701a83800ac8fec09493be1d16b85c48280b2a3359d5d712"
+  },
+  "manifest_self_hash_policy": "SHA-256 of this manifest is reported in the sealed handoff, not embedded recursively.",
+  "validation": {
+    "records": 24,
+    "unique_review_ids": 24,
+    "packet_order_matches": true,
+    "blank_fields_present": true,
+    "requirement_ids_and_order_match": true,
+    "types_valid": true,
+    "exact_explanation_quote_occurrences_checked": 115,
+    "exact_quote_errors": 0,
+    "overall_rule_matches": true,
+    "delivery_status_matches": true,
+    "all_delivery_status": "EXPLANATION",
+    "nonempty_notes": true
+  },
+  "read_boundary": {
+    "other_judgments_read": false,
+    "root_review_read": false,
+    "coordinator_condition_key_read": false,
+    "raw_run_read": false,
+    "prior_v2_judgments_read": false,
+    "result_docs_or_readme_read": false,
+    "other_agent_records_read": false,
+    "memory_read": false,
+    "original_source_pdf_txt_png_opened_this_review": false,
+    "source_basis": "Source quotations supplied in cases/packets and permitted source preflight report; no claim of repeated original PDF validation."
+  },
+  "method": {
+    "judgments": "All 24 independently authored in packet order; no copying another response judgment and no semantic scoring code. Code serialized manual literal values and validated them.",
+    "assessment_surface": "explanation_ko only for semantic outcomes; target metadata audited separately.",
+    "ambiguity": "Unresolved semantics retained as null; explicit 0 and confirmed distortion have precedence.",
+    "condition_visibility": "Actual additional_context_supplied flag visible; per-response hint/replicate key not read; no claim of full blinding.",
+    "manual_self_review": "MCR-010 ambiguous precondition retained as null before sealing; no outside adjudication read."
+  },
+  "limits": [
+    "Same-model-family fresh AI context, not human expert review.",
+    "Separate context does not guarantee statistical error independence.",
+    "Selected development cases, not held-out or population performance.",
+    "No condition-level comparison or other-reviewer adjudication performed."
+  ],
+  "side_effects": {
+    "external_api_calls": false,
+    "commits": false,
+    "writes_outside_fresh_review": false
+  },
+  "seal": {
+    "mode": "read-only permissions",
+    "file_mode": "0444",
+    "directory_mode": "0555",
+    "intended_files": [
+      "judgments_24.jsonl",
+      "review_notes.md",
+      "reviewer_manifest.json"
+    ]
+  }
+}

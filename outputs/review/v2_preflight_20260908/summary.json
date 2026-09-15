@@ -1,0 +1,59 @@
+{
+  "status": "PREFLIGHT_COMPLETE_WITH_UNRESOLVED",
+  "references_reviewed": 51,
+  "gold_status_counts": {
+    "SOURCE_SUPPORTED": 49,
+    "UNRESOLVED": 2
+  },
+  "input_context_gap_counts": {
+    "NONE_IDENTIFIED": 49,
+    "IDENTIFIED": 2
+  },
+  "unresolved_reference_ids": [
+    "G023",
+    "G028"
+  ],
+  "unresolved_case_ids": [
+    "MAIN-SD-005",
+    "MAIN-SDN-003"
+  ],
+  "cohorts": {
+    "PRIMARY_STRICT_49": {
+      "frozen_n": 49,
+      "gold_status_counts": {
+        "SOURCE_SUPPORTED": 47,
+        "UNRESOLVED": 2
+      }
+    },
+    "SENS_GOLD_50": {
+      "frozen_n": 50,
+      "gold_status_counts": {
+        "SOURCE_SUPPORTED": 48,
+        "UNRESOLVED": 2
+      }
+    },
+    "SENS_EXCEPTION_50": {
+      "frozen_n": 50,
+      "gold_status_counts": {
+        "SOURCE_SUPPORTED": 48,
+        "UNRESOLVED": 2
+      }
+    },
+    "SENS_GOLD_EXCEPTION_51": {
+      "frozen_n": 51,
+      "gold_status_counts": {
+        "SOURCE_SUPPORTED": 49,
+        "UNRESOLVED": 2
+      }
+    }
+  },
+  "primary_source_pages_visually_reviewed": 38,
+  "additional_annex_pages_visually_reviewed": 5,
+  "reference_proposition_count": 58,
+  "new_model_calls": 0,
+  "semantic_reviews_completed": 0,
+  "cohort_membership_changes": 0,
+  "original_gold_changes": 0,
+  "ready_for_pass1_recording": true,
+  "unresolved_handling": "Keep all frozen case masks. UNRESOLVED gold cannot yield PASS; an independently clear error may justify FAIL with evidence. No response outcome is assigned by preflight."
+}

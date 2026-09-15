@@ -1,0 +1,14 @@
+{
+  "sealed_at": "2026-09-13T14:28:42.807652+00:00",
+  "primary_review_sealed_at": "2026-09-13T14:27:01.348023+00:00",
+  "primary_manifest_sha256": "f2911b6dd71fc686a0d5a14ed499a6fb27339fb63eaa696432d6f1335dcec5fb",
+  "script_sha256": "a7a6cb09f3220a9aa22106e3a05183753df518f302d57fef335c09092f6fbe77",
+  "file_sha256": {
+    "summary.json": "97ac7e140d3036888db0771c826fa903e9c93ea6426db1c3636417b2af9835d4",
+    "condition_results.json": "189f9db84a9d2c754010ec9d0ee0e5b44206ca949322f3a653718aa798e4504e",
+    "quote_diagnostics.jsonl": "04d8b2718157ee67c2c999ffb3caebb84f49e46c8e130172009189e90422a525",
+    "extraction_judgments_6.jsonl": "558414091459773815265e0e8ecc82248c546c557048d03c5d689c634259d3ac",
+    "requirement_transitions_18.jsonl": "84e2f5bdc9c647b659b5f60c824c763d0e42e5869226fc0ea7117cd7a43092b4",
+    "paired_results_6.jsonl": "86ac92d7925bb6bf5e6af3402a952d84a95e722688f3d111f45d62247372db1e"
+  }
+}

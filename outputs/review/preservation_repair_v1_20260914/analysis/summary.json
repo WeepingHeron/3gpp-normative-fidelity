@@ -1,0 +1,31 @@
+{
+  "status": "BOUNDED_REPAIR_TEST_AND_FIRST_REVIEW_COMPLETE",
+  "candidate_status": "IMPROVEMENT_NOT_CONFIRMED",
+  "criteria": {
+    "all_18_returned_and_12_usable": true,
+    "robust_completeness_gain": false,
+    "no_distortion_upper_bound_increase": false,
+    "no_R0_complete_regression": true,
+    "no_original_complete_regression": true
+  },
+  "prior_hold_unchanged": true,
+  "independent_review": false,
+  "seed_to_R1_transitions": {
+    "PRESERVED": 10,
+    "STILL_INCOMPLETE": 5,
+    "RECOVERED": 3
+  },
+  "audit_item_counts": {
+    "checks": 41,
+    "additional": 13,
+    "all_six_id_sets_complete": true
+  },
+  "quote_counts": {
+    "total": 54,
+    "source_exact": 14,
+    "source_whitespace_normalized": 50,
+    "explanation_nonempty": 29,
+    "explanation_exact": 24
+  },
+  "limits": "Audit self-labels are not ground truth. Manual findings are bounded diagnostic examples, not exhaustive audit accuracy measurement. Fixed known seeds; no end-to-end or generalization claim."
+}

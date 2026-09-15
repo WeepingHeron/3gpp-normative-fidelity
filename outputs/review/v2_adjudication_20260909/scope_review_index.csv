@@ -1,0 +1,61 @@
+﻿review_id,reference_id,pass1_state,pass2_state,semantic_judgment,rationale
+V2-P2-008,G037,PASS,PASS,PASS,shall be able의 권한 한정 능력 요구를 유지한다. 기술적 능력을 실제 CRUD 수행 의무로 바꾸지 않는다.
+V2-P2-009,G006,PASS,PASS,PASS,등록 중 COMPLETE의 제공 가능성을 그대로 설명하고 외부 허가를 부가하지 않는다.
+V2-P2-010,G004,PASS,PASS,PASS,전송의 IE 포함 관계와 기술적 가능성이 유지되며 목적 부연이 조건을 새로 만들지 않는다.
+V2-P2-014,G006,PASS,PASS,PASS,can의 기술적 제공 가능성과 실제 메시지 종류를 보존한다.
+V2-P2-019,G031,PASS,FAIL,PASS,첫 문장이 Active Time 할당 조건과 all PLMN 비권고를 완결한다. 뒤의 목적 재언급은 only-if나 다른 경우 허용을 명시하지 않으므로 조건이라는 단어만으로 범위 축소를 확정하지 않는다.
+V2-P2-021,G006,FAIL,FAIL,FAIL,제공 can을 허용 사항이라고 명시하여 행위의 가능성을 규범적 허가로 바꾼다. 선택적인 능력 보유를 중첩해 남긴 070과 구조가 다르다.
+V2-P2-022,G004,PASS,PASS,PASS,경우라는 표현은 앞서 설명한 전송 경로를 재언급하며 새로운 외부 조건을 추가하지 않는다.
+V2-P2-027,G004,PASS,PASS,PASS,IE 내부 전송이라는 기술적 가능성을 정확히 유지한다.
+V2-P2-028,G031,PASS,PASS,PASS,Active Time 시 all PLMN area 비권고와 paging 회피 목적을 유지한다.
+V2-P2-036,G009,PASS,PASS,PASS,두 mode 지원 UE의 EPC interworking 목적과 두 registration 운용 가능성을 유지한다.
+V2-P2-038,G037,FAIL,FAIL,FAIL,접근 권한과 변경 권한을 혼동하고 필요한 CRUD 능력 보유 의무를 빠뜨린다.
+V2-P2-040,G008,FAIL,FAIL,FAIL,두 사용 분기는 보존하나 can의 사용 가능성을 명시적인 사용 허가로 바꾼다.
+V2-P2-048,G050,PASS,PASS,PASS,entity는 처리 주체의 화제로 제시되고 검사 대상은 생략돼 뒤의 NAS messages로 복원된다. 엔티티 자체가 검사를 받았다고 명시한 099와 다르다.
+V2-P2-053,G004,FAIL,FAIL,FAIL,can을 전송 의무로 바꾸고 독립 전송 불가를 추가하므로 목적 재언급 해석과 무관한 오류다.
+V2-P2-056,G003,PASS,PASS,PASS,TSN인 특수 범위에서 sub-network가 될 기술적 가능성과 architecture 근거를 유지한다.
+V2-P2-062,G010,FAIL,FAIL,FAIL,may가 걸린 능력 보유를 생략하고 제어 행위 허가로 옮겨 R1의 중첩 범위를 소실한다.
+V2-P2-063,G031,PASS,PASS,PASS,Active Time 할당 시 비권고와 paging 회피 목적을 분명히 유지한다.
+V2-P2-070,G010,PASS,FAIL,PASS,능력이 있을 수 있다는 표현이 보유 여부의 선택성과 두 UPF의 제어 대상을 남긴다. 기술적 가능성이라는 부연은 그 능력을 설명할 수 있고 보유를 확정하거나 행동 허가로 바꾸지 않으므로 유형 명칭 하나로 FAIL하지 않는다.
+V2-P2-073,G005,FAIL,FAIL,FAIL,수립할 가능성이 있어야 한다는 말만 반복하고 실제 context 수립 필요조건을 복원하지 않는다.
+V2-P2-076,G009,PASS,PASS,PASS,단일 또는 이중 registration 운용의 기술적 가능성을 유지한다.
+V2-P2-081,G003,PASS,PASS,PASS,TSN 범위의 sub-network 가능성과 규격 architecture 지원을 유지한다.
+V2-P2-083,G025,PASS,PASS,PASS,MICO 요청 전 구현별 대기 권고를 callback 목적과 구별해 유지한다.
+V2-P2-089,G001,FAIL,FAIL,FAIL,목적 문장 해석만으로 실패시키지 않는다. 배치 can을 있을 수 있도록 허용된다고 바꾼 별도의 규범 유형 오류가 남는다.
+V2-P2-091,G003,PASS,PASS,PASS,TSN 범위의 sub-network 가능성을 보존하며 일반 5GS 역할로 확대하지 않는다.
+V2-P2-093,G008,PASS,PASS,PASS,두 OR 분기에서 secure exchange의 기술적 가능성을 유지하고 추가 인증 필수로 바꾸지 않는다.
+V2-P2-097,G009,FAIL,FAIL,FAIL,single/dual registration 대안을 S1/N1 mode 선택으로 대체한다.
+V2-P2-099,G050,PASS,FAIL,FAIL,엔티티가 NAS에 의해 무결성 검사를 받았다는 문법적 주어와 피검사자의 연결이 명시된다. 메시지가 아니라 엔티티를 검사 대상으로 둔 오류를 고쳐 읽어야 하므로 단순 문체 차이로 인정하지 않는다.
+V2-P2-100,G031,PASS,PASS,PASS,Active Time 할당이라는 조건과 all PLMN area 비권고 및 목적을 유지한다.
+V2-P2-106,G010,FAIL,UNRESOLVED,UNRESOLVED,능력이 있다는 첫 문장과 선택 가능이라는 뒤 문장 사이에서 이는의 대상이 보유인지 행동인지 확정되지 않는다. R3의 지시 대상 불명확 규칙을 적용하고 명백한 보유 확정만 있는 158과 구분한다.
+V2-P2-111,G025,PASS,PASS,PASS,callback을 가능하게 하려면이라는 말은 원문의 목적 관계를 남긴다. 구현별 대기와 서비스 완료 후·MICO 요청 전 시점을 유지한다.
+V2-P2-112,G005,PASS,PASS,PASS,실제 context 확립 후에만 활성화 가능하다는 필요조건을 명확히 유지한다.
+V2-P2-117,G005,PASS,PASS,PASS,AMF와 UE가 실제 context를 수립해야 한다는 전제조건을 유지한다.
+V2-P2-121,G008,FAIL,FAIL,FAIL,원문에 명시된 두 사용 분기를 context 유효성 하나로 대체해 기술적 가능성의 조건을 변경한다.
+V2-P2-128,G031,FAIL,FAIL,FAIL,all PLMN area를 피하라는 권고를 최대한 작은 영역 설정 의무로 바꾼다.
+V2-P2-131,G006,FAIL,FAIL,FAIL,COMPLETE 메시지의 제공 가능성을 등록 요청 메시지의 전달 의무로 바꾼다.
+V2-P2-137,G005,PASS,PASS,PASS,첫 문장의 능력 필요는 실제 수립의 약한 함의이고 뒤 문장이 실제 establish를 전제라고 명시해 보완한다. 명시된 잘못된 검사 대상을 그대로 남긴 151과 다르다.
+V2-P2-140,G003,PASS,PASS,PASS,TSN의 특수 경우라는 한정과 clause architecture 기반 가능성을 유지한다.
+V2-P2-149,G001,PASS,PASS,PASS,두 VPLMN 배치 가능성을 보존하고 inter-PLMN 목적을 후자에 분명히 연결한다.
+V2-P2-151,G050,PASS,FAIL,FAIL,첫 문장에서 엔티티가 검사를 받은 것으로 명시한다. 뒤 문장도 검사 성공만 말하며 검사 대상을 메시지로 바로잡지 않아 첫 오류가 남는다. 실제 필요한 행위를 명시해 복원한 137과 다르다.
+V2-P2-152,G010,FAIL,FAIL,FAIL,선택적 능력 보유를 유지하지 않고 local/central 트래픽 분담이라는 미지원 역할을 추가한다.
+V2-P2-156,G050,PASS,PASS,PASS,엔티티는 처리 주체의 화제이고 무결성 검사가 된 경우의 대상은 뒤의 NAS 메시지에서 복원된다. 엔티티가 검사를 받았다는 명시적 서술은 없다.
+V2-P2-158,G010,FAIL,FAIL,FAIL,각 SMF의 제어 기술적 가능성을 확정하며 능력 보유가 선택적이라는 중첩 범위를 남기지 않는다. 선택 가능 부연도 없어 106의 모호성과 다르다.
+V2-P2-163,G037,PASS,PASS,PASS,권한 있는 데이터만 CRUD할 수 있어야 하는 능력 요구를 유지한다.
+V2-P2-166,G001,PASS,PASS,PASS,두 배치 대안과 서로 다른 VPLMN의 mobility 목적을 분리해 유지한다.
+V2-P2-177,G008,PASS,PASS,PASS,두 사용 분기와 secure NAS exchange의 기술적 가능성을 유지한다.
+V2-P2-178,G025,PASS,PASS,PASS,callback 목적과 서비스 완료 후 MICO 요청 전 구현별 대기 권고를 유지한다.
+V2-P2-183,G009,PASS,PASS,PASS,두 mode 지원과 EPC 상호동작 목적 및 single/dual 등록 가능성을 유지한다.
+V2-P2-191,G009,PASS,PASS,PASS,선택 가능한 운용 옵션은 앞서 적시한 두 기술적 운용 대안을 가리킨다. 행위를 허가한다고 명시한 설명과 다르다.
+V2-P2-195,G001,FAIL,FAIL,FAIL,같은 VPLMN의 연동만 말해 서로 다른 VPLMN 배치와 그 목적을 누락한다.
+V2-P2-204,G050,FAIL,FAIL,FAIL,NAS integrity 성공의 필요조건을 보안 보호와 context 일치라는 다른 조건으로 대체한다.
+V2-P2-210,G006,PASS,PASS,PASS,UE가 COMPLETE로 제공할 기술적 가능성을 유지하며 허가로 재분류하지 않는다.
+V2-P2-215,G037,PASS,PASS,PASS,권한 범위 내 CRUD 능력을 갖춰야 하는 의무를 유지한다.
+V2-P2-224,G003,FAIL,FAIL,FAIL,TSN sub-network 가능성을 역할 확정으로 바꾸고 시간 동기·트래픽 전달 기능을 추가한다.
+V2-P2-225,G008,FAIL,FAIL,FAIL,context를 사용할 can을 명시적 허용이라고 바꾸어 규범적 허가를 추가한다.
+V2-P2-228,G001,PASS,PASS,PASS,두 배치 가능성을 유지한 채 inter-PLMN 목적을 부연한다. 같은 VPLMN을 금지하거나 inter-PLMN일 때만 배치 가능하다는 제한을 추가하지 않는다.
+V2-P2-229,G005,FAIL,FAIL,FAIL,공통 context 준비에 더해 동일 알고리즘 적용 능력과 관련 키 준비라는 제공 원문 밖 요구를 추가한다.
+V2-P2-233,G037,PASS,PASS,PASS,권한 범위에 한정된 기술적 가능성이 있어야 한다는 표현이 shall be able의 의무와 내부 능력을 함께 남긴다.
+V2-P2-243,G004,FAIL,FAIL,FAIL,전송 가능성을 뒤 문장에서 명시적인 행위 허가로 바꾼다. 능력 보유의 선택성을 남긴 070과 다르다.
+V2-P2-246,G025,PASS,PASS,PASS,callback 목적과 MICO 요청 전 구현별 대기 권고를 유지한다.
+V2-P2-249,G025,FAIL,FAIL,FAIL,구현별 시간 대기 권고를 MICO 해제와 일반 연결 상태 유지 의무로 대체한다.

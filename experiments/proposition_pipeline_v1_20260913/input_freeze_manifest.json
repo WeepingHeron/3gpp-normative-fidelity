@@ -1,0 +1,20 @@
+{
+  "status": "FROZEN_BEFORE_GENERATION",
+  "frozen_at": "2026-09-13T14:23:44.367618+00:00",
+  "file_sha256": {
+    "experiments/proposition_pipeline_v1_20260913/extraction_instruction.md": "fb519018c5586787ef172cb84e63de76efdaa362d270a21d7d4501e870194b85",
+    "experiments/proposition_pipeline_v1_20260913/generator_inputs.json": "1d135cbd2d553d9c7f7dae304b77fd1aa25f6cf247c2d141239cf59c4b6ecc18",
+    "experiments/proposition_pipeline_v1_20260913/composition_suffix.md": "91cfd3449ff17c112d01aa0738defaad56ea60ff128a7830486b644a97de401a",
+    "experiments/proposition_pipeline_v1_20260913/evaluation_reference.json": "787c3877312ac3048bab8af8d8593ea4410663facb29650483b6502c740cf8b5",
+    "experiments/proposition_pipeline_v1_20260913/extraction_schema.json": "87774e3668c37a01590b78dfa504c94beaf11287e95648b66f4cae57bb049f8f",
+    "experiments/proposition_pipeline_v1_20260913/protocol.json": "ec3015296a236693269edebab5b3ebd59cbd026e4a435db44cf6941a48352506",
+    "experiments/proposition_pipeline_v1_20260913/validation_report.json": "339bc022b4e2a5b67ef377b0be2ab8a85624bb00655adc065bb01d8608cf7fcd",
+    "experiments/proposition_pipeline_v1_20260913/request_recipe_12.jsonl": "11ca9fbe219467788eb2dd552cf2e7be6df24aef7d91b78bc6e014bd14eb0dfd",
+    "experiments/proposition_pipeline_v1_20260913/response_schema.json": "9f0294572d5455132b7b0af943824bad0df37af538e2fb3fa4fdba40e120bfc3",
+    "tools/prepare_proposition_pipeline_20260913.py": "da0f5cdf4b586342f5bce53c8c591aac7f8909aeac96d9f92513ec17c28fee21",
+    "experiments/run_proposition_pipeline_20260913.mjs": "74e72f7a97b2bee77bc8a93ae072b9db84f08fa5022a21165bfe477c1f6618f1",
+    "experiments/test_proposition_pipeline_20260913.mjs": "78fe21d4c1288c4e306b1379beede2e924ee5af26ef150cb649a04ed1154ab73",
+    "docs/36_proposition_pipeline_plan_2026-09-13.md": "9b9770435b2322b925af8d271a040b5b93779fe59a69cf11e30f8f8af004e1d0",
+    "experiments/run_generation_preservation_20260909.mjs": "9a2d99897982f81327cf8c35df65821d822cdf863ebaf0410ed1e65964fec1da"
+  }
+}

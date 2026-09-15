@@ -1,0 +1,587 @@
+{
+  "status": "AUTOMATED_SCREEN_NOT_FULL_ELIGIBILITY_AUDIT",
+  "rows": [
+    {
+      "case_id": "MAIN-SH-001",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 58,
+      "matched": true,
+      "first_line": "A UE simultaneously connected to the same 5G Core Network of a PLMN/SNPN over a 3GPP access and a non-3GPP",
+      "preceding_450": "ess network selection is affected by the PLMN/SNPN selection. A UE that accesses the 5G Core Network over a non-3GPP access shall, after UE registration, support NAS signalling with 5G Core Network control-plane functions using the N1 reference point. When a UE is connected via a NG-RAN and via a non-3GPP access, multiple N1 instances shall exist for the UE i.e. there shall be one N1 instance over NG-RAN and one N1 instance over non-3GPP access. "
+    },
+    {
+      "case_id": "MAIN-SH-002",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 58,
+      "matched": true,
+      "first_line": "A UE that accesses the 5G Core Network over a non-3GPP    access shall, after UE registration, support NAS signalling",
+      "preceding_450": "d the non-3GPP access network selection are independent. The N3IWF selection is defined in clause 6.3.6. When the UE decides to use trusted non-3GPP access to connect to a 5G Core Network in a PLMN: - the UE first selects a PLMN/SNPN; and then - the UE selects a non-3GPP access network (a TNAN) that supports trusted connectivity to the selected PLMN/SNPN. In this case, the non-3GPP access network selection is affected by the PLMN/SNPN selection. "
+    },
+    {
+      "case_id": "MAIN-SH-003",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 100,
+      "matched": true,
+      "first_line": "        from a PLMN that is not the same as the PLMN the UE is already registered with. If the UE does not include a",
+      "preceding_450": "ccess and selects a N3IWF, TNGF or W-AGF located in a PLMN different from the PLMN of the 3GPP access, or the UE is registered over Non-3GPP and registers to a 3GPP access in a PLMN different from the PLMN of the N3IWF, TNGF or W-AGF), the UE shall use for the registration to the PLMN associated with the new access a 5G-GUTI only if it has got one previously received from a PLMN that is not the same as the PLMN the UE is already registered with. "
+    },
+    {
+      "case_id": "MAIN-SH-004",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 42,
+      "matched": true,
+      "first_line": "Network functions within the 5GC Control Plane shall only use service-based interfaces for their interactions.",
+      "preceding_450": "ed network functions to access their services. This representation also includes point-to-point reference points where necessary. - A reference point representation, shows the interaction exist between the NF services in the network functions described by point-to-point reference point (e.g. N11) between any two network functions (e.g. AMF and SMF). Service-based interfaces are listed in clause 4.2.6. Reference points are listed in clause 4.2.7. "
+    },
+    {
+      "case_id": "MAIN-SH-005",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 52,
+      "matched": true,
+      "first_line": "Each NF Service Consumer accessing the UDR, via Nudr, shall be able to add, modify, update or delete only the data it",
+      "preceding_450": "NF and stores its data and, thus, can be integrated with this NF, can be possible. NOTE 6: The internal structure of the UDR in figure 4.2.5-2 is shown for information only. The Nudr interface is defined for the network functions (i.e. NF Service Consumers), such as UDM, PCF and NEF, to access a particular set of the data stored and to read, update (including add, modify), delete and subscribe to notification of relevant data changes in the UDR. "
+    },
+    {
+      "case_id": "MAIN-SH-006",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 97,
+      "matched": true,
+      "first_line": "area to a UE in MICO mode (refer to clause 5.4.1.3). When     AMF allocates registration area for UE registered for",
+      "preceding_450": "llocates a set of tracking areas in TAI List to the UE. When the AMF allocates registration area, i.e. the se t of tracking areas in TAI List, to the UE it may take into account various information (e.g. Mobility Pattern and Allowed/Non-Allowed Area (refer to clause 5.3.4.1)). An AMF which has the whole PLMN as serving area may alternatively allocate the whole PLMN (\"all PLMN\") as registration area to a UE in MICO mode (refer to clause 5.4.1.3). "
+    },
+    {
+      "case_id": "MAIN-SH-007",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 56,
+      "matched": true,
+      "first_line": "ngKSI with the newly created mapped 5G NAS security context. The AMF shall then include the message",
+      "preceding_450": "t received from the source MME as indicated in 3GPP TS 33.501 [24]. The AMF shall select the 5G NAS security algorithms and derive the 5G NAS keys (i.e. KNASenc and K NASint). The AMF shall define an ngKSI for the newly derived K' AMF key such that the value field is taken from the eKSI of the K ASME key and the type field is set to indicate a mapped security context and associate this ngKSI with the newly created mapped 5G NAS security context. "
+    },
+    {
+      "case_id": "MAIN-SH-008",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 54,
+      "matched": true,
+      "first_line": "",
+      "preceding_450": "ssage contain an ngKSI in the ngKSI IE indi cating the current 5G NAS security context used to integrity protect the NAS message. In the present document, when the UE is required to delete an ngKSI, the UE shall set the ngKSI to the value \"no key is available\" and consider also the associated keys K AMF or K'AMF, 5G NAS ciphering key and 5G NAS integrity key invalid (i.e. the 5G NAS security context associated with the ngKSI as no longer valid). "
+    },
+    {
+      "case_id": "MAIN-SH-009",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 54,
+      "matched": true,
+      "first_line": "However, when the UE operating in dual-registration mode performs an initial registration procedure, it shall take into",
+      "preceding_450": " can operate in either single-registration mode or dual-registration mode. A UE operating in dual- registration mode shall independently maintain and use both EPS security context (see 3GPP TS 24.301 [15]) and 5G NAS security context. When the UE operating in dual-registration mode performs an EPS attach procedure, it shall take into use an EPS security context and follow the handling of this security context as specified in 3GPP TS 24.301 [15]. "
+    },
+    {
+      "case_id": "MAIN-SH-010",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 54,
+      "matched": true,
+      "first_line": "In the present document, when the UE is required to delete an ngKSI, the UE shall set the ngKSI to the value \"no key is",
+      "preceding_450": " a new primary authentication and key agreement procedure (see subclause 5.4. 1) or when the AMF initiates a security mode control procedure. For this purpose, the initial NAS messages (i.e. REGISTRATION REQUEST, DEREGISTRATION REQUEST, SERVICE REQUEST and CONTROL PLANE SERVICE REQUEST) and the SECURITY MODE COMMAND message contain an ngKSI in the ngKSI IE indi cating the current 5G NAS security context used to integrity protect the NAS message. "
+    },
+    {
+      "case_id": "MAIN-SH-011",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 56,
+      "matched": true,
+      "first_line": "(i.e. KNASenc and K NASint). The AMF shall define an ngKSI for the newly derived K'    AMF key such that the value field is",
+      "preceding_450": "ting in single-registration mode in a network supporting N26 interface to derive a mapped 5G NAS security context for an inter-system change from S1 mode to N1 mode in 5GMM-CONNECTED mode, the AMF shall construct a mapped 5G NAS security context from the EPS security context received from the source MME as indicated in 3GPP TS 33.501 [24]. The AMF shall select the 5G NAS security algorithms and derive the 5G NAS keys (i.e. KNASenc and K NASint). "
+    },
+    {
+      "case_id": "MAIN-SH-012",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 56,
+      "matched": true,
+      "first_line": "When the UE operating in single-registration mode in a network supporting N26 interface receives the command to",
+      "preceding_450": " N1 mode NAS transparent container IE and associate th is mapped 5G NAS security context with the ngKSI value received. The UE shall then verify the received NAS MAC. In case the received NAS MAC is not verified successfully (see subclause 4.4.3.3) the UE shall discard the content of the received S1 mode to N1 mode NAS transparent container IE and inform the lower layers that the received S1 m ode to N1 mode NAS transparent container is invalid. "
+    },
+    {
+      "case_id": "MAIN-MAY-001",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 45,
+      "matched": true,
+      "first_line": "multiple PDU Sessions where two SMFs are selected for the two different PDU Sessions. However, each SMF may also",
+      "preceding_450": "-point and service- based architecture diagrams. For more information on edge computing architecture refer to TS 23.548 [130]. Figure 4.2.3-3 depicts the non-roaming architecture for UE s concurrently accessing two (e.g. local and central) data networks using multiple PDU Sessions, using the reference point representation. This figure shows the architecture for multiple PDU Sessions where two SMFs are selected for the two different PDU Sessions. "
+    },
+    {
+      "case_id": "MAIN-MAY-002",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 67,
+      "matched": true,
+      "first_line": "When a N5CW device performs an EAP-based access authen  tication procedure to connect to a trusted WLAN access",
+      "preceding_450": "devices to access 5GC via trusted WLAN access networks. A trusted WLAN access network is a particular type of a Trusted Non-3GPP Access Network (TNAN) that supports a WLAN access technology, e.g. IEEE 802.11. Not all trusted WLAN access networks support 5GC access from N5CW devices. To support 5GC access from N5CW devices, a trusted WLAN access network must support the special functionality specified below (e.g. it must support a TWIF function). "
+    },
+    {
+      "case_id": "MAIN-MAY-003",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 92,
+      "matched": true,
+      "first_line": "network instances within a UPF, each network instance is co  nsidered logically separate. The network instance for the",
+      "preceding_450": "nd TSCTSF is not depicted in the architecture diagram for brevity. UPF/NW-TT distributes the (g)PTP messages as described in clause 5.27.1. When the UPF supports one or more NW-TT(s), there is one-to-one association between an NW-TT and the network instance or between an NW-TT and network instance together with DNN/S-NSSAI in the UPF. When there are multiple network instances within a UPF, each network instance is co nsidered logically separate. "
+    },
+    {
+      "case_id": "MAIN-MAY-004",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 57,
+      "matched": true,
+      "first_line": "A non-3GPP access network may advertise the PLMNs or SNPNs for which it supports trusted connectivity and the",
+      "preceding_450": "PP access networks and trusted non-3GPP access networks (TNANs). An untrusted non-3GPP access network shall be connected to the 5G Core Network via a Non-3GPP InterWorking Function (N3IWF), whereas a trusted non-3GPP access networ k shall be connected to the 5G Core Network via a Trusted Non-3GPP Gateway Function (TNGF). Both the N3IWF and the TNGF interface with the 5G Core Network CP and UP functions via the N2 and N3 interfaces, respectively. "
+    },
+    {
+      "case_id": "MAIN-MAY-005",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 76,
+      "matched": true,
+      "first_line": "",
+      "preceding_450": "r-CN interface between the MME and 5GS AMF in order to enable interworking between EPC and the NG core. Support of N26 interface in the network is optional for interworking. N26 supports subset of the functionalities (essential for interworking) that are supported over S10. NOTE 2: PGW-C + SMF and UPF + PGW-U are dedicated for interworking between 5GS and EPC, which are optional and are based on UE MM Core Network Capability and UE subscription. "
+    },
+    {
+      "case_id": "MAIN-MAY-006",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 98,
+      "matched": true,
+      "first_line": "defined in a PLMN and apply within this PLMN. Each N3IWF, TNGF, TWIF and W-AGF is locally configured with",
+      "preceding_450": "3GPP TS 23.501 version 18.12.0 Release 18 97 ETSI TS 123 501 V18.12.0 (2026-01) TAI used for non-3GPP access shall be dedicated to non- 3GPP access. TAI(s) dedicated to Non-3GPP access may be defined in a PLMN and apply within this PLMN. Each N3IWF, TNGF, TWIF and W-AGF is locally configured with one TAI value. "
+    },
+    {
+      "case_id": "MAIN-MAY-007",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 95,
+      "matched": true,
+      "first_line": "In addition, the HPLMN may configure a UE with a single default configured NSSAI and consider the default",
+      "preceding_450": "cated that it supports the subscription-based restrictions to simultaneous registration of net work slices feature; c) on-demand NSSAI if the UE has indicated it supports the network slice usage control feature; d) S-NSSAI time validity information if the UE has indicated that it supports S-NSSAI time validity information; and e) S-NSSAI location validity information if the UE has indicated that it supports S-NSSAI location validity information. "
+    },
+    {
+      "case_id": "MAIN-MAY-008",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 53,
+      "matched": true,
+      "first_line": "AMF and the UE. A new 5G NAS security context may also  be created during an N1 mode to N1 mode handover.",
+      "preceding_450": "protect ion and ciphering are tied together in a 5G NAS security context and identified by a key set identifier (ngKSI). The relationship between the security parameters is defined in 3GPP TS 33.501 [24]. Before security can be activated, the AMF and the UE need to establish a 5G NAS security context. Usually, the 5G NAS security context is created as the result of a prim ary authentication and key agreement procedure between the AMF and the UE. "
+    },
+    {
+      "case_id": "MAIN-MAY-009",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 98,
+      "matched": true,
+      "first_line": "procedure. The default configured NSSAI may be changed by sending a UE parameters update transparent container to",
+      "preceding_450": "s) for a UE can be changed at any time while the UE is registered to a PLMN or SNPN, and the change may be initiated by the network or the UE. In this case, the allowed NSSAI and associated registration area may be changed during the registration procedure or the generic UE configuration update procedure. The configured NSSAI and the rejected NSSAI may be changed during the registration procedure or the generic UE configuration update procedure. "
+    },
+    {
+      "case_id": "MAIN-MAY-010",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 66,
+      "matched": true,
+      "first_line": "shall maintain, if any, the 5GMM-context and 5G NAS security context unchanged.For the case when the registration",
+      "preceding_450": "a new native 5G NAS security context. Additionally, the AMF shall initiate a security mode control procedure, and include the Additional 5G security information IE with the RINMR bit set to \"Retransmission of the initial NAS message requested\" in the SECURITY MODE COMMAND message as specified in subclause 5.4.2.2. If authentication procedure is not successful the AMF shall maintain, if any, the 5GMM-context and 5G NAS security context unchanged. "
+    },
+    {
+      "case_id": "MAIN-MAY-011",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 96,
+      "matched": true,
+      "first_line": "more S-NSSAIs are indicated that the maximum number of UEs has been reached. If the timer T3526 associated with",
+      "preceding_450": "d PLMN or SNPN regardless of the access type. The rejected NSSAI for the maximum number of UEs reached is applicable for the whole registered PLMN or SNPN, and the access type over which the rejected NSSAI was sent. The AMF shall send a rejected NSSAI including S- NSSAI(s) with the rejection cause \"S-NSSAI not available due to maximum number of UEs reached\", when one or more S-NSSAIs are indicated that the maximum number of UEs has been reached. "
+    },
+    {
+      "case_id": "MAIN-MAY-012",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 98,
+      "matched": true,
+      "first_line": "",
+      "preceding_450": " the allowed NSSAI or configured NSSAI, the UE can omit a mapped S-NSSAI for one or more S-NSSAIs in requested NSSAI. The set of network slice(s) for a UE can be changed at any time while the UE is registered to a PLMN or SNPN, and the change may be initiated by the network or the UE. In this case, the allowed NSSAI and associated registration area may be changed during the registration procedure or the generic UE configuration update procedure. "
+    },
+    {
+      "case_id": "MAIN-CAN-001",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 50,
+      "matched": true,
+      "first_line": "The N38 references point can be between V-SMFs in the same VPLMN, or between V-SMFs in different VPLMNs (to",
+      "preceding_450": "3GPP TS 23.501 version 18.12.0 Release 18 49 ETSI TS 123 501 V18.12.0 (2026-01) "
+    },
+    {
+      "case_id": "MAIN-CAN-002",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 75,
+      "matched": false,
+      "first_line": "Not all events can be subscribed to UP  F directly. The details and constraints for the subscription to UPF event exposure",
+      "preceding_450": "3GPP TS 23.501 version 18.12.0 Release 18 74 ETSI TS 123 501 V18.12.0 (2026-01) Nausf Nudm Nnssaaf Swd NSWOF AUSF UDM NSSAAF AAA Proxy Swa’ Swd SNPN CH WLAN Access AAA Server UE Figure 4.2.15-4b: Service based reference architecture to support authentication for Non-seamless WLAN offload using credentials from Credentials Holder using AAA Server via 5GC 4.2.16 Architecture to support User Plane Information Exposure via a service-based interface As depicted in Figure 4.2.16-1, the 5G System architectur e allows user plane information exposure to some NFs via service-based interface in UPF. SMF D ANWF NEFF/A TSNAF/TSCTSF UPF (Exposureer Svice) Figure 4.2.16-1: Architecture to support User Plane Information Exposure via a service-based interface NOTE 1: In this Release of the specification, only NWDAF/DCCF/MFAF, NEF/AF and TSNAF/TSCTSF are considered as the receiver of the UPF event notifications. NOTE 2: UPF information exposure is not restricted to SBI interface, i.e. reporting via PFCP over N4 to SMF is still applicable. Not all events can be subscribed to UP F directly. The details and constraints for the subscription to UPF event exposure service (i.e. direct vs. indirect) and the information exposed to certain NFs by UPF, as well as the information contained in the event notifications, are defined in clause 5.2.26.2 of TS 23.502 [3] and clause 5.8.2.17. 4.2.17 Architecture for Ranging based services and Sidelink Positioning The architecture for Ranging based services and Sidelink Positioning is defined in TS 23.586 [180]. ETS"
+    },
+    {
+      "case_id": "MAIN-CAN-003",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 93,
+      "matched": true,
+      "first_line": "The architecture does not require the DS-TT functionality to be supported in the device nor require the user plane NW-",
+      "preceding_450": "3GPP TS 23.501 version 18.12.0 Release 18 92 ETSI TS 123 501 V18.12.0 (2026-01) 5GS logical DetNet Router UDM TSCTSF CPF: D etNet controller N8 N10 N84 AMF N11 SMF N7 PCF N1 N2 N4 NW-TT DetNet UE (R)AN N3 U-plane D etNet network system UPF N9 Figure 4.4.8.4-1: 5GS Architecture to support IETF Deterministic Networking On the device side, the UE is connected with a DetNet syst em, which may be a DetNet End System or a DetNet Node. "
+    },
+    {
+      "case_id": "MAIN-CAN-004",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 51,
+      "matched": true,
+      "first_line": "",
+      "preceding_450": " located close to the respective NF). NOTE 1: Structured data in this specification refers to data for which the structure is defined in 3GPP specifications. Unstructured data refers to data for which the structure is not defined in 3GPP specifications. NOTE 2: If a NF Set has its own UDSF, it is up to UDSF implementation and deployment that only the NF instance within the set can access the data created by another NF instance within the NF set. "
+    },
+    {
+      "case_id": "MAIN-CAN-005",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 59,
+      "matched": true,
+      "first_line": "An UE connected to a 5G-RG or FN-RG can access to the 5G   C via the N3IWF or via the TNGF where the combination",
+      "preceding_450": "3GPP TS 23.501 version 18.12.0 Release 18 58 ETSI TS 123 501 V18.12.0 (2026-01) The 5G-RG connected to 5GC via NG-RAN is specified in TS 23.316 [84]. For the scenario of FN-RG, which is not 5G capable, co nnected via W-5GAN to 5GC, the W-AGF provides the N1 interface to AMF on behalf of the FN-RG. "
+    },
+    {
+      "case_id": "MAIN-CAN-006",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 93,
+      "matched": true,
+      "first_line": "",
+      "preceding_450": "e combined with architecture in clause 4.4.8.3 to support time synchronization and TSC. DetNet may be used in combination with time synchronization mechanisms as defined in clause 5.27, but it does not require usage of these mechanisms. 5GS acts as a DetNet router in the DetNet domain. Use cases where the 5GS acts as a sub-network (see clause 4.1.2 of IETF RFC 8655 [150]) are also possible but do not require an y additional 3GPP standardization. "
+    },
+    {
+      "case_id": "MAIN-CAN-007",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 49,
+      "matched": true,
+      "first_line": "messages. To this purpose, the 5GSM messages can be tr  ansmitted in an information element in the 5GMM transport",
+      "preceding_450": "ions consist of specific sequences of elementary procedures. Examples of such specific sequences can be found in 3GPP TS 23.502 [9]. The NAS for 5GS follows the protocol architecture model for layer 3 as described in 3GPP TS 24.007 [11]. 4.2 Coordination between the protocols for 5GS mobility management and 5GS session management A 5GS session management (5GSM) message is piggybacked in specific 5GS mobility management (5GMM) transport messages. "
+    },
+    {
+      "case_id": "MAIN-CAN-008",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 53,
+      "matched": true,
+      "first_line": "Before security can be activated, the AMF and the UE need   to establish a 5G NAS security context. Usually, the 5G",
+      "preceding_450": "uring the AMF so that it always selects the \"null ciphering algorithm\", 5G- EA0. 4.4.2 Handling of 5G NAS security contexts 4.4.2.1 General 4.4.2.1.1 Establishment of 5G NAS security context The security parameters for authentication, integrity protect ion and ciphering are tied together in a 5G NAS security context and identified by a key set identifier (ngKSI). The relationship between the security parameters is defined in 3GPP TS 33.501 [24]. "
+    },
+    {
+      "case_id": "MAIN-CAN-009",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 69,
+      "matched": true,
+      "first_line": "The UE can provide the SOR transparent container IE du  ring the registration procedure to the network in the",
+      "preceding_450": " over other access; the UE shall delete the 5G NAS security context. NOTE: UE deletes the 5G NAS security context only if the UE is not in the connected mode. 4.4.7 Protection of NAS IEs The network can provide the SOR transparent container IE during the registration procedure to the UE in the REGISTRATION ACCEPT message. The SOR transparent cont ainer IE is integrity protected by the HPLMN or subscribed SNPN as specified in 3GPP TS 33.501 [24]. "
+    },
+    {
+      "case_id": "MAIN-CAN-010",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 54,
+      "matched": true,
+      "first_line": "NAS security context. This current 5G NAS security context   can be of type native or mapped, i.e. originating from a",
+      "preceding_450": " from an EPS security context that has been established while the UE was in S1 mode. The 5G NAS security context is taken into use by the UE and the AMF, when the AMF initiates a security mode control procedure, during an N1 mode to N1 mode handover, or during the inter-system change procedure from S1 mode to N1 mode. The 5G NAS security context which has been taken into use by the network most recently is called current 5G NAS security context. "
+    },
+    {
+      "case_id": "MAIN-CAN-011",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 54,
+      "matched": true,
+      "first_line": "The 5G NAS security context is taken into use by the UE and the AMF, when the AMF initiates a security mode control",
+      "preceding_450": " NAS security context, during the inter-system change. The ngKSI consists of a value and a type of security context parameter indicating whether a 5G NAS security context is a native 5G NAS security context or a mapped 5G NAS security context. When the 5G NAS security context is a native 5G NAS security context, the ngKSI has the value of KSI AMF, and when the current 5G NAS security context is of type mapped, the ngKSI has the value of KSIASME. "
+    },
+    {
+      "case_id": "MAIN-CAN-012",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 54,
+      "matched": true,
+      "first_line": "As described in subclause 4.8 in order to interwork with E-UTRAN connected to EPC, the UE supporting both S1 mode",
+      "preceding_450": "value \"no key is available\" and consider also the associated keys K AMF or K'AMF, 5G NAS ciphering key and 5G NAS integrity key invalid (i.e. the 5G NAS security context associated with the ngKSI as no longer valid). In the initial registration procedure, when the key K AU S F, is invalid, the UE shall delete the ngKSI. NOTE: In some specifications the term ciphering key sequence number might be used instead of the term key set identifier (KSI). "
+    },
+    {
+      "case_id": "MAIN-SN-001",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 109,
+      "matched": true,
+      "first_line": "In order to enforce all primary RAT restrictions, the related RAT has to be deployed in different Tracking Area Codes",
+      "preceding_450": "3GPP TS 23.501 version 18.12.0 Release 18 108 ETSI TS 123 501 V18.12.0 (2026-01) "
+    },
+    {
+      "case_id": "MAIN-SN-002",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 114,
+      "matched": true,
+      "first_line": "AMF. Subscriptions targeted to Any UE shall not be moved to another AMF due to UE mobility. The new AMF may",
+      "preceding_450": " D of TS 23.502 [3]. If the Area Of Interest in the subscription to the UE mobility event notification includes \"Adjust AoI based on RA\" indicator as described in Table 5.2.2.3.1-1 in TS 23.502 [3], the AMF reports the UE presence in Area of Interest based on the most recent N2 connection as described in Annex D in TS 23.502 [3]. When the AMF is changed, the subscription of mobility event for a UE or group of UEs is transferred from the old AMF. "
+    },
+    {
+      "case_id": "MAIN-SN-003",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 100,
+      "matched": true,
+      "first_line": "If the UE is performing registration over one access and intends to perform registration over the other access in the",
+      "preceding_450": "3GPP TS 23.501 version 18.12.0 Release 18 99 ETSI TS 123 501 V18.12.0 (2026-01) "
+    },
+    {
+      "case_id": "MAIN-SN-004",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 107,
+      "matched": true,
+      "first_line": "                                                        The UE shall not use the entering of a Non-Allowed Area as a criterion for Cell Reselection, a trigger for",
+      "preceding_450": "ate communication with the network as allowed by the subscription. - Non-Allowed Area: In a Non-Allowed Area a UE is service area restricted based on subscription. The UE and the network are not allowed to initiate Service Request, or any connection requests for user plane data, control plane data, exception data reporting, or SM signalling (except for PS Data Off status change reporting) to obtain user services that are not related to mobility. "
+    },
+    {
+      "case_id": "MAIN-SN-005",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 113,
+      "matched": true,
+      "first_line": "AMF for cell reselection and Random Access as described below. If the UE has not received any NSAG Information",
+      "preceding_450": "3GPP TS 23.501 version 18.12.0 Release 18 112 ETSI TS 123 501 V18.12.0 (2026-01) NOTE 2: The AMF can assign same priority value for NSAGs provided in the NSAG Information. If the UE has received NSAG Information from the AMF, the UE shall use the NSAG Information provided by the AMF for cell reselection and Random Access as described below. "
+    },
+    {
+      "case_id": "MAIN-SN-006",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 116,
+      "matched": true,
+      "first_line": "NWDAF (see TS 23.288 [86]) to decide MICO mode parameters. If the UE does not indicate preference for MICO",
+      "preceding_450": "viour and/or Network Configuration parameters if available from the UDM, UE indicated preferences, UE subscription information and network policies, or any combination of them, determines whether MICO mode is allowed for the UE and indicates it to the UE during Registration procedure. If NWDAF is deployed, the AMF may also use analytics on UE mobility and/or UE communication generated by NWDAF (see TS 23.288 [86]) to decide MICO mode parameters. "
+    },
+    {
+      "case_id": "MAIN-SN-007",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 66,
+      "matched": true,
+      "first_line": "",
+      "preceding_450": "ecution of the security mode control procedure as specified in subclause 5.4.2. Additionally, the AMF shall include the Additional 5G security information IE with the RINMR bit set to \"Retransmission of the initial NAS message requested\" in the SECURITY MODE COMMAND message as specified in subclause 5.4.2.2. After successful completion of the service request procedure, the network shall perform a local rel ease of all non-emergency PDU sessions. "
+    },
+    {
+      "case_id": "MAIN-SN-008",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 96,
+      "matched": true,
+      "first_line": "rejected NSSAI but not both. The number of S-NSSAIs included   in the partially allowed NSSAI or the partially rejected",
+      "preceding_450": "pports the partial network slice feature and includes the S-NSSAI(s) in the requested NSSAI, the AMF determines the S-NSSAI(s) to be included in the partially allowed NSSAI or the partially rejected NSSAI as specified in subclause 4.6.2.11. When the AMF provides both the partially allowed NSSAI and the partially rejected NSSAI to the UE, each S-NSSAI shall be e ither in the partially allowed NSSAI or in the partially rejected NSSAI but not both. "
+    },
+    {
+      "case_id": "MAIN-SN-009",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 57,
+      "matched": true,
+      "first_line": "When a new 5G NAS security context is derived using the same KAMF, the target AMF includes the 8 least significant",
+      "preceding_450": "leted successfully, the AMF and the UE operating in single-registration mode in a network supporting N26 interface shall delete the new mapped 5G NAS security context. 4.4.2.3 Establishment of a 5G NAS security context during N1 mode to N1 mode handover During an N1 mode to N1 mode handover, the target AMF may derive a new 5G NAS security context for which the target AMF creates a new 5G NAS security co ntext as indicated in 3GPP TS 33.501 [24]. "
+    },
+    {
+      "case_id": "MAIN-SN-010",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 65,
+      "matched": true,
+      "first_line": "Once the secure exchange of NAS messages has been established, the receiving 5GMM entity in the UE shall not",
+      "preceding_450": "3GPP TS 24.501 version 18.12.0 Release 18 64 ETSI TS 124 501 V18.12.0 (2025-10) Integrity protection is never applied directly to 5GSM messages, but to the 5GMM message in which the 5GSM message is included. "
+    },
+    {
+      "case_id": "MAIN-SN-011",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 95,
+      "matched": true,
+      "first_line": "for which the UE has neither a configured NSSAI nor an allowed NSSAI. If the UE is registering or registered for",
+      "preceding_450": " control feature; and e) S-NSSAI location validity information if the UE has indicated that it supports S-NSSAI location validity information. In addition, the credential holder may configure a single default configured NSSAI associated with the selected entry of the \"list of subscriber data\" or the PLMN subscription and consider the default configured NSSAI as valid in a SNPN for which the UE has neither a configured NSSAI nor an allowed NSSAI. "
+    },
+    {
+      "case_id": "MAIN-SN-012",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 106,
+      "matched": true,
+      "first_line": "",
+      "preceding_450": " by emergency services, a DEREGISTRATION REQUEST message, and a SERVICE REQUEST message which is triggered by emergency services (e.g. a SERVICE REQUEST message includes the service type IE set to \"emergency services\" or \"emergency services fallback\", a SERVICE REQUEST message triggered for emergency services includes the service type IE set to “high priority access” as specified in subclause 5.6.1.2.1), no NSSAI is provided to the lower layers. "
+    },
+    {
+      "case_id": "MAIN-SD-001",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 109,
+      "matched": true,
+      "first_line": "The Registration Area of a UE in the Non-Allowed Area should consist of a set of TAs which belongs to a Non-",
+      "preceding_450": "information to the PCF, NG-RAN and UE. When the AMF assigns a limited allowed area to the UE, the AMF shall provide the UE with Service Area Restrictions which consist of either Allowed Areas or Non-Allowed Areas. The Allowed Areas included in the Service Area Restrictions can be pre-configured and/or dynamically assigned by the AMF. The Allowed Area may alternatively be configured as unlimited i.e. it may contain all Tracking Areas of the PLMN. "
+    },
+    {
+      "case_id": "MAIN-SD-002",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 119,
+      "matched": true,
+      "first_line": "When the 5GS supports the Paging Policy Differentiation (PPD) feature, the DSCP value (TOS in IPv4 / TC in IPv6) is",
+      "preceding_450": "use 4.2.3.3 of TS 23.502 [3]. NOTE: The 5QI is used by AMF to determine suitable paging strategies. 5.4.3.2 Paging Policy Differentiation Paging policy differentiation is an optional feature that allows the AMF, based on operator configuration, to apply different paging strategies for different traffic or service type s provided within the same PDU Session. In this Release of the specification this feature applies only to PDU Session of IP type. "
+    },
+    {
+      "case_id": "MAIN-SD-003",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 95,
+      "matched": true,
+      "first_line": "If the NG-RAN node takes a decision to initiate UAC because of the reception of the N2 interface OVERLOAD",
+      "preceding_450": "3GPP TS 23.501 version 18.12.0 Release 18 94 ETSI TS 123 501 V18.12.0 (2026-01) - AMFs request to restrict the load for UEs that access the network by sending OVERLOAD START message containing conditions defined in clause 5.19.5.2, or - requested by OAM, or - triggered by NG-RAN itself. "
+    },
+    {
+      "case_id": "MAIN-SD-004",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 106,
+      "matched": true,
+      "first_line": "",
+      "preceding_450": "e radio access network within Mobility Restriction List. Mobility Restrictions consists of RAT restriction, Forbidden Area, Service Area Restrictions, Core Network type restriction and Closed Access Group information as follows: - RAT restriction: Defines the 3GPP and non-3GPP Radio Access Technology(ies), a UE is not allowed to access in a PLMN. In a restricted RAT a UE based on subscription is not permitted access to the network for this PLMN. "
+    },
+    {
+      "case_id": "MAIN-SD-005",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 98,
+      "matched": true,
+      "first_line": "The allowed NSSAI(s) should be stored in a non-volatile memory in the ME as specified in annex C. The partially",
+      "preceding_450": "ach of the configured NSSAI stored in the UE, including th e default configured NSSAI, is a set composed of at most 16 S-NSSAIs. Each of the configured NSSAI, except the defaul t configured NSSAI, is associated with a PLMN identity or SNPN identity and, if the UE supports access to an SNPN using credentials from a cr edentials holder, equivalent SNPNs or both, the selected entry of the \"list of subscriber data\" or the selected PLMN subscription. "
+    },
+    {
+      "case_id": "MAIN-SD-006",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 133,
+      "matched": true,
+      "first_line": "The UE should memorize the identity of the PLMN or SNPN where N1 mode capability for 3GPP access was disabled",
+      "preceding_450": "n single-registration mode (see subclause 5.5.2.2.3), upon request of the upper layers to re-register for 5GS services over 3GPP access or the UE needs to come out of unavailability period and resume normal services, the UE shall enable the N1 mode capability for 3GPP access again. As an implementation option, the UE may start a timer for enabling the N1 mode capability for 3GPP access when the UE disables the N1 mode capability for 3GPP access. "
+    },
+    {
+      "case_id": "MAIN-SD-007",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 255,
+      "matched": true,
+      "first_line": "                                                     If the mapping of 5G-GUTI to SUPI in the network was incorrect, the network should respond by sending a new",
+      "preceding_450": "at the 5G-GUTI originally used in the 5G authentication challenge corresponded to the correct SUPI. Upon receipt of the IDENTITY REQUEST message from the network, the UE shall proceed as specified in subclause 5.4.3.3. NOTE 1: Upon receipt of an AUTHENTICATION FAILURE message from the UE with 5GMM cause #20 \"MAC failure\", the network may also terminate the 5G AKA based primary authentication and key agreement procedure (see subclause 5.4.1.3.5). "
+    },
+    {
+      "case_id": "MAIN-SD-008",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 255,
+      "matched": true,
+      "first_line": "                                                     If the mapping of 5G-GUTI to SUPI in the network was incorrect, the network should respond by sending a new",
+      "preceding_450": "e network may also terminate the 5G AKA based primary authentication and key agreement procedure (see subclause 5.4.1.3.5). If the mapping of 5G-GUTI to SUPI in the network was incorrect, the network should respond by sending a new AUTHENTICATION REQUEST message to the UE. Upon receiving the new AUTHENTICATION REQUEST message from the network, the UE shall stop the timer T3520, if running, and then process the 5G challenge information as normal. "
+    },
+    {
+      "case_id": "MAIN-SD-009",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 133,
+      "matched": true,
+      "first_line": "If the disabling of N1 mode capability for 3GPP access was due to successful completion of an emergency services",
+      "preceding_450": "ction mode, the UE does not consider the memorized PLMNs as PLMN selection candidates for NG- RAN access technology or satellite NG-RAN access technology or the memorized SNPN as SNPN selection candidates till the timer expires. The UE may disable the N1 mode capability for currently camped PLMN or SNPN over 3GPP access (see 3GPP TS 23.122 [5]) if no network slice is available for the camped PLMN or SNPN (see subclauses 5.5.1.2.5 and 5.5.1.3.5). "
+    },
+    {
+      "case_id": "MAIN-SD-010",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 193,
+      "matched": false,
+      "first_line": "",
+      "preceding_450": "3GPP TS 24.501 version 18.12.0 Release 18 192 ETSI TS 124 501 V18.12.0 (2025-10) If the UE requested the use of active time by including an active time value and the network accepts the use of MICO mode and the use of active time, the AMF shall include an active time value in the T3324 IE to the UE. If the AMF indicates active time value to the UE, AMF should not indicate \"all PLMN registration area allocated\" indication in the MICO indication IE to the UE. Upon entering 5GMM-IDLE mode, AMF shall start the active timer with the active time value indicated to the UE and shall consid er the UE is reachable for paging as long as the timer is running. If the UE enters 5GMM-CONNECTED mode over 3GPP access when the active timer is running, the AMF shall stop the active timer. NOTE 1: The active time value assigned by AMF can be different from the active time value requested by the UE. AMF assigns the active time value based on several factors, e.g. local configuration, expected UE behaviour, UE requested active time value, UE subscription information, network policies etc. If the UE requested an active time and a requested T3512 value and the network accepts the use of MICO mode, the AMF shall take the UE requested T3512 value into consideration when assigning a value of timer T3512 to the UE. If the network accepts the use of MICO mode, the UE may deactivate the AS layer and activate MICO mode by entering the state 5GMM-REGISTERED.NO-CELL-AVAILABLE if: a) the UE is in 5GMM-IDLE mode over 3GPP access; b) the UE is in the 5GMM-REGISTERED.NORMAL-SERVICE or 5GMM-REGISTERED.NON-ALLOWED- SERVICE (as described in subclause 5.3.5.2) state for 3GPP access; and c) no T3324 value is received from the network. If the network accepts the use of MICO mode and indicates an active time value to the UE in a successful registration procedure, the UE shall start the timer T3324 with the value received from the network after entering 5GMM-IDLE mode over 3GPP access. At the expiry of the timer T3324, the UE may deactivate the AS layer and activate MICO mode by entering the state 5GMM-REGISTERED.NO-CELL-AVAILABLE if the UE is in the 5GMM- REGISTERED.NORMAL-SERVICE or 5GMM-REGISTERED.NON-ALLOWED-SERVICE (as described in subclause 5.3.5.2) state for 3GPP access. If the UE enters 5GMM-CONNECTED mode over 3GPP access when the timer T3324 is running, the UE shall stop the timer T3324. When MICO mode is activated, all NAS timers are stopped and associated procedures aborted except for timers T3512, T3346, T3447, T3448, T3396, T3526, T3584, T3585, T3587 any back-off timers, T3245, T3247, any slice deregistration inactivity timers, the timer T controlling the periodic search for HPLMN or EHPLMN or higher prioritized PLMNs (see 3GPP TS 23.122 [5]) and the timer T SENSE controlling the periodic search for PLMNs satisfying the operator controlled signal level threshold (see 3GPP TS 23.122 [5]). NOTE 2: When MICO mode is activated and if the UE is also registered over the non-3GPP access, the AMF will not send a NOTIFICATION message with access type indicating 3GPP access over the non-3GPP access for PDU sessions associated with 3GPP access. The UE may deactivate MICO mode and activate the AS layer at any time. Upon deactivating MICO mode, the UE may initiate 5GMM procedures (e.g., for the transfer of mobile originated signalling or user data). When an emergency PDU session is successfully established after the MICO mode was enabled, the UE and the AMF shall locally disable MICO mode. The UE and the AMF shal l not enable MICO mode until the AMF accepts the use of MICO mode in the next registration procedure. To enab le an emergency call back, the UE should wait for a UE implementation-specific duration of time before requesting the use of MICO mode after the completion of the emergency services. If the AMF accepts the use of MICO mode and does not indicate \"strictly periodic registration timer supported\" in the MICO indication IE to the UE, the AMF starts the implicit de-registration timer for 3GPP access when entering 5GMM-IDLE mode for 3GPP access. If AMF accepts the use of MICO mode and indicates \"strictly periodic registration timer supported\" in the MICO indication IE to the UE, AMF shall start the strictly periodic monitoring timer with T3512 value indicated in the T3512 value IE after the registration procedure is completed. The AMF shall neither stop nor reset the strictly periodic monitoring timer when the NAS signalling connection is established or released for the UE. If the strictly periodic monitoring time r expires when NAS signalling connection is established for the UE, AMF shall restart the strictly periodic monitoring timer with the T3512 value, otherwise AMF shall start the implicit de-registration timer. When an emergency PDU session is successfully established and the MICO mode is disabled, the UE shall stop timer T3512 if running and the AMF shall stop strictly periodic monitoring timer if running. The UE and the AMF shall ETS"
+    },
+    {
+      "case_id": "MAIN-SD-011",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 222,
+      "matched": true,
+      "first_line": "period based on their availability. The AMF should set the value of the mobile reachable timer and implicit de-",
+      "preceding_450": "e REGISTRATION REQUEST message or the DEREGISTRATION REQUEST message from the UE. During the registration procedure, the AMF may determine the values of the negotiated extended DRX parameters, the timer T3324, and the periodic registration update timer (T3512) to be provided to the UE based on the discontinuous coverage maximum time offset, the unavailability period duration and the start of the unavailability period based on their availability. "
+    },
+    {
+      "case_id": "MAIN-SD-012",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 223,
+      "matched": true,
+      "first_line": "registration update when the unavailability period duration has ended. If the AMF does not provide the Unavailability",
+      "preceding_450": "cedure for mobility registration update. If the AMF sets the EUPR bit value in the Unavailability configuration IE to \"UE does not need to report end of unavailability period\", then upon returning to a TA in the current registration area the UE shall choose an appropriate substate of 5GMM-REGISTERED and the UE is not required to trigger the registration procedure for mobility registration update when the unavailability period duration has ended. "
+    },
+    {
+      "case_id": "MAIN-SDN-001",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 106,
+      "matched": true,
+      "first_line": "                                                   Forbidden Areas should not be used for Untrusted or Trusted non-3GPP access.",
+      "preceding_450": "ny communication with the network for this PLMN. The UE behaviour in terms of cell selection, RAT selection and PLMN selection depends on the network response that informs the UE of Forbidden Area. A Forbidden Area applies either to 3GPP access or to non-3GPP access. Further description on Forbidden Area when using wireline access is available in TS 23.316 [84]. Support for Forbidden Area with NR satellite access is described in clause 5.4.11.8. "
+    },
+    {
+      "case_id": "MAIN-SDN-002",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 192,
+      "matched": true,
+      "first_line": "",
+      "preceding_450": " assume that congestion related packet drops will not occur. NOTE 5: Exceptions (e.g. transient link outages) can always occur in a radio access system which may then lead to congestion related packet drops. Packets surviving co ngestion related packet dropping may still be subject to non-congestion related packet losses (see PER below). Services using Non-GBR QoS Flows should be prepared to experience congestion-related packet drops and delays. "
+    },
+    {
+      "case_id": "MAIN-SDN-003",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 133,
+      "matched": true,
+      "first_line": "the AMF may initiate deregistration of the UE. The AMF should not reject the request or deregister the UE unless it has",
+      "preceding_450": "d may decide to verify the UE location. If the AMF determines based on the Selected PLMN ID and ULI (including Cell ID) received from the gNB that it is not allowed to operate at the present UE location the AMF should reject any NAS request with a suitable cause value. If the UE is already registered to the network when the AMF determines that it is not allowed to operate at the present UE location, the AMF may initiate deregistration of the UE. "
+    },
+    {
+      "case_id": "MAIN-SDN-004",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 315,
+      "matched": true,
+      "first_line": "",
+      "preceding_450": "e RRC connections. In this mode, UE maintains 5G-GUTI and EPS-GUTI independently. In this mode, UE provides native 5G-GUTI, if previously allocated by 5GC, for registrations towards 5GC and it provides native EPS- GUTI, if previously allocated by EPC, for Attach/TAU towards EPC. In this mode, the UE may be registered to 5GC only, EPC only, or to both 5GC and EPC. Dual-registration mode is intended for interworking between EPS/E-UTRAN and 5GS/NR. "
+    },
+    {
+      "case_id": "MAIN-SDN-005",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 334,
+      "matched": true,
+      "first_line": "appropriately. The network should not move the UE to another available PLMN/SNPN, e.g. by handover, as long as the",
+      "preceding_450": "in TS 23.122 [17] may cause the UE to perform a reselection of another available PLMN. UE uses all of the received broadcast PLMN-IDs in its cell and PLMN (re)selection processes. 5.18.4 Network selection by the network The NG-RAN uses the selected PLMN/SNPN (provided by the UE at RRC establishment, or, provided by the AMF/source NG-RAN at N2/Xn handover) to select target cells for future handovers (and radio resources in general) appropriately. "
+    },
+    {
+      "case_id": "MAIN-SDN-006",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 338,
+      "matched": true,
+      "first_line": "The AMF should not reject Registration Request message for Mobility Registration Update that are performed when the",
+      "preceding_450": "ion control timer was running and was unable to initiate MM signalling, the UE defers the related MM signalling until the MM congestion control timer expires and initiates after the expiry of the timer. In the case of a UE with scheduled communication pattern, the AMF may consider the UE's communication pattern while selecting a value for the Mobility Management back-off timer so that the UE does not miss its only scheduled communication window. "
+    },
+    {
+      "case_id": "MAIN-SDN-007",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 428,
+      "matched": true,
+      "first_line": "To redirect a UE from 5GC to EPC, when the UE sends a Registration Request or Service Request, the AMF sends a",
+      "preceding_450": "cludes its EPC Preferred Network Behaviour then the UE shall also include its 5GC Preferred Network Behaviour. In networks that support CIoT features in both EPC and 5GC, the operator may steer UEs from a specific CN type due to operator policy, e.g. due to roaming agreements, Preferred and Supported Network Behaviour, load redistribution, etc. Operator policies in EPC and 5GC are assumed to avoid steering UEs back and forth between EPC and 5GC. "
+    },
+    {
+      "case_id": "MAIN-SDN-008",
+      "spec_id": "3GPP TS 23.501",
+      "pdf_page": 436,
+      "matched": true,
+      "first_line": "area size. To avoid paging in the entire PLMN, when the AMF allocates the Active Time the AMF should not allocate",
+      "preceding_450": "ion procedure. When an Active Time value is assigned to the UE the AMF shall consider the UE reachable for paging after the transition from CM-CONNECTED to CM-IDLE for the duration of the Active Time. Together with the Active Time value, the UE may request a periodic registration time value as specified in clause 5.31.7.45. When the AMF indicates MICO mode with an Active Time to a UE, the registration area may be constrained by paging area size. "
+    },
+    {
+      "case_id": "MAIN-SDN-009",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 193,
+      "matched": true,
+      "first_line": "",
+      "preceding_450": "3GPP TS 24.501 version 18.12.0 Release 18 192 ETSI TS 124 501 V18.12.0 (2025-10) If the UE requested the use of active time by including an active time value and the network accepts the use of MICO mode and the use of active time, the AMF shall include an active time value in the T3324 IE to the UE. "
+    },
+    {
+      "case_id": "MAIN-SDN-010",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 197,
+      "matched": true,
+      "first_line": "3GPP TS 23.501 [8]. The AMF should not reject the following:",
+      "preceding_450": "3GPP TS 24.501 version 18.12.0 Release 18 196 ETSI TS 124 501 V18.12.0 (2025-10) 5.3.9 Handling of NAS level mobility management congestion control The AMF may detect 5GMM signalling congestion and perform general NAS level congestion control. Under the 5GMM signalling congestion conditions the AMF may reject 5GMM signalling requests from UEs as specified in 3GPP TS 23.501 [8]. "
+    },
+    {
+      "case_id": "MAIN-SDN-011",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 359,
+      "matched": true,
+      "first_line": "If the UE is authorized to use V2X communication over PC5 reference point based on:",
+      "preceding_450": "3GPP TS 24.501 version 18.12.0 Release 18 358 ETSI TS 124 501 V18.12.0 (2025-10) "
+    },
+    {
+      "case_id": "MAIN-SDN-012",
+      "spec_id": "3GPP TS 24.501",
+      "pdf_page": 644,
+      "matched": true,
+      "first_line": "The UE should not request to join a multicast MBS session for local MBS service if neither current TAI nor CGI of the",
+      "preceding_450": "3GPP TS 24.501 version 18.12.0 Release 18 643 ETSI TS 124 501 V18.12.0 (2025-10) b) if the Type of multicast MBS session ID is set to \"Source specific IP multicast address for IPv4\" or \" Source specific IP multicast address for IPv6\", the UE shall set the Source IP address information and the Destination IP address information to the corresponding values. "
+    }
+  ],
+  "automatic_exact_or_prefix_locations": 70,
+  "visual_note_violations_confirmed": [
+    "MAIN-CAN-004",
+    "MAIN-MAY-005"
+  ],
+  "all_remaining_cases_eligible": null
+}

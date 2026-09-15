@@ -1,0 +1,17 @@
+{
+  "experiment_id": "GENERATION_PRESERVATION_V1_20260909",
+  "status": "GENERATION_COMPLETE_SEMANTICS_PENDING",
+  "provenance": "LIVE_API",
+  "started_at": "2026-09-13T13:50:34.210Z",
+  "input_freeze_sha256": "6c3c9955339d6f812f3a2a52ba5bf8615035cc1aa9326752fe515c3aa7f9de06",
+  "input_frozen_at": "2026-09-09T09:18:39.485470+00:00",
+  "model": "gpt-5.4-mini-2026-03-17",
+  "planned_slots": 18,
+  "attempts": 18,
+  "returned_responses": 18,
+  "usable_explanations": 18,
+  "known_cost_usd": 0.04311900000000001,
+  "cost_complete": true,
+  "evaluator_status": "NOT_EVALUATED",
+  "finished_at": "2026-09-13T13:51:25.090Z"
+}

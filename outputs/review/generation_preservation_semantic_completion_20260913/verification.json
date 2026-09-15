@@ -1,0 +1,80 @@
+{
+  "status": "TWO_AI_SEMANTIC_REVIEWS_COMPLETE",
+  "verified_at": "2026-09-13T14:06:41.087976+00:00",
+  "progression_status": "HOLD_FOR_METHOD_REVISION",
+  "semantic_review": {
+    "status": "TWO_AI_SEMANTIC_REVIEWS_COMPLETE",
+    "unique_responses": 18,
+    "reviewers": 2,
+    "review_records": 36,
+    "requirement_judgments": 108,
+    "primary_agreement": {
+      "completeness": {
+        "same": 15,
+        "total": 18
+      },
+      "claim": {
+        "same": 11,
+        "total": 18
+      },
+      "requirements": {
+        "same": 46,
+        "total": 54
+      }
+    },
+    "sqlite_group_count_check": true,
+    "review_seal_times": {
+      "root_review": "2026-09-13T13:59:48.722118+00:00",
+      "fresh_review": "2026-09-13T13:59:25.381143+00:00"
+    },
+    "progression_status": "HOLD_FOR_METHOD_REVISION",
+    "metadata_comparability": "WITHHELD: some fresh diagnostics compare metadata to source instead of metadata to explanation; preserve raw values and report post-seal clarification separately.",
+    "semantic_scores_automatically_inferred": false,
+    "human_expert_review": false
+  },
+  "execution_integrity": {
+    "ok": true,
+    "generated": 18,
+    "retries": 0,
+    "delivery_failures": 0,
+    "input_tokens": 19668,
+    "cached_input_tokens": 2560,
+    "output_tokens": 6688,
+    "generation_cost_usd": 0.043119,
+    "masked_packets": 18,
+    "requirements_per_reviewer": 54,
+    "exact_request_response_binding": true,
+    "freeze_and_output_hashes_verified": true,
+    "semantic_evaluation_performed": false
+  },
+  "prior_results_preserved": {
+    "ok": true,
+    "slots": 24,
+    "exact_model_and_payloads": true,
+    "estimated_cost_usd": 0.0445545,
+    "input_frozen_before_generation": true,
+    "semantic_truth_automatically_verified": false,
+    "assessment": "Share with caveats",
+    "reviewer_slot_rows": 48,
+    "unique_generation_slots": 24,
+    "source_cases": 3,
+    "reviewers": 2,
+    "reviewer_condition_groups": 8,
+    "sqlite_group_count_check": true,
+    "paired_comparisons": 24,
+    "inferential_tests_performed": false,
+    "old_v2_results_changed": false,
+    "same_scored_fields": 22,
+    "different_scored_fields_rows": 2,
+    "same_overall_completeness": 24,
+    "same_claim_status": 24,
+    "same_requirement_coverage_items": 71,
+    "human_expert_validation": false,
+    "automatic_adjudication_applied": false
+  },
+  "metadata_diagnostic_comparability": "WITHHELD",
+  "post_seal_addendum_verified": true,
+  "original_judgments_overwritten": false,
+  "automatic_adjudication": false,
+  "new_generation_calls_during_semantic_review": 0
+}

@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { assertArchivedMainReview } from './assert_archived_main_review.mjs';
 
 function parseCsv(text) {
   const rows = []; let row = [], field = "", quoted = false;
@@ -26,6 +27,7 @@ function B(actor, polarity, condition, action, exception, unsupported, note) {
 
 const runDir = path.resolve(process.argv[2] || "");
 if (!process.argv[2]) throw new Error("Usage: node experiments/annotate_main72_pass2.mjs <run_directory>");
+assertArchivedMainReview(runDir, 'pass2');
 const inputPath = path.join(runDir, "blind_review_pass2_blank.csv");
 const rows = parseCsv(fs.readFileSync(inputPath, "utf8"));
 if (rows.length !== 216) throw new Error(`Expected 216 blind rows, got ${rows.length}`);

@@ -1,0 +1,26 @@
+{
+  "completed_at": "2026-09-13T15:38:45.682707+00:00",
+  "status": "BOUNDED_REPAIR_TEST_AND_FIRST_REVIEW_COMPLETE",
+  "independent_review_performed": false,
+  "file_sha256": {
+    "outputs/review/preservation_repair_v1_20260914/coordinator_keys_12.jsonl": "cc8bb057d69d22794b94627f09dc2b5ff25892b7527dd8a70e764324d24bbdad",
+    "outputs/review/preservation_repair_v1_20260914/packet_manifest.json": "dae7f985f01539267a1f112a72e11f4736fd26c9f12a2ff9df3463cfae01b98b",
+    "outputs/review/preservation_repair_v1_20260914/execution_verification.json": "04fde4e04815ce99e9b3592ecfef46826becdf62be49efdcf3638a078be493c8",
+    "outputs/review/preservation_repair_v1_20260914/primary_packets_12.jsonl": "b9f0e04c7b1b58fdbe5ba998788e2c279d4b0a78587be172404aaae1e67aa980",
+    "outputs/review/preservation_repair_v1_20260914/analysis/summary.json": "aab949c99abfbfd4c762d470716a14d56c5e4571b70487fb07d653aedb7e545a",
+    "outputs/review/preservation_repair_v1_20260914/analysis/condition_results.json": "fb4903fa777ac3fd0da2e824483a4997dcd5555cd525edb0c6332b1b93550bb3",
+    "outputs/review/preservation_repair_v1_20260914/analysis/quote_diagnostics.jsonl": "0a3502ebe47ada31f53654939248c787f4f6e66f599c83586ee1de6d1d71351b",
+    "outputs/review/preservation_repair_v1_20260914/analysis/analysis_manifest.json": "280405b2f3cd9eb410f9cba6e3e9d11ccd86ef0288c16be311b81b958ef8dd8f",
+    "outputs/review/preservation_repair_v1_20260914/analysis/audit_diagnostics_6.jsonl": "22109ccdf00577b383c34f0b8ae869b83d77966f71945341594f8b72bf489017",
+    "outputs/review/preservation_repair_v1_20260914/analysis/paired_results_6.jsonl": "2cbd84596f99322a3199d53b041f03a3ed51aa9fbceb6c2f6bec9f81ae5a0b77",
+    "outputs/review/preservation_repair_v1_20260914/analysis/seed_to_repair_requirements_18.jsonl": "1abcc134754aea6c2002163a11742c420d94ad2f0c6635997f2367c7a06cfa18",
+    "outputs/review/preservation_repair_v1_20260914/primary_review/reviewer_manifest.json": "e92638684a3f92d565e338a3fac425f7d7f03ea7b2d516b96fc0c8ccced755f8",
+    "outputs/review/preservation_repair_v1_20260914/primary_review/judgments_12.jsonl": "94ea63dc5c11a0cd65e29f2dd8a43ff3e76a8c42e0e9e9a1331d2d5fcca5a7ef",
+    "outputs/review/preservation_repair_v1_20260914/primary_review/review_notes.md": "d804eb208bb3bb7cf2a52d68895f199e588311e9ef496d51f94e0006b555b5ed",
+    "docs/39_preservation_repair_results_2026-09-14.md": "52410468e34a7124a6e8361f094b823882a441d6204edac455a954ca1f0fc37e",
+    "tools/prepare_preservation_repair_review_20260914.py": "62710e818efb33b72d826548b2cb86484bdae3f760515bc9041b21324ef215a3",
+    "tools/record_preservation_repair_primary_20260914.py": "e19737913e0f1f4bbb5db6a42e64c2e2ab7e576751fbf1fe5f384be45197ba0a",
+    "tools/analyze_preservation_repair_20260914.py": "691bfdaaf4480b1017ea936623c3a207d6e022b23f6dd97868c2e86b8fd7b663",
+    "tools/verify_preservation_repair_20260914.py": "05971c60048921bcf632dfc3f49c98a7fc1414f12d54ea49f480e62156db4b5e"
+  }
+}

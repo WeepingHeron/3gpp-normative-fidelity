@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-09-13T13:50:11.894191+00:00",
+  "status": "PRELAUNCH_VERIFIED",
+  "user_instruction": "동결 요청 실행해줘.",
+  "scope": "Execute frozen 18 requests; preserve raw results and prepare masked review packets, no semantic scoring in this execution step.",
+  "freeze_verification": {
+    "ok": true,
+    "status": "FROZEN_BEFORE_GENERATION",
+    "frozen_at": "2026-09-09T09:18:39.485470+00:00",
+    "planned_calls": 18,
+    "bound_files": 53,
+    "input_manifest_sha256": "6c3c9955339d6f812f3a2a52ba5bf8615035cc1aa9326752fe515c3aa7f9de06",
+    "live_api_calls_by_this_tool": 0
+  },
+  "model": "gpt-5.4-mini-2026-03-17",
+  "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+  "pricing_checked_date": "2026-09-13",
+  "pricing_usd_per_million": {
+    "input": 0.75,
+    "cached_input": 0.075,
+    "output": 4.5
+  },
+  "pricing_changed": false,
+  "endpoint": "https://api.openai.com/v1/responses",
+  "generation_cost_cap_usd": 0.5,
+  "estimated_reservation_usd": 0.1630125,
+  "credential_decision": "Reuse existing credential as previously authorized in this task; no secret values recorded.",
+  "retry_policy": "No automatic retries, preserve uncertain outcomes.",
+  "input_manifest_sha256": "6c3c9955339d6f812f3a2a52ba5bf8615035cc1aa9326752fe515c3aa7f9de06"
+}

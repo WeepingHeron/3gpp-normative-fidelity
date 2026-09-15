@@ -1,0 +1,255 @@
+{
+  "status": "PROVISIONAL_CODEX_PASS1_NOT_INDEPENDENT_EXPERT_VALIDATION",
+  "hashes_verified_counts": {
+    "main_inputs": 18,
+    "main_outputs": 7,
+    "c3_inputs": 11,
+    "c3_outputs": 8,
+    "blank_review": 4,
+    "pass1_decisions": 5
+  },
+  "conditions": {
+    "C1": {
+      "n": 72,
+      "complete": 61,
+      "complete_pct": 84.72222222222223,
+      "wilson_95ci_pct": [
+        74.67771063249945,
+        91.2492912705243
+      ],
+      "unsupported_additions": 9,
+      "components": {
+        "actor_preserved": {
+          "success": 71,
+          "denominator": 72
+        },
+        "polarity_preserved": {
+          "success": 62,
+          "denominator": 72
+        },
+        "condition_preserved": {
+          "success": 63,
+          "denominator": 63
+        },
+        "action_preserved": {
+          "success": 71,
+          "denominator": 72
+        },
+        "exception_preserved": {
+          "success": 25,
+          "denominator": 26
+        }
+      },
+      "failed_case_ids": [
+        "MAIN-CAN-009",
+        "MAIN-CAN-011",
+        "MAIN-CAN-007",
+        "MAIN-SDN-003",
+        "MAIN-MAY-001",
+        "MAIN-SD-002",
+        "MAIN-SDN-007",
+        "MAIN-SDN-010",
+        "MAIN-SD-009",
+        "MAIN-SDN-009",
+        "MAIN-SDN-005"
+      ]
+    },
+    "C2": {
+      "n": 72,
+      "complete": 71,
+      "complete_pct": 98.61111111111111,
+      "wilson_95ci_pct": [
+        92.54339785252385,
+        99.75440481170943
+      ],
+      "unsupported_additions": 0,
+      "components": {
+        "actor_preserved": {
+          "success": 72,
+          "denominator": 72
+        },
+        "polarity_preserved": {
+          "success": 72,
+          "denominator": 72
+        },
+        "condition_preserved": {
+          "success": 63,
+          "denominator": 63
+        },
+        "action_preserved": {
+          "success": 71,
+          "denominator": 72
+        },
+        "exception_preserved": {
+          "success": 25,
+          "denominator": 26
+        }
+      },
+      "failed_case_ids": [
+        "MAIN-SDN-010"
+      ]
+    },
+    "C3": {
+      "n": 72,
+      "complete": 65,
+      "complete_pct": 90.27777777777777,
+      "wilson_95ci_pct": [
+        81.26495420487313,
+        95.21036800263443
+      ],
+      "unsupported_additions": 5,
+      "components": {
+        "actor_preserved": {
+          "success": 70,
+          "denominator": 72
+        },
+        "polarity_preserved": {
+          "success": 66,
+          "denominator": 72
+        },
+        "condition_preserved": {
+          "success": 61,
+          "denominator": 63
+        },
+        "action_preserved": {
+          "success": 71,
+          "denominator": 72
+        },
+        "exception_preserved": {
+          "success": 25,
+          "denominator": 26
+        }
+      },
+      "failed_case_ids": [
+        "MAIN-CAN-011",
+        "MAIN-SD-002",
+        "MAIN-CAN-008",
+        "MAIN-MAY-001",
+        "MAIN-SH-007",
+        "MAIN-SDN-007",
+        "MAIN-CAN-001"
+      ]
+    }
+  },
+  "primary_C1_C3_all72": {
+    "first": "C1",
+    "second": "C3",
+    "n": 72,
+    "first_successes": 61,
+    "second_successes": 65,
+    "second_minus_first_pp": 5.555555555555555,
+    "paired_bootstrap_95ci_pp": [
+      -2.7777777777777777,
+      13.88888888888889
+    ],
+    "first_only": 3,
+    "second_only": 7,
+    "exact_McNemar_two_sided_p": 0.34375
+  },
+  "primary_C1_C3_excluding_original3": {
+    "first": "C1",
+    "second": "C3",
+    "n": 69,
+    "first_successes": 59,
+    "second_successes": 64,
+    "second_minus_first_pp": 7.246376811594203,
+    "paired_bootstrap_95ci_pp": [
+      -1.4492753623188406,
+      15.942028985507246
+    ],
+    "first_only": 2,
+    "second_only": 7,
+    "exact_McNemar_two_sided_p": 0.1796875
+  },
+  "secondary_C3_C2_all72": {
+    "first": "C3",
+    "second": "C2",
+    "n": 72,
+    "first_successes": 65,
+    "second_successes": 71,
+    "second_minus_first_pp": 8.333333333333334,
+    "paired_bootstrap_95ci_pp": [
+      1.3888888888888888,
+      16.666666666666668
+    ],
+    "first_only": 1,
+    "second_only": 7,
+    "exact_McNemar_two_sided_p": 0.0703125
+  },
+  "secondary_C3_C2_excluding_original3": {
+    "first": "C3",
+    "second": "C2",
+    "n": 69,
+    "first_successes": 64,
+    "second_successes": 68,
+    "second_minus_first_pp": 5.797101449275362,
+    "paired_bootstrap_95ci_pp": [
+      0.0,
+      13.043478260869565
+    ],
+    "first_only": 1,
+    "second_only": 5,
+    "exact_McNemar_two_sided_p": 0.21875
+  },
+  "extraction": {
+    "n": 72,
+    "cross_slot_structure_content_preserved": 61,
+    "JSON_modal_correct": 65,
+    "JSON_polarity_correct": 69,
+    "structure_and_JSON_both_correct": 57,
+    "slot_counts": {
+      "actor": {
+        "success": 63,
+        "denominator": 72
+      },
+      "condition": {
+        "success": 41,
+        "denominator": 63
+      },
+      "action": {
+        "success": 66,
+        "denominator": 72
+      },
+      "exception": {
+        "success": 9,
+        "denominator": 26
+      }
+    }
+  },
+  "structure_to_explanation_counts": {
+    "1->1": 57,
+    "1->0": 4,
+    "0->1": 8,
+    "0->0": 3
+  },
+  "archived_main_complete_decisions_changed": 9,
+  "JSON_explanation_alignment": {
+    "C1": {
+      "agree": 65,
+      "disagree": 6,
+      "not_assessable": 1
+    },
+    "C2": {
+      "agree": 72,
+      "disagree": 0,
+      "not_assessable": 0
+    },
+    "C3": {
+      "agree": 66,
+      "disagree": 3,
+      "not_assessable": 3
+    }
+  },
+  "bootstrap": {
+    "unit": "case",
+    "iterations": 20000,
+    "seed": 2026090601
+  },
+  "caveats": [
+    "Same reviewer with prior results knowledge; masked IDs are not independent validation.",
+    "Provisional first pass; delayed review and adjudication remain.",
+    "C1/C2 generated September 3 and C3 September 6; comparisons are exploratory.",
+    "Extraction slot and cross-slot diagnostics defined after generation.",
+    "No causal proof that correct explanations repaired extraction: generation also sees the original source."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "status": "PASS1_SEALED_PASS2_PENDING",
+  "manifested_at": "2026-09-08T03:34:42.534772+00:00",
+  "preflight_completion_manifest_sha256": "46a585bfe6d26dd10589e31f8f502f9ca086d17cf0ed13e00c0216d3c0d40ede",
+  "review_package_manifest_sha256": "6e34c03a58dfe3e87407b80e1a10059408496c305b6fd316b449eafa53325051",
+  "treatment_freeze_manifest_sha256": "271c9718049be10a7ef6422c8d08a0a6edc672cc4a6051d7a9bf957338b4bfa5",
+  "file_sha256": {
+    "authored/batch_001_025.tsv": "73c340b88077098d2b0f1fc1eded5056837ee4aa658d0c7a0e8c8cacc17a0ba8",
+    "authored/batch_026_050.tsv": "9f51116de5f8fedd0ee3d3ae93a498a1d8711ec1fee83b771d7b470f196022fd",
+    "authored/batch_051_075.tsv": "a1af893cacfd1c2edf1f288f9ef63cd07448758a0014c488b6216961b83ff357",
+    "authored/batch_076_100.tsv": "3d16eb9eeb78847d61c1a2fd6ff22579a781e83634d5b3ea95ed411d1c6fc4ef",
+    "authored/batch_101_125.tsv": "b47f8ceabd09bd07584f8259fa0f57d06a645b9740240c179901f8f29931547b",
+    "authored/batch_126_150.tsv": "8cab32e1363d4dd3783625ab7abd227492b9a18a707cdcf254450125cf557737",
+    "authored/batch_151_175.tsv": "bf512dbf895e3c20cfb57c6b9edd789388a29b269e34ed2682b302887fe76672",
+    "authored/batch_176_200.tsv": "3a3c223e857edcc26ee745d1d2146023ae5739ad36fe1330866d4b87b14d08b5",
+    "authored/batch_201_225.tsv": "33edb27bc5f9578d6590a12ca219bc4af18b63c3a2aa283ecfddd9febb93a85c",
+    "authored/batch_226_255.tsv": "9bb0dd1786f0f12c8abbc392de2f048d36f6deec011032397637bd50919e9084",
+    "coordinator/response_bindings.json": "638a7a5a19c28ecb1808cd296bcd294211d16f35c0fa49659a97a26bc66de13f",
+    "judgments_completed.jsonl": "c6bb79305c684d15cf0d8ead4278a39408a21175d669168184bd2b70b8eadc33",
+    "judgments_index.csv": "94df44e5f895b42f19e32c6c8b2e7ec4cb5c8ec9926fc4404acb036c4d356a4b",
+    "judgments_working.jsonl": "fba748d7bbf8f70fd15ee160ba8674da931e9c0818c38677ab980f4bd6679e58",
+    "readable/review_001_043.md": "6015a57b8058542a9c5faf150b48ff3606cae8f5560551d5c13f79bb6383e8ed",
+    "readable/review_044_086.md": "082a2bd08abcb8b8076a22fcf83406f664939230efccf9d6e77aa2472769d4ae",
+    "readable/review_087_129.md": "e5b1eca52880ec70efb78567cf57934e1fbc3022b04b333e15d4850eab68bdda",
+    "readable/review_130_172.md": "0fa97bfb93c22a7a31e93c04554ab1ab514ab1af64f09f1d9310a25641c4bb8b",
+    "readable/review_173_215.md": "2a4f4c4d3e20e0e95192cbb6ccb46da03b73ed7f90c2a3cb354ed749a7dd24ae",
+    "readable/review_216_255.md": "47b25c4336a7f21d151eb6f511dba95ed113c260eeb39ba87a6526ac135ce9af",
+    "seal/completion_manifest.json": "798b99adbfb6e8a287c0d6450ba2d2aa175d221df74de92c478427b0106fe45c",
+    "seal/pass1_completed.jsonl": "c6bb79305c684d15cf0d8ead4278a39408a21175d669168184bd2b70b8eadc33",
+    "seal/preflight_completed.jsonl": "572a4c7efc0f72c192af68b585ca0a0edf44f979995e72c161cab898ba322ff4",
+    "summary.json": "e41c1baf3d9da92a724f5104b7b7a28b2c277c10cc532ede6ac4c2a1a8792632",
+    "verification_receipt.json": "fb2a835bc0a0cf67b5d42e3ffdd1f5c73f9fda67f58e2aae058eb1f99ebd4adb"
+  },
+  "support_file_sha256": {
+    "tools/v2_pass1_workbench_20260908.py": "7d998386748c8e27bafcbd3898d5fb5d8db9d74352f3f6b7d390375ed0e58fa2",
+    "tools/finalize_v2_pass1_20260908.py": "12dc986daa7d3d0ae043c9375f01f8859ad9763c45db3d83bf71093ef183c2d9",
+    "docs/25_v2_semantic_review_pass1_2026-09-08.md": "a96ad7b5e60a810e4381d9998216952b61ea5d1ae56163964925aeadc3cf6ff2"
+  }
+}

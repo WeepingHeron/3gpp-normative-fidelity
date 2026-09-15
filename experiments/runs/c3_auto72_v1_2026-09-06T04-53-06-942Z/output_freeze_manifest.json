@@ -1,0 +1,13 @@
+{
+  "frozen_at": "2026-09-06T04:56:21.393Z",
+  "file_sha256": {
+    "execution_summary.json": "9b5931a20bb9ee7d66f659bade58f70b46403b3ce4ed4f109224d4bcbc1f8b74",
+    "extractions.jsonl": "8102ec92525a727f1f6343d19a38ead4aa664def15771599d544d9009725b0cd",
+    "input_freeze_manifest.json": "452ffd12e2bbaae1fcb0876ddd48fc4680849488ae2e3c578a9c765bcfccaa69",
+    "manifest.json": "ae889e139f7c377b42a55f4fd0099b792782bd4a91b59562b551a094087f4541",
+    "parsed_responses.jsonl": "5ec5d59d17cc7ce928ef4c31534e1415920b4ee981e6cb41a4fecfc7c045bdb4",
+    "projected_inputs.jsonl": "d6bd444379b1b4b4984d52802039bf6191c0e3840f1b0eba241d90a2a2339540",
+    "raw_responses.jsonl": "8267afb8f46dd7b957e27a123140c6227408b980be385c81fb5cfb44f0843651",
+    "requests.jsonl": "724c8c88152687085766670e739d6110d524f69ec5a46b6b0980209db2547a35"
+  }
+}

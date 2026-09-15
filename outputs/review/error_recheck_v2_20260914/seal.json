@@ -1,0 +1,13 @@
+{
+  "sealed_at": "2026-09-14T04:05:22.134512+00:00",
+  "unchanged_decisions": 9,
+  "file_sha256": {
+    "outputs/review/error_replication_v1_20260914/judgments_8.jsonl": "966588b9f9f11029cc5993b90d71d014deec5e42073078079ad5c429b43c7a8a",
+    "outputs/review/error_replication_v1_20260914/review_seal.json": "3c932981f6140b12f472bc29de385c28da2e28400fa2f1cf52c6fffaae746b87",
+    "outputs/review/v2_adjudication_20260909/adjudication_readable.md": "c2984d14b11e0b6279090383619a7b5d20db4dd22a21e9fa0afef7d54da7989a",
+    "experiments/error_replication_v1_20260914/evaluation_reference.json": "787c3877312ac3048bab8af8d8593ea4410663facb29650483b6502c740cf8b5",
+    "experiments/c3_lib.mjs": "b9493af34faaa9839bcb0e194501df4ce27741d875a8f22181abddda897c72f2",
+    "outputs/review/error_recheck_v2_20260914/rechecked_8.jsonl": "0c2f5e4dc093d0a6fa065564a29c3f14673e17c52f7c36db46d098a22c7c16da",
+    "outputs/review/error_recheck_v2_20260914/review.md": "da8c3733793ff1dc26f7bfa9b23114a455f27d120c3ff442dbc9422c68406a1e"
+  }
+}

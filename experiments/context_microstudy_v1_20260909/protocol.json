@@ -1,0 +1,54 @@
+{
+  "experiment_id": "CONTEXT_MICROSTUDY_V1_20260909",
+  "status": "READY_TO_FREEZE",
+  "prepared_at": "2026-09-09T05:51:05.925796+00:00",
+  "design": "3 purposively selected previously reviewed sources x 2 context levels x 2 hint levels x 2 repeated calls",
+  "case_ids": [
+    "CTX-001",
+    "CTX-002",
+    "CTX-003"
+  ],
+  "context_levels": [
+    "SHORT",
+    "FULL"
+  ],
+  "hint_levels": [
+    "NONE",
+    "MODAL"
+  ],
+  "replicates": [
+    1,
+    2
+  ],
+  "planned_calls": 24,
+  "model": "gpt-5.4-mini-2026-03-17",
+  "parameters": {
+    "temperature": 0,
+    "reasoning_effort": "none",
+    "max_output_tokens": 900,
+    "store": false
+  },
+  "execution_order_seed": "context-microstudy-v1-20260909",
+  "max_estimated_cost_usd": 0.5,
+  "pricing_usd_per_million": {
+    "input": 0.75,
+    "cached_input": 0.075,
+    "output": 4.5
+  },
+  "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+  "pricing_checked_date": "2026-09-09",
+  "retry_policy": "no automatic retries; stop on uncertain transport, HTTP error or missing usage",
+  "primary_outcome": "full_context_target_completeness: all frozen target/context requirements are present and accurate; 1/0/null, with item-level evidence",
+  "secondary_outcome": "unsupported_or_distorted_claim: true/false/null, judged against actually supplied target, question and context; omission of unavailable context alone is not distortion",
+  "missing_information_policy": "Requirements absent from SHORT input remain in shared completeness denominator, but are marked INPUT_CONTEXT_GAP and not relabelled as mistranslation. Explicit insufficient-context statements can be faithful yet incomplete.",
+  "ambiguity_policy": "Unresolved semantics remain null; no forced binary. Refusal/empty/incomplete generation counts 0 for pipeline task completeness with separate delivery status.",
+  "inferential_policy": "descriptive counts and case/replicate paired changes only; no p-values, confidence intervals, population or generalization claims; two repeats per source are not independent cases",
+  "comparison_policy": "Compare SHORT/FULL within the same hint level. Hint contrasts are secondary. Same model, parameters, target, question, hint and output limit; FULL only adds context blocks. No C2 or C3 extraction variant in this focused experiment.",
+  "review_policy": "Root AI manual review plus a separate fresh AI context review before conditions/results are compared. Record disagreement; do not overwrite either. Human expert review is not performed.",
+  "prior_results_policy": "No rescoring or replacement of frozen v2 results. New prompt, question scope for CTX-002, context and outcome differ from prior v2.",
+  "selection_limits": "These are development cases selected after observed uncertainty, not held-out clauses. CTX-001 is a context control whose core requirement is already present in SHORT. No tuning or selecting successful retries after outputs.",
+  "execution_requires_separate_source_preflight_approval": true,
+  "assessment_surface": "Both semantic outcomes and per-requirement coverage use explanation_ko only. Metadata fields are audited separately against target text; a correct label cannot repair the explanation, and an incorrect metadata label alone does not change explanation completeness. Cross-field contradiction is reported separately as JSON_EXPLANATION_INCONSISTENCY.",
+  "compound_requirement_rule": "Each enumerated conjunct and exception/deletion trigger in a requirement must be preserved for coverage=1; explicit contradiction or omission yields 0; genuinely ambiguous language yields null. Overall target completeness is 0 if any requirement is 0 or an unsupported/distorted claim is confirmed; otherwise null if any unresolved coverage/claim remains; else 1. Exact wording is not required.",
+  "hint_contrast_interpretation": "Both arms receive the same generic modality guidance. MODAL adds only case-specific normative_type/polarity labels for the target sentence; it does not add context-specific exception gold."
+}

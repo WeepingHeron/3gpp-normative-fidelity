@@ -1,0 +1,10 @@
+import fs from 'node:fs';import path from 'node:path';import os from 'node:os';import assert from 'node:assert/strict';
+import {runSlots,delivery} from './run_atomic_audit_20260914.mjs';
+const base='experiments/atomic_audit_v1_20260914';const p=JSON.parse(fs.readFileSync(base+'/protocol.json'));const plan=fs.readFileSync(base+'/request_plan.jsonl','utf8').trim().split('\n').map(JSON.parse);const row=plan.find(r=>r.arm==='C1_ATOMIC');
+const body=data=>({id:'synthetic',model:p.model,status:'completed',output:[{type:'message',content:[{type:'output_text',text:JSON.stringify(data)}]}],usage:{input_tokens:10,output_tokens:10,total_tokens:20}});
+assert.equal(delivery(body({checks:[]}),row.request.text.format.schema).status,'AUDIT');assert.equal(delivery(body({checks:[{check_id:'bad'}]}),row.request.text.format.schema).status,'SCHEMA_INVALID');
+const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'atomic-audit-test-'));let n=0;const args={protocol:p,plan:[row,row],inputFreezeHash:'synthetic',inputFrozenAt:'synthetic',provenance:'SYNTHETIC_TEST'};
+let m=await runSlots({...args,runDir:path.join(tmp,'invalid'),transport:async()=>{n++;return {http_status:200,body:body({checks:[{}]})};}});assert.equal(n,1);assert.equal(m.status,'STOPPED');
+n=0;m=await runSlots({...args,runDir:path.join(tmp,'transport'),transport:async()=>{n++;throw Error('simulated');}});assert.equal(n,1);assert.equal(m.cost_complete,false);
+await assert.rejects(()=>runSlots({...args,runDir:path.join(tmp,'transport'),transport:async()=>{}}),/RUN_EXISTS/);
+console.log(JSON.stringify({status:'PASS',checks:['nested_schema','empty_audit_not_semantically_approved','stop_invalid_delivery','no_retry','unknown_cost','no_replay'],live_calls:0}));

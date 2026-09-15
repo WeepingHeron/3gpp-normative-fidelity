@@ -1,0 +1,14 @@
+{
+  "sealed_at": "2026-09-13T14:27:01.348023+00:00",
+  "review_count": 12,
+  "requirement_count": 36,
+  "semantic_scores_automatically_inferred": false,
+  "input_files": {
+    "primary_packets_12.jsonl": "9d5b9cbef2b7dd0bc238c14f9fe82ef3d040009ce502d550c83ab75615bbee66"
+  },
+  "file_sha256": {
+    "judgments_12.jsonl": "3ecec7c94d9ea6d615b23d9991e4a69757696b31a1b6aca898842883c8462e3b",
+    "review_notes.md": "b1cb0352b2523830f3346c456b801c359364591e4334b9de4a046c7d3b96f6ec"
+  },
+  "serializer_sha256": "1cf6ee96445020b6aba507a3bba4dffd1bf968c062c6378ee525697e792add8e"
+}

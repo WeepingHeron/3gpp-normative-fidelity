@@ -1,0 +1,68 @@
+{
+  "ok": true,
+  "status": "PREPARED_PREFLIGHT_PENDING",
+  "references": 51,
+  "slots": 255,
+  "delivery_counts": {
+    "EXPLANATION": 254,
+    "NOT_GENERATED": 1
+  },
+  "package_files_verified": 22,
+  "support_files_verified": 2,
+  "frozen_files_unchanged": 119,
+  "gold_preflight_completed": 0,
+  "semantic_reviews_completed": 0,
+  "new_model_calls": 0,
+  "self_tests": [
+    {
+      "name": "blank_preflight_rejected",
+      "passed": true
+    },
+    {
+      "name": "missing_preflight_rejected",
+      "passed": true
+    },
+    {
+      "name": "missing_response_not_model_failure",
+      "passed": true
+    },
+    {
+      "name": "early_pass2_rejected",
+      "passed": true
+    },
+    {
+      "name": "exact_24h_allowed",
+      "passed": true
+    },
+    {
+      "name": "valid_unresolved_and_pipeline_contract",
+      "passed": true
+    },
+    {
+      "name": "duplicate_review",
+      "passed": true
+    },
+    {
+      "name": "rubric_change",
+      "passed": true
+    },
+    {
+      "name": "unknown_to_zero",
+      "passed": true
+    },
+    {
+      "name": "delivery_changed",
+      "passed": true
+    },
+    {
+      "name": "old_pass_reuse",
+      "passed": true
+    },
+    {
+      "name": "judgment_before_preflight",
+      "passed": true
+    }
+  ],
+  "verified_at": "2026-09-08T01:43:07.777575+00:00",
+  "package_manifest_sha256": "6e34c03a58dfe3e87407b80e1a10059408496c305b6fd316b449eafa53325051"
+}

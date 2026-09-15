@@ -1,0 +1,13 @@
+{
+  "planned": 9,
+  "completed": 8,
+  "transport_unknown": 1,
+  "complete": 3,
+  "incomplete": 5,
+  "unresolved_semantics": 0,
+  "observed_cost_usd": 0.018653250000000003,
+  "total_billing_known": false,
+  "primary49_unchanged": true,
+  "review_status": "SAME_AI_FIRST_REVIEW_COMPLETE",
+  "all_outputs_retained": true
+}

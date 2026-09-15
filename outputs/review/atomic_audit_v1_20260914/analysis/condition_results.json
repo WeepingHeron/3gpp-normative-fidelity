@@ -1,0 +1,40 @@
+[
+  {
+    "arm": "C0_COARSE",
+    "audits": 6,
+    "known_requirement_defects": 8,
+    "correctly_detected_defects": 3,
+    "preserved_requirements": 10,
+    "false_alarms_on_preserved_requirements": 2,
+    "erroneous_repair_advice_cases": 2,
+    "known_unresolved_claim_cases": 1,
+    "unresolved_claims_adequately_flagged": 0,
+    "structural": {
+      "audit_items": 59,
+      "source_exact": 15,
+      "source_whitespace_normalized": 54,
+      "explanation_nonempty": 26,
+      "explanation_exact": 26,
+      "all_propositions_covered": true
+    }
+  },
+  {
+    "arm": "C1_ATOMIC",
+    "audits": 6,
+    "known_requirement_defects": 8,
+    "correctly_detected_defects": 2,
+    "preserved_requirements": 10,
+    "false_alarms_on_preserved_requirements": 0,
+    "erroneous_repair_advice_cases": 1,
+    "known_unresolved_claim_cases": 1,
+    "unresolved_claims_adequately_flagged": 0,
+    "structural": {
+      "audit_items": 102,
+      "source_exact": 62,
+      "source_whitespace_normalized": 90,
+      "explanation_nonempty": 68,
+      "explanation_exact": 59,
+      "all_propositions_covered": true
+    }
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "status": "FROZEN_BEFORE_GENERATION",
+  "frozen_at": "2026-09-13T15:31:33.514854+00:00",
+  "file_sha256": {
+    "experiments/preservation_repair_v1_20260914/audit_instruction.md": "e378db41646446ffaaeace91084b2bd0e06703955243819c10957302195691b2",
+    "experiments/preservation_repair_v1_20260914/generator_inputs.json": "1d135cbd2d553d9c7f7dae304b77fd1aa25f6cf247c2d141239cf59c4b6ecc18",
+    "experiments/preservation_repair_v1_20260914/evaluation_reference.json": "787c3877312ac3048bab8af8d8593ea4410663facb29650483b6502c740cf8b5",
+    "experiments/preservation_repair_v1_20260914/seeds_6.json": "2063caa4552fc4212400f29dee0f3f46674755953141b4bf7c58cacce7e03dac",
+    "experiments/preservation_repair_v1_20260914/protocol.json": "9820c451d8e80e0b59ad020393fe98c73e052d1d7db444e23799ae8216055acc",
+    "experiments/preservation_repair_v1_20260914/validation_report.json": "ee721aff6d726e56a327797de7d9a16e53b376394e1fe5f28420c4dfcc6f2eaf",
+    "experiments/preservation_repair_v1_20260914/request_recipe_12.jsonl": "1dbd0fdf7abdbba0a2e44ace36afca87fbe514b282d68e4610b1b54e8de4c55b",
+    "experiments/preservation_repair_v1_20260914/audit_schema.json": "5cd6b255270639995d7b7104b113bd0c73253579d9d52bdc64b18b7204c263fe",
+    "experiments/preservation_repair_v1_20260914/repair_suffix.md": "92c96548c8d0f5e577a5fa572dd95e2d06769ea69d169c8713f60363511363a9",
+    "experiments/preservation_repair_v1_20260914/response_schema.json": "9f0294572d5455132b7b0af943824bad0df37af538e2fb3fa4fdba40e120bfc3",
+    "experiments/preservation_repair_v1_20260914/rewrite_instruction.md": "6cecbdf273dc59cc10a202cec5119d366d733758eb5e550338ca961a48522456",
+    "tools/prepare_preservation_repair_20260914.py": "80b1d80d470dad01aaefa880fe3bdec4b8a27c1054941b0052b66faa948ac0f2",
+    "experiments/run_preservation_repair_20260914.mjs": "c50b0b097ed20be3ac24f8cdbb8684e6d0c6a9a090b1c251196b8886f1f40dc4",
+    "experiments/test_preservation_repair_20260914.mjs": "e9d18ea3baa82fd5e483f8c66f29f7d625660448d7f1a8f70b3e1e6914866ffd",
+    "experiments/run_generation_preservation_20260909.mjs": "9a2d99897982f81327cf8c35df65821d822cdf863ebaf0410ed1e65964fec1da",
+    "docs/38_preservation_repair_plan_2026-09-14.md": "92feae2b61f62cad2eeefcee33ee89db8215868653fc1aa3ad0eb78933b09741"
+  }
+}

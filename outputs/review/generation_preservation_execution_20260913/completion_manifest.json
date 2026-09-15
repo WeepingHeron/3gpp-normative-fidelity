@@ -1,0 +1,13 @@
+{
+  "status": "FROZEN_REQUEST_EXECUTION_COMPLETE_SEMANTICS_PENDING",
+  "completed_at": "2026-09-13T13:54:03.336187+00:00",
+  "file_sha256": {
+    "outputs/review/generation_preservation_execution_20260913/prelaunch.json": "7933c92bc9462771928073b53d16ad5126249464ecb73fcf63746c41d0cae847",
+    "outputs/review/generation_preservation_execution_20260913/completion_verification.json": "d661f271bef7e075fc77d3f149662cc1504d442ef8de7c3288b348cfee381b9a",
+    "outputs/review/generation_preservation_execution_20260913/runtime_verification.json": "913d305a43b674eecaac8ef574246cb824ca9a545564557fecb5ac22091e711a",
+    "docs/33_generation_preservation_execution_2026-09-13.md": "32c61d29d9538e094ee667988c8f0a246f3a98b993ec9250fdadcbb543da3fd6",
+    "tools/verify_generation_preservation_execution_20260913.mjs": "3095623f96f5c82d4ee4ea962c2accc37c3c84f484043d531e57d7712c425869",
+    "experiments/runs/generation_preservation_v1_20260909/output_freeze_manifest.json": "67164d690669e597f7cb164ab495b1daa84d43702c2d6f63a36f477aa93e79d3",
+    "outputs/review/generation_preservation_v1_20260909/packet_manifest.json": "9ad07470e2ea9bdf75fe1245e28e28067ca47eef751c6ef4bbbf2aa932835ded"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "sealed_at": "2026-09-13T16:18:10.788029+00:00",
+  "input_sha256": "8b5de2fab3b991c9380087a4db262272aacda4bbb44b1e0b9ff186735f618892",
+  "script_sha256": "9b11473423232cf271e542fa1c7cedcb90b72ab7dd3c7b2996fe2dded1b201cf",
+  "file_sha256": {
+    "judgments_12.jsonl": "650c3a85ad6bd9b2f99ee18b7cb1ed5b5ab837bc7811901518e09016d115ddbc"
+  },
+  "manual_semantic_judgments": true,
+  "independent_review": false
+}

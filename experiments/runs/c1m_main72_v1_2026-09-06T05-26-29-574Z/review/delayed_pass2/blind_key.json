@@ -1,0 +1,866 @@
+{
+  "H001": {
+    "case_id": "MAIN-CAN-002",
+    "condition": "C2"
+  },
+  "H002": {
+    "case_id": "MAIN-SN-010",
+    "condition": "C1M"
+  },
+  "H003": {
+    "case_id": "MAIN-SD-010",
+    "condition": "C1"
+  },
+  "H004": {
+    "case_id": "MAIN-SH-008",
+    "condition": "C2"
+  },
+  "H005": {
+    "case_id": "MAIN-SH-005",
+    "condition": "C2"
+  },
+  "H006": {
+    "case_id": "MAIN-SN-012",
+    "condition": "C1"
+  },
+  "H007": {
+    "case_id": "MAIN-SD-003",
+    "condition": "C2"
+  },
+  "H008": {
+    "case_id": "MAIN-CAN-005",
+    "condition": "C1M"
+  },
+  "H009": {
+    "case_id": "MAIN-SD-011",
+    "condition": "C1"
+  },
+  "H010": {
+    "case_id": "MAIN-CAN-001",
+    "condition": "C1"
+  },
+  "H011": {
+    "case_id": "MAIN-SDN-005",
+    "condition": "C1"
+  },
+  "H012": {
+    "case_id": "MAIN-MAY-009",
+    "condition": "C1"
+  },
+  "H013": {
+    "case_id": "MAIN-SH-010",
+    "condition": "C1"
+  },
+  "H014": {
+    "case_id": "MAIN-SH-007",
+    "condition": "C1M"
+  },
+  "H015": {
+    "case_id": "MAIN-SH-005",
+    "condition": "C1"
+  },
+  "H016": {
+    "case_id": "MAIN-SN-007",
+    "condition": "C1M"
+  },
+  "H017": {
+    "case_id": "MAIN-MAY-007",
+    "condition": "C1"
+  },
+  "H018": {
+    "case_id": "MAIN-SD-008",
+    "condition": "C2"
+  },
+  "H019": {
+    "case_id": "MAIN-MAY-001",
+    "condition": "C1M"
+  },
+  "H020": {
+    "case_id": "MAIN-SD-009",
+    "condition": "C2"
+  },
+  "H021": {
+    "case_id": "MAIN-MAY-003",
+    "condition": "C1M"
+  },
+  "H022": {
+    "case_id": "MAIN-SN-003",
+    "condition": "C1"
+  },
+  "H023": {
+    "case_id": "MAIN-SH-004",
+    "condition": "C1M"
+  },
+  "H024": {
+    "case_id": "MAIN-SH-001",
+    "condition": "C2"
+  },
+  "H025": {
+    "case_id": "MAIN-SN-002",
+    "condition": "C1"
+  },
+  "H026": {
+    "case_id": "MAIN-SN-004",
+    "condition": "C1"
+  },
+  "H027": {
+    "case_id": "MAIN-MAY-002",
+    "condition": "C1M"
+  },
+  "H028": {
+    "case_id": "MAIN-SH-004",
+    "condition": "C1"
+  },
+  "H029": {
+    "case_id": "MAIN-CAN-003",
+    "condition": "C2"
+  },
+  "H030": {
+    "case_id": "MAIN-SN-003",
+    "condition": "C2"
+  },
+  "H031": {
+    "case_id": "MAIN-SD-001",
+    "condition": "C1"
+  },
+  "H032": {
+    "case_id": "MAIN-MAY-012",
+    "condition": "C1M"
+  },
+  "H033": {
+    "case_id": "MAIN-CAN-006",
+    "condition": "C1"
+  },
+  "H034": {
+    "case_id": "MAIN-SD-005",
+    "condition": "C1"
+  },
+  "H035": {
+    "case_id": "MAIN-SH-012",
+    "condition": "C1M"
+  },
+  "H036": {
+    "case_id": "MAIN-MAY-010",
+    "condition": "C2"
+  },
+  "H037": {
+    "case_id": "MAIN-SD-012",
+    "condition": "C1"
+  },
+  "H038": {
+    "case_id": "MAIN-CAN-007",
+    "condition": "C1"
+  },
+  "H039": {
+    "case_id": "MAIN-SN-012",
+    "condition": "C1M"
+  },
+  "H040": {
+    "case_id": "MAIN-SN-007",
+    "condition": "C1"
+  },
+  "H041": {
+    "case_id": "MAIN-SDN-005",
+    "condition": "C1M"
+  },
+  "H042": {
+    "case_id": "MAIN-SD-007",
+    "condition": "C2"
+  },
+  "H043": {
+    "case_id": "MAIN-SH-011",
+    "condition": "C2"
+  },
+  "H044": {
+    "case_id": "MAIN-MAY-008",
+    "condition": "C1M"
+  },
+  "H045": {
+    "case_id": "MAIN-CAN-004",
+    "condition": "C1M"
+  },
+  "H046": {
+    "case_id": "MAIN-SDN-011",
+    "condition": "C1"
+  },
+  "H047": {
+    "case_id": "MAIN-CAN-006",
+    "condition": "C1M"
+  },
+  "H048": {
+    "case_id": "MAIN-SD-003",
+    "condition": "C1"
+  },
+  "H049": {
+    "case_id": "MAIN-CAN-009",
+    "condition": "C2"
+  },
+  "H050": {
+    "case_id": "MAIN-CAN-001",
+    "condition": "C2"
+  },
+  "H051": {
+    "case_id": "MAIN-MAY-010",
+    "condition": "C1M"
+  },
+  "H052": {
+    "case_id": "MAIN-MAY-008",
+    "condition": "C1"
+  },
+  "H053": {
+    "case_id": "MAIN-SN-006",
+    "condition": "C1M"
+  },
+  "H054": {
+    "case_id": "MAIN-SH-007",
+    "condition": "C2"
+  },
+  "H055": {
+    "case_id": "MAIN-MAY-006",
+    "condition": "C1M"
+  },
+  "H056": {
+    "case_id": "MAIN-CAN-003",
+    "condition": "C1M"
+  },
+  "H057": {
+    "case_id": "MAIN-SH-011",
+    "condition": "C1M"
+  },
+  "H058": {
+    "case_id": "MAIN-SDN-007",
+    "condition": "C1"
+  },
+  "H059": {
+    "case_id": "MAIN-MAY-012",
+    "condition": "C2"
+  },
+  "H060": {
+    "case_id": "MAIN-MAY-002",
+    "condition": "C2"
+  },
+  "H061": {
+    "case_id": "MAIN-SDN-004",
+    "condition": "C1"
+  },
+  "H062": {
+    "case_id": "MAIN-MAY-005",
+    "condition": "C1"
+  },
+  "H063": {
+    "case_id": "MAIN-MAY-005",
+    "condition": "C1M"
+  },
+  "H064": {
+    "case_id": "MAIN-CAN-001",
+    "condition": "C1M"
+  },
+  "H065": {
+    "case_id": "MAIN-SD-004",
+    "condition": "C1"
+  },
+  "H066": {
+    "case_id": "MAIN-SN-008",
+    "condition": "C1M"
+  },
+  "H067": {
+    "case_id": "MAIN-SDN-002",
+    "condition": "C1M"
+  },
+  "H068": {
+    "case_id": "MAIN-SH-009",
+    "condition": "C2"
+  },
+  "H069": {
+    "case_id": "MAIN-CAN-009",
+    "condition": "C1M"
+  },
+  "H070": {
+    "case_id": "MAIN-CAN-003",
+    "condition": "C1"
+  },
+  "H071": {
+    "case_id": "MAIN-MAY-004",
+    "condition": "C2"
+  },
+  "H072": {
+    "case_id": "MAIN-CAN-007",
+    "condition": "C2"
+  },
+  "H073": {
+    "case_id": "MAIN-SD-003",
+    "condition": "C1M"
+  },
+  "H074": {
+    "case_id": "MAIN-CAN-002",
+    "condition": "C1M"
+  },
+  "H075": {
+    "case_id": "MAIN-CAN-008",
+    "condition": "C1M"
+  },
+  "H076": {
+    "case_id": "MAIN-SD-011",
+    "condition": "C1M"
+  },
+  "H077": {
+    "case_id": "MAIN-SN-011",
+    "condition": "C1M"
+  },
+  "H078": {
+    "case_id": "MAIN-SD-002",
+    "condition": "C1M"
+  },
+  "H079": {
+    "case_id": "MAIN-SN-001",
+    "condition": "C1"
+  },
+  "H080": {
+    "case_id": "MAIN-SH-001",
+    "condition": "C1"
+  },
+  "H081": {
+    "case_id": "MAIN-SD-008",
+    "condition": "C1M"
+  },
+  "H082": {
+    "case_id": "MAIN-MAY-011",
+    "condition": "C1"
+  },
+  "H083": {
+    "case_id": "MAIN-CAN-011",
+    "condition": "C2"
+  },
+  "H084": {
+    "case_id": "MAIN-SN-008",
+    "condition": "C1"
+  },
+  "H085": {
+    "case_id": "MAIN-SD-010",
+    "condition": "C2"
+  },
+  "H086": {
+    "case_id": "MAIN-SH-010",
+    "condition": "C1M"
+  },
+  "H087": {
+    "case_id": "MAIN-MAY-007",
+    "condition": "C1M"
+  },
+  "H088": {
+    "case_id": "MAIN-SN-005",
+    "condition": "C2"
+  },
+  "H089": {
+    "case_id": "MAIN-SN-008",
+    "condition": "C2"
+  },
+  "H090": {
+    "case_id": "MAIN-SH-006",
+    "condition": "C1M"
+  },
+  "H091": {
+    "case_id": "MAIN-SDN-004",
+    "condition": "C1M"
+  },
+  "H092": {
+    "case_id": "MAIN-MAY-007",
+    "condition": "C2"
+  },
+  "H093": {
+    "case_id": "MAIN-SH-012",
+    "condition": "C1"
+  },
+  "H094": {
+    "case_id": "MAIN-SD-001",
+    "condition": "C2"
+  },
+  "H095": {
+    "case_id": "MAIN-SH-008",
+    "condition": "C1"
+  },
+  "H096": {
+    "case_id": "MAIN-SDN-001",
+    "condition": "C2"
+  },
+  "H097": {
+    "case_id": "MAIN-SH-002",
+    "condition": "C2"
+  },
+  "H098": {
+    "case_id": "MAIN-SDN-001",
+    "condition": "C1M"
+  },
+  "H099": {
+    "case_id": "MAIN-CAN-004",
+    "condition": "C2"
+  },
+  "H100": {
+    "case_id": "MAIN-CAN-007",
+    "condition": "C1M"
+  },
+  "H101": {
+    "case_id": "MAIN-SN-009",
+    "condition": "C1"
+  },
+  "H102": {
+    "case_id": "MAIN-MAY-009",
+    "condition": "C1M"
+  },
+  "H103": {
+    "case_id": "MAIN-CAN-008",
+    "condition": "C2"
+  },
+  "H104": {
+    "case_id": "MAIN-CAN-010",
+    "condition": "C1"
+  },
+  "H105": {
+    "case_id": "MAIN-MAY-006",
+    "condition": "C1"
+  },
+  "H106": {
+    "case_id": "MAIN-SDN-011",
+    "condition": "C1M"
+  },
+  "H107": {
+    "case_id": "MAIN-SDN-003",
+    "condition": "C1M"
+  },
+  "H108": {
+    "case_id": "MAIN-SDN-009",
+    "condition": "C1"
+  },
+  "H109": {
+    "case_id": "MAIN-SDN-006",
+    "condition": "C1M"
+  },
+  "H110": {
+    "case_id": "MAIN-SDN-004",
+    "condition": "C2"
+  },
+  "H111": {
+    "case_id": "MAIN-MAY-011",
+    "condition": "C2"
+  },
+  "H112": {
+    "case_id": "MAIN-MAY-005",
+    "condition": "C2"
+  },
+  "H113": {
+    "case_id": "MAIN-CAN-010",
+    "condition": "C2"
+  },
+  "H114": {
+    "case_id": "MAIN-SN-009",
+    "condition": "C1M"
+  },
+  "H115": {
+    "case_id": "MAIN-MAY-011",
+    "condition": "C1M"
+  },
+  "H116": {
+    "case_id": "MAIN-SH-012",
+    "condition": "C2"
+  },
+  "H117": {
+    "case_id": "MAIN-SDN-010",
+    "condition": "C1"
+  },
+  "H118": {
+    "case_id": "MAIN-MAY-004",
+    "condition": "C1"
+  },
+  "H119": {
+    "case_id": "MAIN-SD-005",
+    "condition": "C2"
+  },
+  "H120": {
+    "case_id": "MAIN-SD-006",
+    "condition": "C1"
+  },
+  "H121": {
+    "case_id": "MAIN-SD-011",
+    "condition": "C2"
+  },
+  "H122": {
+    "case_id": "MAIN-CAN-012",
+    "condition": "C1M"
+  },
+  "H123": {
+    "case_id": "MAIN-MAY-012",
+    "condition": "C1"
+  },
+  "H124": {
+    "case_id": "MAIN-SD-012",
+    "condition": "C1M"
+  },
+  "H125": {
+    "case_id": "MAIN-MAY-003",
+    "condition": "C1"
+  },
+  "H126": {
+    "case_id": "MAIN-SD-001",
+    "condition": "C1M"
+  },
+  "H127": {
+    "case_id": "MAIN-SD-010",
+    "condition": "C1M"
+  },
+  "H128": {
+    "case_id": "MAIN-SN-011",
+    "condition": "C2"
+  },
+  "H129": {
+    "case_id": "MAIN-SN-001",
+    "condition": "C1M"
+  },
+  "H130": {
+    "case_id": "MAIN-SDN-001",
+    "condition": "C1"
+  },
+  "H131": {
+    "case_id": "MAIN-SH-011",
+    "condition": "C1"
+  },
+  "H132": {
+    "case_id": "MAIN-SN-007",
+    "condition": "C2"
+  },
+  "H133": {
+    "case_id": "MAIN-SDN-008",
+    "condition": "C1"
+  },
+  "H134": {
+    "case_id": "MAIN-SH-002",
+    "condition": "C1"
+  },
+  "H135": {
+    "case_id": "MAIN-SN-003",
+    "condition": "C1M"
+  },
+  "H136": {
+    "case_id": "MAIN-SDN-003",
+    "condition": "C2"
+  },
+  "H137": {
+    "case_id": "MAIN-SD-009",
+    "condition": "C1"
+  },
+  "H138": {
+    "case_id": "MAIN-SD-006",
+    "condition": "C2"
+  },
+  "H139": {
+    "case_id": "MAIN-SD-008",
+    "condition": "C1"
+  },
+  "H140": {
+    "case_id": "MAIN-MAY-002",
+    "condition": "C1"
+  },
+  "H141": {
+    "case_id": "MAIN-SDN-007",
+    "condition": "C1M"
+  },
+  "H142": {
+    "case_id": "MAIN-SDN-005",
+    "condition": "C2"
+  },
+  "H143": {
+    "case_id": "MAIN-SDN-008",
+    "condition": "C1M"
+  },
+  "H144": {
+    "case_id": "MAIN-SH-009",
+    "condition": "C1M"
+  },
+  "H145": {
+    "case_id": "MAIN-CAN-009",
+    "condition": "C1"
+  },
+  "H146": {
+    "case_id": "MAIN-SD-007",
+    "condition": "C1M"
+  },
+  "H147": {
+    "case_id": "MAIN-SN-004",
+    "condition": "C1M"
+  },
+  "H148": {
+    "case_id": "MAIN-SDN-012",
+    "condition": "C1M"
+  },
+  "H149": {
+    "case_id": "MAIN-SN-005",
+    "condition": "C1"
+  },
+  "H150": {
+    "case_id": "MAIN-SN-002",
+    "condition": "C2"
+  },
+  "H151": {
+    "case_id": "MAIN-SH-003",
+    "condition": "C1"
+  },
+  "H152": {
+    "case_id": "MAIN-SDN-006",
+    "condition": "C1"
+  },
+  "H153": {
+    "case_id": "MAIN-MAY-009",
+    "condition": "C2"
+  },
+  "H154": {
+    "case_id": "MAIN-MAY-001",
+    "condition": "C1"
+  },
+  "H155": {
+    "case_id": "MAIN-CAN-006",
+    "condition": "C2"
+  },
+  "H156": {
+    "case_id": "MAIN-SN-011",
+    "condition": "C1"
+  },
+  "H157": {
+    "case_id": "MAIN-CAN-011",
+    "condition": "C1"
+  },
+  "H158": {
+    "case_id": "MAIN-SDN-010",
+    "condition": "C1M"
+  },
+  "H159": {
+    "case_id": "MAIN-SN-010",
+    "condition": "C1"
+  },
+  "H160": {
+    "case_id": "MAIN-SN-006",
+    "condition": "C2"
+  },
+  "H161": {
+    "case_id": "MAIN-SDN-011",
+    "condition": "C2"
+  },
+  "H162": {
+    "case_id": "MAIN-SH-002",
+    "condition": "C1M"
+  },
+  "H163": {
+    "case_id": "MAIN-CAN-002",
+    "condition": "C1"
+  },
+  "H164": {
+    "case_id": "MAIN-SDN-008",
+    "condition": "C2"
+  },
+  "H165": {
+    "case_id": "MAIN-SN-005",
+    "condition": "C1M"
+  },
+  "H166": {
+    "case_id": "MAIN-SDN-012",
+    "condition": "C1"
+  },
+  "H167": {
+    "case_id": "MAIN-CAN-005",
+    "condition": "C1"
+  },
+  "H168": {
+    "case_id": "MAIN-SH-009",
+    "condition": "C1"
+  },
+  "H169": {
+    "case_id": "MAIN-SN-001",
+    "condition": "C2"
+  },
+  "H170": {
+    "case_id": "MAIN-SN-004",
+    "condition": "C2"
+  },
+  "H171": {
+    "case_id": "MAIN-CAN-004",
+    "condition": "C1"
+  },
+  "H172": {
+    "case_id": "MAIN-SD-002",
+    "condition": "C2"
+  },
+  "H173": {
+    "case_id": "MAIN-MAY-004",
+    "condition": "C1M"
+  },
+  "H174": {
+    "case_id": "MAIN-SDN-002",
+    "condition": "C2"
+  },
+  "H175": {
+    "case_id": "MAIN-SD-005",
+    "condition": "C1M"
+  },
+  "H176": {
+    "case_id": "MAIN-MAY-001",
+    "condition": "C2"
+  },
+  "H177": {
+    "case_id": "MAIN-CAN-012",
+    "condition": "C2"
+  },
+  "H178": {
+    "case_id": "MAIN-SDN-007",
+    "condition": "C2"
+  },
+  "H179": {
+    "case_id": "MAIN-SH-003",
+    "condition": "C2"
+  },
+  "H180": {
+    "case_id": "MAIN-SDN-009",
+    "condition": "C2"
+  },
+  "H181": {
+    "case_id": "MAIN-MAY-006",
+    "condition": "C2"
+  },
+  "H182": {
+    "case_id": "MAIN-SD-004",
+    "condition": "C2"
+  },
+  "H183": {
+    "case_id": "MAIN-CAN-012",
+    "condition": "C1"
+  },
+  "H184": {
+    "case_id": "MAIN-SD-009",
+    "condition": "C1M"
+  },
+  "H185": {
+    "case_id": "MAIN-MAY-010",
+    "condition": "C1"
+  },
+  "H186": {
+    "case_id": "MAIN-CAN-008",
+    "condition": "C1"
+  },
+  "H187": {
+    "case_id": "MAIN-SDN-009",
+    "condition": "C1M"
+  },
+  "H188": {
+    "case_id": "MAIN-SDN-006",
+    "condition": "C2"
+  },
+  "H189": {
+    "case_id": "MAIN-SH-007",
+    "condition": "C1"
+  },
+  "H190": {
+    "case_id": "MAIN-SH-001",
+    "condition": "C1M"
+  },
+  "H191": {
+    "case_id": "MAIN-SH-010",
+    "condition": "C2"
+  },
+  "H192": {
+    "case_id": "MAIN-SN-009",
+    "condition": "C2"
+  },
+  "H193": {
+    "case_id": "MAIN-SH-006",
+    "condition": "C2"
+  },
+  "H194": {
+    "case_id": "MAIN-SD-012",
+    "condition": "C2"
+  },
+  "H195": {
+    "case_id": "MAIN-SD-006",
+    "condition": "C1M"
+  },
+  "H196": {
+    "case_id": "MAIN-SH-006",
+    "condition": "C1"
+  },
+  "H197": {
+    "case_id": "MAIN-SN-012",
+    "condition": "C2"
+  },
+  "H198": {
+    "case_id": "MAIN-CAN-010",
+    "condition": "C1M"
+  },
+  "H199": {
+    "case_id": "MAIN-SH-003",
+    "condition": "C1M"
+  },
+  "H200": {
+    "case_id": "MAIN-SDN-002",
+    "condition": "C1"
+  },
+  "H201": {
+    "case_id": "MAIN-SH-008",
+    "condition": "C1M"
+  },
+  "H202": {
+    "case_id": "MAIN-SDN-012",
+    "condition": "C2"
+  },
+  "H203": {
+    "case_id": "MAIN-SH-005",
+    "condition": "C1M"
+  },
+  "H204": {
+    "case_id": "MAIN-SDN-003",
+    "condition": "C1"
+  },
+  "H205": {
+    "case_id": "MAIN-SH-004",
+    "condition": "C2"
+  },
+  "H206": {
+    "case_id": "MAIN-SD-004",
+    "condition": "C1M"
+  },
+  "H207": {
+    "case_id": "MAIN-SN-006",
+    "condition": "C1"
+  },
+  "H208": {
+    "case_id": "MAIN-SN-002",
+    "condition": "C1M"
+  },
+  "H209": {
+    "case_id": "MAIN-MAY-008",
+    "condition": "C2"
+  },
+  "H210": {
+    "case_id": "MAIN-CAN-005",
+    "condition": "C2"
+  },
+  "H211": {
+    "case_id": "MAIN-SD-002",
+    "condition": "C1"
+  },
+  "H212": {
+    "case_id": "MAIN-CAN-011",
+    "condition": "C1M"
+  },
+  "H213": {
+    "case_id": "MAIN-SDN-010",
+    "condition": "C2"
+  },
+  "H214": {
+    "case_id": "MAIN-SN-010",
+    "condition": "C2"
+  },
+  "H215": {
+    "case_id": "MAIN-MAY-003",
+    "condition": "C2"
+  },
+  "H216": {
+    "case_id": "MAIN-SD-007",
+    "condition": "C1"
+  }
+}

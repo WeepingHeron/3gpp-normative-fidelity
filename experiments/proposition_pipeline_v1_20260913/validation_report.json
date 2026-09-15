@@ -1,0 +1,9 @@
+{
+  "status": "OFFLINE_VALIDATED",
+  "planned_api_calls": 18,
+  "final_explanations": 12,
+  "gold_perturbation_check": true,
+  "prior_freeze_verified": true,
+  "baseline_exact_A2": true,
+  "reservation_usd": 0.32126849999999996
+}

@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "properties": {
+    "propositions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "actor": {
+            "type": "string"
+          },
+          "modal": {
+            "type": "string"
+          },
+          "action_or_capability": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          },
+          "condition": {
+            "type": "string"
+          },
+          "negation_or_exception": {
+            "type": "string"
+          },
+          "consequent": {
+            "type": "string"
+          },
+          "source_quotes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "actor",
+          "modal",
+          "action_or_capability",
+          "scope",
+          "condition",
+          "negation_or_exception",
+          "consequent",
+          "source_quotes"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "propositions"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "verified_at": "2026-09-09T05:40:53.718981+00:00",
+  "retained_unresolved": 8,
+  "source_pages": 10,
+  "archived_requests": 9,
+  "staged_packets": 15,
+  "old_analysis_unchanged": true,
+  "semantic_truth_automatically_verified": false
+}

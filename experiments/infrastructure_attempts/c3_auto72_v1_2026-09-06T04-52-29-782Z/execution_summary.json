@@ -1,0 +1,10 @@
+{
+  "status": "stopped",
+  "processed_cases": 0,
+  "planned_cases": 72,
+  "extracted_json": 0,
+  "parsed_generations": 0,
+  "semantic_preservation": "NOT_EVALUATED",
+  "estimated_cost_usd": 0,
+  "stop_reason": "TRANSPORT_ERROR_NO_AUTOMATIC_RETRY"
+}

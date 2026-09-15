@@ -1,0 +1,16 @@
+{
+  "captured_at": "2026-09-09T09:09:10.319211+00:00",
+  "file_sha256": {
+    "experiments/generation_preservation_v1_20260909/checklist_instruction.md": "afcf4eac4f03483e4ee799ec4a085ee0f66ec4e663ca1c4791a8c9da89cb9e07",
+    "experiments/generation_preservation_v1_20260909/generator_inputs.json": "1d135cbd2d553d9c7f7dae304b77fd1aa25f6cf247c2d141239cf59c4b6ecc18",
+    "experiments/generation_preservation_v1_20260909/evaluation_reference.json": "787c3877312ac3048bab8af8d8593ea4410663facb29650483b6502c740cf8b5",
+    "experiments/generation_preservation_v1_20260909/request_plan.preview.jsonl": "35c21d750970a098230a73ed778cdf3ba1b756194f2df7a5dd0b04dc23c0c22c",
+    "experiments/generation_preservation_v1_20260909/modality_instruction.md": "6467e648bc50f78bf2b1dfdfcc7d309f883df8746f53e42bfb8934881ab81020",
+    "experiments/generation_preservation_v1_20260909/plan_review_manifest.json": "5ce5694079c9b71de947e84b637566a44cfac08437eb64c28aeae3372fd70d72",
+    "experiments/generation_preservation_v1_20260909/protocol.json": "a36ad1d3c7193340ad2e8696be6a0573bf73b02cd55d1926d6d27305c632145b",
+    "experiments/generation_preservation_v1_20260909/validation_report.json": "6ca65ccd1cf707b54e7cf923fec27e3deaa1f2846a83ae53022fe3328146acd1",
+    "experiments/generation_preservation_v1_20260909/response_schema.json": "9218fe5bd783f2f0fc01798334e9bfd69c117f8df854701c5fc34c42efa68c3c",
+    "docs/31_generation_preservation_experiment_plan_2026-09-09.md": "67d19c01ad10f2dc8e9fb71451a04e8b4e3435f96f1f8afad3ebd7a3b31861c1",
+    "tools/prepare_generation_preservation_plan_20260909.py": "0d00bf76aa25a053e1332a33de05e7a8b28aca2e55f3800194309663eb965a40"
+  }
+}

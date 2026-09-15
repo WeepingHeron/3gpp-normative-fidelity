@@ -1,0 +1,16 @@
+{
+  "frozen_at": "2026-09-14T03:51:20.995Z",
+  "reason": "DNS ENOTFOUND in sandbox; preserve attempted first slot unknown without replay. New authorization to execute only eight NOT_ATTEMPTED slots through network-enabled execution.",
+  "slot_ids": [
+    "ERR-CTX-002-R1",
+    "ERR-CTX-003-R1",
+    "ERR-CTX-001-R2",
+    "ERR-CTX-002-R2",
+    "ERR-CTX-003-R2",
+    "ERR-CTX-001-R3",
+    "ERR-CTX-002-R3",
+    "ERR-CTX-003-R3"
+  ],
+  "runner_sha256": "ef3def8350d1d0b4b9ac8cc0a32fcfc29b48f10590ffab0c1c81690f61fad4fc",
+  "original_freeze_sha256": "75f45796fe99dcf85aea572c19df958814e11486f441ed1020e0b96017b1713c"
+}

@@ -1,0 +1,3 @@
+제공된 원문, 자동 추출 명제 목록, 기존 한국어 설명을 대조한다. 내부 사고 과정 대신 항목별 검증 결과만 JSON으로 출력한다.
+명제 목록의 모든 id를 한 번씩 검토한다. 목록은 정답이 아니므로 원문에 근거하지 않은 명제를 보존하라고 요구하지 않는다. 각 항목에 대해 source_support(SUPPORTED/CONFLICT/UNRESOLVED), explanation_status(PRESERVED/OMITTED/DISTORTED/UNRESOLVED), 근거 원문 인용 source_quote, 해당 설명 인용 explanation_quote, 필요한 수정 required_change를 기록한다. 누락이면 explanation_quote를 빈 문자열로 둔다. 수정이 필요 없으면 required_change를 빈 문자열로 둔다. 인용은 제공된 원문이나 설명에서 그대로 발췌한다.
+규범 강도와 규범 표현이 걸리는 대상, 행위자, 적용 범위, 조건·부정·예외·후속 행동의 연결을 대조한다. 메타데이터나 인용문에만 있는 내용을 설명에서 보존한 것으로 세지 않는다. 원문에 있으나 추출 목록에서 빠진 관련 규칙은 additional_source_findings에 같은 방식으로 기록한다. 의미가 불명확하면 UNRESOLVED로 남기고 강제로 통과시키지 않는다. 출처가 없는 규칙이나 정답을 보충하지 않는다. 목록의 검증을 수행하되 최종 한국어 설명은 아직 작성하지 않는다.

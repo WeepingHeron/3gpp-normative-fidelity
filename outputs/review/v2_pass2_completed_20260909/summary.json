@@ -1,0 +1,64 @@
+{
+  "status": "PASS2_SEALED_ADJUDICATION_PENDING",
+  "recorded_at": "2026-09-09T04:54:57.765780+00:00",
+  "pass1_completed_at": "2026-09-08T03:31:23.646276+00:00",
+  "pass2_released_at": "2026-09-09T04:41:29.277481+00:00",
+  "pass2_completed_at": "2026-09-09T04:52:05.557516+00:00",
+  "pass2_delay_seconds": 90605.631205,
+  "reviewed_slots": 255,
+  "source_references": 51,
+  "slots_per_reference": 5,
+  "pass2_workflow_counts": {
+    "PASS": 165,
+    "FAIL": 81,
+    "UNRESOLVED": 8,
+    "NOT_SCORED": 1
+  },
+  "identical_state_and_value": 250,
+  "disagreements": 5,
+  "state_transition_counts": [
+    {
+      "pass1": "FAIL",
+      "pass2": "FAIL",
+      "count": 77
+    },
+    {
+      "pass1": "FAIL",
+      "pass2": "UNRESOLVED",
+      "count": 1
+    },
+    {
+      "pass1": "NOT_SCORED",
+      "pass2": "NOT_SCORED",
+      "count": 1
+    },
+    {
+      "pass1": "PASS",
+      "pass2": "FAIL",
+      "count": 4
+    },
+    {
+      "pass1": "PASS",
+      "pass2": "PASS",
+      "count": 165
+    },
+    {
+      "pass1": "UNRESOLVED",
+      "pass2": "UNRESOLVED",
+      "count": 7
+    }
+  ],
+  "adjudicated_rows": 0,
+  "final_condition_metrics_computed": false,
+  "cohort_denominators_unchanged": [
+    49,
+    50,
+    50,
+    51
+  ],
+  "new_model_generation_calls": 0,
+  "independent_reviewer": false,
+  "fully_blind": false,
+  "masking_limit": "Same study evaluator; earlier pass1 discussion existed in conversation. During pass2 semantic decisions only released shuffled packets, source/gold preflight and frozen rubric were consulted; pass1 results compared only after pass2 seal.",
+  "semantic_validity_automatically_verified": false
+}

@@ -1,0 +1,8 @@
+{
+  "ok": true,
+  "slots": 24,
+  "exact_model_and_payloads": true,
+  "estimated_cost_usd": 0.0445545,
+  "input_frozen_before_generation": true,
+  "semantic_truth_automatically_verified": false
+}

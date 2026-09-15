@@ -1,0 +1,11 @@
+{
+  "frozen_at": "2026-09-13T13:51:25.090Z",
+  "provenance": "LIVE_API",
+  "file_sha256": {
+    "manifest.json": "75d76090ee56a75b141b82d1a931f9d017bfcccdb81c703ecb7f24fe63ee07c0",
+    "parsed_responses.jsonl": "ac9a7e9e62ef56662c27573f9ca09582e56855232c2498898c099a31d69017ae",
+    "raw_responses.jsonl": "1ebdacbe5c118d934a73a55382f7bec9c6c63068b6a4a0b6bb04af2fea3f62a6",
+    "requests.jsonl": "137897275ce8e924a7b85f7853e41c8690964a0c3c9e5b45af25387edb59ef04",
+    "slot_ledger.jsonl": "ac9a7e9e62ef56662c27573f9ca09582e56855232c2498898c099a31d69017ae"
+  }
+}

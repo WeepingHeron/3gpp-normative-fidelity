@@ -1,0 +1,30 @@
+{
+  "status": "TWO_AI_SEMANTIC_REVIEWS_COMPLETE",
+  "unique_responses": 18,
+  "reviewers": 2,
+  "review_records": 36,
+  "requirement_judgments": 108,
+  "primary_agreement": {
+    "completeness": {
+      "same": 15,
+      "total": 18
+    },
+    "claim": {
+      "same": 11,
+      "total": 18
+    },
+    "requirements": {
+      "same": 46,
+      "total": 54
+    }
+  },
+  "sqlite_group_count_check": true,
+  "review_seal_times": {
+    "root_review": "2026-09-13T13:59:48.722118+00:00",
+    "fresh_review": "2026-09-13T13:59:25.381143+00:00"
+  },
+  "progression_status": "HOLD_FOR_METHOD_REVISION",
+  "metadata_comparability": "WITHHELD: some fresh diagnostics compare metadata to source instead of metadata to explanation; preserve raw values and report post-seal clarification separately.",
+  "semantic_scores_automatically_inferred": false,
+  "human_expert_review": false
+}

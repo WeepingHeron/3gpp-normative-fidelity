@@ -1,0 +1,10 @@
+{
+  "verified_at": "2026-09-13T16:15:38.575576+00:00",
+  "status": "PASS",
+  "audits": 12,
+  "final_explanations_generated": 0,
+  "known_cost_usd": 0.08952149999999999,
+  "input_tokens": 26554,
+  "output_tokens": 15468,
+  "request_and_response_bindings_valid": true
+}

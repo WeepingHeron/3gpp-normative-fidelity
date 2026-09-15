@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "adjudicated_disagreements": 5,
+  "focused_symmetry_checks": 60,
+  "merged_slots": 255,
+  "unchanged_earlier_seals": true,
+  "semantic_truth_automatically_verified": false,
+  "verified_at": "2026-09-09T05:08:02.573870+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PROVISIONAL_PASS1_PACKAGE_READY",
+  "created_at": "2026-09-06T05:13:04.043699+00:00",
+  "base": "project_root",
+  "file_sha256": {
+    "experiments/runs/c3_auto72_v1_2026-09-06T04-53-06-942Z/review/scores_pass1_unmasked.csv": "766168daab94544ffc83dabc9e6a1ecf6b1f29c39aade5b256f0fbd7e576bc2f",
+    "experiments/runs/c3_auto72_v1_2026-09-06T04-53-06-942Z/review/summary_pass1.json": "cc9d708c043ea1fb4fbb022a83eec7cc77fff4d3dd0f763d4121c8e4c8ca4486",
+    "experiments/runs/c3_auto72_v1_2026-09-06T04-53-06-942Z/review/archived_vs_fresh_pass1.csv": "19f25a7d4a30593d155dcc4693f398a2de5be6aa2718e832888c2cca6a621046",
+    "experiments/runs/c3_auto72_v1_2026-09-06T04-53-06-942Z/review/extraction_to_explanation_pass1.csv": "b0792b8c9027f76d1948dcb94ee2901dbad3a00b2360f94ae1a36fc9c8bf0663",
+    "experiments/runs/c3_auto72_v1_2026-09-06T04-53-06-942Z/review/JSON_explanation_alignment_pass1.csv": "5d7cbd2940739d7c9a72f6b3c1c65b8f7e9fa60d0b6f5d7d9a9f54c376a468b3",
+    "experiments/runs/c3_auto72_v1_2026-09-06T04-53-06-942Z/review/pass1_freeze_manifest.json": "75a748f76d3bef3d4223ad23b65dfaf380878cfe559a8e201edbce33b5e10da6",
+    "tools/c3_review_io.py": "c71f209a515bedb4a35948d87d788c70f1322192752c6e942ec62435d7941672",
+    "tools/summarize_c3_pass1.py": "4d52ca8ed381f461794da40e56c6be225117e773ac3cfa7f7b5aa48b233ddee9",
+    "docs/13_c3_semantic_review_pass1_2026-09-06.md": "f01bbef42b6c7c5b6cc9c4cd01689558022c5004de10b71efac582978741ca34"
+  },
+  "pass2": "PREPARED_NOT_REVIEWED",
+  "independent_expert_validation": false
+}

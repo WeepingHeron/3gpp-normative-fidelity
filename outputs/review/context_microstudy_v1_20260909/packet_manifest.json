@@ -1,0 +1,17 @@
+{
+  "prepared_at": "2026-09-09T06:13:28.448008+00:00",
+  "file_sha256": {
+    "coordinator/keys_24.jsonl": "0ce378a52d24b1ba8bed662912fdf25bf8115240316cf574dae311fce32a5bfe",
+    "generation_verification.json": "e81504f217ca4572c82af1ca640e488843b2dea1c7e45486bae8267ae6bd2512",
+    "reviewer/REVIEW_GUIDE.md": "7d791c82ef40d0d303c06038b9560f7bf91246fc57edfe294428fd02b34821ab",
+    "reviewer/judgments_blank_24.jsonl": "2d792408746f11a9247f13784c3b08bd4912891783dd4613996c824e794a421f",
+    "reviewer/packets_24.jsonl": "c8a781933c9e9bc3170a70d0469e5ea777695496d0378ed05da5335350727335"
+  },
+  "input_file_sha256": {
+    "experiments/context_microstudy_v1_20260909/input_freeze_manifest.json": "5cf197871d852f6300e1bda00291afeb0da806261a815960445ea47810e36e64",
+    "experiments/runs/context_microstudy_v1_20260909/output_freeze_manifest.json": "5119af58f92617245001cfe44dbded012e56050f1515bfef043d2c6e3550d994",
+    "experiments/runs/context_microstudy_v1_20260909/parsed_responses.jsonl": "65e8c13e051da7822490db4af0816df8b5ee585c2139c2743ca512be46e1b4dd",
+    "experiments/context_microstudy_v1_20260909/cases.json": "ad9922f924141cb0b8a5b5f2931ca3b42ae77052513d37e6ee7ffe20f64e623e",
+    "experiments/context_microstudy_v1_20260909/protocol.json": "0f1d759430202a0dcf0b6f015bbf2b45c593c88d988c9961e2856b6cdb79ae0b"
+  }
+}

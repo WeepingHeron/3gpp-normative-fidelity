@@ -1,0 +1,3 @@
+# Network setup failure
+
+The sandboxed first request stopped before any API response or parsed output. A credential-free HEAD connectivity check in the same environment returned ENOTFOUND / getaddrinfo / api.openai.com. No observed model output was discarded. Original run artifacts are preserved here unchanged. The authorized experiment will be restarted with network escalation and an unchanged protocol, prompt, model and data. This is an infrastructure attempt, not a completed experimental sample. The first request log did not retain its DNS cause, so its lack of a server response is preserved as recorded rather than relabeled as a successful or billed call.

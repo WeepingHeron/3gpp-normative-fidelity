@@ -1,0 +1,16 @@
+{
+  "experiment_id": "PRESERVATION_REPAIR_V1_20260914",
+  "provenance": "LIVE_API",
+  "status": "GENERATION_COMPLETE_SEMANTICS_PENDING",
+  "started_at": "2026-09-13T15:31:52.918Z",
+  "input_freeze_sha256": "71a7371e6b76649e9e379d652aa8ec14af2932372921f02b2f2694794b5e7f7b",
+  "input_frozen_at": "2026-09-13T15:31:33.514854+00:00",
+  "planned_calls": 18,
+  "planned_explanations": 12,
+  "attempts": 18,
+  "returned": 18,
+  "explanations": 12,
+  "known_cost_usd": 0.07956779999999998,
+  "cost_complete": true,
+  "finished_at": "2026-09-13T15:33:00.974Z"
+}

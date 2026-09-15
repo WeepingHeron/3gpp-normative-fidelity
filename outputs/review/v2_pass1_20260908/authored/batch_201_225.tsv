@@ -1,0 +1,26 @@
+review_id	semantic_judgment	reason_codes	rationale	response_evidence
+V2-P1-201	PASS	PRESERVED	5GSM 메시지를 5GMM transport의 IE 안에 담아 전송하는 기술적 가능성과 포함 관계를 유지한다.	이는 기술적으로 가능한 방식이다.
+V2-P1-202	PASS	PRESERVED	같은 5GC의 3GPP/non-3GPP 동시 연결 UE를 단일 AMF가 서비스해야 하는 의무를 유지한다.	단일 AMF의 서비스를 반드시 받아야 한다.
+V2-P1-203	PASS	PRESERVED	새 인증 없이 새 N1 연결이 수립되는 분기와 AMF security mode control 분기에서 context를 사용할 기술적 가능성을 보존한다.	이는 기술적으로 가능한 상황을 설명한다.
+V2-P1-204	PASS	PRESERVED	동일 5GC에 두 access로 동시 연결된 범위와 단일 AMF 서비스 의무를 보존한다.	단일 AMF에 의해 반드시 서비스되어야 한다.
+V2-P1-205	FAIL	TYPE_ALTERNATIVES_OMISSION	current context의 일반 사용 상태만 설명하고 원문의 native 및 mapped 유형 대안과 그 유래를 모두 누락했다.	현재 활성 상태인 컨텍스트로 취급된다.
+V2-P1-206	PASS	PRESERVED	active time value 통지 시 특정 all-PLMN MICO 표시를 피하는 AMF 권고를 유지한다.	표시를 하지 않는 것이 권고된다.
+V2-P1-207	FAIL	CARDINALITY_CONTRADICTION	단일 AMF 서비스 의무를 access별 별도 AMF 두 개 구성 가능으로 바꾸었다. 두 AMF의 상태 일관성 부연도 단일성 요구를 복원하지 않는다.	각각 별도의 AMF 인스턴스로 구성될 수 있다.
+V2-P1-208	PASS	PRESERVED	initial registration 중 K_AUSF 무효 시 UE의 ngKSI 삭제 의무를 보존한다.	ngKSI를 반드시 삭제해야 한다.
+V2-P1-209	PASS	PRESERVED	N26 지원 single-registration emergency PDN과 current EPS context 부재 조건, 지정 S1→N1 container 및 두 선택 알고리즘의 설정 의무를 유지한다.	5G-IA0과 5G-EA0를 반드시 설정해야 한다.
+V2-P1-210	PASS	PRESERVED	N1→N1 handover 중 생성 가능과 비의무성을 보존한다. 원문이 그 시점만 제시한다는 부연은 원문의 서술 범위 설명이며 다른 상황의 생성 금지를 주장하지 않는다.	반드시 생성해야 한다고는 하지 않는다.
+V2-P1-211	FAIL	TIMER_START_CONDITION_OMISSION	관련 timer 만료 및 최대 UE 수 사유의 S-NSSAI 제거 허용은 남겼다. 그러나 그 rejected NSSAI 수신에 따라 T3526이 시작되었다는 별도 if 조건이 빠져 두 조건의 결합을 완전히 보존하지 못한다.	해당 S-NSSAI들과 연관된 T3526이 만료되면
+V2-P1-212	PASS	PRESERVED|R4	모든 primary RAT restriction 집행을 위한 TAC 분리 배치 요구와 해당 RAT TA의 subscriber 접근 허용 금지를 함께 보존한다.	배치되어야 하며, 가입자는 해당 RAT를 사용하는 TA에서 네트워크에 접근하도록 허용되어서는 안 된다.
+V2-P1-213	FAIL	REQUIRED_ALGORITHMS_OMISSION|CONTAINER_OMISSION	적용 조건과 AMF 설정 의무는 남아 있지만 5G-IA0·5G-EA0라는 정확한 알고리즘과 S1→N1 NAS transparent container IE를 생략하고 적절한 알고리즘으로 대체했다.	해당 상황에 맞는 보안 알고리즘을 설정해야 한다.
+V2-P1-214	PASS	PRESERVED	두 NSSAI 유형이 registration 또는 generic UE configuration update 중 변경 가능하다는 허용을 유지한다.	configured NSSAI와 rejected NSSAI를 변경하도록 허용된다.
+V2-P1-215	PASS	PRESERVED	trusted connectivity를 지원하는 PLMN/SNPN과 지원 유형 광고의 선택성을 보존하고 예시 5G connectivity를 유일한 값으로 만들지 않는다.	유형(예: "5G connectivity")을 광고할 수 있다.
+V2-P1-216	PASS	PRESERVED	HPLMN의 단일 default NSSAI 구성과 configured/allowed 둘 모두 없는 PLMN에서 유효 간주하는 허용을 분리하여 보존한다.	configured NSSAI와 allowed NSSAI가 모두 없는 PLMN
+V2-P1-217	PASS	PRESERVED	선택된 망의 서비스 가능 지속 중 타 PLMN/SNPN으로 UE를 이동시키지 않는 권고와 handover 예시를 보존한다.	이동시키지 않는 것이 권고된다.
+V2-P1-218	FAIL	UNSUPPORTED_EXISTENTIAL|R5	첫 문장은 전칭 부정을 보존하지만 일부 event에 기술적으로 가능하다는 부연이 가능한 event의 존재를 단정한다. Not all만으로 그 존재를 보장할 수 없다.	일부 event에 대해서만 기술적으로 가능하다.
+V2-P1-219	PASS	PRESERVED	Registration 중 MICO 선호 미표시 UE에 대해 AMF의 활성화 금지를 유지한다.	MICO mode를 활성화해서는 안 된다.
+V2-P1-220	PASS	PRESERVED	secure 교환 수립 후 성공적인 NAS integrity 검사를 통과하지 않은 메시지는 처리하지 못한다는 필요조건과 금지를 유지한다.	integrity checked된 경우가 아니면 어떤 NAS signalling messages도 처리해서는 안 된다.
+V2-P1-221	UNRESOLVED	GOLD_SCOPE_UNRESOLVED	본문의 저장 권고 및 Annex C에 따른 ME 비휘발성 저장을 보존한다. Annex C 예외의 평가 범위가 미확정이고 별개 명백한 오류는 없어 UNRESOLVED를 유지한다.	부속서 C에 명시된 방식에 따라
+V2-P1-222	PASS	PRESERVED	초기 등록 절차에서 K_AUSF 무효인 경우 ngKSI 삭제 의무를 그대로 보존한다.	K_AUSF가 유효하지 않을 때
+V2-P1-223	FAIL	CONDITION_REPLACEMENT	새 인증 없는 N1 연결 수립 또는 AMF security mode control이라는 원문 두 상황을 context가 유효하면 재사용 가능이라는 일반 충분조건으로 바꾼다.	컨텍스트가 유효하면 새 인증 절차 없이 그 보안 컨텍스트를 재사용할 수 있다.
+V2-P1-224	PASS	PRESERVED	EPC 연결 E-UTRAN 상호동작 목적과 S1·N1 지원 UE의 single/dual registration 운용 가능성을 유지한다.	단일 등록 모드 또는 이중 등록 모드로 동작할 수 있다.
+V2-P1-225	PASS	PRESERVED	Non-Allowed Area의 UE에 대해 그 영역 소속 TA 집합을 RA로 구성하라는 권고와 적용 조건을 보존한다.	이는 UE가 Non-Allowed Area에 있을 때 적용된다.

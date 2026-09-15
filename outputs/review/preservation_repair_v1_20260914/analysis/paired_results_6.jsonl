@@ -1,0 +1,6 @@
+{"case_id": "CTX-001", "seed_replicate": 1, "seed_id": "CTX-001-P1_EXTRACT_COMPOSE-R1", "seed_review_id": "PPR-006", "seed_complete": 1, "R0_review_id": "PRR-007", "R0_complete": 1, "R1_review_id": "PRR-001", "R1_complete": 1}
+{"case_id": "CTX-001", "seed_replicate": 2, "seed_id": "CTX-001-P1_EXTRACT_COMPOSE-R2", "seed_review_id": "PPR-002", "seed_complete": null, "R0_review_id": "PRR-005", "R0_complete": null, "R1_review_id": "PRR-009", "R1_complete": null}
+{"case_id": "CTX-002", "seed_replicate": 1, "seed_id": "CTX-002-P1_EXTRACT_COMPOSE-R1", "seed_review_id": "PPR-009", "seed_complete": 0, "R0_review_id": "PRR-002", "R0_complete": 0, "R1_review_id": "PRR-003", "R1_complete": 0}
+{"case_id": "CTX-002", "seed_replicate": 2, "seed_id": "CTX-002-P1_EXTRACT_COMPOSE-R2", "seed_review_id": "PPR-001", "seed_complete": 0, "R0_review_id": "PRR-008", "R0_complete": 0, "R1_review_id": "PRR-006", "R1_complete": 0}
+{"case_id": "CTX-003", "seed_replicate": 1, "seed_id": "CTX-003-P1_EXTRACT_COMPOSE-R1", "seed_review_id": "PPR-012", "seed_complete": 0, "R0_review_id": "PRR-004", "R0_complete": 0, "R1_review_id": "PRR-010", "R1_complete": 1}
+{"case_id": "CTX-003", "seed_replicate": 2, "seed_id": "CTX-003-P1_EXTRACT_COMPOSE-R2", "seed_review_id": "PPR-003", "seed_complete": 0, "R0_review_id": "PRR-011", "R0_complete": 0, "R1_review_id": "PRR-012", "R1_complete": 0}

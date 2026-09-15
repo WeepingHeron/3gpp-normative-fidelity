@@ -1,0 +1,203 @@
+{
+  "reviewer": "separate Codex AI context; human domain expert validation=false",
+  "reviewer_id": "reviewer_a",
+  "human_domain_expert_validation": false,
+  "statistical_independence_claimed": false,
+  "error_independence_guaranteed": false,
+  "independence_limit": "Separate context of the same model family; no guarantee of independent errors. Packets and guide disclose follow-up framing; experimental blinding is not claimed.",
+  "review_started_at_utc": "2026-09-09T05:48:04+00:00",
+  "review_completed_at_utc": "2026-09-09T05:54:50.868830+00:00",
+  "timing_notes": "Start is the first observed clock time immediately after initial permitted-material loading and before detailed semantic assessment. Initial loading precedes this timestamp. Completion follows authored judgments, scope write, and exact-quote/schema checks. Each row reviewed_at is its real final-recording timestamp, not a separately timed reading interval.",
+  "rubric_path": "experiments/scoring_v2_frozen_20260908.md",
+  "rubric_version": "v2 frozen 2026-09-08; section 6 posthoc_treatment_v1_20260908 operational rules",
+  "review_pass": "fresh separate AI review of all 15 provided packets",
+  "review_count": 15,
+  "review_ids": [
+    "FOLLOWUP-001",
+    "FOLLOWUP-002",
+    "FOLLOWUP-003",
+    "FOLLOWUP-004",
+    "FOLLOWUP-005",
+    "FOLLOWUP-006",
+    "FOLLOWUP-007",
+    "FOLLOWUP-008",
+    "FOLLOWUP-009",
+    "FOLLOWUP-010",
+    "FOLLOWUP-011",
+    "FOLLOWUP-012",
+    "FOLLOWUP-013",
+    "FOLLOWUP-014",
+    "FOLLOWUP-015"
+  ],
+  "no prior judgments accessed": true,
+  "no_prior_judgments_accessed": true,
+  "no_condition_keys_accessed": true,
+  "no_memory_accessed": true,
+  "no_other_agent_records_accessed": true,
+  "restricted_materials_accessed": false,
+  "external_api_calls": false,
+  "external_api_note": "No external model/provider API, web or connector calls; only supplied local material and local clock/file tools.",
+  "git_commands_or_changes": false,
+  "automatic_scoring_or_inference_code_used": false,
+  "method": "Each of 15 judgments, scores, rationales and rule-sufficiency decisions was individually authored. Code serialized those decisions and validated quote fidelity, IDs, retained fields, JSON status-score consistency and file hashes; it did not assign or infer scores.",
+  "provenance_notes": "Generator source availability copied from packets. All additional page context is adjudication-only. Extractor availability for original reference source is not established by these packets. Scope and all referenced clauses outside the inspected page bundle were not exhaustively verified.",
+  "input_files": [
+    {
+      "path": "experiments/scoring_v2_frozen_20260908.md",
+      "sha256": "a81a590659d18fc6784802438d337731837f820bc8f45b5fd070a1d7e751efb5",
+      "bytes": 13003,
+      "access_purpose": "semantic rubric"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/reviewer/REVIEW_GUIDE.md",
+      "sha256": "b63d8c367e0999c9d168635529527940e036a7488eade1ff0f519169ddbecba1",
+      "bytes": 2898,
+      "access_purpose": "review instructions"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/reviewer/packets_15.jsonl",
+      "sha256": "e6a1aa14a90bde57e178d1dd5db9b42887d816cda7f92567470c72887fd08747",
+      "bytes": 20461,
+      "access_purpose": "source question and response content"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/reviewer/judgments_blank_15.jsonl",
+      "sha256": "dec9ca5c4b6a278b652f965dd7bcd5fc412f2edf825a28b490cf01ac9e50d63b",
+      "bytes": 4470,
+      "access_purpose": "preserve row fields"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_123501v181200p_p132.txt",
+      "sha256": "8b3cebe33cb7c2674f5fb01f5a60e800df13afdb85eb662cda23f45fa914c814",
+      "bytes": 4272,
+      "access_purpose": "adjudication-only context text read"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_123501v181200p_p133.txt",
+      "sha256": "0b0005c9bdec8a49020eba4c1828c258a04c36325cbf9c139d3a2cb26b9794bf",
+      "bytes": 4206,
+      "access_purpose": "adjudication-only context text read"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_123501v181200p_p134.txt",
+      "sha256": "bf7a21668a2414c8f11d64b35104dc2d8d26219ccef70b14b68af3e44b821551",
+      "bytes": 4502,
+      "access_purpose": "adjudication-only context text read"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_123501v181200p_p45.txt",
+      "sha256": "8116c4448a873c14f1216460bdb1f042baf446731bc5495d31c1e05147ccef10",
+      "bytes": 2745,
+      "access_purpose": "adjudication-only context text read"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_124501v181200p_p1089.txt",
+      "sha256": "1341a64e3c7575326f3797740a81768484dca5ff1ca748aee0ced0f717b8aa94",
+      "bytes": 2475,
+      "access_purpose": "adjudication-only context text read"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_124501v181200p_p1090.txt",
+      "sha256": "c60eda6780f8ba61e64af9495582bd0002c4361f7e8691a6ebbaf07923c582f3",
+      "bytes": 4080,
+      "access_purpose": "adjudication-only context text read"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_124501v181200p_p1091.txt",
+      "sha256": "eac36deb753e2ce85567afef07a405fb52eb8d213bac0d794ebf749fcceab0e9",
+      "bytes": 4906,
+      "access_purpose": "adjudication-only context text read"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_124501v181200p_p1092.txt",
+      "sha256": "11e2da827a0ad03b8d8496d3d855a0f1ca1a46e18aa474050bd75527cd1db85d",
+      "bytes": 2415,
+      "access_purpose": "adjudication-only context text read"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_124501v181200p_p1093.txt",
+      "sha256": "6df6ba07ff0e0b8caabbd7c305b2556bfba7ab1f3cf29e02a365f0ca2ff2dba1",
+      "bytes": 3733,
+      "access_purpose": "adjudication-only context text read"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_124501v181200p_p98.txt",
+      "sha256": "1d3d145674724579029a0dbb1183116211f2bf669d47dfcab5084403b58c65df",
+      "bytes": 4761,
+      "access_purpose": "adjudication-only context text read"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_123501v181200p_p45.png",
+      "sha256": "ec35676b9147d3f310f4bfb6a5d177219e95c6a969450a974953c96160fed63c",
+      "bytes": 260417,
+      "access_purpose": "adjudication-only visual check"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_123501v181200p_p133.png",
+      "sha256": "d4b66e727b8e7c3dc05db5724629822b07e5a2b922320047b369ac35f96e50d5",
+      "bytes": 373163,
+      "access_purpose": "adjudication-only visual check"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_124501v181200p_p98.png",
+      "sha256": "9604b923dfe47782216a482b8cf9a196114f56ba8878d31d8aba939e69b657f5",
+      "bytes": 411648,
+      "access_purpose": "adjudication-only visual check"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_124501v181200p_p1090.png",
+      "sha256": "0047975305b1d13bf832cbb3f039241069b7dab6acbc4cc2aca8c0cffd23c6fe",
+      "bytes": 362356,
+      "access_purpose": "adjudication-only visual check"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_124501v181200p_p1091.png",
+      "sha256": "c084846188ff9ca3fc06217a47de1b34864208752d99eb53338e37816bef8e62",
+      "bytes": 425332,
+      "access_purpose": "adjudication-only visual check"
+    },
+    {
+      "path": "outputs/review/v2_followup_20260909/source_pages/ts_124501v181200p_p1093.png",
+      "sha256": "a225d40a68f4808aabe8eaf179dadc7a156869b568b63cdfb79477bb3e2b2f80",
+      "bytes": 339693,
+      "access_purpose": "adjudication-only visual check"
+    },
+    {
+      "path": "data/source/ts_123501v181200p.pdf",
+      "sha256": "2ef71f81a87c86967dc623741b5a3479338844661067a3bb13089fffe6fed2ac",
+      "bytes": 6643370,
+      "access_purpose": "SHA256 verification only; PDF content not extracted"
+    },
+    {
+      "path": "data/source/ts_124501v181200p.pdf",
+      "sha256": "fef06d660506abf6885d593e4129095c17140be4f2317e802daa8599233f1b06",
+      "bytes": 7896856,
+      "access_purpose": "SHA256 verification only; PDF content not extracted"
+    }
+  ],
+  "output_files": [
+    {
+      "path": "outputs/review/v2_independent_ai_20260909/reviewer_a/judgments_15.jsonl",
+      "sha256": "dc96fd7b73dc5eab69c1be2a39d9104f803a5d1bfea4e0362b9f7a4edc0c6a04",
+      "bytes": 63044,
+      "access_purpose": "authored judgments"
+    },
+    {
+      "path": "outputs/review/v2_independent_ai_20260909/reviewer_a/scope_interpretation.md",
+      "sha256": "99fe45419025e255a2874fbc8cc33b3bef08ac0e50d7044f8e4fb21231d82cbc",
+      "bytes": 8209,
+      "access_purpose": "authored scope interpretations"
+    }
+  ],
+  "manifest_hash_note": "A self-referential manifest hash is not embedded. SHA256SUMS records hashes of both artifacts and the completed manifest.",
+  "validation": {
+    "unique_ordered_rows": 15,
+    "original_blank_fields_retained": true,
+    "exact_response_quotes_verified": true,
+    "reference_source_quotes_verified": true,
+    "context_quotes_verified_with_whitespace_normalization": true,
+    "state_score_mapping_verified": true,
+    "pdf_hashes_match_packet_references": true
+  },
+  "seal": "All delivered files set to mode 0444 after this manifest and SHA256SUMS are written. This is a local filesystem read-only seal, not a trusted digital signature."
+}

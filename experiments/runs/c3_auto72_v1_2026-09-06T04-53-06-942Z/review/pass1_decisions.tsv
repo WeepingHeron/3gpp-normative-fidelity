@@ -1,0 +1,217 @@
+# Explicit reviewer decisions; actor, polarity+modality, condition, action, exception, unsupported addition. N=NA. No default pass.
+E001	111110	-	wording	첫 문장의 '사용하지 않아야'는 강하게 들리지만 바로 뒤의 '하지 않는 것이 권고'가 규범 강도를 명시한다. UE/redirect/요청 2종과 AMF의 EMM cause 전달 모두 보존.
+E002	111110	-	none	OVERLOAD START 계기와 관련·연결된 모든 AMF의 부하 제한 요청이라는 only-if 한계가 유지되고 UAC 시작을 권고로 표현.
+E003	1111N0	-	none	서로 다른 TAC 배치 조건과 제한 RAT의 TA 접근 금지, 가입자 주체를 유지. 선행 배치 의무는 gold상 조건으로 평가.
+E004	1111N0	-	none	전체 PLMN paging 방지 목적 및 Active Time 할당 시점, AMF의 all-PLMN 영역 할당 비권고가 일치.
+E005	1011N1	MODAL_CATEGORY_CHANGED;UNSUPPORTED_ADDITION	none	can의 기술적 가능성을 명시적으로 '허용 사항'으로 바꿨다. UE·등록 시점·메시지·IE와 전달 대상은 정확.
+E006	1111N0	-	none	AMF로부터 NSAG 정보 미수신 조건과 두 기능 모두의 전면 사용 금지를 보존.
+E007	1111N0	-	none	등록 중 UE 선호 미표시를 조건으로 AMF의 해당 UE MICO 활성화를 금지함.
+E008	1111N0	-	none	RAT의 서로 다른 TAC 배치 필요와 해당 RAT TA에서 가입자 접근 불허를 모두 명시.
+E009	1011N1	MODAL_CATEGORY_CHANGED;UNSUPPORTED_ADDITION	scope	동결 can 기준으로 '사용하도록 허용'은 가능성을 허용으로 치환. 두 대안 조건과 ngKSI security context·보안 NAS 교환은 보존. 원문의 can 허용 해석 가능성은 별도 scope 쟁점.
+E010	1111N0	-	none	ngKSI 삭제 시 지정 값 설정과 연관 3종 키 무효화를 모두 의무로 유지; context 무효 설명도 원문 괄호와 일치.
+E011	1111N0	-	none	N1 3GPP capability 비활성화된 PLMN/SNPN 식별자를 UE가 기억한다는 권고와 대상을 보존.
+E012	1111N0	-	none	AMF·Active Time 시점·전체 paging 회피·all-PLMN 영역 할당 비권고가 일치.
+E013	1111N0	-	none	유효한 영역 정보 보유와 TAI/CGI 모두 영역 밖이라는 결합 조건, local MBS 가입 요청 비권고를 정확히 표현.
+E014	1111N0	-	none	5GMM transport의 IE 내부로 5GSM을 전송하는 기술적 가능성을 명시. gold의 전달 경로 조건도 유지.
+E015	11N1N0	-	none	각 네 접근 기능의 TAI 값을 서로 다르게 또는 같게 구성할 수 있는 허용과 선택지를 보존.
+E016	1111N0	-	none	등록 중 선호 미표시 조건과 AMF의 해당 UE 활성화 금지가 일치.
+E017	1111N0	-	none	single-registration·N26·emergency PDN·EPS context 없음의 결합 조건과 두 null algorithm을 지정 IE에 설정하는 AMF 의무가 모두 유지.
+E018	1111N0	-	none	untrusted/trusted non-3GPP 양쪽에서 Forbidden Areas 사용 비권고를 보존.
+E019	1111N0	-	none	NSAG 미수신이면 UE의 slice 기반 cell reselection과 Random Access 모두 전혀 사용 금지; 조건·강도·대상 일치.
+E020	111110	-	none	DS-TT/NW-TT 공존 가능성과 두 기능의 지원을 요구하지 않는 한계를 모두 보존.
+E021	111110	-	wording	첫 access 등록 진행 중이라는 상태는 '첫 번째 절차가 완료될 때까지'에 내포됨. 같은 PLMN과 타 access 등록 시작 금지·해제 시점을 유지.
+E022	1111N0	-	none	AMF IE 미제공 또는 지정 EUPR 설정의 OR 조건과 기간 종료 시점, UE mobility update 권고가 일치.
+E023	111110	-	none	최대 UE 수 거절에 연결된 T3526 만료 및 해당 거절 사유의 S-NSSAI만 제거 허용. 타이머 시작 원인이 전후 맥락으로 유지됨.
+E024	1111N0	-	none	특정 PDU session의 establishment 동안 SMF가 UPF에 N6 network instance를 표시하는 허용; 선택성 설명은 원문 may 범위.
+E025	111110	-	wording	slice 부족 원인과 UE의 PLMN/SNPN 식별자 또는 해당 SNPN 목록 기억 권고를 유지. respectively는 해당 목록이라는 연결로 보존됨.
+E026	11N1N0	-	none	AMF·지정 transparent container·MAC/선택 알고리즘/NCC/생성 ngKSI 네 항목 포함 의무가 모두 정확.
+E027	111110	-	scope	공유 UDSF에서 권한 NF만 접근 가능하고 그 보장은 구현·배포에 달린다는 원문의 전체 명제를 보존. '해야 한다'는 새 접근 의무가 아니라 make sure의 책임을 번역.
+E028	11N110	-	none	N38이 같은/다른 VPLMN의 V-SMF 사이에 존재 가능하며 후자는 inter-PLMN 이동성 목적임을 보존.
+E029	1011N1	MODAL_CATEGORY_CHANGED;UNSUPPORTED_ADDITION	scope	두 활성화 조건과 보안 NAS 교환은 정확하지만 사용 가능성을 명시적 허용으로 분류. 동결 can 기준 실패; can 자체의 허용 독해 여지는 별도 표시.
+E030	111110	-	none	보안 교환 설정 이후 UE 수신 5GMM 주체, 무결성 검증 성공이 아닌 메시지 처리 금지 및 unless 범위 유지.
+E031	11N110	-	none	allowed NSSAI의 ME 비휘발성 저장 권고와 Annex C 한계를 명시.
+E032	111110	-	none	Nudr UDR 접근 주체의 권한 데이터만 네 변경 동작을 수행할 수 있어야 한다는 능력 제공 의무를 정확히 보존.
+E033	1111N0	-	none	SMF→UPF 방향, N6 network instance, 특정 session establishment 조건 및 may 허용 유지.
+E034	111110	-	none	5GC 제어 평면 NF 상호작용에서 SBI만 사용해야 한다는 의무와 only 제한을 유지; 다른 인터페이스 불허는 논리적으로 함의됨.
+E035	1111N0	-	none	emergency 종료 후 MICO 요청 전의 순서, callback 목적, UE 구현별 대기 시간 권고가 유지.
+E036	111110	-	wording	비혼잡·98%·PDB 초과 지연 비권고를 보존. 2% 이하라는 보완 문장은 끝의 '권고'로 강도를 한정함.
+E037	0000N0	REFUSED	none	설명이 비어 있어 적용 가능한 행위자·규범·조건·행동을 보존하지 못함. 미생성 사유는 조건 복원 이후 별도 확인.
+E038	111110	-	scope	Before can ... need to ...의 필요조건을 '활성화 전에 context 수립해야'로 정확히 표현. 보안 활성화 의무나 context만 있으면 충분하다는 주장은 추가하지 않음. gold가 can을 독립 가능성으로 분리한 범위는 주의.
+E039	1111N0	-	none	5G-GUTI 미포함 조건에서 새 등록의 SUCI 사용 의무를 그대로 유지.
+E040	111110	-	none	AMF의 거절/등록해제 비권고와 충분히 정확한 위치로 PLMN 운용 불가 지역을 확인한 경우의 예외를 보존.
+E041	111110	-	none	secure exchange 이후의 수신 5GMM 및 NAS 무결성 검사 성공 unless 조건, 모든 NAS signalling 처리 금지를 유지.
+E042	111110	-	none	'모든 것이 가능한 것은 아님'을 일부 event만 direct UPF subscription 가능하다는 제한으로 표현; 전면 불가로 바꾸지 않음.
+E043	111110	-	wording	entity가 는 주절의 처리 주체로 읽고 무결성 검사의 대상은 NAS 메시지로 복원됨. 뒤 문장이 성공 검증 only-if를 재확인하며 교환 설정 이후 조건도 유지.
+E044	11N1N0	-	wording	emergency PDU 해제 금지를 보존. '예외 없이'는 제공된 단문에 한정해 읽으며 표준 전체의 예외 부재 증명으로 확대하지 않음.
+E045	111110	-	none	Disaster Roaming 등록 UE 영역 할당 시 AMF가 Disaster Condition 포함 TAI만 고려해야 한다는 조건과 only 의무가 정확.
+E046	11N110	-	none	두 partial NSSAI에서 S-NSSAI 개수가 7을 초과할 수 없다는 금지와 최대치가 동일; 별도 최대 7 재진술 불필요.
+E047	100101	MODAL_WEAKENED;CONDITION_DROPPED;EXCEPTION_DROPPED;UNSUPPORTED_ADDITION	scope	실제 context 수립 필요를 '수립할 기술적 가능성이 있어야'로 약화. 보안 활성화 이전의 실제 수립이라는 필요조건이 사라지고 다른 능력 요구로 치환됨.
+E048	1111N0	-	none	dual-registration UE의 initial registration 때 context 사용 시작과 규격에 따른 처리라는 두 의무를 유지.
+E049	1111N0	-	none	configured/rejected NSSAI 모두, registration 또는 generic UE update 두 절차 동안 변경 허용을 보존.
+E050	111110	-	none	UE 연결 대상·N3IWF/TNGF 경로·RG/W-AGF/serving UPF 조합 및 respectively untrusted/trusted 대응을 보존. WLAN 예시 생략은 규범 필드 손실 아님.
+E051	1111N0	-	none	UE가 Non-Allowed Area에 있을 때 해당 UE의 그 영역에 속하는 TA 집합으로 registration area를 구성하는 권고가 일치.
+E052	1011N1	MODAL_CATEGORY_CHANGED;UNSUPPORTED_ADDITION	none	5GMM IE를 통한 5GSM 전송 경로는 맞지만 마지막 문장에서 가능성을 명시적 허용으로 바꿈.
+E053	1111N0	-	none	두 non-3GPP access 종류의 Forbidden Areas 사용 비권고를 유지; 단복수 표기는 의미 차이 없음.
+E054	11N1N0	-	none	네 access 기능 모두에 서로 다른/같은 TAI 구성 허용을 적용; 원문의 and/or도 보존.
+E055	111110	-	wording	slice 부재 원인과 UE 기억 권고, PLMN/SNPN 식별자와 SNPN 목록을 보존. 각각의 적용 대상을 풀어쓴 것으로 읽음.
+E056	1111N0	-	none	AMF가 active time을 UE에 알릴 때 MICO IE의 all-PLMN 표시를 하지 않는 권고와 전달 주체·대상이 일치.
+E057	111110	-	none	DS-TT/NW-TT 지원은 필수가 아니지만 공존이 기술적으로 가능하다는 대비와 기능 배치 위치가 모두 일치.
+E058	111110	-	none	Disaster Roaming UE registration area 조건과 Disaster Condition TAI만 고려 의무; 다른 TAI 배제는 only의 함의.
+E059	1111N0	-	none	interworking 비대상 UE를 비전용 PGW 또는 SMF/UPF가 서비스하는 허용과 대안을 보존.
+E060	11N110	-	none	partial allowed/rejected의 S-NSSAI 상한 7을 금지와 최대치로 일관되게 표현.
+E061	1111N0	-	none	TAI와 CGI 모두 영역 밖이고 유효 정보 보유라는 조건, local multicast 가입 요청 비권고를 보존.
+E062	111110	-	none	device DS-TT 및 UPF NW-TT의 지원을 요구하지 않는다는 한계와 공존 가능성을 유지.
+E063	111110	-	none	direct UPF subscribe는 모든 event에 적용되지 않는 부분 부정을 정확히 유지.
+E064	11N110	-	none	Annex C에 따른 ME 비휘발성 메모리 저장이라는 allowed NSSAI 권고를 유지.
+E065	111110	-	none	비혼잡 98%의 PDB 초과 지연 비권고와 최대 2%가 범위 밖이라는 gold 한계를 유지.
+E066	1111N0	-	none	선택 PLMN/SNPN의 UE 위치 서비스 가능 지속 조건 아래 타 가용 망 이동 비권고, handover 예시도 보존.
+E067	111110	-	wording	같은 K_AMF로 context 유도 조건, target AMF의 하위 8비트 및 IE 표시, 새 KAMF 유도 금지를 보존. 표시해야는 원문의 절차 동작 includes/indicates에 대응.
+E068	1111N0	-	none	configured/rejected 두 NSSAI가 두 update/registration 절차 중 변경될 수 있음을 허용으로 명시.
+E069	111110	-	none	emergency PDU와 integrity 실패 결합 조건에서 AMF의 인증 생략·security mode 즉시 진행 허용 및 context 없어도 예외를 유지.
+E070	11N1N0	-	none	emergency PDU 해제 금지를 두 문장에 일관되게 표현.
+E071	1111N0	-	none	이미 CM-CONNECTED인 UE의 mobility update Registration Request에 대한 AMF 거절 비권고와 조건을 유지.
+E072	1111N0	-	none	AMF의 새 K'AMF ngKSI 정의, KASME eKSI 값 출처, mapped type 및 새 mapped context 연결 의무를 모두 보존.
+E073	1111N0	-	none	AMF의 두 타이머 값 설정 권고 및 unavailability 시작·지속 두 기준을 유지.
+E074	1111N0	-	none	N5CW trusted WLAN EAP 인증 시 PLMN 또는 SNPN 5GC에 동시 등록 상태가 허용됨을 유지.
+E075	1111N0	-	none	ngKSI 값과 type 출처, 새 K'AMF 조건, mapped context 연결까지 AMF 의무로 유지.
+E076	1111N0	-	none	NSAG 미수신 시 UE가 두 slice 기반 기능 모두 전혀 사용하지 못한다는 금지 일치.
+E077	1111N0	-	wording	S1/N1 동시 지원 UE·EPC E-UTRAN interworking·single/dual 운용 가능성을 보존. '선택 가능한 운용 옵션'은 기술적 대안 표현이며 명시적 규범 허용으로 단정하지 않음.
+E078	101111	MODAL_STRENGTHENED;UNSUPPORTED_ADDITION	none	should_not을 '등록해제해서는 안 된다'와 only-if 가능으로 강화하며 권고라는 완화 표현이 없다. 정확한 위치·운용 불가 지역 예외는 유지.
+E079	1111N0	-	none	untrusted/trusted non-3GPP에서 Forbidden Areas 비사용 권고 일치.
+E080	111110	-	none	HPLMN의 단일 default 구성과 configured/allowed 모두 없는 PLMN에서 유효 간주 허용을 보존.
+E081	1111N0	-	none	UE의 Non-Allowed 진입을 cell reselection 기준 및 PLMN/domain selection 계기로 삼는 금지, originating session/call 범위 유지.
+E082	111110	-	wording	HPLMN 구성·유효 간주라는 선택 동작 문맥에서 '할 수 있다'는 may 허용으로 자연스럽게 읽힘. 단일 및 neither 조건 보존.
+E083	1111N0	-	none	초기 등록 중 K_AUSF invalid 조건과 UE의 ngKSI 삭제 의무 일치.
+E084	1111N0	-	none	Any UE subscription의 타 AMF 이동 금지를 UE mobility 원인에 한정해 보존.
+E085	1111N0	-	none	서로 다른 TAC 배치 필요와 해당 RAT TA에서 subscriber 접근 금지를 결합해 유지.
+E086	1111N0	-	none	Non-Allowed UE의 registration area를 해당 Non-Allowed TA 집합으로 구성하는 권고 일치.
+E087	1111N0	-	none	SNPN onboarding 초기등록 또는 등록상태 OR 조건과 NAS layer→lower layer NSSAI 제공 금지 유지.
+E088	111110	-	none	Nudr 접근 NF consumer의 권한 데이터만 네 변경 동작을 할 수 있어야 한다는 의무 및 배타 제한을 유지.
+E089	1111N0	-	none	5G-GUTI→SUPI 매핑 올바름 조건, network의 AUTHENTICATION REJECT 송신을 통한 AKA 종료 권고 유지.
+E090	1111N0	-	none	유효 서비스 영역 정보와 TAI/CGI 영역 밖 조건을 결합하고 local multicast join 요청 비권고를 유지.
+E091	1111N0	-	none	N26·single-registration·emergency PDN·EPS context 부재 조건 모두와 지정 IE에 두 알고리즘을 설정할 AMF 의무를 보존.
+E092	1111N0	-	none	callback 목적, emergency 종료 후/MICO 요청 전 시점 및 UE 구현별 대기 권고가 일치.
+E093	111110	-	none	UAC 결정 계기와 모든 관련 연결 AMF의 UE 부하 제한 요청 only-if를 권고 강도로 유지.
+E094	111110	-	none	두 RG·N3IWF/TNGF 접근 경로·세 기능 조합의 untrusted/trusted 대응과 WLAN 예시를 보존.
+E095	1111N0	-	none	onboarding 등록 중/완료 상태 양쪽 조건에서 serving SNPN의 configured NSSAI 제공 금지를 유지.
+E096	11N110	-	wording	광고할 수 있다는 선택적 행위 문맥으로 may 허용을 보존. 지원하는 PLMN/SNPN과 trusted connectivity 유형만 대상으로 한정.
+E097	1111N0	-	none	S1/N1 모두 지원 UE의 EPC E-UTRAN 연동 목적 및 single/dual 운용 가능성 보존.
+E098	1111N0	-	none	onboarding 초기 등록 또는 기등록 UE NAS의 lower layer NSSAI 제공 금지 일치.
+E099	1111N0	-	none	AMF·mobile reachable/implicit deregistration 두 타이머와 기간 지속·시작 기준 및 권고 강도를 보존.
+E100	1111N0	-	none	active time 통지 조건에서 MICO IE의 all-PLMN 표시 비권고, AMF→UE 전달 방향 유지.
+E101	1111N0	-	none	5GS/EPC interworking 비대상 UE를 비전용 PGW 또는 SMF/UPF가 서비스하는 허용을 유지.
+E102	1011N0	MODAL_CATEGORY_CHANGED	scope	동결 may 허용 기준과 달리 '기술적 가능성'으로 명시. actor/한 session/두 UPF 제어는 보존. 원문의 may have capability는 선택적 능력 보유라 gold의 단일 허용 분류 자체도 재검토 필요.
+E103	111110	-	scope	최대 UE 수 거절로 시작한 T3526 만료 후 '해당 S-NSSAI'만 제거하도록 한정해 읽음. 뒤의 '포함'은 source including과 같으며 다른 사유 제거 허용을 명시하지 않음; gold only와 원문 including의 범위 차이는 주의.
+E104	1111N0	-	none	3GPP·CM-CONNECTED·handover/redirection 중 target RAT/PLMN 결정 조건과 RAN의 per-PLMN RAT 제한 고려 권고 유지.
+E105	111110	-	none	AMF 요청 처리의 비거절/비등록해제 권고 및 정확한 위치로 금지 지역 확인이라는 unless 예외를 유지.
+E106	111110	-	none	5GS가 TSN으로 동작할 때 sub-network 가능, 지정 4.4.8.2 기반 특별한 경우라는 한계를 보존.
+E107	111110	-	wording	같은 K_AMF context 유도 시 하위8비트·지정 IE·새 K_AMF 유도 금지 표시를 유지. 표시해야는 원문의 절차 서술에 대응.
+E108	1111N0	-	wording	PC5 V2X 권한에 capability 비트(현재 UE 설정 또는 기존 AMF 저장)와 UDM subscription이 함께 필요함을 유지. EUTRA/NR 개별 비트명은 요약됐지만 권한 근거의 두 축과 즉시 해제 비권고는 유지.
+E109	1111N0	-	none	ngKSI context 사용의 두 대안 조건과 보안 NAS 교환 목적을 유지하고 can을 기술적 가능성으로 명시.
+E110	1111N0	-	none	NAS transport 중 UE parameters update container를 UE로 송신해 default NSSAI 변경하는 수단·방향·허용 유지.
+E111	1111N0	-	none	IE 미제공 또는 지정 EUPR, 기간 종료 시 UE mobility update trigger 권고를 유지.
+E112	11N1N0	-	none	동일 core에 3GPP/non-3GPP 동시 연결된 UE라는 주체 제한과 그 core의 단일 AMF 서비스 의무 유지.
+E113	111110	-	none	Disaster Roaming UE 영역 할당 시 Disaster Condition TAI만 고려하는 AMF 의무 및 only 한계 유지.
+E114	1111N0	-	none	초기 등록·K_AUSF invalid 조건과 UE ngKSI 삭제 의무를 정확히 유지.
+E115	111110	-	none	TSN 동작 경우로 sub-network 가능성을 한정하고 지정 아키텍처 근거를 유지; special이라는 단어가 없어도 일반화하지 않음.
+E116	111110	-	wording	'shall be able to'는 변경 가능성을 갖춰야 하는 의무이므로 '기술적 가능성이 있어야'가 여기서는 정확. E047의 need to 실제 수립과 구별. 권한 데이터만이라는 제한도 유지.
+E117	1111N0	-	none	N1 3GPP 비활성화된 망의 식별자를 UE가 기억하는 권고·대상 제한을 보존.
+E118	1111N0	-	none	N26·single-registration·emergency PDN·EPS context 없음 및 지정 IE에 두 algorithm 설정 의무 모두 일치.
+E119	1111N0	-	none	5GMM IE 내 5GSM 전송 경로와 can 기술적 가능성을 유지.
+E120	111110	-	none	N2 overload 계기와 관련·연결된 모든 AMF의 부하 제한 요청 only-if를 UAC 시작 권고에 정확히 연결.
+E121	1111N0	-	none	이미 CM-CONNECTED인 UE의 mobility update 요청을 AMF가 거절하지 않는 권고 일치.
+E122	1111N0	-	wording	N1→N1 handover 중 새 NAS context 생성 허용을 유지. '원문은 시점을 ...만 제시'는 단문의 범위 설명이며 다른 절차에서의 생성 금지를 추가한 것으로 읽지 않음.
+E123	1111N0	-	none	emergency 종료 후 MICO 요청 전 구현별 대기 권고와 callback 목적 유지.
+E124	1111N0	-	wording	PC5 V2X 권한의 현재/저장 capability 비트 하나 이상과 UDM 가입정보 결합을 유지; 비트명 요약 이외 조건과 즉시 해제 비권고 동일.
+E125	1111N0	-	none	UE 등록 중 MICO 선호 미표시에 따른 AMF 활성화 금지를 보존.
+E126	0011N1	ACTOR_CHANGED;MODAL_STRENGTHENED;UNSUPPORTED_ADDITION	scope	정책 적용 should를 설명하지 않고 application의 DSCP 설정을 '반드시' 의무화. 대상 정책과 DSCP 관계·PPD/IP 조건은 남지만 규범 주체와 강도 범위가 달라짐.
+E127	101111	MODAL_STRENGTHENED;UNSUPPORTED_ADDITION	none	UE의 5GC 비사용을 두 번 '않아야 한다'로 표현하고 권고 한정이 없어 should_not을 강화. redirect·요청·EMM cause 전달은 유지.
+E128	111110	-	none	5GC control NF 간 상호작용에서 SBI만 사용 의무와 다른 인터페이스 배제 유지.
+E129	101111	MODAL_STRENGTHENED;UNSUPPORTED_ADDITION	wording	열거된 7종 요청과 각각의 제한은 유지하나 AMF 비거절 권고를 '거절해서는 안 된다' 금지로 강화. congestion 조건은 gold의 문맥 필드로 평가.
+E130	111110	-	none	dual-registered·5GS/NR 조건, 두 E-UTRA capability의 NR 전송 비권고 및 두 목적지 handover 회피 목적 일치.
+E131	1111N0	-	none	매핑 incorrect 조건에서 network가 UE에 새 AUTHENTICATION REQUEST로 응답하는 권고 유지.
+E132	1111N0	-	none	ngKSI 삭제 시 no-key 값 설정과 K_AMF/K'AMF·암호화·무결성 키 invalid 처리 의무, context 무효 해석 일치.
+E133	111000	ACTION_CHANGED;EXCEPTION_DROPPED	scope	원문/gold의 PLMN 또는 SNPN 식별자 또는 SNPN 목록 중 SNPN 식별자 선택지가 빠지고 PLMN 식별자 대 SNPN 목록만 남음. respectively의 모호성이 있어 후속 대조 필요.
+E134	1111N0	-	none	non-3GPP UE의 등록 후 N1을 통한 core control-plane NAS signalling 지원 의무 유지.
+E135	1111N0	-	none	N1 mode capability가 3GPP에서 비활성화된 PLMN/SNPN 식별자 기억 권고 유지.
+E136	11N1N0	-	none	동일 core에 두 access 동시 연결 UE와 단일 AMF 서비스 의무를 유지.
+E137	1111N0	-	none	dual-registration initial 절차에서 context 사용 개시 및 규격대로 처리 의무 유지; 중복 '따라'는 문체 문제.
+E138	1111N0	-	none	5G-GUTI→SUPI incorrect 조건과 새 authentication request 송신 권고 일치.
+E139	1111N0	-	wording	해당 Non-Allowed TA 집합 구성 권고를 두 번 표현; '이루어져야 한다는 권고'는 명시적 권고 한정으로 읽음.
+E140	1111N0	-	none	non-3GPP UE 등록 후 N1을 사용한 core control NAS signalling 지원 의무 유지.
+E141	1011N0	MODAL_CATEGORY_CHANGED	scope	may have capability의 선택적 능력 보유를 제어의 기술적 가능성으로만 표현해 동결 permission 분류는 보존하지 못함. 한 PDU 내 두 UPF와 SMF 주체는 유지.
+E142	11N1N1	UNSUPPORTED_ADDITION	none	네 항목 포함 의무는 맞지만 원문의 단순 'see 9.11.2.9'를 '예외는 ... 따른다'로 바꿔 미제시 예외를 도입. gold 예외 공란이므로 exception은 NA, addition은 1.
+E143	1111N0	-	none	AMF IE 미제공/EUPR 지정 두 대안과 기간 종료 조건 및 UE registration trigger 권고를 보존.
+E144	1111N0	-	none	dual-registration initial 등록 시 context 도입과 현재 규격 처리라는 두 의무 유지.
+E145	1111N0	-	none	UE의 non-3GPP 접근·등록 이후·N1 경유 core NAS signalling 지원 의무 모두 유지.
+E146	1111N0	-	wording	UE 위치에서 계속 서비스를 제공하는 동안은 선택 망이 그 위치에서 가용한 동안이라는 문맥으로 읽음. 타 가용망 handover 포함 이동 비권고 유지.
+E147	111110	-	none	모든 event는 아니라는 부분 부정과 direct UPF subscription의 기술적 가능성 범위를 유지.
+E148	1111N0	-	none	5G-GUTI 미포함이면 새 등록 SUCI 사용 의무가 동일.
+E149	1111N0	-	wording	비interworking UE가 비전용 PGW/SMF-UPF 서비스를 받을 수 있다는 선택 허용 문맥. capability라고 단정하지 않고 원문의 may 해석 유지.
+E150	1111N0	-	none	매핑 correct 조건 및 AUTHENTICATION REJECT로 AKA 인증·키합의 종료 권고 유지; 진행 중 절차 설명은 종료의 함의.
+E151	111110	-	none	5GC control NF 상호작용에서 SBI만 사용해야 한다는 의무와 배타 한계 유지.
+E152	1111N0	-	none	3GPP CM-CONNECTED·handover/redirection target RAT/PLMN 결정 시 RAN의 PLMN별 RAT 제한 고려 권고 일치.
+E153	1111N0	-	wording	correct 매핑과 reject로 AKA 종료 권고 유지. '단, ... 참조'는 부자연스러우나 예외의 내용·존재를 주장하지 않는 참조 지시로 판단.
+E154	111110	-	none	한 access 등록 진행·같은 PLMN의 타 access 등록 의도 및 첫 절차 완료까지 시작 금지 보존.
+E155	111110	-	scope	타이머 시작 원인·최대 UE 거절·만료 시점·해당 S-NSSAI 제거 허용을 유지. including 재진술이 다른 사유 제거까지 허용한다고 보지 않음.
+E156	11N110	-	none	partial allowed/rejected 두 목록의 S-NSSAI 수 상한 7 유지.
+E157	1111N0	-	none	새 K'AMF ngKSI 정의·eKSI 값 출처·mapped type·새 mapped context 연결의 AMF 의무를 유지.
+E158	111110	-	wording	emergency PDU 및 integrity 실패 조건과 context 없어도 인증 건너뛰고 즉시 security mode 진행할 수 있다는 선택 허용 유지.
+E159	111110	-	none	HPLMN 단일 default 설정 및 configured/allowed 모두 부재인 PLMN에서 유효 간주 허용 유지.
+E160	1111N0	-	none	삭제 시 지정 ngKSI 값 및 연관 세 종류 키 무효화와 context invalid 의미를 유지.
+E161	1111N0	-	none	Non-Allowed 진입을 cell reselection 기준 또는 UE originating session/call의 PLMN/domain 선택 trigger로 삼는 금지 유지.
+E162	11N110	-	none	N38의 같은/다른 VPLMN V-SMF 연결 가능성과 후자의 inter-PLMN mobility 목적 유지.
+E163	1111N0	-	none	3GPP CM-CONNECTED·두 이동 절차·target RAT/PLMN 결정 조건과 RAN의 per-PLMN 제한 고려 권고 일치.
+E164	111110	-	none	dual-registered/5GS NR 조건과 두 radio capability의 NR 전송 비권고, handover 회피 목적 유지.
+E165	111110	-	none	첫 access 등록 진행 및 동일 PLMN 타 access 등록 의도, 첫 등록 완료 전 시작 금지 유지.
+E166	1111N0	-	none	AMF Active Time 할당 시 전체 paging 회피 목적과 all-PLMN 영역 할당 비권고 일치.
+E167	1111N0	-	none	S1/N1 지원 UE의 EPC E-UTRAN 연동을 위한 single/dual 운용 가능성 유지.
+E168	11N1N0	-	none	네 기능 각각이 다른 기능들과 같거나 다른 TAI로 구성될 허용 및 대상 집합 유지.
+E169	1111N0	-	scope	동결 should 기준으로 PPD 지원 시 application DSCP에 따른 IP packet 정책 선택 권고를 보존. 원문의 embedded should를 독립 권고로 읽는 범위는 주의.
+E170	11N1N0	-	none	emergency PDU release 금지를 명시하고 동일 금지 강도로 재설명.
+E171	1111N0	-	wording	'명시된 capability bit와 subscription'으로 원문 PC5 V2X 권한 근거를 참조해 보존. 상세 비트/UDM 경로는 압축되지만 gold 조건과 등록 직후 비해제 권고는 유지.
+E172	111110	-	none	emergency PDU와 integrity 실패 시 context 없이도 인증 생략·security mode 직접 수행 허용 유지.
+E173	1111N0	-	none	SNPN onboarding 등록 중/완료 조건에서 serving SNPN→UE configured NSSAI 제공 금지 일치.
+E174	1011N1	MODAL_STRENGTHENED;UNSUPPORTED_ADDITION	none	AMF active time 통지 시 all-PLMN indication 비권고를 '해서는 안 된다, 금지'로 명시적 강화. 주체·조건·IE는 정확.
+E175	1111N0	-	none	onboarding 등록 중 또는 등록된 UE에게 configured NSSAI를 제공할 수 없다는 serving SNPN 금지 유지.
+E176	11N110	-	none	non-3GPP network 광고 허용과 지원하는 PLMN/SNPN·trusted 유형 대상 및 지원 망만이라는 제한 유지.
+E177	1111N0	-	wording	등록 중 REGISTRATION COMPLETE의 SOR IE를 network에 제공할 기술적 가능성 유지. 규범 유형 부연은 새 운용 제한이 아님.
+E178	11N1N0	-	none	current context의 native/mapped 두 유형 가능성과 각 origin의 대응 유지.
+E179	1111N0	-	none	UE·등록 절차·REGISTRATION COMPLETE·network SOR IE 전달과 기술적 가능성 보존.
+E180	1111N0	-	none	5G-GUTI 미포함이면 새 등록 SUCI 사용 의무 일치.
+E181	111110	-	none	dual registration/5GS NR 조건 및 두 radio capability 비송신 권고와 handover 방지 목적 유지.
+E182	1111N0	-	none	UE mobility로 인한 Any UE subscription 타 AMF 이동 금지 유지.
+E183	111110	-	scope	UDSF의 공유 조건에서 권한 NF만 접근 가능하도록 구현·배포가 보장한다는 원문 책임을 유지. '반드시 보장'은 NF 접근을 의무화한 것이 아니라 make sure에 대응.
+E184	1111N0	-	none	Non-Allowed 진입을 cell reselection 기준이나 PLMN/domain trigger로 사용하는 금지와 세션/호 범위 유지.
+E185	111110	-	scope	실제 context 확립이 보안 활성화의 필요조건임을 정확히 보존. '후에만'은 충분조건 주장과 달라 추가 허용으로 보지 않음.
+E186	1111N0	-	none	NAS transport 중 UE parameter update container를 UE에 송신하는 수단으로 default NSSAI 변경 허용을 유지.
+E187	111110	-	none	비혼잡 98% packet의 PDB 초과 비권고를 유지. gold의 나머지 2% 한계는 98% 양화에 이미 포함되므로 반복 설명 불필요.
+E188	1111N0	-	wording	NAS transport 동안 container를 UE로 보내 default NSSAI 변경할 수 있다는 절차적 허용 문맥 유지.
+E189	1111N0	-	none	incorrect 매핑일 때 network가 UE에 새 authentication request로 응답하는 권고 유지.
+E190	111000	ACTION_CHANGED;EXCEPTION_DROPPED	wording	7종을 열거하지만 mobile terminated services를 '이동 종료 서비스'로 오역해 착신 서비스를 다른 대상으로 읽게 함. paging/notification 수식은 남으나 범주명 보존 실패로 잠정 판정.
+E191	001111	ACTOR_CHANGED;MODAL_STRENGTHENED;UNSUPPORTED_ADDITION	none	UE의 비사용 should_not이 AMF의 거절 메시지 송신 권고로 이동했고 UE 비사용은 '않아야'로 강화. redirect·요청·EMM cause 전달 자체는 보존.
+E192	11N110	-	wording	allowed NSSAI를 ME 비휘발성 메모리에 저장하는 수동문을 ME의 저장 능동문으로 바꾼 것. 저장 대상·위치·Annex C·권고가 같아 actor 변경 오류로 보지 않음.
+E193	11N1N0	-	none	동일 5GC의 두 access 동시 연결 UE를 단일 AMF가 서비스해야 한다는 의무 유지.
+E194	111110	-	none	TSN 동작 경우의 5GS sub-network 가능성과 지정 아키텍처 근거를 유지; 다른 경우를 배제하거나 일반화하지 않음.
+E195	1111N0	-	scope	동결 may/permission 기준으로 SMF가 한 session의 local+central UPF를 제어할 허용을 유지. 다만 원문은 능력 보유의 선택성이라 gold의 control 직접 허용 해석 자체에 불확실성이 있음.
+E196	1111N0	-	none	CM-CONNECTED UE의 mobility update Registration Request에 대한 AMF 거절 비권고 일치.
+E197	1111N0	-	none	unavailability 지속·시작에 근거한 AMF 두 timer 값 설정 권고 유지.
+E198	11N1N0	-	none	current context가 native/mapped 두 유형이고 해당 origin에서 유래한다는 기술적 가능성 보존.
+E199	1111N0	-	none	configured/rejected NSSAI가 registration 또는 generic UE update 중 변경되는 허용 유지.
+E200	1111N0	-	none	SNPN onboarding 초기 등록/기등록 조건 및 NAS→하위계층 NSSAI 비제공 금지 유지.
+E201	111110	-	none	congestion 문맥과 7종 요청 및 각각의 high-priority/paging/emergency/discontinuous 조건, AMF 거절 비권고를 유지.
+E202	1111N0	-	none	N1→N1 handover 동안 새 context 생성 허용과 비의무성을 일관되게 보존.
+E203	10N111	MODAL_CATEGORY_CHANGED;UNSUPPORTED_ADDITION	wording	N38의 위치 가능성을 명시적 '허용'으로 치환. 같은/다른 VPLMN V-SMF 대안은 유지; inter-PLMN 목적은 뒤의 다른 VPLMN 경우에 연결해 읽음.
+E204	1111N0	-	none	UE mobility 원인으로 Any UE subscription을 타 AMF로 옮기는 금지 일치.
+E205	11N1N0	-	none	AMF의 MAC·선택 NAS 알고리즘·NCC·생성 ngKSI를 지정 IE에 포함할 의무 유지. 미제시 예외 추가 없음.
+E206	111110	-	none	UE의 RG 연결, 세 기능 조합의 trusted/untrusted 동작 조건과 N3IWF/TNGF 접근 경로 의존성을 유지.
+E207	1111N0	-	none	초기 등록 중 K_AUSF invalid 때 UE ngKSI 삭제 의무 일치.
+E208	1111N0	-	none	N5CW EAP 인증으로 trusted WLAN 연결 시 PLMN/SNPN 5GC 동시 등록 허용 유지.
+E209	1111N0	-	none	특정 PDU establishment 중 SMF→UPF N6 network instance 표시를 허용·선택으로 표현.
+E210	1111N0	-	none	새 context의 N1→N1 handover 중 생성 허용과 비의무성 유지; '중에도'는 source also와 일치.
+E211	1011N1	MODAL_STRENGTHENED;UNSUPPORTED_ADDITION	none	가용한 선택망이 서비스 가능한 동안 타망 이동 비권고를 '이동시키면 안 된다'로 강화. 권고 한정이 없고 handover 포함 대상은 유지.
+E212	11N1N0	-	none	current context의 native/mapped 유형 및 각각의 기원 가능성 유지.
+E213	111110	-	scope	공유 UDSF 구현·배포가 권한 NF만 접근 가능하게 보장하는 책임과 제한을 유지. 반드시는 NF 접근 의무가 아닌 원문의 make sure에 대응.
+E214	111110	-	wording	같은 K_AMF로 context 유도할 때 target AMF의 하위8비트 포함·IE 표시·새 키 유도 금지를 유지.
+E215	1111N0	-	wording	N5CW trusted WLAN EAP 인증 시 동시 등록된 상태가 허용될 수 있다는 문맥 유지. '허용 또는 가능한 상태'는 유형 구분이 흐려 부연 개선 대상이나 의무/기술적 필연성으로 바꾸지는 않음.
+E216	11N110	-	none	non-3GPP network의 지원 PLMN/SNPN과 trusted connectivity 유형 광고 허용 및 5G 예시를 유지.

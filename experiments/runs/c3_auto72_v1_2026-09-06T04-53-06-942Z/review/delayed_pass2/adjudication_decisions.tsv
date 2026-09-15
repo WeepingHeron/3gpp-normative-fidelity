@@ -1,0 +1,2 @@
+D010	000001	ACTOR_CHANGED;MODAL_CATEGORY_CHANGED;CONDITION_DROPPED;ACTION_CHANGED;EXCEPTION_DROPPED;UNSUPPORTED_ADDITION	scope	pass 2의 actor/action 실패를 채택한다. 단어 자체는 남지만 원문의 security 활성화 가능성에 결합된 주체·동작이 AMF/UE의 context 수립 능력 요구로 이동했다. TS 24.501 PDF 53쪽의 실제 context 수립 전제를 대조했다. 완전 보존 실패는 두 pass가 일치한다.
+D186	111000	ACTION_CHANGED;EXCEPTION_DROPPED	wording	pass 1의 exception 실패를 채택한다. 7개라는 수만 유지한 것으로 충분하지 않고 비거절 대상의 한정 범위가 같은 7종이어야 한다. mobile terminated를 이동 종료로 바꾸면 그 범위도 달라진다. PDF 197쪽의 paging/notification 착신 맥락을 재확인했다. 완전 보존 실패는 두 pass가 일치한다.

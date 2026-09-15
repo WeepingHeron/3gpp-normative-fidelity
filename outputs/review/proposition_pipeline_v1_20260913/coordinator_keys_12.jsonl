@@ -1,0 +1,12 @@
+{"review_id":"PPR-001","slot_id":"CTX-002-P1_EXTRACT_COMPOSE-R2","case_id":"CTX-002","arm":"P1_EXTRACT_COMPOSE","replicate":2}
+{"review_id":"PPR-002","slot_id":"CTX-001-P1_EXTRACT_COMPOSE-R2","case_id":"CTX-001","arm":"P1_EXTRACT_COMPOSE","replicate":2}
+{"review_id":"PPR-003","slot_id":"CTX-003-P1_EXTRACT_COMPOSE-R2","case_id":"CTX-003","arm":"P1_EXTRACT_COMPOSE","replicate":2}
+{"review_id":"PPR-004","slot_id":"CTX-003-A2_FRESH-R1","case_id":"CTX-003","arm":"A2_FRESH","replicate":1}
+{"review_id":"PPR-005","slot_id":"CTX-002-A2_FRESH-R1","case_id":"CTX-002","arm":"A2_FRESH","replicate":1}
+{"review_id":"PPR-006","slot_id":"CTX-001-P1_EXTRACT_COMPOSE-R1","case_id":"CTX-001","arm":"P1_EXTRACT_COMPOSE","replicate":1}
+{"review_id":"PPR-007","slot_id":"CTX-003-A2_FRESH-R2","case_id":"CTX-003","arm":"A2_FRESH","replicate":2}
+{"review_id":"PPR-008","slot_id":"CTX-001-A2_FRESH-R1","case_id":"CTX-001","arm":"A2_FRESH","replicate":1}
+{"review_id":"PPR-009","slot_id":"CTX-002-P1_EXTRACT_COMPOSE-R1","case_id":"CTX-002","arm":"P1_EXTRACT_COMPOSE","replicate":1}
+{"review_id":"PPR-010","slot_id":"CTX-002-A2_FRESH-R2","case_id":"CTX-002","arm":"A2_FRESH","replicate":2}
+{"review_id":"PPR-011","slot_id":"CTX-001-A2_FRESH-R2","case_id":"CTX-001","arm":"A2_FRESH","replicate":2}
+{"review_id":"PPR-012","slot_id":"CTX-003-P1_EXTRACT_COMPOSE-R1","case_id":"CTX-003","arm":"P1_EXTRACT_COMPOSE","replicate":1}

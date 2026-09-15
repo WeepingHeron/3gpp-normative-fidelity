@@ -1,0 +1,12 @@
+{
+  "frozen_at": "2026-09-06T05:28:31.248Z",
+  "file_sha256": {
+    "input_freeze_manifest.json": "9ceb86647e2a301ac0ee7027e817c4b583bceca191efc572c5bd3638c9623cd8",
+    "manifest.json": "f36f7096cd9ee52d994fe1d81fe689df39bb7c260855be545dfee0aa6bdc4207",
+    "parsed_responses.jsonl": "050a630f3914cd25f4576bcc628ada432c683179c6e5e07d870d9e36d11f6b8c",
+    "projected_inputs.jsonl": "3a0642b79be2f7e582321259cb34d749902e767c57162ffc36dfe4bb904da707",
+    "prompt_template.md": "deb8ddd5f16b8f53e1ab87f08c464f47a6d547d8239a67d8826571be54e69b04",
+    "raw_responses.jsonl": "2407c268e73dca057f0ec8698aad70c881997b3e71351ec5f996714706dc3084",
+    "requests.jsonl": "95e0ebd6cea3d4bf19185d084cda5e8a4d632f0e70f108f3a268a5ca8d7fda86"
+  }
+}

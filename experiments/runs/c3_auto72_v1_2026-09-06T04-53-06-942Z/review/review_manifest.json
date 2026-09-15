@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-09-06T04:56:26.684Z",
+  "score_status": "BLANK_NOT_REVIEWED",
+  "conditions": [
+    "C1",
+    "C2",
+    "C3"
+  ],
+  "rows": 216,
+  "limitation": "Masking hides condition and ID, but the reviewing agent has prior experiment knowledge; independent human review is still absent.",
+  "file_sha256": {
+    "blind_explanations_blank.csv": "dba8596e53cc9f6bfcc9070d01be6a52708261fb590082939edcc3bef26f7693",
+    "blind_key.json": "4b2bda78316fda1543d7fb802e20dab830463caa539029385282b18159a48a14",
+    "diagnostics.json": "32b39c3e6b7ee1826490a12dcacefd2d0d9b00a5192ba03e25ce2113537f2cfd",
+    "extraction_review.csv": "b0962ec42126ac660a016426e999af5d7c5b2daa79f562c14cc00b842ec02078"
+  }
+}

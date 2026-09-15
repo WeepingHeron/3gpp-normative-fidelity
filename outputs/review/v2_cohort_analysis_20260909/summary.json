@@ -1,0 +1,23 @@
+{
+  "status": "COHORT_BOUNDS_COMPLETE_INFERENCE_DEFERRED",
+  "generated_at": "2026-09-09T05:17:52.128482+00:00",
+  "treatment_version": "posthoc_treatment_v1_20260908",
+  "unique_cases": 51,
+  "unique_response_slots": 255,
+  "condition_result_rows": 20,
+  "paired_result_rows": 16,
+  "paired_case_memberships": 800,
+  "cohort_case_counts": {
+    "PRIMARY_STRICT_49": 49,
+    "SENS_GOLD_50": 50,
+    "SENS_EXCEPTION_50": 50,
+    "SENS_GOLD_EXCEPTION_51": 51
+  },
+  "inference_deferred_comparisons": 16,
+  "cohorts_overlap": true,
+  "uncertainty_intervals_are_confidence_intervals": false,
+  "semantic_judgments_changed": 0,
+  "new_model_generation_calls": 0,
+  "paper_updated": false,
+  "independent_expert_validation": false
+}

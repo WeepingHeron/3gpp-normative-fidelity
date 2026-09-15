@@ -1,0 +1,45 @@
+{
+  "status": "HOLD_FOR_METHOD_REVISION",
+  "reviewers": [
+    {
+      "reviewer_set": "root_review",
+      "conditions": {
+        "complete_run_and_sealed_reviews": true,
+        "robust_completeness_gain": false,
+        "no_increase_in_distortion_upper_bound": true,
+        "no_paired_complete_regression": true,
+        "both_modality_and_exception_gain": false
+      },
+      "passes": false,
+      "complete_bounds_A0": [
+        1,
+        2
+      ],
+      "complete_bounds_A2": [
+        2,
+        2
+      ]
+    },
+    {
+      "reviewer_set": "fresh_review",
+      "conditions": {
+        "complete_run_and_sealed_reviews": true,
+        "robust_completeness_gain": true,
+        "no_increase_in_distortion_upper_bound": true,
+        "no_paired_complete_regression": true,
+        "both_modality_and_exception_gain": true
+      },
+      "passes": true,
+      "complete_bounds_A0": [
+        0,
+        1
+      ],
+      "complete_bounds_A2": [
+        2,
+        2
+      ]
+    }
+  ],
+  "rule_changed": false,
+  "automatic_adjudication": false
+}

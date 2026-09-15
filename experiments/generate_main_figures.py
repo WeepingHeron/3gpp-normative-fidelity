@@ -210,11 +210,12 @@ save_all(fig, "figure3_semantic_component_failures")
 # Exact paper tables and C1 failures.
 paired = recorded["comparisons"]
 def pct(v): return f"{100*v:.2f}%"
+def pp(v): return f"{100*v:.2f} pp"
 lines = [
     "# Main experiment result tables", "",
     "> Source: `human_scores_adjudicated.csv`. Pass 1, delayed pass 2, and adjudication were performed by the same Codex reviewer; this is not independent expert validation.", "",
     "## Table 1. Overall results", "",
-    "| Condition | Modal accuracy | Complete preservation | Unsupported addition | Exact citation |", "|---|---:|---:|---:|---:|",
+    "| Condition | JSON modal label accuracy | Explanation complete preservation | Unsupported addition | Citation ID exactness |", "|---|---:|---:|---:|---:|",
 ]
 for condition in CONDITIONS:
     s = recorded["conditions"][condition]
@@ -223,12 +224,12 @@ for condition in CONDITIONS:
 lines += ["", "## Table 2. Paired complete-preservation comparisons", "", "| Comparison | Difference | Paired bootstrap 95% CI | First-only / second-only | Exact McNemar p |", "|---|---:|---:|---:|---:|"]
 for key in ["C0_vs_C1", "C1_vs_C2", "C0_vs_C2"]:
     x = paired[key]["complete_preservation"]
-    lines.append(f"| {key.replace('_vs_', ' vs ')} | {pct(x['rate_difference_second_minus_first'])} | {pct(x['paired_bootstrap_95'][0])} to {pct(x['paired_bootstrap_95'][1])} | {x['discordant_first_only']} / {x['discordant_second_only']} | {x['exact_mcnemar_two_sided_p']:.6g} |")
+    lines.append(f"| {key.replace('_vs_', ' vs ')} | {pp(x['rate_difference_second_minus_first'])} | {pp(x['paired_bootstrap_95'][0])} to {pp(x['paired_bootstrap_95'][1])} | {x['discordant_first_only']} / {x['discordant_second_only']} | {x['exact_mcnemar_two_sided_p']:.6g} |")
 lines += ["", "## Table 3. C1 complete-preservation failures", "", "| Case | Modal | Failed fields | Unsupported addition |", "|---|---|---|---:|"]
 for r in sorted([r for r in rows if r["condition"] == "C1" and r["complete_preservation"] == "0"], key=lambda x: x["case_id"]):
     failed = [name for name, field in [("actor","actor_preserved"),("force","polarity_preserved"),("condition","condition_preserved"),("action","action_preserved"),("exception","exception_preserved")] if r[field] == "0"]
     lines.append(f"| `{r['case_id']}` | `{r['gold_modal_class']}` | {', '.join(failed)} | {r['unsupported_addition']} |")
-lines += ["", "## Reporting boundary", "", "- C2's 72/72 is a ceiling result on this frozen oracle-evidence dataset, not proof of perfect general performance.", "- Retrieval was not evaluated; all conditions compare generation under the experiment's supplied evidence design.", "- `MAIN-CAN-004`, `MAIN-SD-002`, and `MAIN-CAN-008` remain predeclared gold-scope sensitivity cases.", ""]
+lines += ["", "## Reporting boundary", "", "- C2 receives the gold structured fields; 72/72 is not evidence of automatic extraction or perfect general performance.", "- JSON modal labels and Korean explanation judgments have different evaluation targets. See docs/09_reporting_errata_2026-09-06.md.", "- Retrieval was not evaluated; citation exactness checks supplied identifier copying.", "- Three gold-scope cases were recorded after pass 1 and before delayed pass 2. Excluding them: C1 65/69, C2 69/69, difference +5.80 pp, exact McNemar p=0.125.", ""]
 (TABLE_DIR / "main_results.md").write_text("\n".join(lines), encoding="utf-8")
 
 print(json.dumps({

@@ -1,0 +1,8 @@
+{
+  "status": "OFFLINE_PREPARED",
+  "source_integrity_valid": true,
+  "all_six_prior_P1_included": true,
+  "evaluator_field_perturbation_check": true,
+  "planned_reservation_usd": 0.41614575000000004,
+  "live_calls": 0
+}

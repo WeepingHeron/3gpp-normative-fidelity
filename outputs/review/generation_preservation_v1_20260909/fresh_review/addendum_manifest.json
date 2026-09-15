@@ -1,0 +1,42 @@
+{
+  "kind": "post_seal_methodology_clarification",
+  "reviewer": "fresh_ai",
+  "started_at": "2026-09-13T14:01:56.204249+00:00",
+  "completed_at": "2026-09-13T14:01:56.205668+00:00",
+  "request_scope": "Clarify metadata-vs-source versus JSON_EXPLANATION_INCONSISTENCY; no replacement judgments or semantic rescoring.",
+  "bound_original_reviewer_manifest": {
+    "path": "/Users/taehoon/Desktop/졸업논문/outputs/review/generation_preservation_v1_20260909/fresh_review/reviewer_manifest.json",
+    "sha256": "f6757fc0daa51bdc51235a0104696167d9813e8d2905e7324e01b258d15e03e9"
+  },
+  "original_sealed_files": [
+    {
+      "path": "/Users/taehoon/Desktop/졸업논문/outputs/review/generation_preservation_v1_20260909/fresh_review/judgments_18.jsonl",
+      "sha256": "8cda241f08669b4abd9e0d1ffb0fd93a48d30f56ef3f279d6a60d2373666c251"
+    },
+    {
+      "path": "/Users/taehoon/Desktop/졸업논문/outputs/review/generation_preservation_v1_20260909/fresh_review/review_notes.md",
+      "sha256": "5f8efc18231b583d034af6f9f25baa946ec15fa56fd5e5475d3cfc787c491178"
+    },
+    {
+      "path": "/Users/taehoon/Desktop/졸업논문/outputs/review/generation_preservation_v1_20260909/fresh_review/reviewer_manifest.json",
+      "sha256": "f6757fc0daa51bdc51235a0104696167d9813e8d2905e7324e01b258d15e03e9"
+    }
+  ],
+  "read_for_content_this_addendum": [
+    "/Users/taehoon/Desktop/졸업논문/outputs/review/generation_preservation_v1_20260909/fresh_review/judgments_18.jsonl",
+    "/Users/taehoon/Desktop/졸업논문/outputs/review/generation_preservation_v1_20260909/fresh_review/reviewer_manifest.json"
+  ],
+  "read_for_hash_only_this_addendum": [
+    "/Users/taehoon/Desktop/졸업논문/outputs/review/generation_preservation_v1_20260909/fresh_review/review_notes.md"
+  ],
+  "not_read": "Root judgments, condition keys, other reviewer conclusions, external sources.",
+  "output_files": [
+    {
+      "path": "/Users/taehoon/Desktop/졸업논문/outputs/review/generation_preservation_v1_20260909/fresh_review/diagnostic_scope_addendum.md",
+      "sha256": "fcd1b7f7c061ab7179a9e9e8da9cac3ac47bcb340d78b5bd9f9939b4bde22577"
+    }
+  ],
+  "manifest_self_hash_policy": "Reported externally after serialization, not recursively embedded.",
+  "seal_permissions": "0444",
+  "original_files_unchanged": true
+}

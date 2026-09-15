@@ -1,0 +1,11 @@
+{
+  "status": "PREPARED_NOT_REVIEWED",
+  "prepared_at": "2026-09-07T05:57:46.614852+00:00",
+  "not_before": "2026-09-08T05:56:15.827828+00:00",
+  "rows": 216,
+  "file_sha256": {
+    "blind_explanations_pass2_blank.csv": "cbaf21b06c8cc3fc27c2567461f377c68c5e0f8dc93f90d1cb886a12bb1f3f9a",
+    "blind_key.json": "74beb5da98597b7aec5db8ed04164bff7224df62bc60e3c6fab6263c22e817f0",
+    "README.md": "889310ca6f55256c55a3ed00c42c530c5d0cb4b3fdfb53ffae4d80844d04f2b3"
+  }
+}

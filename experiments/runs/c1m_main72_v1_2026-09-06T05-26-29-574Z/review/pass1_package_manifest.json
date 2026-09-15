@@ -1,0 +1,17 @@
+{
+  "status": "PROVISIONAL_CODEX_C1M_PASS1_PACKAGE_FROZEN_DELAYED_REVIEW_PENDING",
+  "created_at": "2026-09-07T06:18:20.617152+00:00",
+  "base": "project_root",
+  "independent_expert_validation": false,
+  "file_sha256": {
+    "docs/17_c1m_semantic_review_pass1_2026-09-07.md": "4143ea900b87d9746ef53eccd1fa71f5a1dc8367a8542c45337be8942c9db22a",
+    "experiments/runs/c1m_main72_v1_2026-09-06T05-26-29-574Z/review/annotation_sensitivity.json": "5ab6e4233ea4b5be88c00bff8c84adb9134ffe35a8aa7788a611bb2da3381b51",
+    "experiments/runs/c1m_main72_v1_2026-09-06T05-26-29-574Z/review/delayed_pass2/preparation_manifest.json": "53e61aa29f80c5626b1a05fbcff548d4aaae18460f00f6f7b80e499e1486f15a",
+    "experiments/runs/c1m_main72_v1_2026-09-06T05-26-29-574Z/review/failures_pass1.csv": "6b699d02608ad847ec9618aa1d16747b82e02e1f812bec0d7b4e8a0406bd9fbb",
+    "experiments/runs/c1m_main72_v1_2026-09-06T05-26-29-574Z/review/pass1_freeze_manifest.json": "7db1fadca354347be317b2215741c8c680a8c6a9fcd9bf9c2efcc192f59f3dee",
+    "experiments/runs/c1m_main72_v1_2026-09-06T05-26-29-574Z/review/scores_pass1_unmasked.csv": "060815c7ef80ea5f16095cc1033e1c19d119af8718e16bdfc16b87e7f4d72e64",
+    "experiments/runs/c1m_main72_v1_2026-09-06T05-26-29-574Z/review/summary_pass1.json": "46c9e3aa8200470680d6721a23842318287b29134eae1a4f58d4cc8b58c377cd",
+    "tools/semantic_review_io.py": "295a97384266200c941c3b2e03a4bd2f4ff040c62d00cb5bc61aeb37436afbf8",
+    "tools/summarize_c1m_pass1.py": "05537e7947a683e511fb867220462b2b62a156a055b1cb559a72d1860bb74f8e"
+  }
+}

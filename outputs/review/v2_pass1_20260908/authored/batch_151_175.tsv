@@ -1,0 +1,26 @@
+review_id	semantic_judgment	reason_codes	rationale	response_evidence
+V2-P1-151	FAIL	POLARITY_REVERSAL	SNPN onboarding UE에게 configured NSSAI를 제공해서는 안 된다는 금지를 제공해야 한다는 의무로 뒤집었다.	configured NSSAI를 제공해야 한다.
+V2-P1-152	PASS	PRESERVED	Non-Allowed Area에 있는 UE의 RA를 해당 영역 소속 TA들의 집합으로 구성하는 권고와 집합 한정을 유지한다.	TA들의 집합으로 구성하는 것이 권고된다.
+V2-P1-153	FAIL	MESSAGE_TYPE_ERROR|MODAL_STRENGTHENING	SOR IE의 전달 메시지를 REGISTRATION COMPLETE에서 등록 요청으로 바꾸고 기술적 전달 가능성을 전달 의무로 강화했다.	등록 요청 메시지에 포함하여 네트워크에 전달해야 한다.
+V2-P1-154	PASS	PRESERVED	네 기능이 다른 기능과 같거나 다른 TAI로 구성되는 두 허용 대안을 유지한다.	다른 TAI 값으로 구성되거나 같은 TAI 값으로 구성되도록 허용된다.
+V2-P1-155	PASS	PRESERVED	dual-registration 초기 등록의 context 사용 개시와 규격상 처리 절차 준수 의무를 함께 보존한다.	이 security context의 처리는 현 규격에 설명된 절차를 따라야 한다.
+V2-P1-156	PASS	PRESERVED	OVERLOAD START 수신에 따른 UAC 개시에 대해 관련·연결된 AMF 전부의 부하 제한 요청을 권고상 필요조건으로 유지한다.	모든 AMF가 네트워크에 접근하는 UE에 대한 부하 제한을 요청할 때에만
+V2-P1-157	PASS	PRESERVED	등록 후 non-3GPP UE가 N1 reference point를 이용해 5GC control-plane NAS signalling을 지원해야 한다는 요구를 유지한다.	N1 reference point를 사용하여
+V2-P1-158	FAIL	INDEPENDENT_CLEAR_ERROR|MODAL_STRENGTHENING	Annex C 예외의 평가 범위는 미확정으로 남긴다. 그와 독립적으로 본문의 should 저장 권고를 비휘발성 저장 및 PLMN별 보관 의무로 강화했으므로 실패 근거가 성립한다.	비휘발성 저장소에 저장해야 하며
+V2-P1-159	FAIL	SET_DEFINITION_REPLACEMENT	Disaster Condition 지역을 덮는 TAI라는 공간적 한정을 재난 로밍용으로 허용·지정된 TAI라는 별도의 정책 집합으로 대체했다. 두 집합이 동일하다는 근거는 제공 원문에 없다.	재난 로밍용으로 지정된 TAI들로 제한되어야 하며
+V2-P1-160	PASS	PRESERVED	NAS transport에서 특정 transparent container를 UE에 보내는 default configured NSSAI 변경 수단과 허용을 보존한다.	default configured NSSAI를 변경하도록 허용된다.
+V2-P1-161	FAIL	MODAL_TYPE_SHIFT|ACTOR_ACTION_OMISSION	HPLMN의 단일 default configured NSSAI 구성 허용 및 두 정보가 없는 PLMN에서 유효 간주하는 허용을 UE의 기본 구성 사용 권고로 바꾸었다.	사용해 NSSAI를 처리하는 것이 권고된다.
+V2-P1-162	PASS	PRESERVED|R4	application이 DSCP를 설정해 5GS에 policy를 표시하는 동작을 둘째 문장이 보존한다. 첫 문장의 권고는 특정 packet에 적용할 policy 선택에 걸리며 DSCP 설정 권고로 옮기지 않아 원문의 관계를 유지한다.	특정 IP packet에 적용할 Paging Policy가 선택되는 것이 권고된다.
+V2-P1-163	PASS	PRESERVED	N38의 같은 및 다른 VPLMN V-SMF 배치 가능성을 남기고 inter-PLMN mobility 목적을 후속 설명으로 유지한다. 같은 망 배치가 금지된다는 추가 조건은 없다.	이는 기술적으로 가능하며
+V2-P1-164	PASS	PRESERVED	재난 로밍 UE의 영역 할당 시 Disaster Condition 지역을 덮는 TAI만 고려하는 의무를 유지하며 다른 TAI 제외는 only의 직접 함의다.	다른 TAI는 고려해서는 안 된다.
+V2-P1-165	PASS	PRESERVED	SNPN onboarding 등록 중 또는 등록된 상태에서 serving SNPN의 configured NSSAI 제공 금지를 보존한다.	제공해서는 안 된다.
+V2-P1-166	PASS	PRESERVED	NAS transport 중 지정 UE parameters update container를 UE에 보내 default configured NSSAI를 변경하는 허용을 유지한다.	UE에 UE parameters update transparent container를 보내는 방식
+V2-P1-167	FAIL	OBLIGATION_TO_EXISTING_CONDITION|R4	관련 RAT를 다른 TAC에 배치해야 한다는 별도 요구를 이미 배치되어 제한을 적용하는 경우라는 전제로 바꾸었다. 접근 금지는 남지만 배치 의무가 복원되지 않는다.	서로 다른 Tracking Area Codes에 배치되어 있어
+V2-P1-168	PASS	PRESERVED|R4	동일 K_AMF 사용 조건에서 특정 container의 NAS COUNT 하위 8비트 포함과 새 K_AMF 유도 금지 표시를 모두 보존한다.	이 표시를 통해 새 K_AMF 유도 금지를 나타낸다.
+V2-P1-169	PASS	PRESERVED	N1→N1 handover 중 새 context 생성 허용을 유지하고 해당 시점의 생성 의무를 명시적으로 배제한다.	반드시 생성해야 한다는 의미는 아니다.
+V2-P1-170	PASS	PRESERVED	등록 중 MICO 선호 미표시 조건에서 AMF의 해당 UE MICO 활성화 금지를 보존한다.	MICO mode를 활성화해서는 안 된다.
+V2-P1-171	PASS	PRESERVED|R3	AMF의 request 대응 reject EMM cause 전달을 보존하며 둘째 문장이 5GC 사용 비권고임을 명시하여 첫 문장의 강도 해석을 분명히 한정한다.	하지 않는 것이 권고됨을 의미한다.
+V2-P1-172	PASS	PRESERVED|R2|R3	첫 문장은 수립 가능성의 필요를 말하지만 둘째 문장이 실제 security context 수립을 활성화의 전제조건으로 명확히 보완한다. 능력만으로 충분하다는 상충 주장은 없으므로 전체 의미가 보존된다.	전제조건은 AMF와 UE가 5G NAS security context를 establish하는 것이다.
+V2-P1-173	PASS	PRESERVED	등록 후 non-3GPP UE의 N1 기반 5GC control-plane NAS signalling 지원 의무를 그대로 유지한다.	NAS signalling을 지원해야 한다.
+V2-P1-174	PASS	PRESERVED	Non-Allowed Area의 UE에 대해 그 영역에 속하는 TA 집합으로 RA를 구성하라는 권고를 보존한다.	UE의 NonAllowed Area에 속하는 TA들의 집합
+V2-P1-175	FAIL	MODAL_SCOPE_TRANSFER|R4	UE의 5GC 사용 비권고를 표현해야 하는데 should를 AMF의 reject 전송 권고로 옮겼다. 전달 내용의 사용하지 않아야 함도 권고라고 보완되지 않았다.	Registration Reject 또는 Service Reject를 보내는 것이 권고된다.

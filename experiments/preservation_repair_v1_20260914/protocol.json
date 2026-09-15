@@ -1,0 +1,40 @@
+{
+  "experiment_id": "PRESERVATION_REPAIR_V1_20260914",
+  "status": "READY_TO_FREEZE",
+  "model": "gpt-5.4-mini-2026-03-17",
+  "arms": [
+    "R0_REWRITE",
+    "R1_AUDIT_REPAIR"
+  ],
+  "planned_calls": 18,
+  "planned_explanations": 12,
+  "seed_outputs": 6,
+  "source_cases": 3,
+  "source_output_freeze_sha256": "7778b3b1b2f17af616a065edcf08d2a92bc2914f42c5c2bf7acfb2773eab0d3f",
+  "pricing_usd_per_million": {
+    "input": 0.75,
+    "cached_input": 0.075,
+    "output": 4.5
+  },
+  "pricing_checked_date": "2026-09-14",
+  "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+  "generation_cost_cap_usd": 0.5,
+  "planning_reservation_usd": 0.41614575000000004,
+  "max_audit_json_utf8_bytes": 24000,
+  "timeout_ms": 60000,
+  "design": "All six sealed prior P1 seeds, including complete and unresolved, each assigned once to direct rewrite and audit+repair. No new extraction or seed selection. Paired post-hoc repair diagnostic, not an end-to-end fresh generation efficacy estimate. Extra audit call and context are bundled; not an isolated formatting effect.",
+  "request_policy": "Same original P1 source/extraction input and draft for both final calls; same generic rewrite instruction. Only R1 adds full unedited audit JSON plus frozen suffix. Source authority precedes automatic extraction/audit. No evaluator requirements/scores in requests.",
+  "fixed_parameters": "temperature=0, reasoning none, store false; final schema same and 2-4 sentences, max_output_tokens=900; audit max_output_tokens=3000",
+  "execution": "Hash-ordered 12 slots, sequential. Audit immediately precedes repair. No retry/resume/filtering/editing of audit. Stop on transport/HTTP/model/usage/schema/incomplete/size/budget errors. Missing/duplicate IDs or unsupported audit labels are diagnostic, not selection. Preserve all slots.",
+  "evaluation": "Coordinator manual primary assessment of 12 anonymized final outputs using unchanged nine requirements and 1/0/null, true/false/null rules; seal before reading new audit outputs or keys. Coordinator knows seed outputs and prior scores, so no independent/blinded review claim. Old seed scores remain unchanged.",
+  "diagnostic": "After primary seal, inspect audit whether prior missing/distorted elements were flagged and whether final preserved them. Audit self-labels do not determine final success. Quote matching is diagnostic only.",
+  "candidate_gate": [
+    "All 18 calls completed and 12 final explanations usable with input/output seals valid",
+    "R1 confirmed complete > R0 complete+unresolved",
+    "R1 confirmed distorted+unresolved <= R0 confirmed distorted",
+    "No R0 confirmed complete paired seed regresses in R1",
+    "No previously confirmed complete seed regresses in R1"
+  ],
+  "decision": "At most FIRST_REVIEW_CANDIDATE, never unseen-clause authorization; otherwise IMPROVEMENT_NOT_CONFIRMED. Preserve previous HOLD. No automatic new trial, tuning, independent-agent review or unseen-clause run.",
+  "scope": "3 known developmental cases, six fixed drafts; descriptive comparisons and unresolved bounds only; no p-values/CI/generalization."
+}

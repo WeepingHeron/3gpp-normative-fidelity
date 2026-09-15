@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-09-13T16:15:38.575768+00:00",
+  "run_output_manifest_sha256": "7b8f81a62eb6a26833185f1baa3ca180c6dfb6c7aa91db25f6582c7395d3b5dc",
+  "file_sha256": {
+    "structural_diagnostics_12.jsonl": "5d7d57b2ce58036cc9fa78d90fd3026f47f73895555f7ef841b38a66e3207e21",
+    "review_packets_12.jsonl": "8b5de2fab3b991c9380087a4db262272aacda4bbb44b1e0b9ff186735f618892",
+    "coordinator_keys_12.jsonl": "06044c615f695d80d86fe35b9501168dbdf060808f761d052ed0843779ec142a",
+    "execution_verification.json": "6a189509db1413090fd8e7b5004e57d0d75b984d983aa7cafa784f7ff14d404e"
+  }
+}

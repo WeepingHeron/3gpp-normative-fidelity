@@ -1,0 +1,26 @@
+review_id	semantic_judgment	reason_codes	rationale	response_evidence
+V2-P1-101	PASS	PRESERVED	재난 로밍 UE의 영역 할당 시 Disaster Condition 지역을 덮는 TAI만 고려할 의무와 적용 대상을 유지한다.	Disaster Condition이 있는 영역을 포함하는 TAI만 반드시 고려해야 한다.
+V2-P1-102	PASS	PRESERVED	삭제 시 ngKSI no-key 값 설정과 열거된 연관 키 무효화, 그 context의 무효 상태를 모두 정확히 보존한다.	이는 ngKSI와 연관된 5G NAS security context가 더 이상 유효하지 않음을 뜻한다.
+V2-P1-103	FAIL	INDEPENDENT_CLEAR_ERROR|ACTION_OMISSION|MODAL_REPLACEMENT	위성 접속 문맥의 범위는 미확정으로 남긴다. 그와 별개로 요청 거절·UE 등록해제의 비권고를 모두 누락하고 일반 요청 처리 시 위치정보를 확보해야 한다는 새로운 요구로 대체했다.	위치정보가 그 제한 지역과의 관련성을 판단할 수 있을 만큼 확보되어 있어야 한다.
+V2-P1-104	PASS	PRESERVED	onboarding 등록 중 또는 등록 완료라는 조건에서 serving SNPN의 configured NSSAI 제공 금지를 그대로 유지한다.	configured NSSAI를 제공해서는 안 된다.
+V2-P1-105	FAIL	AUTHORIZATION_SCOPE_ERROR|REQUIRED_CAPABILITY_LOSS	데이터 변경 권한을 접근 권한으로 바꾸어 권한 경계를 넓혔다. 또한 shall be able의 변경 능력 보유 요구와 add/modify/update/delete의 구체적 대상을 단순 변경 가능으로 축약했다.	접근 권한을 가진 데이터만 변경할 수 있다.
+V2-P1-106	PASS	PRESERVED	최대 UE 수 거절 수신으로 관련 timer가 시작된 전제와 timer 만료를 모두 유지하고 관련 S-NSSAI 제거의 허용을 보존한다.	그 타이머가 만료될 때 UE는 해당 S-NSSAI(s)를 거절 NSSAI에서 제거할 수 있도록 허용된다.
+V2-P1-107	PASS	PRESERVED|R4	동일 K_AMF 조건에서 target AMF가 downlink NAS COUNT 하위 8비트를 지정 IE에 담고 새 K_AMF 유도 금지를 표시한다는 두 명제를 보존한다.	downlink NAS COUNT의 하위 8비트를 포함하고, 새 KAMF를 유도해서는 안 된다고 표시해야 한다.
+V2-P1-108	PASS	PRESERVED	trusted connectivity 지원 PLMN/SNPN 및 지원 유형의 광고 허용을 유지하고 5G connectivity를 유일한 값이 아닌 예로 제시한다.	예를 들어 “5G connectivity”를 광고할 수 있다.
+V2-P1-109	UNRESOLVED	GOLD_SCOPE_UNRESOLVED	unless에 따른 충분한 위치정보 조건과 거절·등록해제 비권고를 보존한다. NR 위성 접속 문맥의 충분한 제공 범위는 해결되지 않았으므로 PASS 확정 없이 미확정으로 둔다.	위치정보가 그 정도로 충분히 정확한 경우에는 이 권고가 적용되지 않는다.
+V2-P1-110	PASS	PRESERVED	동일 5GC에 두 access로 동시 연결된 UE라는 범위와 그 5GC에서 단일 AMF 서비스를 받아야 하는 의무를 보존한다.	단일 AMF의 서비스를 반드시 받아야 한다.
+V2-P1-111	FAIL	PERMISSION_TO_OBLIGATION|CONDITION_REPLACEMENT	두 절차 중 NSSAI가 변경될 수 있다는 허용을 새 정보를 수신하면 UE가 갱신해야 한다는 의무로 바꾸고 별도 수신 조건을 추가했다.	기존에 저장된 해당 정보는 새 값으로 갱신해야 한다.
+V2-P1-112	PASS	PRESERVED	각 네 종류 기능에 동일하거나 다른 TAI 구성이 허용된다는 대안을 유지한다.	동일한 TAI 값으로 구성되도록도 허용된다.
+V2-P1-113	PASS	PRESERVED	NSAG 미수신 시 Network Slice 기반 두 동작 모두의 전면 사용 금지를 보존한다.	Network Slice 기반 cell reselection과 Random Access를 전혀 사용해서는 안 된다.
+V2-P1-114	PASS	PRESERVED	AMF로부터 NSAG 정보 미수신이라는 조건과 UE의 slice 기반 reselection·Random Access 사용 금지를 유지한다.	UE가 AMF로부터 NSAG Information을 받지 못한 경우
+V2-P1-115	PASS	PRESERVED	3GPP N1 capability가 비활성화된 PLMN/SNPN 식별자를 기억하라는 권고와 대상 한정을 보존한다.	식별자를 기억하는 것이 권고된다.
+V2-P1-116	PASS	PRESERVED	비상 서비스 완료 후 MICO 요청 전 UE 구현별 기간 대기를 권고하며 callback 목적을 올바르게 연결한다.	UE 구현별 지속 시간 동안 기다리는 것이 권고된다.
+V2-P1-117	PASS	PRESERVED	UE→network 방향, registration 중 REGISTRATION COMPLETE에 SOR IE를 포함하는 전달 방식과 기술적 가능성을 보존한다.	의무나 허용의 표현으로 바꾸지 않는다.
+V2-P1-118	FAIL	MODAL_TYPE_SHIFT	전달 시점·메시지·방향은 맞지만 원문의 can 기술적 제공 가능성을 허용 사항이라고 명시적으로 바꾼다. 비의무라는 부연만으로 이 차이는 해소되지 않는다.	이는 허용 사항이며
+V2-P1-119	PASS	PRESERVED	dual-registration 초기 등록 시 5G NAS context를 사용하고 현 규격의 처리 절차를 따르는 두 의무를 모두 유지한다.	이 security context의 처리는 현 규격에 설명된 절차를 따라야 한다.
+V2-P1-120	PASS	PRESERVED	configured/rejected NSSAI의 변경 허용을 registration 또는 generic update 절차 중이라는 대안 시점과 함께 보존한다.	일반 UE 구성 업데이트 절차 동안 변경하도록 허용된다.
+V2-P1-121	UNRESOLVED	GOLD_SCOPE_UNRESOLVED	본문의 ME 비휘발성 저장 권고 및 Annex C 방식 참조는 보존했다. 참조 예외의 설명 범위가 미확정이므로 별개 명백한 오류 없이 성공이나 실패로 확정하지 않는다.	부속서 C에 명시된 방식에 따라
+V2-P1-122	FAIL	ALTERNATIVE_DENIAL|UNSUPPORTED_OBLIGATION	서로 동일한 TAI를 공유할 수 있다는 원문의 선택지를 부정하고 access별 TAI 형식 사용 의무를 추가했다.	동일한 TAI를 공유하는 것이 아니라
+V2-P1-123	PASS	PRESERVED	새 인증 없이 새 N1 연결을 수립하는 분기와 AMF security mode control 분기의 OR를 유지하며 context 활용의 기술적 가능성을 보존한다. 마지막 부연은 새 인증의 보편적 의무를 부정할 뿐 두 번째 분기에서 항상 새 인증이 없다고 단정하지 않는다.	이는 기술적으로 가능한 상황을 설명하는 것이며
+V2-P1-124	PASS	PRESERVED|R4	동일 K_AMF로 새 context를 유도할 때 target AMF의 지정 IE 내 NAS COUNT 하위 8비트 포함과 새 K_AMF 유도 금지 표시를 모두 보존한다.	새 KAMF가 유도되어서는 안 된다고 표시한다.
+V2-P1-125	PASS	PRESERVED	current context가 native 또는 mapped일 수 있고 각각의 context에서 유래한다는 기술적 유형 대안을 유지한다.	이는 기술적으로 가능한 유형을 설명한다.

@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "normative_type": {"type": "string", "enum": ["obligation", "prohibition", "recommendation", "discouragement", "permission", "capability", "unclear"]},
+    "polarity": {"type": "string", "enum": ["positive", "negative", "unclear"]},
+    "modal_cue": {"type": "string", "enum": ["shall", "shall not", "should", "should not", "may", "can", "unclear"]},
+    "scope_quote": {"type": "string"},
+    "actor_quote": {"type": "string"},
+    "action_quote": {"type": "string"},
+    "conditions": {"type": "array", "items": {"type": "string"}},
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "references": {"type": "array", "items": {"type": "string"}}
+  },
+  "required": ["normative_type", "polarity", "modal_cue", "scope_quote", "actor_quote", "action_quote", "conditions", "limitations", "references"]
+}

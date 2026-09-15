@@ -1,0 +1,27 @@
+{
+  "reviewer": "coordinator_ai",
+  "serialization_started_at": "2026-09-13T13:59:48.720877+00:00",
+  "completed_at": "2026-09-13T13:59:48.722118+00:00",
+  "input_file_sha256": {
+    "outputs/review/generation_preservation_v1_20260909/reviewer/packets_18.jsonl": "cc6dc286ea9297f736e4301a876cc8c633e330c10cd064be962c5f4525d34d23",
+    "experiments/generation_preservation_v1_20260909/reviewer_instructions.md": "53c77fa7c70e4f57278193b980b80d39036748e474601996eca2b1ac01e9b7f7",
+    "experiments/generation_preservation_v1_20260909/evaluation_reference.json": "787c3877312ac3048bab8af8d8593ea4410663facb29650483b6502c740cf8b5",
+    "experiments/generation_preservation_v1_20260909/protocol.json": "7b08072837f2ed4a59d41327b64e9640243b239ad86ce33e3fccda08e474067c"
+  },
+  "output_file_sha256": {
+    "judgments_18.jsonl": "80829c97eee6fecfe20f36e1ea861c5c92571dc56b67f1833c6a876f7b867d54",
+    "review_notes.md": "d2d159ee9e3afac02c7fcca30d46da4a5561bd2ab23bd9022e2c6cd150dadc46"
+  },
+  "recording_script_sha256": "d76ad6a7129392506b437edb61a08f4cacfcbe29c3e4ef94830ca18a4be12c8c",
+  "read_boundary": {
+    "condition_key_read_before_seal": false,
+    "other_reviewer_judgments_read_before_seal": false,
+    "prior_design_known": true,
+    "prior_results_known_from_conversation": true,
+    "protocol_read": true,
+    "memory_preference_read": "MEMORY.md:28-29",
+    "fresh_pdf_visual_review": false
+  },
+  "judgments": 18,
+  "requirement_judgments": 54
+}

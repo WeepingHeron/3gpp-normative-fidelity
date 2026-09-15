@@ -31,8 +31,11 @@
 | CellularSpecSec-Bench (2026) | 3GPP normative language, 교차참조, 보안 추론 | 한국어 설명에서의 modal·condition 보존을 직접 대상으로 함 |
 | DeepSpecs (2026) | clause 교차참조, version diff, Change Request | Release-aware retrieval을 본 연구 기여에서 제외 |
 | Twin-Pass Telco Confidence (2026) | TeleQnA/O-RAN/srsRAN confidence calibration | confidence calibration을 본 연구 기여에서 제외 |
+| HL-Trans (2026) | 중·영·일 법률 번역의 계층적 제약과 deontic modality 보존 | 구조화 제약 자체보다 3GPP 영문→한국어의 요소별 평가로 차별화 |
 
 ## 4. 참고 URL
+
+- HL-Trans (2026-09-06 출판사 공개 초록 확인): https://link.springer.com/article/10.1007/s10506-026-09529-2
 
 - TSpec-LLM: https://arxiv.org/abs/2406.01768
 - TelecomRAG: https://arxiv.org/abs/2406.07053

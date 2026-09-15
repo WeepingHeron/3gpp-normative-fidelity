@@ -1,0 +1,12 @@
+{
+  "prepared_at": "2026-09-13T13:51:48.374728+00:00",
+  "records": 18,
+  "source_cases": 3,
+  "semantic_scores_created": 0,
+  "input_freeze_sha256": "6c3c9955339d6f812f3a2a52ba5bf8615035cc1aa9326752fe515c3aa7f9de06",
+  "run_output_freeze_sha256": "67164d690669e597f7cb164ab495b1daa84d43702c2d6f63a36f477aa93e79d3",
+  "file_sha256": {
+    "reviewer/packets_18.jsonl": "cc6dc286ea9297f736e4301a876cc8c633e330c10cd064be962c5f4525d34d23",
+    "coordinator/keys_18.jsonl": "1cc9e8db7283a42eba8b13b7e53e09b9cfac0ed4597d1fbc9071f9637780b1ae"
+  }
+}

@@ -1,0 +1,26 @@
+review_id	semantic_judgment	reason_codes	rationale	response_evidence
+V2-P1-126	FAIL	ACTION_REPLACEMENT|PERMISSION_TO_OBLIGATION	T3526 만료 시 rejected NSSAI에서 해당 S-NSSAI를 제거할 수 있다는 허용을 절차 중단 및 재시도 가능 상태로 돌아가야 한다는 요구로 바꾸었다.	재시도 가능 상태로 전환하는 것이 요구된다.
+V2-P1-127	FAIL	CONDITION_DETAIL_OMISSION	현재 설정 또는 이전 저장 bit와 UDM subscription의 결합 및 즉시 해제 비권고는 남겼다. 그러나 E-UTRA-PC5 또는 NR-PC5 지원 bit라는 특정 대안 및 지원 값이 빠져 권한의 세부 근거를 완전히 보존하지 못한다.	5GMM context의 비트와, UDM에서 얻은 사용자의 subscription context
+V2-P1-128	PASS	PRESERVED	current context의 native/mapped 두 유형 가능성과 각각의 기원을 보존한다.	이는 기술적으로 가능한 경우를 설명하는 것이다.
+V2-P1-129	PASS	PRESERVED	TSN network인 특별한 사례에서 sub-network로 동작할 가능성과 해당 clause architecture 근거를 보존한다.	clause 4.4.8.2의 아키텍처에 기반한 특별한 경우이다.
+V2-P1-130	PASS	PRESERVED	trusted connectivity 지원 망과 지원 유형을 광고할 수 있다는 선택성과 5G connectivity 예시를 유지한다.	유형(예: "5G connectivity")을 광고하도록 허용된다.
+V2-P1-131	PASS	PRESERVED	trusted WLAN EAP 인증 수행과 PLMN/SNPN 5GC 등록 상태가 동시에 허용됨을 보존한다.	동시에 등록되어 있을 수 있도록 허용된다.
+V2-P1-132	PASS	PRESERVED	등록 중 REGISTRATION COMPLETE 메시지에 SOR IE를 담아 UE가 망에 전달할 기술적 가능성을 유지한다.	이는 기술적으로 가능한 동작이다.
+V2-P1-133	PASS	PRESERVED	선택된 망이 UE 위치에서 계속 서비스 가능한 동안 다른 PLMN/SNPN으로의 이동을 피하는 권고를 유지하며 handover 예시도 같은 권고 강도다.	핸드오버를 통해 이동시키는 것도 권고되지 않는다.
+V2-P1-134	PASS	PRESERVED|R4	Nudr 접근 consumer에게 권한 있는 데이터의 add/modify/update/delete 능력이 요구됨을 보존한다. 권한 없는 데이터 배제도 only의 의미와 일치한다.	삭제할 수 있어야 한다.
+V2-P1-135	FAIL	MODAL_STRENGTHENING|BASIS_DETAIL_OMISSION	두 timer 설정 권고를 설정 의무로 강화하고, 기반 정보인 duration 및 start를 일반적인 period 정보와 예상 도달·해제 시점으로 대체했다.	설정해야 한다.
+V2-P1-136	PASS	PRESERVED	non-3GPP access UE가 등록 후 N1을 통해 5GC control-plane NAS signalling을 지원해야 한다는 요구를 보존한다.	제어면 기능과 NAS signalling을 지원해야 한다.
+V2-P1-137	PASS	PRESERVED	TSN 동작 시 sub-network 역할 가능성과 architecture 기반 3GPP 지원이라는 관계를 보존한다.	3GPP specifications에 의해 지원된다.
+V2-P1-138	PASS	PRESERVED|R4	권한 있는 데이터만 네 CRUD 동작을 할 수 있도록 반드시 되어야 한다는 표현은 실제 수행 의무가 아닌 능력 보유 요구다. 동결된 shall be able 해석을 보존한다.	할 수 있도록 반드시 되어야 한다.
+V2-P1-139	FAIL	ACTION_REPLACEMENT|MODAL_STRENGTHENING	비상 서비스 완료 후 구현별 시간 대기 권고를 MICO 해제 또는 일반 연결 가능 상태 유지 의무로 바꾸었다. 구현별 기간도 누락됐다.	일반적인 연결 가능 상태를 유지하는 것이 요구된다.
+V2-P1-140	PASS	PRESERVED	같은 PLMN의 첫 access 등록이 완료되기 전 다른 access 등록 개시 금지를 정확히 보존한다.	완료될 때까지 다른 access에서의 등록을 시작해서는 안 된다.
+V2-P1-141	FAIL	DIRECTION_REVERSAL|PERMISSION_TO_OBLIGATION	UE로 container를 보내 변경할 수 있다는 방향과 수단을 UE가 망으로 변경을 전달해야 한다는 의무로 뒤집었다.	UE는 해당 변경을 NAS 메시지로 네트워크에 전달해야 한다.
+V2-P1-142	FAIL	ACTION_SCOPE_EXPANSION	MICO 활성화 금지를 모든 MICO 관련 동작 적용 및 고려의 금지로 넓혔다. 관련 동작 일반을 금지하는 명제는 제공 원문에 없다.	MICO 관련 동작을 적용해서는 안 된다.
+V2-P1-143	FAIL	MODAL_TYPE_SHIFT	두 사용 상황과 첫 분기의 새 인증 부재는 맞지만 can의 기술적 사용 가능성을 사용하도록 허용된다는 규범적 허가로 바꾼다.	사용하도록 허용된다.
+V2-P1-144	PASS	PRESERVED	ngKSI 삭제 시 no-key 설정, AMF key 대안과 NAS 암호화·무결성 키 무효화 및 context 무효를 모두 보존한다.	5G NAS 암호화 키, 5G NAS 무결성 키도 무효로 간주해야 한다.
+V2-P1-145	PASS	PRESERVED	dual-registration 초기 등록 시 context 사용 개시 및 현 규격에 따른 처리라는 두 의무를 보존한다. 따라 따라야라는 중복은 의미 판정에 영향을 주지 않는다.	반드시 5G NAS security context를 사용하기 시작해야 하며
+V2-P1-146	PASS	PRESERVED|R3	request 조건과 reject·EMM cause 전달을 보존한다. 첫 문장의 사용하지 않아야 함을 둘째 문장이 사용 비권고라고 명확히 해석하므로 최종 강도는 should not으로 복원된다.	이는 UE가 5GC를 사용하지 않는 것이 권고된다는 뜻이다.
+V2-P1-147	PASS	PRESERVED	등록 후 non-3GPP UE의 N1 기반 control-plane NAS signalling 지원 의무를 보존한다.	이는 반드시 해야 하는 의무이다.
+V2-P1-148	FAIL	CONDITION_DETAIL_OMISSION	현재 설정·과거 저장과 최소 하나라는 일부 구조는 보존했으나 그 bit가 V2XCEPC5 또는 V2XCNPC5의 지원 값이어야 한다는 한정을 누락했다. 임의 capability bit로 설명 범위가 넓어졌다.	비트 중 하나 이상과
+V2-P1-149	PASS	PRESERVED	trusted WLAN용 EAP 인증 중 PLMN 또는 SNPN 5GC 등록 상태의 동시 존재 허용을 보존한다.	5GC에 동시에 등록되어 있을 수 있도록 허용된다.
+V2-P1-150	PASS	PRESERVED	NAS transport 중 지정 update container를 UE로 보내 default configured NSSAI를 변경할 수 있다는 허용과 수단을 보존한다.	UE로 보내는 방식으로 default configured NSSAI를 변경할 수 있다.

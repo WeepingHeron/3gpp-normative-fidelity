@@ -1,0 +1,27 @@
+{
+  "status": "BOUNDED_RUN_AND_FIRST_REVIEW_COMPLETE",
+  "improvement_candidate": false,
+  "candidate_checks": {
+    "robust_completeness_gain": false,
+    "no_paired_complete_regression": true,
+    "no_distortion_upper_bound_increase": false
+  },
+  "progression_status": "NOT_AUTHORIZED_BY_SINGLE_REVIEW",
+  "prior_experiment_hold_unchanged": true,
+  "reviewers": 1,
+  "final_explanations": 12,
+  "extraction_outputs": 6,
+  "extraction_requirements": 18,
+  "stage_counts": {
+    "INCOMPLETE_FROM_EXTRACTION": 2,
+    "PRESERVED": 10,
+    "LOST_IN_COMPOSITION": 6
+  },
+  "component_diagnostic": "Both NSSAI extractions contain should fields but final explanations use obligation wording. Full STORAGE_RECOMMENDATION extraction score remains 0 because Annex C linkage is absent; do not label full requirement 1->0.",
+  "quote_counts": {
+    "total": 46,
+    "exact": 15,
+    "whitespace_normalized": 43
+  },
+  "no_automatic_semantic_scoring": true
+}

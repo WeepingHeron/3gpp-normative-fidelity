@@ -1,0 +1,18 @@
+{
+  "status": "BOUNDARY_REVIEW_AND_RUBRIC_CANDIDATE_NOT_APPLIED",
+  "created_at": "2026-09-07T07:15:36.299635+00:00",
+  "base": "project_root",
+  "listed_cases": 9,
+  "legacy_response_links": 36,
+  "candidate_scores": 0,
+  "all72_eligibility_audit_complete": false,
+  "independent_expert_validation": false,
+  "file_sha256": {
+    "docs/20_gold_boundary_review_2026-09-07.md": "ce2d04cb93cbc16b9c22ac209dee109c4ad64bc52630626b2d3523bed4066013",
+    "experiments/scoring_v2_candidate.md": "411e050359a8d3d035ef9d2af08403f3574618c56e5b933f30c8eb685d98f66c",
+    "outputs/analysis/gold_boundary_review_20260907/main72_layout_screen.json": "d05696d7ac63969c5164eed7be795d70c985b404b27a4c8c86eff952050cda6d",
+    "outputs/analysis/gold_boundary_review_20260907/validation.json": "0f98eafdef579020508c512c4929ae236dd51075b841d86b8dcfaa30f8be4f4a",
+    "outputs/analysis/gold_boundary_review_20260907/case_review.json": "876754eb9fd251f82ba79109acabb8c58522fc34e8e5aae590c8edfd92241fae",
+    "outputs/analysis/gold_boundary_review_20260907/legacy_response_links.json": "6be94c33502a3f93bb59ba09fd65007b23824055fadee310be6b2eefb555b3c8"
+  }
+}

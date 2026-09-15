@@ -1,0 +1,362 @@
+[
+  {
+    "case_id": "MAIN-CAN-002",
+    "condition": "C2",
+    "review_id": "D003",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "모든 event가 UPF에 직접 subscribe될 수 있는 것은 아니다. 즉, UPF에 직접 subscribe하는 기능은 일부 event에만 기술적으로 가능하다.",
+    "legacy_reviewer_note": "모든 이벤트가 가능한 것은 아니라는 부분 한정을 유지하고 직접 UPF 구독의 기술적 가능성을 설명한다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-SD-009",
+    "condition": "C3",
+    "review_id": "D004",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "3GPP 액세스에서 N1 mode capability의 비활성화가 사용 가능한 network slice가 없어서 발생한 경우, UE는 N1 mode가 사용 가능한 network slice 부족 때문에 비활성화된 PLMN 또는 SNPN의 식별자를, 또는 해당 SNPN 목록을 기억하는 것이 권고된다.",
+    "legacy_reviewer_note": "slice 부재에 따른 비활성화 조건과 PLMN/SNPN 식별자 또는 SNPN 목록의 기억 권고가 남는다. 원문의 respectively 연결 자체는 모호하다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-CAN-008",
+    "condition": "C3",
+    "review_id": "D010",
+    "legacy_complete_preservation": 0,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "5G NAS security를 활성화하기 전에 AMF와 UE는 5G NAS security context를 설정할 기술적 가능성이 있어야 한다. 이는 보안이 활성화되기 전의 전제조건이다.",
+    "legacy_reviewer_note": "pass 2의 actor/action 실패를 채택한다. 단어 자체는 남지만 원문의 security 활성화 가능성에 결합된 주체·동작이 AMF/UE의 context 수립 능력 요구로 이동했다. TS 24.501 PDF 53쪽의 실제 context 수립 전제를 대조했다. 완전 보존 실패는 두 pass가 일치한다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-SDN-002",
+    "condition": "C1",
+    "review_id": "D024",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "혼잡하지 않은 상황에서는 98%의 패킷이 5QI의 PDB를 초과하는 지연을 경험하지 않는 것이 권고된다. 즉, 5QI Packet Delay Budget을 넘는 패킷 지연 비율은 2%를 넘지 않아야 하는 권고이다.",
+    "legacy_reviewer_note": "비혼잡 조건·98% 패킷·PDB 초과 지연 비권고를 보존하고 2% 보완 설명도 권고 범위로 한정한다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-SD-002",
+    "condition": "C1",
+    "review_id": "D046",
+    "legacy_complete_preservation": 0,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "5GS가 Paging Policy Differentiation(PPD) 기능을 지원하는 경우, 애플리케이션은 특정 IP 패킷에 적용할 Paging Policy를 5GS에 표시하기 위해 DSCP 값(TOS in IPv4 / TC in IPv6)을 설정한다. 이는 반드시 해야 하는 의무로 표현된다.",
+    "legacy_reviewer_note": "Paging Policy 적용에 걸린 should를 애플리케이션 DSCP 설정의 반드시 해야 하는 의무로 옮겼다. PPD·특정 패킷 조건은 남는다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-MAY-001",
+    "condition": "C3",
+    "review_id": "D047",
+    "legacy_complete_preservation": 0,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "각 SMF는 하나의 PDU Session 내에서 local UPF와 central UPF를 모두 제어할 기술적 가능성이 있다.",
+    "legacy_reviewer_note": "동결 gold는 may의 허용인데 설명은 각 SMF의 기술적 가능성으로만 분류한다. may have the capability 원문 자체의 범주 중첩을 별도 불확실성으로 남긴다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-SD-009",
+    "condition": "C1",
+    "review_id": "D053",
+    "legacy_complete_preservation": 0,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "3GPP 접속에서 N1 mode capability의 비활성화가 사용 가능한 network slice가 없어서 발생한 경우, UE는 N1 mode가 사용 가능한 network slice 부재로 비활성화된 PLMN의 식별자 또는, 각각의 경우에 해당하는 SNPN들의 목록을 기억하는 것이 권고된다.",
+    "legacy_reviewer_note": "PLMN 식별자 또는 SNPN 목록만 남겨 원문/gold의 SNPN 식별자 선택지를 누락한다. 원문의 respectively 범위 모호성은 별도 남긴다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-MAY-005",
+    "condition": "C3",
+    "review_id": "D057",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "5GS와 EPC interworking 대상이 아닌 UE는 interworking 전용이 아닌 엔티티에 의해 서비스되도록 허용된다. 즉, PGW 또는 SMF/UPF에 의해 서비스될 수 있다.",
+    "legacy_reviewer_note": "interworking 비대상 UE가 비전용 PGW 또는 SMF/UPF에서 서비스될 허용을 유지한다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-SD-009",
+    "condition": "C2",
+    "review_id": "D058",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "3GPP 액세스에 대한 N1 mode capability의 비활성화가 사용 가능한 network slice가 없어서 발생한 경우, UE는 해당 PLMN 또는 SNPN의 식별자를 기억하는 것이 권고된다. 이때 PLMN인 경우에는 해당 PLMN의 식별자를, SNPN인 경우에는 N1 mode가 비활성화된 SNPN 목록을 기억하는 것이 권고된다.",
+    "legacy_reviewer_note": "비활성화의 slice 부재 조건과 PLMN/SNPN 식별자 및 SNPN 목록을 모두 남긴다. 후속 경우 구분은 원문의 모호한 respectively를 풀어 쓴 것으로 판정한다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-CAN-002",
+    "condition": "C1",
+    "review_id": "D071",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "모든 event가 UPF에 직접 subscribe될 수 있는 것은 아니다. 즉, UPF에 직접 subscribe하는 기능은 일부 event에만 적용된다.",
+    "legacy_reviewer_note": "not all 한정을 명시하고 일부 이벤트만 직접 UPF 구독 가능하다고 설명한다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-CAN-008",
+    "condition": "C1",
+    "review_id": "D081",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "5G NAS security를 활성화하기 전에 AMF와 UE는 5G NAS security context를 수립해야 한다. 이는 보안이 활성화되기 위한 전제조건이다.",
+    "legacy_reviewer_note": "context 수립해야 한다는 표현은 원문의 need to에 해당하며 보안 활성화의 전제라는 관계를 명시한다. security can에 새 의무를 부여하지 않는다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-MAY-005",
+    "condition": "C1",
+    "review_id": "D083",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "5GS와 EPC interworking의 대상이 아닌 UE는 interworking 전용이 아닌 엔티티에 의해 서비스될 수 있으며, 즉 PGW 또는 SMF/UPF에 의해 서비스될 수 있다.",
+    "legacy_reviewer_note": "interworking 비대상 UE의 비전용 PGW 또는 SMF/UPF 서비스 허용을 수 있다로 유지한다. 능력이라고 재분류하지 않는다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-SDN-010",
+    "condition": "C1",
+    "review_id": "D087",
+    "legacy_complete_preservation": 0,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "5GMM signalling congestion 상황에서 AMF는 다음 요청들을 거절해서는 안 된다: 긴급 서비스 요청, 긴급 서비스 fallback 요청, 선택된 PLMN 또는 SNPN에서 high priority access로 설정된 UE의 요청, DEREGISTRATION REQUEST 메시지, paging 또는 notification procedure로 트리거된 mobile terminated services 요청, 하위 계층에서 긴급이 표시된 경우의 initial registration 또는 mobility/periodic registration update 요청, 그리고 discontinuous coverage로 인해 UE가 unavailability information을 보고하는 경우의 mobility registration update 요청이다.",
+    "legacy_reviewer_note": "7종 요청·congestion 맥락은 유지하지만 should not을 거절해서는 안 된다로 강화한다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-SDN-002",
+    "condition": "C2",
+    "review_id": "D098",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "혼잡하지 않은 상황에서는 패킷의 98%가 5QI의 Packet Delay Budget을 초과하는 지연을 겪지 않는 것이 권고된다. 즉, 최대 2%의 패킷은 이 권고의 범위 밖에 있을 수 있다.",
+    "legacy_reviewer_note": "비혼잡 시 98% 패킷의 PDB 초과 지연 비권고와 나머지 최대 2% 한정이 정확하다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-SDN-010",
+    "condition": "C3",
+    "review_id": "D107",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "AMF는 5GMM signalling congestion 상황에서 다음 요청들을 거절하지 않는 것이 권고된다: 긴급 서비스 요청, 긴급 서비스 fallback 요청, 선택된 PLMN 또는 SNPN에서 고우선순위 접속으로 설정된 UE의 요청, DEREGISTRATION REQUEST 메시지, paging 또는 notification procedure로 트리거된 mobile terminated services 요청, 하위 계층에서 긴급이 표시된 경우의 initial registration 또는 mobility 및 periodic registration update 요청, 그리고 UE가 discontinuous coverage로 인한 unavailability 정보를 보고하는 경우의 mobility registration update 요청이다.",
+    "legacy_reviewer_note": "congestion 조건과 7종 요청 각각의 세부 조건을 유지하면서 AMF 비거절을 권고로 서술한다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-CAN-004",
+    "condition": "C2",
+    "review_id": "D114",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "여러 NF가 같은 set에 속하지 않거나 여러 NF set이 UDSF를 공유하는 경우, UDSF 구현과 배포는 권한이 있는 NF만 데이터에 접근할 수 있도록 해야 한다. 즉, 권한이 없는 NF는 데이터에 접근할 수 없고, 접근 가능 여부의 보장은 UDSF 구현과 배포에 달려 있다.",
+    "legacy_reviewer_note": "공유 UDSF에서 권한 NF만 접근 가능한 한정과 구현·배포의 보장 책임이 유지된다. 해야 한다는 표현은 make sure에 해당하며 can 자체의 의무화로 보지 않는다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-SD-002",
+    "condition": "C3",
+    "review_id": "D118",
+    "legacy_complete_preservation": 0,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "",
+    "legacy_reviewer_note": "설명이 공란이므로 모든 적용 가능한 보존 항목은 실패다. 추가 주장은 없으며 gold 예외 공란은 NA다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-CAN-004",
+    "condition": "C1",
+    "review_id": "D125",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "여러 NF가 같은 set에 속하지 않거나 여러 NF set이 UDSF를 공유하는 경우, UDSF 구현과 배치는 권한이 있는 NF만 데이터에 접근할 수 있도록 반드시 보장해야 한다. 즉, 접근 범위는 권한이 부여된 NF로 제한된다.",
+    "legacy_reviewer_note": "UDSF 공유 조건과 권한 NF만 접근하는 제한, 구현·배포의 보장 책임이 유지된다. 반드시 보장해야 함은 원문의 make sure 책임을 풀어 쓴 것이다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-CAN-008",
+    "condition": "C2",
+    "review_id": "D142",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "5G NAS security는 기술적으로 활성화되기 전에 AMF와 UE가 5G NAS security context를 반드시 확립해야 한다. 즉, 해당 context가 확립된 후에만 security가 활성화될 수 있다.",
+    "legacy_reviewer_note": "context 실제 확립 후에만 security 활성화가 가능하다는 필요조건을 명시한다. 반드시 확립은 need to의 내용이다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-MAY-005",
+    "condition": "C2",
+    "review_id": "D144",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "5GS와 EPC interworking 대상이 아닌 UE는 interworking 전용이 아닌 엔티티에 의해 서비스되도록 허용된다. 즉, PGW 또는 SMF/UPF에 의해 서비스될 수 있다.",
+    "legacy_reviewer_note": "interworking 대상이 아닌 UE의 비전용 PGW 또는 SMF/UPF 서비스 허용을 유지한다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-CAN-004",
+    "condition": "C3",
+    "review_id": "D146",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "여러 NF가 같은 set에 속하지 않거나 여러 NF set이 UDSF를 공유하는 경우, UDSF 구현과 배포는 반드시 권한이 있는 NF만 데이터에 접근할 수 있도록 해야 한다.",
+    "legacy_reviewer_note": "공유 UDSF 구현·배포의 책임과 권한 있는 NF만의 접근 가능성을 유지한다. 반드시 해야 한다는 보장 책임은 make sure에 대응한다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-MAY-001",
+    "condition": "C2",
+    "review_id": "D169",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "각 SMF는 하나의 PDU Session 내에서 local UPF와 central UPF를 모두 제어하도록 허용된다. 이는 의무가 아니라 허용 사항이다.",
+    "legacy_reviewer_note": "동결 gold의 각 SMF local/central UPF 제어 허용을 유지한다. 원문 may have the capability와 단순 허용 라벨의 범주 중첩은 별도 불확실성이다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-SD-002",
+    "condition": "C2",
+    "review_id": "D170",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "5GS가 Paging Policy Differentiation(PPD) 기능을 지원하는 경우, 애플리케이션이 설정한 DSCP 값(TOS in IPv4 / TC in IPv6)에 따라 특정 IP packet에 적용할 Paging Policy가 선택되는 것이 권고된다. 즉, 애플리케이션은 DSCP 값을 통해 5GS에 어떤 Paging Policy를 적용할지 표시한다.",
+    "legacy_reviewer_note": "PPD 조건에서 애플리케이션 DSCP에 따른 Paging Policy 선택·적용 권고를 보존하고 DSCP 설정 동작과 구별한다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-SDN-002",
+    "condition": "C3",
+    "review_id": "D181",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "혼잡하지 않은 상황에서는 패킷의 98%가 5QI의 PDB를 초과하는 지연을 경험하지 않는 것이 권고된다.",
+    "legacy_reviewer_note": "비혼잡·98%라는 수치 범위와 PDB 초과 지연 비권고가 남아 2% 범위 밖 한정도 산술적으로 보존된다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-SDN-010",
+    "condition": "C2",
+    "review_id": "D186",
+    "legacy_complete_preservation": 0,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "5GMM signalling congestion control 동안 AMF는 다음 7개 요청 범주를 거절하지 않는 것이 권고된다: 긴급 서비스 요청, 긴급 서비스 fallback 요청, 선택된 PLMN 또는 SNPN에서 고우선순위 접근으로 구성된 UE의 요청, DEREGISTRATION REQUEST 메시지, 페이징 또는 통지 절차로 트리거된 이동 종료 서비스 요청, 하위 계층에서 긴급이 표시된 초기 등록 또는 이동성 및 주기적 등록 갱신 요청, 그리고 단속적 커버리지로 인해 UE가 부재 정보를 보고하는 경우의 이동성 등록 갱신 요청이다.",
+    "legacy_reviewer_note": "pass 1의 exception 실패를 채택한다. 7개라는 수만 유지한 것으로 충분하지 않고 비거절 대상의 한정 범위가 같은 7종이어야 한다. mobile terminated를 이동 종료로 바꾸면 그 범위도 달라진다. PDF 197쪽의 paging/notification 착신 맥락을 재확인했다. 완전 보존 실패는 두 pass가 일치한다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-MAY-001",
+    "condition": "C1",
+    "review_id": "D202",
+    "legacy_complete_preservation": 0,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "각 SMF는 하나의 PDU Session 안에서 로컬 UPF와 중앙 UPF를 모두 제어할 수 있는 능력이 있을 수 있다. 이는 의무나 금지가 아니라 기술적 가능성을 나타낸다.",
+    "legacy_reviewer_note": "may have the capability를 기술적 가능성으로만 해석해 동결 gold의 permission과 다르다. 원문 어휘와 gold 범주의 중첩은 별도 scope 쟁점이다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-CAN-002",
+    "condition": "C3",
+    "review_id": "D209",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C3_DELAYED_ADJUDICATED",
+    "explanation_ko": "모든 event가 UPF에 직접 subscribe될 수 있는 것은 아니다. 즉, event의 UPF 직접 subscribe는 일부 event에 대해서만 기술적으로 가능하다.",
+    "legacy_reviewer_note": "모든 이벤트가 가능한 것은 아니라는 부분 부정과 일부 이벤트만 직접 UPF 구독 가능하다는 한정을 보존한다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-MAY-001",
+    "condition": "C1M",
+    "review_id": "M057",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C1M_FIRST_PASS",
+    "explanation_ko": "그러나 각 SMF는 하나의 PDU Session 내에서 local UPF와 central UPF를 모두 제어할 수 있는 능력이 있다. 이는 허용 또는 선택 가능을 나타내며, 반드시 해야 한다는 의미는 아니다.",
+    "legacy_reviewer_note": "동결 gold의 SMF 두 UPF 제어 허용을 둘째 문장에서 명시한다. 첫 문장의 능력이 있다 단정과 원문의 선택적 능력 보유는 용어 범위 쟁점으로 남기되 전체 설명의 선택 가능 한정을 함께 읽는다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-CAN-002",
+    "condition": "C1M",
+    "review_id": "M071",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C1M_FIRST_PASS",
+    "explanation_ko": "모든 이벤트가 UPF에 직접 구독될 수 있는 것은 아니다. 즉, UPF에 직접 subscribe하는 기능은 일부 이벤트에만 기술적으로 가능하다.",
+    "legacy_reviewer_note": "not all 부분 부정과 일부 이벤트에만 직접 UPF 구독이 가능하다는 한정을 보존한다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-SDN-010",
+    "condition": "C1M",
+    "review_id": "M080",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C1M_FIRST_PASS",
+    "explanation_ko": "AMF는 5GMM signalling congestion 상황에서 다음 요청들을 거절하지 않는 것이 권고된다: 긴급 서비스 요청, 긴급 서비스 fallback 요청, 선택된 PLMN 또는 SNPN에서 고우선순위 접속으로 구성된 UE의 요청, DEREGISTRATION REQUEST 메시지, paging 또는 notification procedure로 트리거된 mobile terminated 서비스 요청, 하위 계층에서 긴급이 표시된 경우의 초기 등록 또는 이동성 및 주기적 등록 갱신 요청, 그리고 discontinuous coverage로 인해 UE가 unavailability 정보를 보고하는 경우의 mobility registration update 요청이다.",
+    "legacy_reviewer_note": "congestion 시 7종 요청 각각의 조건과 mobile terminated 대상을 유지하며 비거절을 권고로 표현한다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-MAY-005",
+    "condition": "C1M",
+    "review_id": "M087",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C1M_FIRST_PASS",
+    "explanation_ko": "5GS와 EPC interworking 대상이 아닌 UE는 interworking 전용이 아닌 엔티티에 의해 서비스될 수 있으며, 즉 PGW 또는 SMF/UPF에 의해 서비스되도록 허용된다.",
+    "legacy_reviewer_note": "interworking 비대상 UE가 비전용 PGW 또는 SMF/UPF에서 서비스될 허용을 유지한다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-CAN-008",
+    "condition": "C1M",
+    "review_id": "M111",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C1M_FIRST_PASS",
+    "explanation_ko": "5G NAS security를 활성화하기 전에 AMF와 UE는 5G NAS 보안 컨텍스트를 수립할 기술적 가능성이 있어야 한다. 즉, 보안 활성화의 전제조건은 AMF와 UE가 5G NAS security context를 establish하는 것이다.",
+    "legacy_reviewer_note": "첫 문장은 context 수립 능력으로 약하게 표현하지만 둘째 문장이 security 활성화의 전제는 실제 context establish라고 명시해 필요조건을 복원한다. 실제 수립은 수립 능력을 함의하므로 두 문장 전체에는 상충하는 충분조건 주장이 없다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-SD-009",
+    "condition": "C1M",
+    "review_id": "M128",
+    "legacy_complete_preservation": 0,
+    "legacy_review_status": "C1M_FIRST_PASS",
+    "explanation_ko": "3GPP 접속에서 사용 가능한 network slice가 없어 N1 mode capability가 비활성화된 경우, UE는 N1 mode가 사용 가능한 network slice 부족 때문에 비활성화된 PLMN의 식별자 또는, 해당하는 경우 N1 mode가 사용 가능한 network slice 부족 때문에 비활성화된 SNPN들의 목록을 기억하는 것이 권고된다.",
+    "legacy_reviewer_note": "PLMN 식별자와 SNPN 목록만 남기고 원문/gold의 SNPN 식별자 선택지를 누락한다. respectively 연결의 모호성은 별도 기록한다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-SDN-002",
+    "condition": "C1M",
+    "review_id": "M152",
+    "legacy_complete_preservation": 1,
+    "legacy_review_status": "C1M_FIRST_PASS",
+    "explanation_ko": "혼잡하지 않은 상황에서는 패킷의 98%가 5QI의 PDB를 초과하는 지연을 겪지 않는 것이 권고된다. 즉, 5QI Packet Delay Budget을 넘는 packet delay 비율은 2%를 넘지 않도록 하는 것이 권고된다.",
+    "legacy_reviewer_note": "비혼잡 시 98% 패킷의 PDB 초과 지연 비권고와 2% 수치 한정을 유지한다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-CAN-004",
+    "condition": "C1M",
+    "review_id": "M171",
+    "legacy_complete_preservation": 0,
+    "legacy_review_status": "C1M_FIRST_PASS",
+    "explanation_ko": "여러 NF가 같은 set에 속하지 않거나 여러 NF set이 UDSF를 공유하는 경우, UDSF 구현과 배치는 권한이 있는 NF만 데이터에 접근할 수 있도록 기술적으로 가능해야 한다. 이는 데이터 접근 범위를 권한 있는 NF로 제한하는 능력에 관한 설명이다.",
+    "legacy_reviewer_note": "원문의 권한 NF만 접근 가능하도록 구현·배포가 보장한다는 내용이 UDSF의 접근 제한 기술 능력이 있어야 한다는 요구로 이동했다. 제한 능력 보유만으로 실제 권한 NF 접근 한정·보장 책임을 충족하지 못한다.",
+    "candidate_semantic_score": null
+  },
+  {
+    "case_id": "MAIN-SD-002",
+    "condition": "C1M",
+    "review_id": "M199",
+    "legacy_complete_preservation": 0,
+    "legacy_review_status": "C1M_FIRST_PASS",
+    "explanation_ko": "5GS가 Paging Policy Differentiation(PPD) 기능을 지원할 때, 애플리케이션은 특정 IP packet에 적용할 Paging Policy를 5GS에 알리기 위해 DSCP 값(TOS in IPv4 / TC in IPv6)을 설정하는 것이 권고된다.",
+    "legacy_reviewer_note": "원문의 Paging Policy 적용에 걸린 should를 애플리케이션 DSCP 설정에 대한 권고로 이동했다. 권고라는 단어는 맞지만 규범이 결합되는 주체와 행위가 다르다. PPD·특정 패킷·DSCP 표시 동작 자체는 남는다.",
+    "candidate_semantic_score": null
+  }
+]

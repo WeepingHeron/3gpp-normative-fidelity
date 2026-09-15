@@ -1,0 +1,12 @@
+{"review_id": "AAR-001", "slot_id": "CTX-003-C1_ATOMIC-R1", "seed_id": "CTX-003-P1_EXTRACT_COMPOSE-R1", "arm": "C1_ATOMIC"}
+{"review_id": "AAR-002", "slot_id": "CTX-002-C1_ATOMIC-R2", "seed_id": "CTX-002-P1_EXTRACT_COMPOSE-R2", "arm": "C1_ATOMIC"}
+{"review_id": "AAR-003", "slot_id": "CTX-001-C1_ATOMIC-R1", "seed_id": "CTX-001-P1_EXTRACT_COMPOSE-R1", "arm": "C1_ATOMIC"}
+{"review_id": "AAR-004", "slot_id": "CTX-002-C1_ATOMIC-R1", "seed_id": "CTX-002-P1_EXTRACT_COMPOSE-R1", "arm": "C1_ATOMIC"}
+{"review_id": "AAR-005", "slot_id": "CTX-003-C1_ATOMIC-R2", "seed_id": "CTX-003-P1_EXTRACT_COMPOSE-R2", "arm": "C1_ATOMIC"}
+{"review_id": "AAR-006", "slot_id": "CTX-001-C0_COARSE-R2", "seed_id": "CTX-001-P1_EXTRACT_COMPOSE-R2", "arm": "C0_COARSE"}
+{"review_id": "AAR-007", "slot_id": "CTX-002-C0_COARSE-R2", "seed_id": "CTX-002-P1_EXTRACT_COMPOSE-R2", "arm": "C0_COARSE"}
+{"review_id": "AAR-008", "slot_id": "CTX-002-C0_COARSE-R1", "seed_id": "CTX-002-P1_EXTRACT_COMPOSE-R1", "arm": "C0_COARSE"}
+{"review_id": "AAR-009", "slot_id": "CTX-003-C0_COARSE-R1", "seed_id": "CTX-003-P1_EXTRACT_COMPOSE-R1", "arm": "C0_COARSE"}
+{"review_id": "AAR-010", "slot_id": "CTX-003-C0_COARSE-R2", "seed_id": "CTX-003-P1_EXTRACT_COMPOSE-R2", "arm": "C0_COARSE"}
+{"review_id": "AAR-011", "slot_id": "CTX-001-C0_COARSE-R1", "seed_id": "CTX-001-P1_EXTRACT_COMPOSE-R1", "arm": "C0_COARSE"}
+{"review_id": "AAR-012", "slot_id": "CTX-001-C1_ATOMIC-R2", "seed_id": "CTX-001-P1_EXTRACT_COMPOSE-R2", "arm": "C1_ATOMIC"}

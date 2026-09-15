@@ -1,0 +1,21 @@
+{
+  "status": "PREFLIGHT_COMPLETE_WITH_UNRESOLVED",
+  "completed_at": "2026-09-08T02:25:05.856478+00:00",
+  "treatment_freeze_manifest_sha256": "271c9718049be10a7ef6422c8d08a0a6edc672cc4a6051d7a9bf957338b4bfa5",
+  "review_package_manifest_sha256": "6e34c03a58dfe3e87407b80e1a10059408496c305b6fd316b449eafa53325051",
+  "file_sha256": {
+    "coordinator/case_index.csv": "e8d1f662b4c278f24259ec1c81bb8e9ecccccece9d06e2fbcbc62c5e11c2b2b9",
+    "coordinator/input_provenance.json": "0ba23dba1a314e41d6e872b6602f12d3c83b3be42a5cc900d410acbb7dd46c58",
+    "manual_annotations.json": "bdecb181c9d06f49b9587e726c2eab406cc145d92d49c510df147dbeba9d54b0",
+    "preflight_completed.jsonl": "572a4c7efc0f72c192af68b585ca0a0edf44f979995e72c161cab898ba322ff4",
+    "preflight_index.csv": "ec46e5f8fe601c3e1e6b0f46a29ea4c6df4eef0563142879f31f5ff1eb2e0ae9",
+    "source_page_evidence.json": "b0ab0c3ad1c6c0f96e201241814530c0c29510c727309754b43a86e18212eb85",
+    "summary.json": "da5ec452c34b157e75b73148cf1e88a72233e0e714c84fb0c6d212b322f521bf",
+    "verification_receipt.json": "98ad89e5f7924fb7dc3385d23b749f21067adabcf6c156013af149c5f6360b2f"
+  },
+  "support_file_sha256": {
+    "tools/assemble_v2_preflight_20260908.py": "14bc60436a80935292f62027a006146456dcd7fa27bb9f023bbb3c97641b51f0",
+    "docs/24_v2_gold_preflight_2026-09-08.md": "c6bcb785651607673d7334e5f0c2015e0683952df354f3f82e211cd5420d0d4d"
+  },
+  "semantic_reviews_completed": 0
+}

@@ -1,0 +1,9 @@
+{
+  "status": "OFFLINE_PREPARED",
+  "prior_freeze_valid": true,
+  "generator_inputs_only": true,
+  "all_six_seeds_both_arms": true,
+  "same_parameters_except_instruction_schema": true,
+  "reservation_usd": 0.428268,
+  "live_calls": 0
+}

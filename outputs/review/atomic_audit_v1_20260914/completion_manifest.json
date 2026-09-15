@@ -1,0 +1,20 @@
+{
+  "completed_at": "2026-09-13T16:20:25.493844+00:00",
+  "status": "AUDIT_VALIDATION_COMPLETE",
+  "independent_review_performed": false,
+  "file_sha256": {
+    "outputs/review/atomic_audit_v1_20260914/structural_diagnostics_12.jsonl": "5d7d57b2ce58036cc9fa78d90fd3026f47f73895555f7ef841b38a66e3207e21",
+    "outputs/review/atomic_audit_v1_20260914/review_packets_12.jsonl": "8b5de2fab3b991c9380087a4db262272aacda4bbb44b1e0b9ff186735f618892",
+    "outputs/review/atomic_audit_v1_20260914/coordinator_keys_12.jsonl": "06044c615f695d80d86fe35b9501168dbdf060808f761d052ed0843779ec142a",
+    "outputs/review/atomic_audit_v1_20260914/packet_manifest.json": "c90d897a8dd587be140e1953bbba4e69f30b024026f2e355cf22ded64637006c",
+    "outputs/review/atomic_audit_v1_20260914/execution_verification.json": "6a189509db1413090fd8e7b5004e57d0d75b984d983aa7cafa784f7ff14d404e",
+    "outputs/review/atomic_audit_v1_20260914/manual_review/reviewer_manifest.json": "4dd9c98819a6fdf7c1ff89fffb579b6262ce918d9a93501956b52b1ba58ef1ad",
+    "outputs/review/atomic_audit_v1_20260914/manual_review/judgments_12.jsonl": "650c3a85ad6bd9b2f99ee18b7cb1ed5b5ab837bc7811901518e09016d115ddbc",
+    "outputs/review/atomic_audit_v1_20260914/analysis/summary.json": "56e32d27c074e5aeaa5fe431fb7b96b54a9d6dd14c610797b1e4ae8ab19c9c12",
+    "outputs/review/atomic_audit_v1_20260914/analysis/condition_results.json": "6056093138bc9c946a58a79534b1b05140dce34e900a4ffeb9e3a4c0d782b540",
+    "docs/41_atomic_audit_results_2026-09-14.md": "6344c21a579cdde6de9f56fc40da2bc2e8ca7e3f1af56992ac1009dc7357ce28",
+    "tools/prepare_atomic_audit_review_20260914.py": "783b582dcdadec22e452d830f215074d2518631595deee733aa3d8fd5be725ca",
+    "tools/record_atomic_audit_review_20260914.py": "9b11473423232cf271e542fa1c7cedcb90b72ab7dd3c7b2996fe2dded1b201cf",
+    "tools/verify_atomic_audit_completion_20260914.py": "c98d37eb075a302dbcfe2cdbf7f66164b15d5f506fd50360fbe50e8da1c07240"
+  }
+}

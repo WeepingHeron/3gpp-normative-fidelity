@@ -1,0 +1,18 @@
+{
+  "status": "PASS2_SEALED_ADJUDICATION_PENDING",
+  "completed_at": "2026-09-09T04:52:05.557516+00:00",
+  "release_manifest_sha256": "68d054e628b0ecf4a33865658aba2d8ff25cf935f5358d7d6ac8d95bdaba6cee",
+  "pass1_completion_manifest_sha256": "798b99adbfb6e8a287c0d6450ba2d2aa175d221df74de92c478427b0106fe45c",
+  "package_manifest_sha256": "6e34c03a58dfe3e87407b80e1a10059408496c305b6fd316b449eafa53325051",
+  "rubric_sha256": "a81a590659d18fc6784802438d337731837f820bc8f45b5fd070a1d7e751efb5",
+  "file_sha256": {
+    "pass2_completed.jsonl": "381d9d08b420a9bd598fc56222a80a9790630c2194cc5c4c79219cb9c70c89ce",
+    "preflight_completed.jsonl": "572a4c7efc0f72c192af68b585ca0a0edf44f979995e72c161cab898ba322ff4"
+  },
+  "support_file_sha256": {
+    "tools/finalize_v2_pass2_20260909.py": "2a6793097a65e7ba5cf8ce66c188f1d04934b63530972e0ef366c067c0dad118",
+    "tools/v2_pass2_workbench_20260909.py": "2a92690b6968490cca0a5a150b4fa24f0b0d982a7242efbd5dcba2a4766d9353"
+  },
+  "reviewer_independence": "Same evaluator; prior conversation exposure; condition labels and pass1 decisions not read during current pass2 scoring; not fully blind or independent.",
+  "new_model_generation_calls": 0
+}

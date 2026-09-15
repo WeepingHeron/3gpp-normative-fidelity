@@ -1,0 +1,14 @@
+{
+  "experiment_id": "CONTEXT_MICROSTUDY_V1_20260909",
+  "started_at": "2026-09-09T06:11:53.045Z",
+  "status": "GENERATION_COMPLETE_SEMANTICS_PENDING",
+  "model": "gpt-5.4-mini-2026-03-17",
+  "input_freeze_sha256": "5cf197871d852f6300e1bda00291afeb0da806261a815960445ea47810e36e64",
+  "input_frozen_at": "2026-09-09T06:11:26.953Z",
+  "planned_slots": 24,
+  "attempts": 24,
+  "completed_slots": 24,
+  "estimated_cost_usd": 0.0445545,
+  "evaluator_status": "NOT_EVALUATED",
+  "completed_at": "2026-09-09T06:12:59.978Z"
+}

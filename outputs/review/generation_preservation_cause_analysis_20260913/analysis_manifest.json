@@ -1,0 +1,57 @@
+{
+  "created_at": "2026-09-13T14:13:37.563576+00:00",
+  "status": "BOUNDED_DIAGNOSTIC_COMPLETE_NO_RESCORE",
+  "method": "Manual interpretation of preserved outputs; deterministic joins, exact quote containment and delivery checks only",
+  "inputs": [
+    {
+      "path": "experiments/runs/generation_preservation_v1_20260909/requests.jsonl",
+      "sha256": "137897275ce8e924a7b85f7853e41c8690964a0c3c9e5b45af25387edb59ef04"
+    },
+    {
+      "path": "experiments/runs/generation_preservation_v1_20260909/raw_responses.jsonl",
+      "sha256": "1ebdacbe5c118d934a73a55382f7bec9c6c63068b6a4a0b6bb04af2fea3f62a6"
+    },
+    {
+      "path": "outputs/review/generation_preservation_v1_20260909/reviewer/packets_18.jsonl",
+      "sha256": "cc6dc286ea9297f736e4301a876cc8c633e330c10cd064be962c5f4525d34d23"
+    },
+    {
+      "path": "outputs/review/generation_preservation_v1_20260909/coordinator/keys_18.jsonl",
+      "sha256": "1cc9e8db7283a42eba8b13b7e53e09b9cfac0ed4597d1fbc9071f9637780b1ae"
+    },
+    {
+      "path": "outputs/review/generation_preservation_v1_20260909/root_review/judgments_18.jsonl",
+      "sha256": "80829c97eee6fecfe20f36e1ea861c5c92571dc56b67f1833c6a876f7b867d54"
+    },
+    {
+      "path": "outputs/review/generation_preservation_v1_20260909/fresh_review/judgments_18.jsonl",
+      "sha256": "8cda241f08669b4abd9e0d1ffb0fd93a48d30f56ef3f279d6a60d2373666c251"
+    },
+    {
+      "path": "outputs/review/generation_preservation_v1_20260909/analysis/progression_gate.json",
+      "sha256": "ce8ba1d53bad4259d7aab432f928c82c854778270ef2dbe2700e39a43b422350"
+    },
+    {
+      "path": "experiments/generation_preservation_v1_20260909/modality_instruction.md",
+      "sha256": "6467e648bc50f78bf2b1dfdfcc7d309f883df8746f53e42bfb8934881ab81020"
+    },
+    {
+      "path": "experiments/generation_preservation_v1_20260909/checklist_instruction.md",
+      "sha256": "afcf4eac4f03483e4ee799ec4a085ee0f66ec4e663ca1c4791a8c9da89cb9e07"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "outputs/review/generation_preservation_cause_analysis_20260913/delivery_summary.json",
+      "sha256": "5b12a1275195c50ae0cd78f2cf2c6e32da6783e542337f6ce12d7c7c8e5d3af6"
+    },
+    {
+      "path": "outputs/review/generation_preservation_cause_analysis_20260913/trace_cases_5.jsonl",
+      "sha256": "7fb184ec18784e058ab280bbdb0fcadc5bf43e8db4d33c070ba85c8df3b0a9b6"
+    },
+    {
+      "path": "docs/35_generation_preservation_bounded_cause_analysis_2026-09-13.md",
+      "sha256": "266a2c11be24d68b0e965534c13c5291de1e65b1b41a509194125639adf489a7"
+    }
+  ]
+}

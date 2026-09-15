@@ -1,0 +1,39 @@
+{
+  "experiment": "C1M_MODAL_HINT_MAIN72_V1",
+  "condition": "C1M",
+  "model": "gpt-5.4-mini-2026-03-17",
+  "cases": 72,
+  "max_successful_calls": 72,
+  "request_order_seed": "c1m-main72-v1-20260906",
+  "max_estimated_cost_usd": 0.5,
+  "source_projection_keys": [
+    "source_text_en",
+    "question_ko",
+    "spec_id",
+    "version",
+    "clause_id",
+    "normative_type",
+    "polarity"
+  ],
+  "file_sha256": {
+    "data/main_cases.csv": "46c5ad53d861c2bdf0542acfd74d376baa6e384425f705536034b03cf5d04a3f",
+    "data/main_freeze_manifest.json": "3644a972cfb0d388a17ea88ccb1cc2f1951f5f9ba121cfe0cb22ad88ec10326d",
+    "docs/14_modal_hint_extension_protocol.md": "c40e2ba8bf1d874ba464d11c0ec0917e589f520117b2275f3fa476675a75c53b",
+    "experiments/prompts/c1_v2.md": "f68bc297b94e2990a8a8149b9074b20c0a063848266ca305e30887a6c77647f7",
+    "experiments/response_schema.json": "9218fe5bd783f2f0fc01798334e9bfd69c117f8df854701c5fc34c42efa68c3c",
+    "experiments/c3_lib.mjs": "b9493af34faaa9839bcb0e194501df4ce27741d875a8f22181abddda897c72f2",
+    "experiments/c1m_lib.mjs": "40f35110e899450fad7df65faa75cc5c5da7c7ab5d440b8206d3bb7024d78548",
+    "experiments/test_c1m_contract.mjs": "38c3f4669e878f1b9e468d84717ad3067cd536641b23f21e0ca8c8e123e47ad8",
+    "experiments/run_c1m_extension.mjs": "47f805cd128a042f5dc9f3b9a79b266550f986b4a4550a23261358e1c715f368"
+  },
+  "projection_sha256": "6b22a2676f36765773435bc6ad9c525ceef9e51173a0f78e2321dbea4f8abf6b",
+  "parameters": {
+    "temperature": 0,
+    "reasoning_effort": "none",
+    "max_output_tokens": 600,
+    "store": false
+  },
+  "comparison_run": "main72_v3_2026-09-03T07-35-49-603Z",
+  "review_basis": "C3 fresh provisional pass 1; new C1M meanings not yet evaluated",
+  "frozen_at": "2026-09-06T05:26:29.578Z"
+}

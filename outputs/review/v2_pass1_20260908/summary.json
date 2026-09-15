@@ -1,0 +1,26 @@
+{
+  "status": "PASS1_SEALED_PASS2_PENDING",
+  "reviewer": "Codex (same study evaluator; not independent domain expert)",
+  "slots_reviewed": 255,
+  "references": 51,
+  "conditions_per_reference": 5,
+  "judgment_counts": {
+    "PASS": 169,
+    "FAIL": 78,
+    "NOT_SCORED": 1,
+    "UNRESOLVED": 7
+  },
+  "gold_unresolved_slots": 10,
+  "independent_clear_failures_on_unresolved_gold": 3,
+  "first_review_recorded_at": "2026-09-08T02:33:48.943935+00:00",
+  "last_review_recorded_at": "2026-09-08T02:44:30.217034+00:00",
+  "sealed_at": "2026-09-08T03:31:23.646276+00:00",
+  "pass2_earliest_at": "2026-09-09T03:31:23.646276+00:00",
+  "pass2_earliest_kst": "2026-09-09T12:31:23.646276+09:00",
+  "pass2_completed": 0,
+  "adjudications_completed": 0,
+  "new_model_api_calls": 0,
+  "condition_comparisons_computed": false,
+  "final_research_results": false,
+  "semantic_truth_automatically_verified": false
+}

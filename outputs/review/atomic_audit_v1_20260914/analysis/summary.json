@@ -1,0 +1,13 @@
+{
+  "status": "AUDIT_VALIDATION_COMPLETE",
+  "candidate_status": "IMPROVEMENT_NOT_CONFIRMED",
+  "candidate_checks": {
+    "more_defects_detected": false,
+    "no_increase_false_alarms": true,
+    "no_increase_erroneous_advice_cases": true
+  },
+  "prior_hold_unchanged": true,
+  "new_final_explanations": 0,
+  "independent_review": false,
+  "semantic_scores_automatically_inferred": false
+}

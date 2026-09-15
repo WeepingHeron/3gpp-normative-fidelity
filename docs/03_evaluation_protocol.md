@@ -13,7 +13,7 @@
 
 ### 2.1 Modal Class Accuracy
 
-모델 응답이 원문의 카테고리를 정확히 보존했는지 평가한다.
+**2026-09-06 정정:** 동결 main의 `modal_correct` 구현은 JSON `normative_type` 일치율이다. 결과표에서는 `JSON modal label accuracy`로 표기한다. 아래 한국어 표현 규칙은 의미 검토 지침이며, 이 지표가 한국어 설명 자체를 자동 채점한다는 뜻이 아니다. 설명의 완전 보존은 별도 의미 판정이다. 상세 내용은 `09_reporting_errata_2026-09-06.md`를 따른다.
 
 - `shall`: 반드시, ~해야 한다
 - `shall_not`: ~해서는 안 된다, 금지된다

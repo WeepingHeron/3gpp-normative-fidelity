@@ -1,0 +1,22 @@
+{
+  "reviewer": "root AI",
+  "review_count": 24,
+  "completed_at": "2026-09-09T06:18:31.155234+00:00",
+  "timing_note": "Timestamp is final recording after individual reading and manual decisions, not per-row reading duration.",
+  "other_reviewer_judgments_read_before_completion": false,
+  "known_design_and_prior_study": true,
+  "human_expert_validation": false,
+  "method": "Each coverage and claim/metadata judgment was manually authored; code combines authored items by the frozen outcome rule and verifies serialization.",
+  "input_file_sha256": {
+    "outputs/review/context_microstudy_v1_20260909/reviewer/packets_24.jsonl": "c8a781933c9e9bc3170a70d0469e5ea777695496d0378ed05da5335350727335",
+    "outputs/review/context_microstudy_v1_20260909/reviewer/REVIEW_GUIDE.md": "7d791c82ef40d0d303c06038b9560f7bf91246fc57edfe294428fd02b34821ab",
+    "experiments/context_microstudy_v1_20260909/protocol.json": "0f1d759430202a0dcf0b6f015bbf2b45c593c88d988c9961e2856b6cdb79ae0b",
+    "experiments/context_microstudy_v1_20260909/cases.json": "ad9922f924141cb0b8a5b5f2931ca3b42ae77052513d37e6ee7ffe20f64e623e",
+    "outputs/review/context_microstudy_preflight_20260909/review.json": "365ec3b9c215cd1b217b4c87bcd4388370f3f7a8e79692140c9d53c83439754f"
+  },
+  "file_sha256": {
+    "judgments_24.jsonl": "7417cf584e040cc8906c2e2f31f4fd432901671619249fb77d05c87bd114a446"
+  },
+  "authored_decision_source": "tools/record_context_microstudy_root_review_20260909.py",
+  "authored_decision_source_sha256": "ae1909eb529a5df8b34987f5674d08e66af41caad9b2ef9a142a74d18d9781e6"
+}

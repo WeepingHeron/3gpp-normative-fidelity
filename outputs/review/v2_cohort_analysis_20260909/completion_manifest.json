@@ -1,0 +1,25 @@
+{
+  "status": "COHORT_BOUNDS_COMPLETE_INFERENCE_DEFERRED",
+  "completed_at": "2026-09-09T05:19:38.682867+00:00",
+  "file_sha256": {
+    "bound_slots_255.jsonl": "016399e9eb2f8810e4759af45fc6e6480115afe5ca9fef0dcb48e870505af839",
+    "condition_results.csv": "a64d10678648afb6f0ff0f475a1eab651aeb2f50c4f960e97b7c0ce7925c36b6",
+    "condition_results.jsonl": "7eb511276788ddd0fd090f6086303ba0302a3736ea6674165e221027665a6008",
+    "paired_cases.jsonl": "09631443cbc8c0193a160dc2d5abea095edb31581c88ee0c6ba043718006509d",
+    "paired_results.csv": "d4094f7757531e0d16e4622a81f517de4a9577daff2d3461b39bc0bf29fc4246",
+    "paired_results.jsonl": "09cf94c030827a7b662fd5c9857610188b3ec75dbec182c982f69053be89dc55",
+    "sensitivity_added_cases.jsonl": "c5ee48fd11d3039f356b06ba61c0d38915e67a8fdd175d198476775309223285",
+    "summary.json": "32f68633ee1dd727dbcc5727d01b3dc8af9366148d05cfebb63e9d0f45731d03",
+    "validation_report.json": "13f6de9eaf396e91e70ac4855edcf6188756d59a658af8961787cbede07c55a8"
+  },
+  "support_file_sha256": {
+    "docs/28_v2_cohort_results_2026-09-09.md": "13754029e5a17df2525a3928e5f17ebbf020fc0b520ccad14699cbae836bd5e6",
+    "tools/summarize_v2_cohorts_20260909.py": "7c9c2632349790b7898ae7e54bde3ea4f1c63671b5fae8f404ad012ae394469e"
+  },
+  "input_file_sha256": {
+    "experiments/posthoc_treatment_v1_20260908/protocol.json": "f68dc83a1e351fd5925e58a4e6db7a20823f0e89c7c0bf08af2528e33920acd9",
+    "outputs/review/v2_adjudication_20260909/completion_manifest.json": "2de88706fbe3a4e3f3474f3c606f82b1a5fd82a2f5d54d381463f6c924587777",
+    "outputs/review/v2_adjudication_20260909/adjudicated_view_255.jsonl": "6d9c8e76129d2806da4f02a2743c0e3d55de4114c593fee274249bbf7ca71796",
+    "outputs/review/v2_20260908/coordinator/keys.json": "e52678ee55b0296a88e29a0eb97d87b4e63283973b5a95ff5c8cd4fc344308fa"
+  }
+}

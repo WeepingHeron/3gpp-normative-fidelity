@@ -1,0 +1,32 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {parseCsv,projectCase,extractionInput,generationInput,responseObject,extractionUsable,reserveCost} from './c3_lib.mjs';
+const exSchema=JSON.parse(fs.readFileSync(new URL('./c3_extraction_schema.json',import.meta.url)));
+const genSchema=JSON.parse(fs.readFileSync(new URL('./response_schema.json',import.meta.url)));
+const et=fs.readFileSync(new URL('./prompts/c3_extract_v1.md',import.meta.url),'utf8');
+const gt=fs.readFileSync(new URL('./prompts/c2_v2.md',import.meta.url),'utf8');
+const rows=parseCsv(fs.readFileSync(new URL('../data/main_cases.csv',import.meta.url),'utf8'));
+const fake={actor:'UE',condition:'if connected',normative_type:'obligation',polarity:'positive',action:'send message',exception:''};
+for(const row of rows){
+  const mutated={...row};
+  for(const k of ['case_id','candidate_id','modal_class','polarity','actor','condition','action','exception','gold_summary_ko','difficulty_tier'])mutated[k]='FORBIDDEN_GOLD_SENTINEL';
+  assert.deepEqual(projectCase(row),projectCase(mutated));
+  assert.equal(extractionInput(et,projectCase(row)),extractionInput(et,projectCase(mutated)));
+  assert.equal(generationInput(gt,projectCase(row),fake),generationInput(gt,projectCase(mutated),fake));
+  assert(!extractionInput(et,projectCase(mutated)).includes('FORBIDDEN_GOLD_SENTINEL'));
+  assert(!generationInput(gt,projectCase(mutated),fake).includes('FORBIDDEN_GOLD_SENTINEL'));
+}
+const response=(value,status='completed')=>({status,output:[{type:'message',content:[{type:'output_text',text:JSON.stringify(value)}]}]});
+assert.deepEqual(responseObject(response(fake),exSchema),fake);
+assert.equal(responseObject(response(fake,'incomplete'),exSchema),null);
+assert.equal(responseObject(response({...fake,unexpected:'x'}),exSchema),null);
+assert.equal(responseObject({status:'completed',output:[{type:'message',content:[{type:'refusal',refusal:'no'}]}]},exSchema),null);
+assert(extractionUsable(fake,exSchema));
+assert(!extractionUsable({...fake,normative_type:'unclear',polarity:'unclear'},exSchema));
+assert(!extractionUsable({...fake,actor:''},exSchema));
+assert(!extractionUsable({...fake,polarity:'negative'},exSchema));
+const trap={...fake,actor:'{{gold_summary_ko}}'};
+assert(generationInput(gt,projectCase(rows[0]),trap).includes('{{gold_summary_ko}}'));
+assert(reserveCost('abc',genSchema,600)>reserveCost('abc',genSchema,300));
+assert.deepEqual(parseCsv('a,b\r\n"one, two","line\nnext"\r\n'),[{a:'one, two',b:'line\nnext'}]);
+console.log('PASS 72-case gold mutation isolation; completed/schema/refusal checks; unclear/missing/scope gate; CSV and budget checks');

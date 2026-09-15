@@ -1,0 +1,30 @@
+[
+  {
+    "arm": "A2_FRESH",
+    "n": 6,
+    "complete": 0,
+    "incomplete": 4,
+    "unresolved": 2,
+    "complete_bounds": [
+      0,
+      2
+    ],
+    "distorted": 0,
+    "not_distorted": 4,
+    "claim_unresolved": 2
+  },
+  {
+    "arm": "P1_EXTRACT_COMPOSE",
+    "n": 6,
+    "complete": 1,
+    "incomplete": 4,
+    "unresolved": 1,
+    "complete_bounds": [
+      1,
+      2
+    ],
+    "distorted": 3,
+    "not_distorted": 2,
+    "claim_unresolved": 1
+  }
+]

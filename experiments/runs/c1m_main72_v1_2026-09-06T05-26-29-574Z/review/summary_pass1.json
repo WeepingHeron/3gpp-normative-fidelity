@@ -1,0 +1,212 @@
+{
+  "status": "PROVISIONAL_CODEX_C1M_PASS1_NOT_INDEPENDENT_EXPERT_VALIDATION",
+  "created_at": "2026-09-07T05:57:45.628981+00:00",
+  "conditions": {
+    "C1": {
+      "n": 72,
+      "complete": 61,
+      "complete_pct": 84.72222222222223,
+      "wilson_95ci_pct": [
+        74.67771063249945,
+        91.2492912705243
+      ],
+      "unsupported_additions": 9,
+      "components": {
+        "actor_preserved": {
+          "success": 71,
+          "denominator": 72
+        },
+        "polarity_preserved": {
+          "success": 62,
+          "denominator": 72
+        },
+        "condition_preserved": {
+          "success": 63,
+          "denominator": 63
+        },
+        "action_preserved": {
+          "success": 71,
+          "denominator": 72
+        },
+        "exception_preserved": {
+          "success": 25,
+          "denominator": 26
+        }
+      },
+      "failed_case_ids": [
+        "MAIN-CAN-007",
+        "MAIN-CAN-009",
+        "MAIN-CAN-011",
+        "MAIN-MAY-001",
+        "MAIN-SD-002",
+        "MAIN-SD-009",
+        "MAIN-SDN-003",
+        "MAIN-SDN-005",
+        "MAIN-SDN-007",
+        "MAIN-SDN-009",
+        "MAIN-SDN-010"
+      ]
+    },
+    "C2": {
+      "n": 72,
+      "complete": 71,
+      "complete_pct": 98.61111111111111,
+      "wilson_95ci_pct": [
+        92.54339785252385,
+        99.75440481170943
+      ],
+      "unsupported_additions": 0,
+      "components": {
+        "actor_preserved": {
+          "success": 72,
+          "denominator": 72
+        },
+        "polarity_preserved": {
+          "success": 72,
+          "denominator": 72
+        },
+        "condition_preserved": {
+          "success": 63,
+          "denominator": 63
+        },
+        "action_preserved": {
+          "success": 71,
+          "denominator": 72
+        },
+        "exception_preserved": {
+          "success": 25,
+          "denominator": 26
+        }
+      },
+      "failed_case_ids": [
+        "MAIN-SDN-010"
+      ]
+    },
+    "C1M": {
+      "n": 72,
+      "complete": 68,
+      "complete_pct": 94.44444444444444,
+      "wilson_95ci_pct": [
+        86.56798403400208,
+        97.81857840186834
+      ],
+      "unsupported_additions": 3,
+      "components": {
+        "actor_preserved": {
+          "success": 70,
+          "denominator": 72
+        },
+        "polarity_preserved": {
+          "success": 70,
+          "denominator": 72
+        },
+        "condition_preserved": {
+          "success": 62,
+          "denominator": 63
+        },
+        "action_preserved": {
+          "success": 70,
+          "denominator": 72
+        },
+        "exception_preserved": {
+          "success": 23,
+          "denominator": 26
+        }
+      },
+      "failed_case_ids": [
+        "MAIN-CAN-004",
+        "MAIN-MAY-011",
+        "MAIN-SD-002",
+        "MAIN-SD-009"
+      ]
+    }
+  },
+  "C1_C2_differences_from_C3_delayed_adjudication": [],
+  "primary_C1_C1M_all72": {
+    "first": "C1",
+    "second": "C1M",
+    "n": 72,
+    "first_successes": 61,
+    "second_successes": 68,
+    "second_minus_first_pp": 9.722222222222221,
+    "paired_bootstrap_95ci_pp": [
+      1.3888888888888888,
+      18.055555555555557
+    ],
+    "first_only": 2,
+    "second_only": 9,
+    "exact_McNemar_two_sided_p": 0.0654296875
+  },
+  "primary_C1_C1M_excluding_original3": {
+    "first": "C1",
+    "second": "C1M",
+    "n": 69,
+    "first_successes": 59,
+    "second_successes": 67,
+    "second_minus_first_pp": 11.594202898550725,
+    "paired_bootstrap_95ci_pp": [
+      2.898550724637681,
+      20.28985507246377
+    ],
+    "first_only": 1,
+    "second_only": 9,
+    "exact_McNemar_two_sided_p": 0.021484375
+  },
+  "secondary_C1M_C2_all72": {
+    "first": "C1M",
+    "second": "C2",
+    "n": 72,
+    "first_successes": 68,
+    "second_successes": 71,
+    "second_minus_first_pp": 4.166666666666667,
+    "paired_bootstrap_95ci_pp": [
+      -1.3888888888888888,
+      11.11111111111111
+    ],
+    "first_only": 1,
+    "second_only": 4,
+    "exact_McNemar_two_sided_p": 0.375
+  },
+  "secondary_C1M_C2_excluding_original3": {
+    "first": "C1M",
+    "second": "C2",
+    "n": 69,
+    "first_successes": 67,
+    "second_successes": 68,
+    "second_minus_first_pp": 1.4492753623188406,
+    "paired_bootstrap_95ci_pp": [
+      -2.898550724637681,
+      7.246376811594203
+    ],
+    "first_only": 1,
+    "second_only": 2,
+    "exact_McNemar_two_sided_p": 1.0
+  },
+  "post_hoc_cluster_sensitivity": {
+    "C1M-C1": {
+      "clusters": 44,
+      "iterations": 20000,
+      "seed": 2026090602,
+      "cluster_bootstrap_95ci_pp": [
+        1.3157894736842106,
+        19.402985074626866
+      ]
+    },
+    "C2-C1M": {
+      "clusters": 44,
+      "iterations": 20000,
+      "seed": 2026090602,
+      "cluster_bootstrap_95ci_pp": [
+        -1.5151515151515151,
+        10.447761194029852
+      ]
+    }
+  },
+  "caveats": [
+    "C1M first review only; delayed review remains. C1/C2 were recently reviewed by the same Codex.",
+    "C1M is an oracle modal/polarity hint, not automatic extraction or new-clause generalization.",
+    "C1/C2 generated September 3; C1M September 6. Same model/settings do not remove all time/order effects.",
+    "C2 and C1M differ in original instructions as well as other structured fields; no pure field-level causal claim.",
+    "Non-significance is not proof of equivalence. Original-three exclusion cannot replace the full 72-case analysis."
+  ]
+}

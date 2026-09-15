@@ -1,0 +1,100 @@
+{
+  "experiment_id": "GENERATION_PRESERVATION_V1_20260909",
+  "status": "DRAFT_READY_FOR_REVIEW",
+  "prepared_date": "2026-09-09",
+  "scope": "Plan and offline request preparation only; no generation authorized by this artifact",
+  "research_question": "With identical FULL source context, do explicit modality-preservation instructions and an additional proposition self-check instruction improve explanation completeness?",
+  "source_experiment": "experiments/context_microstudy_v1_20260909",
+  "source_input_manifest_sha256": "5cf197871d852f6300e1bda00291afeb0da806261a815960445ea47810e36e64",
+  "case_ids": [
+    "CTX-001",
+    "CTX-002",
+    "CTX-003"
+  ],
+  "arms": [
+    "A0_BASE",
+    "A1_MODAL",
+    "A2_MODAL_CHECK"
+  ],
+  "arm_definition": {
+    "A0_BASE": "Exact prior FULL/NONE request, generated anew",
+    "A1_MODAL": "A0 input plus modality_instruction.md appended",
+    "A2_MODAL_CHECK": "A1 input plus checklist_instruction.md appended"
+  },
+  "context_level": "FULL",
+  "case_specific_gold_hint": false,
+  "replicates": [
+    1,
+    2
+  ],
+  "planned_calls": 18,
+  "primary_contrast": [
+    "A2_MODAL_CHECK",
+    "A0_BASE"
+  ],
+  "secondary_contrasts": [
+    [
+      "A1_MODAL",
+      "A0_BASE"
+    ],
+    [
+      "A2_MODAL_CHECK",
+      "A1_MODAL"
+    ]
+  ],
+  "model": "gpt-5.4-mini-2026-03-17",
+  "parameters": {
+    "temperature": 0,
+    "reasoning_effort": "none",
+    "max_output_tokens": 900,
+    "store": false
+  },
+  "output_policy": "Identical prior JSON schema and explanation_ko 2-4 sentences in all arms; no observable checklist field, extra model call, retrieval, external tool or post-generation repair",
+  "execution_order_seed": "generation-preservation-v1-20260909",
+  "execution_order": "Sort slots by SHA256(seed + slot_id); sequential fresh requests without conversation state",
+  "replicate_interpretation": "Two identical-input calls per case/arm; pairing uses case and replicate index, not a shared model random seed; three source cases, not six independent cases",
+  "pricing_usd_per_million": {
+    "input": 0.75,
+    "cached_input": 0.075,
+    "output": 4.5
+  },
+  "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+  "pricing_checked_date": "2026-09-09",
+  "generation_cost_cap_usd": 0.5,
+  "reservation_method": "For each request: (UTF8 input bytes + compact JSON schema bytes + 2048 overhead allowance) * input unit price + max_output_tokens * output unit price. Planning allowance, not a provider-enforced billing cap; no cache discount assumed.",
+  "retry_policy": "No automatic retry or selective regeneration. Stop on uncertain transport, HTTP error, missing/invalid usage or model mismatch. Preserve attempted and unattempted slots and any unknown cost.",
+  "delivery_policy": "Empty/refused/truncated/schema-invalid completed response is task-completeness 0 with distinct delivery status. Unattempted/uncertain-transport slots are NOT_OBSERVED; interrupted run cannot pass the progression gate. Non-delivery claims are NOT_ASSESSABLE, not a zero-distortion success.",
+  "semantic_evaluation": "Copy the prior frozen assessment surface, compound requirement and ambiguity rules. Evaluate explanation_ko against the same nine requirements across three cases; metadata/citation diagnostics separate. Preserve null and full quotations/rationales.",
+  "review_plan": "Two AI reviewers in separate contexts, each scoring all 18 anonymized responses without arm labels, prompts, old scores, other judgments or aggregate results. Seal each set before comparison. Source + question + requirements + output supplied. Imperfect blinding; no human expert or statistical independence claim.",
+  "inference_policy": "Descriptive counts, unresolved bounds and case/replicate transitions only; no p-values, confidence intervals or generalization claims. Two reviewer records of one response are not two generated samples.",
+  "progression_gate": {
+    "scope": "Conservative engineering screen for proceeding to an unseen-clause extension; not statistical evidence",
+    "all_required": [
+      "All 18 slots have usable explanations; both review sets are sealed; source bindings and output accounting pass",
+      "For each reviewer, confirmed complete count A2 exceeds confirmed complete plus unresolved count A0",
+      "For each reviewer, confirmed distorted plus unresolved-claim count A2 does not exceed confirmed distorted count A0",
+      "For each reviewer, no paired A0 completeness=1 becomes A2 completeness=0 or null",
+      "For each reviewer, at least one paired 0-to-1 gain occurs in STORAGE_RECOMMENDATION or LOCATION_UNLESS_RECOMMENDATION, and at least one in EMERGENCY_EXCEPTION or ECALL_EXCEPTION"
+    ],
+    "pass": "READY_FOR_UNSEEN_CLAUSE_PLAN; requires separate clause selection, source review and freeze before any extension calls",
+    "otherwise": "HOLD_FOR_METHOD_REVISION; report all arms and disagreements, do not select A1 as an unregistered winner or tune/retry within v1"
+  },
+  "stage_2": {
+    "status": "CONDITIONAL_DESIGN_NOT_READY_TO_RUN",
+    "candidate_target": "12 new non-overlapping clauses, 6 modality strata with 2 clauses each; each includes an explicit condition/exception or scoped capability proposition",
+    "strata": [
+      "shall",
+      "shall not",
+      "should",
+      "should not",
+      "may",
+      "can"
+    ],
+    "design": "12 clauses x same 3 frozen arms x 2 repeats = 72 calls; separate cohort",
+    "selection": "After method freeze, inventory sources without model generations; exclude prior 72 cases, all development cases, shared normative paragraph/context spans, and manually identified semantic duplicates. Log all candidates and exclusions. Seeded hash selection within strata; no replacement after observing outputs.",
+    "proposed_seed": "generation-preservation-unseen-v1",
+    "budget": "Not included in the $0.50 development cap; estimate and freeze a separate budget after source selection",
+    "insufficient_candidates": "HOLD and amend source selection before generation; do not relax novelty/overlap rules silently",
+    "limits": "Held out from this project's prompt development only, not model pretraining. Twelve purposively constrained clauses are not a representative 3GPP benchmark. Source IDs, requirements and budget remain unfrozen."
+  }
+}

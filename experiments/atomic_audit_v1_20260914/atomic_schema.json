@@ -1,0 +1,70 @@
+{
+  "type": "object",
+  "properties": {
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "check_id": {
+            "type": "string"
+          },
+          "proposition_id": {
+            "type": "string"
+          },
+          "dimension": {
+            "type": "string",
+            "enum": [
+              "MODALITY",
+              "ACTOR_ACTION",
+              "SCOPE_CONDITION",
+              "EXCEPTION",
+              "FOLLOWUP"
+            ]
+          },
+          "source_support": {
+            "type": "string",
+            "enum": [
+              "SUPPORTED",
+              "CONFLICT",
+              "UNRESOLVED"
+            ]
+          },
+          "explanation_status": {
+            "type": "string",
+            "enum": [
+              "PRESERVED",
+              "OMITTED",
+              "DISTORTED",
+              "UNRESOLVED"
+            ]
+          },
+          "source_quote": {
+            "type": "string"
+          },
+          "explanation_quote": {
+            "type": "string"
+          },
+          "required_change": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "check_id",
+          "proposition_id",
+          "dimension",
+          "source_support",
+          "explanation_status",
+          "source_quote",
+          "explanation_quote",
+          "required_change"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "checks"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,6 @@
+{"reviewer_set": "root_review", "arm": "A0_BASE", "n": 6, "complete": 1, "incomplete": 4, "unresolved": 1, "distorted": 3, "no_distortion": 2, "claim_unresolved": 1}
+{"reviewer_set": "root_review", "arm": "A1_MODAL", "n": 6, "complete": 2, "incomplete": 4, "unresolved": 0, "distorted": 2, "no_distortion": 4, "claim_unresolved": 0}
+{"reviewer_set": "root_review", "arm": "A2_MODAL_CHECK", "n": 6, "complete": 2, "incomplete": 4, "unresolved": 0, "distorted": 2, "no_distortion": 4, "claim_unresolved": 0}
+{"reviewer_set": "fresh_review", "arm": "A0_BASE", "n": 6, "complete": 0, "incomplete": 5, "unresolved": 1, "distorted": 4, "no_distortion": 1, "claim_unresolved": 1}
+{"reviewer_set": "fresh_review", "arm": "A1_MODAL", "n": 6, "complete": 2, "incomplete": 3, "unresolved": 1, "distorted": 0, "no_distortion": 3, "claim_unresolved": 3}
+{"reviewer_set": "fresh_review", "arm": "A2_MODAL_CHECK", "n": 6, "complete": 2, "incomplete": 4, "unresolved": 0, "distorted": 0, "no_distortion": 6, "claim_unresolved": 0}

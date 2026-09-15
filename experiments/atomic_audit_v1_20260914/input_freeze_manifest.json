@@ -1,0 +1,21 @@
+{
+  "status": "FROZEN_BEFORE_GENERATION",
+  "planned_calls": 12,
+  "frozen_at": "2026-09-13T16:14:02.364292+00:00",
+  "file_sha256": {
+    "experiments/atomic_audit_v1_20260914/atomic_instruction.md": "50922077aeb3aa129c2ba1c03f9d4a6e6cd97b068740c238dcbdac0a6633399b",
+    "experiments/atomic_audit_v1_20260914/request_plan.jsonl": "8c41c4afb6c69252e5144c1ea72603147430f7e2dc6bb9ad45c2863e2a3bff3c",
+    "experiments/atomic_audit_v1_20260914/generator_inputs.json": "1d135cbd2d553d9c7f7dae304b77fd1aa25f6cf247c2d141239cf59c4b6ecc18",
+    "experiments/atomic_audit_v1_20260914/atomic_schema.json": "91905c8a602d3f7a7987b3f7a6efc61da8411d17737ff44835a37616cfcdaf4c",
+    "experiments/atomic_audit_v1_20260914/evaluation_reference.json": "787c3877312ac3048bab8af8d8593ea4410663facb29650483b6502c740cf8b5",
+    "experiments/atomic_audit_v1_20260914/seeds_6.json": "2063caa4552fc4212400f29dee0f3f46674755953141b4bf7c58cacce7e03dac",
+    "experiments/atomic_audit_v1_20260914/protocol.json": "dc2cde3f615b8171aa6e049e87a543d5c8a19616a8afe7058f0ec3756047c01a",
+    "experiments/atomic_audit_v1_20260914/validation_report.json": "024e3c4036c5d0c7d0e80c487e90784633d71cb1e8e353287a9592797f5d7f5c",
+    "tools/prepare_atomic_audit_20260914.py": "68b6000b629f727a0ac49742cc8636e68c5157a53ec00210bc3cbb9123703362",
+    "experiments/run_atomic_audit_20260914.mjs": "9b288089690ef12541c7e71c1c65a72c09f45f2e4fc1510eaa6e4f48a382356f",
+    "experiments/run_preservation_repair_20260914.mjs": "c50b0b097ed20be3ac24f8cdbb8684e6d0c6a9a090b1c251196b8886f1f40dc4",
+    "experiments/run_generation_preservation_20260909.mjs": "9a2d99897982f81327cf8c35df65821d822cdf863ebaf0410ed1e65964fec1da",
+    "experiments/test_atomic_audit_20260914.mjs": "fb5dc9ee48448f57f9db3dc16b9eb59c7a29730d61f1b4a4701a35180f27f4eb",
+    "docs/40_atomic_audit_plan_2026-09-14.md": "7e84477137879a6194761f09a2c1e2230dab833ca708eb7aca9b89e7358de622"
+  }
+}

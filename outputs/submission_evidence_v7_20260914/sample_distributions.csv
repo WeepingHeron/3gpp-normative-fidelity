@@ -1,0 +1,56 @@
+﻿cohort,dimension,value,count,N
+ORIGINAL_72,spec_id,3GPP TS 23.501,36,72
+ORIGINAL_72,spec_id,3GPP TS 24.501,36,72
+ORIGINAL_72,modal_class,can,12,72
+ORIGINAL_72,modal_class,may,12,72
+ORIGINAL_72,modal_class,shall,12,72
+ORIGINAL_72,modal_class,shall_not,12,72
+ORIGINAL_72,modal_class,should,12,72
+ORIGINAL_72,modal_class,should_not,12,72
+ORIGINAL_72,difficulty_tier,compound,42,72
+ORIGINAL_72,difficulty_tier,conditional,22,72
+ORIGINAL_72,difficulty_tier,simple,8,72
+PRIMARY_STRICT_49,spec_id,3GPP TS 23.501,23,49
+PRIMARY_STRICT_49,spec_id,3GPP TS 24.501,26,49
+PRIMARY_STRICT_49,modal_class,can,9,49
+PRIMARY_STRICT_49,modal_class,may,9,49
+PRIMARY_STRICT_49,modal_class,shall,8,49
+PRIMARY_STRICT_49,modal_class,shall_not,9,49
+PRIMARY_STRICT_49,modal_class,should,8,49
+PRIMARY_STRICT_49,modal_class,should_not,6,49
+PRIMARY_STRICT_49,difficulty_tier,compound,28,49
+PRIMARY_STRICT_49,difficulty_tier,conditional,15,49
+PRIMARY_STRICT_49,difficulty_tier,simple,6,49
+SENS_GOLD_50,spec_id,3GPP TS 23.501,24,50
+SENS_GOLD_50,spec_id,3GPP TS 24.501,26,50
+SENS_GOLD_50,modal_class,can,9,50
+SENS_GOLD_50,modal_class,may,10,50
+SENS_GOLD_50,modal_class,shall,8,50
+SENS_GOLD_50,modal_class,shall_not,9,50
+SENS_GOLD_50,modal_class,should,8,50
+SENS_GOLD_50,modal_class,should_not,6,50
+SENS_GOLD_50,difficulty_tier,compound,28,50
+SENS_GOLD_50,difficulty_tier,conditional,15,50
+SENS_GOLD_50,difficulty_tier,simple,7,50
+SENS_EXCEPTION_50,spec_id,3GPP TS 23.501,23,50
+SENS_EXCEPTION_50,spec_id,3GPP TS 24.501,27,50
+SENS_EXCEPTION_50,modal_class,can,9,50
+SENS_EXCEPTION_50,modal_class,may,9,50
+SENS_EXCEPTION_50,modal_class,shall,8,50
+SENS_EXCEPTION_50,modal_class,shall_not,9,50
+SENS_EXCEPTION_50,modal_class,should,8,50
+SENS_EXCEPTION_50,modal_class,should_not,7,50
+SENS_EXCEPTION_50,difficulty_tier,compound,29,50
+SENS_EXCEPTION_50,difficulty_tier,conditional,15,50
+SENS_EXCEPTION_50,difficulty_tier,simple,6,50
+SENS_GOLD_EXCEPTION_51,spec_id,3GPP TS 23.501,24,51
+SENS_GOLD_EXCEPTION_51,spec_id,3GPP TS 24.501,27,51
+SENS_GOLD_EXCEPTION_51,modal_class,can,9,51
+SENS_GOLD_EXCEPTION_51,modal_class,may,10,51
+SENS_GOLD_EXCEPTION_51,modal_class,shall,8,51
+SENS_GOLD_EXCEPTION_51,modal_class,shall_not,9,51
+SENS_GOLD_EXCEPTION_51,modal_class,should,8,51
+SENS_GOLD_EXCEPTION_51,modal_class,should_not,7,51
+SENS_GOLD_EXCEPTION_51,difficulty_tier,compound,29,51
+SENS_GOLD_EXCEPTION_51,difficulty_tier,conditional,15,51
+SENS_GOLD_EXCEPTION_51,difficulty_tier,simple,7,51

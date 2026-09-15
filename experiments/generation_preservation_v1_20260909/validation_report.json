@@ -1,0 +1,73 @@
+{
+  "status": "OFFLINE_INPUTS_VALIDATED_NO_GENERATION",
+  "planned_calls": 18,
+  "source_cases": 3,
+  "calls_per_arm": 6,
+  "live_api_calls": 0,
+  "requirements_per_reviewer": 54,
+  "reviewers_planned": 2,
+  "baseline_exact_prior_FULL_NONE": true,
+  "only_instruction_suffix_changes": true,
+  "evaluator_field_perturbation_check": "PASS",
+  "source_hash_and_quote_checks": "PASS",
+  "same_parameters_schema_and_replicate_inputs": true,
+  "total_planning_reservation_usd": 0.1630125,
+  "generation_cost_cap_usd": 0.5,
+  "estimated_reservation_by_arm_usd": {
+    "A0_BASE": 0.0498435,
+    "A1_MODAL": 0.0541545,
+    "A2_MODAL_CHECK": 0.0590145
+  },
+  "input_utf8_bytes_by_case_arm": [
+    {
+      "case_id": "CTX-003",
+      "arm": "A1_MODAL",
+      "bytes": 4362
+    },
+    {
+      "case_id": "CTX-001",
+      "arm": "A2_MODAL_CHECK",
+      "bytes": 4147
+    },
+    {
+      "case_id": "CTX-003",
+      "arm": "A0_BASE",
+      "bytes": 3404
+    },
+    {
+      "case_id": "CTX-002",
+      "arm": "A1_MODAL",
+      "bytes": 4536
+    },
+    {
+      "case_id": "CTX-001",
+      "arm": "A1_MODAL",
+      "bytes": 3067
+    },
+    {
+      "case_id": "CTX-003",
+      "arm": "A2_MODAL_CHECK",
+      "bytes": 5442
+    },
+    {
+      "case_id": "CTX-002",
+      "arm": "A2_MODAL_CHECK",
+      "bytes": 5616
+    },
+    {
+      "case_id": "CTX-001",
+      "arm": "A0_BASE",
+      "bytes": 2109
+    },
+    {
+      "case_id": "CTX-002",
+      "arm": "A0_BASE",
+      "bytes": 3578
+    }
+  ],
+  "limits": [
+    "No model response or semantic effectiveness validated",
+    "Design review is by the coordinator AI, not a separate reviewer",
+    "Consult input_freeze_manifest.json for execution freeze status"
+  ]
+}

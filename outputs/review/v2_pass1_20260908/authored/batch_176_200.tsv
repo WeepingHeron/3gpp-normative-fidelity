@@ -1,0 +1,26 @@
+review_id	semantic_judgment	reason_codes	rationale	response_evidence
+V2-P1-176	FAIL	ADVERTISED_OBJECT_OMISSION	광고할 수 있다는 선택성은 있지만 지원 여부라는 일반 정보만 남기고 지원 PLMN/SNPN의 집합 및 trusted connectivity 유형이라는 두 광고 대상을 누락했다.	trusted connectivity를 지원하는지 여부
+V2-P1-177	PASS	PRESERVED|R4	동일 K_AMF 조건, target AMF, 지정 container의 NAS COUNT 하위 8비트 및 새 K_AMF 유도 금지 표시를 모두 유지한다. 참조 절을 예외로 만들지 않는다.	새 KAMF를 유도해서는 안 된다고 표시해야 한다.
+V2-P1-178	PASS	PRESERVED	두 timer 값을 unavailability 기간의 지속 시간과 시작 시점에 근거하여 설정하는 권고를 보존한다.	지속 시간과 시작 시점을 기준으로
+V2-P1-179	FAIL	MODAL_STRENGTHENING|UNSUPPORTED_OPTIMIZATION	all-PLMN 영역을 배정하지 않는 권고를 가능한 한 제한적인 영역을 설정하고 더 작은 범위에서만 paging해야 한다는 의무로 강화·변경한다.	가능한 한 제한적으로 설정하여
+V2-P1-180	PASS	PRESERVED	session establishment 중 특정 session의 N6 network instance를 SMF가 UPF에 표시할 허용을 유지한다.	의무가 아니라 허용 사항이다.
+V2-P1-181	UNRESOLVED	GOLD_SCOPE_UNRESOLVED	ME의 비휘발성 저장 권고와 Annex C 방식 종속성을 보존한다. 참조 예외 설명의 충분성은 미확정이므로 단일 성공 판정을 강제하지 않는다. 별도의 명백한 오류는 없다.	부록 C에 명시된 방식에 따라
+V2-P1-182	FAIL	ACTION_REPLACEMENT|MODAL_STRENGTHENING	all-PLMN 표시 자체를 피하라는 권고를 모든 PLMN에 동일하게 적용하는 값으로 취급해야 한다는 다른 요구로 바꾼다.	모든 PLMN에 대해 동일하게 적용되는 값으로 취급되어야 한다.
+V2-P1-183	FAIL	ACTUAL_PRECONDITION_LOSS|R2	context 설정의 기술적 가능성이 있어야 한다고만 설명하며 실제 AMF·UE의 context 수립을 요구하지 않는다. 둘째 문장도 그 가능성을 전제조건으로 반복할 뿐 실제 수립 명제를 복원하지 않는다.	설정할 기술적 가능성이 있어야 한다.
+V2-P1-184	FAIL	MODAL_STRENGTHENING|UNSUPPORTED_EXCLUSIVITY	5GMM transport IE를 통한 전달 가능성을 반드시 그 방식으로 전달해야 하는 요구로 강화하고 별도 독립 전송을 배제하는 원문 밖 전칭 주장을 추가했다.	별도의 독립 전송으로 처리되지 않는다.
+V2-P1-185	FAIL	MODAL_STRENGTHENING|TEMPORAL_SCOPE_LOSS|CONDITION_DETAIL_OMISSION	등록 직후 해제를 피하라는 AMF 권고를 NAS 연결 유지의 확정 및 네트워크 처리 의무로 바꾸었다. immediately 한정과 특정 PC5 지원 bit·저장·UDM 조건 세부도 빠졌다.	NAS signalling connection은 유지되며
+V2-P1-186	FAIL	CAPABILITY_SCOPE_LOSS|UNSUPPORTED_ADDITION|R1	선택적인 양 UPF 제어 능력 보유를 단순 제어 가능으로 축약하고 트래픽·세션 처리 역할의 분할을 확정 설명으로 추가했다.	중앙 UPF가 나머지 세션 처리를 담당하는 형태로 운용된다.
+V2-P1-187	PASS	PRESERVED	첫 access 절차 완료까지 같은 PLMN의 다른 access 등록 개시를 금지함을 보존한다. 첫 절차가 진행 중인 범위는 완료될 때까지라는 표현과 질문의 전제로 분명하다.	첫 번째 access의 Registration procedure가 완료될 때까지
+V2-P1-188	PASS	PRESERVED	HPLMN의 단일 default NSSAI 구성 허용과 두 NSSAI 정보가 모두 없는 PLMN에서 유효하게 간주하는 허용을 구분하여 보존한다. 구성 시점을 해당 PLMN 도착 후로 제한하지 않는다.	유효한 것으로 간주하도록 허용된다.
+V2-P1-189	PASS	PRESERVED	두 partially NSSAI 유형의 S-NSSAI 수 7 초과 금지를 유지한다.	7을 초과해서는 안 된다.
+V2-P1-190	PASS	PRESERVED	같은 5GC에 두 access로 동시 연결된 UE의 단일 AMF 서비스 의무를 보존한다.	단일 AMF에 의해 반드시 서비스되어야 한다.
+V2-P1-191	PASS	PRESERVED	전체 paging 회피 목적, Active Time 할당 시점과 all-PLMN 영역 할당 비권고를 보존한다.	할당하지 않는 것이 권고된다.
+V2-P1-192	PASS	PRESERVED	S1·N1 모두 지원 UE가 EPC 연결 E-UTRAN 상호동작을 위해 single 또는 dual registration mode로 동작할 가능성을 보존한다.	단일 등록 모드 또는 이중 등록 모드로 동작할 수 있다.
+V2-P1-193	PASS	PRESERVED	TSN 동작 사례의 sub-network 가능성과 4.4.8.2 architecture에 기반한 규격 지원을 유지한다.	3GPP 규격에 의해 지원된다.
+V2-P1-194	PASS	PRESERVED	N26·single-registration·emergency PDN 및 EPS context 부재 조건과 AMF의 두 알고리즘을 특정 S1→N1 container에 설정하는 의무를 유지한다.	5G-IA0와 5G-EA0를 선택된 5G NAS security algorithms로 설정해야 한다.
+V2-P1-195	PASS	PRESERVED	N1→N1 handover 중 새 NAS context 생성이 허용된다는 시점과 선택성을 보존한다.	새 보안 컨텍스트를 만들 수 있다.
+V2-P1-196	FAIL	MODAL_STRENGTHENING|PROCEDURE_OMISSION	기간 종료 후 mobility registration update용 registration procedure를 트리거하라는 권고를 일반 종료 보고 의무로 바꾸고 구체적 절차를 생략했다.	종료 보고를 수행해야 한다.
+V2-P1-197	PASS	PRESERVED	registration 중 REGISTRATION COMPLETE로 SOR IE를 UE에서 network에 제공할 기술적 가능성을 정확히 보존한다.	반드시 해야 하거나 허용만 되는 것으로 표현되지 않는다.
+V2-P1-198	PASS	PRESERVED	3GPP access의 N1 capability가 비활성화된 PLMN/SNPN 식별자를 기억하는 권고와 대상 한정을 유지한다.	식별자를 기억하는 것이 권고된다.
+V2-P1-199	PASS	PRESERVED	IE 미제공 또는 EUPR 종료 보고 요구와 기간 종료의 결합 조건에서 mobility registration update 개시 권고를 보존한다.	registration procedure를 트리거하는 것이 권고된다.
+V2-P1-200	PASS	PRESERVED	TAI·CGI 모두 service area 밖이고 유효한 area 정보 보유 시 local multicast MBS 참가 요청 비권고를 보존한다.	join request를 하지 않는 것이 권고된다.

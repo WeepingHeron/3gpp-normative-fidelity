@@ -1,0 +1,21 @@
+{
+  "experiment_id": "ERROR_REPLICATION_V1_20260914",
+  "model": "gpt-5.4-mini-2026-03-17",
+  "pricing_usd_per_million": {
+    "input": 0.75,
+    "cached_input": 0.075,
+    "output": 4.5
+  },
+  "generation_cost_cap_usd": 0.5,
+  "planned_calls": 9,
+  "design": "Three known developmental sources, three fixed-input repetitions each. Exact earlier A2 direct-context requests; no tuning, filtering, additional source selection, or retries. All outputs assessed by current same AI against frozen requirements, ambiguity retained. Not independent expert validation, novel-source evidence, or a method comparison. Keep primary49 unchanged. Stop after nine calls regardless of outcome.",
+  "selection": "All three existing developmental source cases; not sampled from population. Repetition at temperature0 measures observed recurrence, not independent sample size.",
+  "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+  "evaluation": "explanation_ko only; all frozen required conjuncts, claims assessed 1/0/null. Errors selected for paper only after all nine assessed; first occurrence of each clear error family with full trace. No p-values or confidence intervals.",
+  "parameters": {
+    "temperature": 0,
+    "reasoning_effort": "none",
+    "max_output_tokens": 900
+  },
+  "reservation_usd": 0.08852175000000001
+}

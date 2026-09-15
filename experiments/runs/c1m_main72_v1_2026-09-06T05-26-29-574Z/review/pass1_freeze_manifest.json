@@ -1,0 +1,12 @@
+{
+  "status": "PROVISIONAL_CODEX_PASS1_COMPLETE_BEFORE_UNMASKING",
+  "completed_at": "2026-09-07T05:56:15.827828+00:00",
+  "pass2_not_before": "2026-09-08T05:56:15.827828+00:00",
+  "rows": 216,
+  "independent_expert_validation": false,
+  "file_sha256": {
+    "PASS1_METHOD.md": "678e027757d8d780943f09fbbe5f1096337e466a822940a951016100f09417a3",
+    "pass1_decisions.tsv": "bbd42d8035813468aa4c2b4230e374fdb3cacd973f6cc8c6dd24bcf91bfbc508",
+    "blind_explanations_pass1.csv": "5d0cab10adf00829cf971a382f4046f933229b74a443de76838b7e3a53ce18ad"
+  }
+}

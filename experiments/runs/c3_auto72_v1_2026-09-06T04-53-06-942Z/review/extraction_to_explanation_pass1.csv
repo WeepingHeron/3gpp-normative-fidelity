@@ -1,0 +1,73 @@
+﻿case_id,review_id,structure_content,extraction_JSON_modal_correct,extraction_polarity_correct,explanation_complete,extraction_flags,extraction_note,explanation_note
+MAIN-SN-006,E007,1,1,1,1,none,등록 중 MICO 선호 미표시 조건·AMF·해당 UE 활성화 금지 구조 정확.,등록 중 UE 선호 미표시를 조건으로 AMF의 해당 UE MICO 활성화를 금지함.
+MAIN-CAN-011,E009,1,0,1,0,modal_category,ngKSI context·두 조건·보안 NAS 교환 동작은 정확하지만 normative_type을 capability 대신 permission으로 선택.,동결 can 기준으로 '사용하도록 허용'은 가능성을 허용으로 치환. 두 대안 조건과 ngKSI security context·보안 NAS 교환은 보존. 원문의 can 허용 해석 가능성은 별도 scope 쟁점.
+MAIN-SD-006,E011,1,1,1,1,cross_slot,N1 3GPP 비활성화 조건은 기억 대상 PLMN/SNPN을 수식하는 action에 보존.,N1 3GPP capability 비활성화된 PLMN/SNPN 식별자를 UE가 기억한다는 권고와 대상을 보존.
+MAIN-SDN-008,E012,0,1,1,1,purpose_dropped,Active Time 할당 조건과 all-PLMN 영역 동작은 남으나 gold 조건의 전체 PLMN paging 방지 목적은 어느 필드에도 없음. 핵심 조건보다 목적 손실임을 구분.,AMF·Active Time 시점·전체 paging 회피·all-PLMN 영역 할당 비권고가 일치.
+MAIN-SH-012,E017,1,1,1,1,none,AMF·N26/single/emergencyPDN/noEPS 네 조건 및 지정 IE 두 algorithm 설정 구조 정확.,single-registration·N26·emergency PDN·EPS context 없음의 결합 조건과 두 null algorithm을 지정 IE에 설정하는 AMF 의무가 모두 유지.
+MAIN-SDN-001,E018,1,1,1,1,cross_slot,두 non-3GPP access 한계가 condition 대신 action에 들어 있어 정보 손실 없음.,untrusted/trusted non-3GPP 양쪽에서 Forbidden Areas 사용 비권고를 보존.
+MAIN-SN-005,E019,1,1,1,1,none,NSAG 미수신 조건 및 두 slice 기반 기능 전면 비사용 동작과 금지를 정확히 보존.,NSAG 미수신이면 UE의 slice 기반 cell reselection과 Random Access 모두 전혀 사용 금지; 조건·강도·대상 일치.
+MAIN-MAY-003,E024,1,1,1,1,none,"SMF actor, 특정 PDU establishment 조건 및 N6 network instance→UPF 표시 동작이 정확.",특정 PDU session의 establishment 동안 SMF가 UPF에 N6 network instance를 표시하는 허용; 선택성 설명은 원문 may 범위.
+MAIN-SD-009,E025,1,1,1,1,cross_slot;gold_scope,slice 부재 조건과 identity PLMN/SNPN 또는 SNPN list 각각 대응을 action에서 원문대로 유지. exception 공란이나 정보는 남음.,slice 부족 원인과 UE의 PLMN/SNPN 식별자 또는 해당 SNPN 목록 기억 권고를 유지. respectively는 해당 목록이라는 연결로 보존됨.
+MAIN-SD-002,E037,0,0,0,0,target_scope;abstained,policy 대신 application을 actor로 선택하고 특정 IP 조건은 action에 이동. unclear로 판단해 생성 보류; 원문의 embedded should 범위 모호성을 반영한 보류임.,설명이 비어 있어 적용 가능한 행위자·규범·조건·행동을 보존하지 못함. 미생성 사유는 조건 복원 이후 별도 확인.
+MAIN-SH-003,E039,1,1,1,1,none,SUCI 대상·5G-GUTI 미포함 조건·새 등록 사용과 obligation 정확.,5G-GUTI 미포함 조건에서 새 등록의 SUCI 사용 의무를 그대로 유지.
+MAIN-SDN-003,E040,1,1,1,1,cross_slot,요청·UE 처리라는 gold 조건은 reject/deregister action에 내포. 정확한 위치로 운용 금지 지역 확인하는 unless 예외 유지.,AMF의 거절/등록해제 비권고와 충분히 정확한 위치로 PLMN 운용 불가 지역을 확인한 경우의 예외를 보존.
+MAIN-SN-010,E041,1,1,1,1,none,UE receiving 5GMM·보안 교환 이후·NAS 처리 금지·integrity 성공 unless의 결합 정확.,"secure exchange 이후의 수신 5GMM 및 NAS 무결성 검사 성공 unless 조건, 모든 NAS signalling 처리 금지를 유지."
+MAIN-SH-006,E045,1,1,1,1,cross_slot,"Disaster Roaming UE는 condition에, 영역 할당 시점과 Disaster Condition TAI only는 action에 존재. 슬롯 경계만 다름.",Disaster Roaming 등록 UE 영역 할당 시 AMF가 Disaster Condition 포함 TAI만 고려해야 한다는 조건과 only 의무가 정확.
+MAIN-SN-008,E046,1,1,1,1,cross_slot,상한은 prohibition + exceed 7에 완전히 표현되어 exception 공란으로 인한 실제 정보 손실 없음.,두 partial NSSAI에서 S-NSSAI 개수가 7을 초과할 수 없다는 금지와 최대치가 동일; 별도 최대 7 재진술 불필요.
+MAIN-CAN-008,E047,0,1,1,0,target_scope;gold_scope,security 활성화 가능 대신 AMF/UE의 context 수립을 actor/action으로 선택. need to 문구는 action에 있지만 capability 라벨이 실제 수립 의무에 잘못 결합할 위험.,실제 context 수립 필요를 '수립할 기술적 가능성이 있어야'로 약화. 보안 활성화 이전의 실제 수립이라는 필요조건이 사라지고 다른 능력 요구로 치환됨.
+MAIN-SH-009,E048,1,1,1,1,none,dual-registration UE initial 절차와 context 사용 개시·규격 처리 의무에 대응하는 구조가 정확.,dual-registration UE의 initial registration 때 context 사용 시작과 규격에 따른 처리라는 두 의무를 유지.
+MAIN-MAY-006,E054,1,1,1,1,none,네 access 기능과 동일/상이 TAI 구성 대안 모두 보존. 조건·예외 추가 없음.,네 access 기능 모두에 서로 다른/같은 TAI 구성 허용을 적용; 원문의 and/or도 보존.
+MAIN-CAN-003,E057,0,1,1,1,actor_binding,architecture 대신 DS-TT/NW-TT 기능을 actor로 추출하여 공존의 주체를 바꿈. condition은 없고 architecture 비필수성은 exception에 있으나 올바른 actor-action 결합을 복원하지 못함.,DS-TT/NW-TT 지원은 필수가 아니지만 공존이 기술적으로 가능하다는 대비와 기능 배치 위치가 모두 일치.
+MAIN-MAY-005,E059,1,1,1,1,cross_slot,비interworking 조건이 actor 수식에 보존되어 있고 PGW/SMF-UPF 비전용 서비스 동작도 정확.,interworking 비대상 UE를 비전용 PGW 또는 SMF/UPF가 서비스하는 허용과 대안을 보존.
+MAIN-SDN-005,E066,1,1,1,1,none,선택망의 UE 위치 가용 지속 조건과 타 가용망 이동/handover 동작 보존; discouragement 정확.,"선택 PLMN/SNPN의 UE 위치 서비스 가능 지속 조건 아래 타 가용 망 이동 비권고, handover 예시도 보존."
+MAIN-SN-009,E067,0,0,0,1,target_scope;reference_as_exception,금지 대상 새 K_AMF 대신 target AMF를 actor로 선택하고 obligation/positive를 붙임. action에 원문 금지는 남지만 규범 결합 대상이 틀렸고 단순 참조를 exception으로 분류.,"같은 K_AMF로 context 유도 조건, target AMF의 하위 8비트 및 IE 표시, 새 KAMF 유도 금지를 보존. 표시해야는 원문의 절차 동작 includes/indicates에 대응."
+MAIN-MAY-010,E069,1,1,1,1,none,AMF·emergency PDU/integrity 실패·인증 생략 후 즉시 security mode·context 부재 even-if 모두 보존.,emergency PDU와 integrity 실패 결합 조건에서 AMF의 인증 생략·security mode 즉시 진행 허용 및 context 없어도 예외를 유지.
+MAIN-SN-007,E070,1,1,1,1,none,emergency PDU release 금지의 대상·동작을 정확히 추출.,emergency PDU 해제 금지를 두 문장에 일관되게 표현.
+MAIN-SDN-006,E071,1,1,1,1,cross_slot,CM-CONNECTED 상태만 condition에 있고 mobility Registration Request는 action에 존재해 전체 대상 조건은 유지.,이미 CM-CONNECTED인 UE의 mobility update Registration Request에 대한 AMF 거절 비권고와 조건을 유지.
+MAIN-SH-011,E072,1,1,1,1,none,새 K'AMF 조건 및 eKSI value/mapped type/ngKSI-context 연결의 AMF 의무 구조 정확.,"AMF의 새 K'AMF ngKSI 정의, KASME eKSI 값 출처, mapped type 및 새 mapped context 연결 의무를 모두 보존."
+MAIN-MAY-007,E080,1,1,1,1,cross_slot,HPLMN·neither configured nor allowed 조건과 default 구성/PLMN 유효 간주 동작 정확. single 한계는 action에 남으며 조건의 for which는 action의 PLMN에 연결됨.,HPLMN의 단일 default 구성과 configured/allowed 모두 없는 PLMN에서 유효 간주 허용을 보존.
+MAIN-SN-004,E081,1,1,1,1,cross_slot,Non-Allowed 진입이라는 gold 조건이 action 목적어 안에 있고 condition 슬롯은 공란. 전체로는 금지 기준·trigger 세 종류 유지.,"UE의 Non-Allowed 진입을 cell reselection 기준 및 PLMN/domain selection 계기로 삼는 금지, originating session/call 범위 유지."
+MAIN-SH-008,E083,1,1,1,1,none,초기 등록 K_AUSF invalid 조건과 UE ngKSI 삭제 동작·의무를 보존.,초기 등록 중 K_AUSF invalid 조건과 UE의 ngKSI 삭제 의무 일치.
+MAIN-SN-001,E085,1,1,1,1,none,TAC 분리 배치·RAT restriction 목적 조건 및 subscriber의 해당 TA 접근 금지 구조 유지.,서로 다른 TAC 배치 필요와 해당 RAT TA에서 subscriber 접근 금지를 결합해 유지.
+MAIN-SD-001,E086,1,1,1,1,cross_slot,UE의 Non-Allowed 위치 조건이 actor 수식에 있고 해당 TA 집합 구성 action은 정확.,Non-Allowed UE의 registration area를 해당 Non-Allowed TA 집합으로 구성하는 권고 일치.
+MAIN-SN-012,E087,1,1,1,1,none,SNPN onboarding 초기등록/기등록 조건과 UE NAS의 lower layer NSSAI 제공 금지 구조 정확.,SNPN onboarding 초기등록 또는 등록상태 OR 조건과 NAS layer→lower layer NSSAI 제공 금지 유지.
+MAIN-SDN-012,E090,1,1,1,1,none,유효 MBS 정보와 neither TAI nor CGI 영역 포함 조건·local multicast join 동작·비권고 보존.,유효 서비스 영역 정보와 TAI/CGI 영역 밖 조건을 결합하고 local multicast join 요청 비권고를 유지.
+MAIN-SD-010,E092,1,1,1,1,cross_slot,"callback 목적·서비스 종료는 condition에, MICO 요청 전 시점은 action에 분리. 전체 대기 순서는 유지.","callback 목적, emergency 종료 후/MICO 요청 전 시점 및 UE 구현별 대기 권고가 일치."
+MAIN-CAN-005,E094,1,1,1,1,cross_slot;example_as_exception,trusted/untrusted 경로 대응은 condition의 respectively에 유지. exception에는 한 WLAN 예시를 배치해 필드 역할만 잘못 분류.,두 RG·N3IWF/TNGF 접근 경로·세 기능 조합의 untrusted/trusted 대응과 WLAN 예시를 보존.
+MAIN-SN-011,E095,1,1,1,1,none,serving SNPN·onboarding 등록중/완료·UE configured NSSAI 제공 금지 구조 정확.,onboarding 등록 중/완료 상태 양쪽 조건에서 serving SNPN의 configured NSSAI 제공 금지를 유지.
+MAIN-CAN-012,E097,1,1,1,1,none,S1/N1 지원 UE·EPC E-UTRAN interworking·single/dual mode 운용 구조와 capability 유지.,S1/N1 모두 지원 UE의 EPC E-UTRAN 연동 목적 및 single/dual 운용 가능성 보존.
+MAIN-SDN-009,E100,1,1,1,1,none,AMF·active-time 통지 조건·MICO IE all-PLMN 표시 동작이 해당 슬롯에 정확하고 discouragement/negative도 일치.,"active time 통지 조건에서 MICO IE의 all-PLMN 표시 비권고, AMF→UE 전달 방향 유지."
+MAIN-MAY-011,E103,1,1,1,1,cross_slot;gold_scope,최대 UE 수 거절로 시작한 T3526 만료·UE·해당 제거 동작 정확. gold exception 내용은 action의 대상 수식으로 남음. including 대 only 해석 차이는 별도 주의.,최대 UE 수 거절로 시작한 T3526 만료 후 '해당 S-NSSAI'만 제거하도록 한정해 읽음. 뒤의 '포함'은 source including과 같으며 다른 사유 제거 허용을 명시하지 않음; gold only와 원문 including의 범위 차이는 주의.
+MAIN-SD-004,E104,1,1,1,1,none,3GPP CM-CONNECTED·두 이동절차 target RAT/PLMN 결정·RAN per-PLMN 제한 고려 구조 정확.,3GPP·CM-CONNECTED·handover/redirection 중 target RAT/PLMN 결정 조건과 RAN의 per-PLMN RAT 제한 고려 권고 유지.
+MAIN-SDN-011,E108,1,1,1,1,none,PC5 V2X capability 두 비트 대안·현재/저장 맥락·UDM 가입정보 결합 및 AMF 즉시 해제 동작을 상세히 보존.,PC5 V2X 권한에 capability 비트(현재 UE 설정 또는 기존 AMF 저장)와 UDM subscription이 함께 필요함을 유지. EUTRA/NR 개별 비트명은 요약됐지만 권한 근거의 두 축과 즉시 해제 비권고는 유지.
+MAIN-MAY-009,E110,0,1,1,1,actor_binding;direction_lost,container를 수신하는 UE를 변경 주체로 오인. action은 UE가 container를 송신하는 것으로 읽히고 원문의 to UE 방향도 누락.,NAS transport 중 UE parameters update container를 UE로 송신해 default NSSAI 변경하는 수단·방향·허용 유지.
+MAIN-SD-012,E111,1,1,1,1,cross_slot,"IE 미제공/EUPR 지정은 condition에, 기간 종료는 action에 분리됨. 전체 필드 결합하면 두 조건 모두 보존.","IE 미제공 또는 지정 EUPR, 기간 종료 시 UE mobility update trigger 권고를 유지."
+MAIN-SH-001,E112,1,1,1,1,none,동일 core 두 access 동시 연결 UE와 단일 AMF 서비스 의무의 구조 보존.,동일 core에 3GPP/non-3GPP 동시 연결된 UE라는 주체 제한과 그 core의 단일 AMF 서비스 의무 유지.
+MAIN-SH-005,E116,1,0,1,1,cross_slot;modal_category,"UDR/Nudr는 actor, 권한 데이터 only는 action에 보존. shall be able to의 의무를 capability로 분류해 규범 강도는 잘못됨.",'shall be able to'는 변경 가능성을 갖춰야 하는 의무이므로 '기술적 가능성이 있어야'가 여기서는 정확. E047의 need to 실제 수립과 구별. 권한 데이터만이라는 제한도 유지.
+MAIN-CAN-007,E119,1,1,1,1,cross_slot,5GMM transport 경로 조건이 action 안에 있어 정보 손실 없음; capability와 전달 IE 위치 정확.,5GMM IE 내 5GSM 전송 경로와 can 기술적 가능성을 유지.
+MAIN-SD-003,E120,1,1,1,1,cross_slot,UAC 결정 계기 condition 및 모든 관련 연결 AMF 요청 only-if가 action에 보존. exception 공란이지만 한계 유지.,N2 overload 계기와 관련·연결된 모든 AMF의 부하 제한 요청 only-if를 UAC 시작 권고에 정확히 연결.
+MAIN-SDN-004,E130,1,1,1,1,none,dual-registered UE·5GS/NR 조건·두 capability NR 송신과 handover 회피 목적 모두 보존.,"dual-registered·5GS/NR 조건, 두 E-UTRA capability의 NR 전송 비권고 및 두 목적지 handover 회피 목적 일치."
+MAIN-SH-010,E132,1,1,1,1,none,ngKSI 삭제 조건과 지정 값 설정·연관 키 무효화·context 무효 해석을 정확히 추출.,"ngKSI 삭제 시 no-key 값 설정과 K_AMF/K'AMF·암호화·무결성 키 invalid 처리 의무, context 무효 해석 일치."
+MAIN-MAY-001,E141,1,0,1,0,cross_slot;modal_category;gold_scope,한 session 조건이 action에 이동. 능력 보유 구조 자체는 원문에 있으나 may 선택성을 capability로 단일 분류하여 gold permission과 불일치.,may have capability의 선택적 능력 보유를 제어의 기술적 가능성으로만 표현해 동결 permission 분류는 보존하지 못함. 한 PDU 내 두 UPF와 SMF 주체는 유지.
+MAIN-SH-007,E142,1,1,1,0,reference_as_exception,AMF의 네 항목 포함 의무 구조는 맞음. 단순 see 9.11.2.9를 exception에 넣어 downstream에서 예외로 오해할 위험을 별도 표시.,"네 항목 포함 의무는 맞지만 원문의 단순 'see 9.11.2.9'를 '예외는 ... 따른다'로 바꿔 미제시 예외를 도입. gold 예외 공란이므로 exception은 NA, addition은 1."
+MAIN-SH-002,E145,1,1,1,1,none,non-3GPP UE·등록 이후·N1 core signalling 지원 동작과 obligation이 정확.,UE의 non-3GPP 접근·등록 이후·N1 경유 core NAS signalling 지원 의무 모두 유지.
+MAIN-CAN-002,E147,0,1,0,1,cross_slot;partial_negation_lost,UPF 직접 경로는 action에 있지만 not all이 모든 필드에서 사라짐. capability/positive JSON 일치만으로 발견할 수 없는 부분 부정·양화 한계 손실.,모든 event는 아니라는 부분 부정과 direct UPF subscription의 기술적 가능성 범위를 유지.
+MAIN-SH-004,E151,1,1,1,1,cross_slot,NF 상호작용 조건과 SBI only 제한이 모두 action에 있음. condition/exception 슬롯은 비었으나 결합 의미는 유지.,5GC control NF 상호작용에서 SBI만 사용해야 한다는 의무와 배타 한계 유지.
+MAIN-SD-008,E153,1,1,1,1,reference_as_exception,correct 매핑·reject로 AKA 종료 권고의 구조는 보존. exception에 단순 see 참조를 잘못 배치했으나 참조 자체를 새로운 예외 내용으로 해석하지는 않음.,"correct 매핑과 reject로 AKA 종료 권고 유지. '단, ... 참조'는 부자연스러우나 예외의 내용·존재를 주장하지 않는 참조 지시로 판단."
+MAIN-SN-003,E165,1,1,1,1,none,같은 PLMN의 두 access 등록 조건과 첫 절차 완료까지 다른 등록 금지 결합 유지. exception의 until은 negative 라벨과 함께 해석.,"첫 access 등록 진행 및 동일 PLMN 타 access 등록 의도, 첫 등록 완료 전 시작 금지 유지."
+MAIN-CAN-009,E177,1,1,1,1,none,UE·등록 절차·SOR IE의 REGISTRATION COMPLETE 전송·network 대상 및 capability가 정확.,등록 중 REGISTRATION COMPLETE의 SOR IE를 network에 제공할 기술적 가능성 유지. 규범 유형 부연은 새 운용 제한이 아님.
+MAIN-SDN-002,E187,0,1,1,1,quantifier_lost,actor를 packets로만 추출하고 98% 수치와 나머지 범위가 모든 필드에서 사라짐. 비혼잡·PDB 초과 비권고는 남으나 전체 패킷 권고로 확대될 위험.,비혼잡 98% packet의 PDB 초과 비권고를 유지. gold의 나머지 2% 한계는 98% 양화에 이미 포함되므로 반복 설명 불필요.
+MAIN-SD-007,E189,1,1,1,1,none,incorrect 매핑 조건과 network→UE 새 authentication request 응답 동작·권고가 정확.,incorrect 매핑일 때 network가 UE에 새 authentication request로 응답하는 권고 유지.
+MAIN-SDN-007,E191,0,1,1,0,target_scope,UE의 5GC 비사용 권고 대신 AMF의 Reject 송신을 actor/action으로 잡아 discouragement negative의 결합 대상이 이동. EMM cause 전달 내용은 action 안에 남음.,UE의 비사용 should_not이 AMF의 거절 메시지 송신 권고로 이동했고 UE 비사용은 '않아야'로 강화. redirect·요청·EMM cause 전달 자체는 보존.
+MAIN-SD-005,E192,1,1,1,1,voice_alternation,gold의 stored NSSAI 수동 주체 대신 저장하는 ME를 actor로 정규화. actor 슬롯은 다르지만 장소 ME와 저장 대상·동작·Annex C가 결합해 원문 의미는 유지.,allowed NSSAI를 ME 비휘발성 메모리에 저장하는 수동문을 ME의 저장 능동문으로 바꾼 것. 저장 대상·위치·Annex C·권고가 같아 actor 변경 오류로 보지 않음.
+MAIN-CAN-006,E194,1,1,1,1,none,5GS TSN 조건·sub-network 가능성과 참조 아키텍처의 제한을 보존. 예외라기보다 근거지만 gold 슬롯에 대응.,TSN 동작 경우의 5GS sub-network 가능성과 지정 아키텍처 근거를 유지; 다른 경우를 배제하거나 일반화하지 않음.
+MAIN-SD-011,E197,1,1,1,1,cross_slot,두 timer 설정 기준인 unavailability 지속·시작이 condition 대신 action에 모두 들어 있어 정보 손실은 없음.,unavailability 지속·시작에 근거한 AMF 두 timer 값 설정 권고 유지.
+MAIN-CAN-010,E198,1,1,1,1,none,현재 context의 native/mapped 유형 및 각각 origin을 보존.,current context가 native/mapped 두 유형이고 해당 origin에서 유래한다는 기술적 가능성 보존.
+MAIN-MAY-012,E199,1,1,1,1,none,configured/rejected NSSAI 및 두 절차 조건과 변경 동작을 보존.,configured/rejected NSSAI가 registration 또는 generic UE update 중 변경되는 허용 유지.
+MAIN-SDN-010,E201,0,1,1,1,cross_slot;source_context_absent,7종과 한계는 action에 모두 있지만 congestion 조건은 어떤 추출 필드에도 없음. 이는 추출 입력 원문에도 없고 질문/gold 및 상위 조항에만 있어 모델이 추정해 채우면 안 되는 맥락 결손.,"congestion 문맥과 7종 요청 및 각각의 high-priority/paging/emergency/discontinuous 조건, AMF 거절 비권고를 유지."
+MAIN-CAN-001,E203,1,0,1,0,modal_category,N38 두 위치 대안과 inter-PLMN mobility 목적은 보존하나 can을 permission으로 분류.,N38의 위치 가능성을 명시적 '허용'으로 치환. 같은/다른 VPLMN V-SMF 대안은 유지; inter-PLMN 목적은 뒤의 다른 VPLMN 경우에 연결해 읽음.
+MAIN-SN-002,E204,1,1,1,1,cross_slot,UE mobility 원인이 condition 대신 action에 있어 Any UE subscription의 타 AMF 이동 금지는 유지.,UE mobility 원인으로 Any UE subscription을 타 AMF로 옮기는 금지 일치.
+MAIN-MAY-002,E208,1,1,1,1,none,N5CW·trusted WLAN EAP 인증 조건·PLMN/SNPN 5GC 동시 등록 상태·permission 유지.,N5CW EAP 인증으로 trusted WLAN 연결 시 PLMN/SNPN 5GC 동시 등록 허용 유지.
+MAIN-MAY-008,E210,1,1,1,1,none,새 context·N1→N1 handover·생성 동작 모두 보존; action의 may 중복은 의미 손실 아님.,새 context의 N1→N1 handover 중 생성 허용과 비의무성 유지; '중에도'는 source also와 일치.
+MAIN-CAN-004,E213,0,0,1,1,target_scope;gold_scope,원문 전체의 UDSF 보장 책임을 obligation으로 선택. gold의 권한 NF 접근 가능성 target과 불일치하나 책임 독해 자체는 원문에 있음; 단순 정보 삭제와 구별.,공유 UDSF 구현·배포가 권한 NF만 접근 가능하게 보장하는 책임과 제한을 유지. 반드시는 NF 접근 의무가 아닌 원문의 make sure에 대응.
+MAIN-MAY-004,E216,1,1,1,1,cross_slot;example_as_exception,지원 망 only 제한은 action에 보존. exception에 실제 예외 대신 5G connectivity 예시를 넣어 역할 분류는 부정확하나 e.g. 표식으로 예시임을 유지.,non-3GPP network의 지원 PLMN/SNPN과 trusted connectivity 유형 광고 허용 및 5G 예시를 유지.

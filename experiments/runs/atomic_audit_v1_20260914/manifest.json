@@ -1,0 +1,17 @@
+{
+  "experiment_id": "ATOMIC_AUDIT_V1_20260914",
+  "status": "GENERATION_COMPLETE_SEMANTICS_PENDING",
+  "provenance": "LIVE_API",
+  "started_at": "2026-09-13T16:14:17.671Z",
+  "input_freeze_sha256": "8d60ee0f26ee64d191d10ff2600c481a809ebecf4ceff1a4b14c517211270c7c",
+  "input_frozen_at": "2026-09-13T16:14:02.364292+00:00",
+  "model": "gpt-5.4-mini-2026-03-17",
+  "planned_slots": 12,
+  "attempts": 12,
+  "returned_responses": 12,
+  "usable_explanations": 12,
+  "known_cost_usd": 0.08952149999999999,
+  "cost_complete": true,
+  "evaluator_status": "NOT_EVALUATED",
+  "finished_at": "2026-09-13T16:15:30.463Z"
+}

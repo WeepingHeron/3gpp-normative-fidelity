@@ -1,0 +1,12 @@
+{
+  "frozen_at": "2026-09-14T03:50:37.820Z",
+  "file_sha256": {
+    "experiments/error_replication_v1_20260914/evaluation_reference.json": "787c3877312ac3048bab8af8d8593ea4410663facb29650483b6502c740cf8b5",
+    "experiments/error_replication_v1_20260914/generator_inputs.json": "1d135cbd2d553d9c7f7dae304b77fd1aa25f6cf247c2d141239cf59c4b6ecc18",
+    "experiments/error_replication_v1_20260914/plan.json": "23a97330f94f76c00e88cf23c1187ca69eaaeb4e8751d3a0ba2769b379b1644a",
+    "experiments/error_replication_v1_20260914/protocol.json": "bba5e0c465d0c7e3e78599ed652643f331c53cc87624947963cba97723274a51",
+    "experiments/run_error_replication_20260914.mjs": "a12264537308f9e29ecdd8cd1c5c0bff64d7007347c833475ee233f72dd725ac",
+    "experiments/run_atomic_audit_20260914.mjs": "9b288089690ef12541c7e71c1c65a72c09f45f2e4fc1510eaa6e4f48a382356f",
+    "experiments/run_preservation_repair_20260914.mjs": "c50b0b097ed20be3ac24f8cdbb8684e6d0c6a9a090b1c251196b8886f1f40dc4"
+  }
+}
