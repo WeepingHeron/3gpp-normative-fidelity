@@ -3,7 +3,7 @@
 # Evaluating Normative Fidelity in Korean Explanations of 3GPP Requirements
 
 **KIPS_C2026B0055 · ACK 2026**
-Paper (original Korean title): 「3GPP 요구사항의 한국어 설명에서 규범적 의미 보존을 위한 증거 제약 생성 평가」
+Paper (English translation): Evaluating Evidence-Constrained Generation for Preserving Normative Meaning in Korean Explanations of 3GPP Requirements
 
 ## Overview
 
