@@ -1,35 +1,37 @@
-# 3GPP 한국어 설명의 규범적 의미 보존 평가
+[English](README.md) | [한국어](README.ko.md)
+
+# Evaluating Normative Fidelity in Korean Explanations of 3GPP Requirements
 
 **KIPS_C2026B0055 · ACK 2026**
-논문: 「3GPP 요구사항의 한국어 설명에서 규범적 의미 보존을 위한 증거 제약 생성 평가」
+Paper (original Korean title): 「3GPP 요구사항의 한국어 설명에서 규범적 의미 보존을 위한 증거 제약 생성 평가」
 
-## 연구 개요
+## Overview
 
-영문 3GPP 요구사항을 LLM이 한국어로 설명할 때 규범 강도·행위자·조건·행동·예외를 얼마나 보존하는지 평가하는 연구다. 같은 원문을 제공하더라도 설명에서 의무·권고의 강도가 달라지거나 조건·예외가 누락될 수 있다는 문제를 다룬다.
+This study evaluates how well LLM-generated Korean explanations of English 3GPP requirements preserve normative strength, actors, conditions, actions, and exceptions. Even with the same source text, explanations may change the strength of obligations or recommendations, or omit conditions and exceptions.
 
-## 연구 목적
+## Research objectives
 
-- **RQ1.** 일반 LLM은 `shall / shall not / should / should not / may / can` 차이를 한국어 설명에서 정확히 보존하는가?
-- **RQ2.** 원문 조항을 제공하는 것만으로 오류가 줄어드는가?
-- **RQ3.** 원문에 `행위자·조건·규범 유형·행동·예외`의 정답 구조를 추가하면 원문 단독 조건보다 의미 보존이 개선되는가?
+- **RQ1.** Does a general-purpose LLM accurately preserve the distinctions among `shall / shall not / should / should not / may / can` in Korean explanations?
+- **RQ2.** Does providing the source clause alone reduce errors?
+- **RQ3.** Does adding a gold structure of `actor · condition · normative type · action · exception` to the source improve meaning preservation compared with the source alone?
 
-## 접근법
+## Approach
 
-| ID | 조건 | 목적 |
+| ID | Condition | Purpose |
 |---|---|---|
-| C0 | 질문만 제공하는 LLM | 사전지식 기준선 |
-| C1 | 같은 정답 조항과 의미 보존 지시 제공 | Oracle source 기준선 |
-| C2 | 같은 조항 + 평가 gold와 같은 구조화 필드 | Oracle structured 조건 |
-| C3 | 원문만으로 구조 추출 → 질문·원문·추출 필드로 설명 생성 | 자동 구조 추출 확장 |
-| C1M | C1 + 정답 규범 유형·부정만 제공 | Modal 힌트 분리 비교 |
+| C0 | LLM given only the question | Prior-knowledge baseline |
+| C1 | Same gold source clause and instructions to preserve meaning | Oracle source baseline |
+| C2 | Same clause + structured fields matching the evaluation gold | Oracle structured condition |
+| C3 | Extract structure from the source alone → generate an explanation from the question, source, and extracted fields | Automatic structure extraction extension |
+| C1M | C1 + only the gold normative type and negation | Separate comparison of modal hints |
 
-C1과 C2에는 동일한 원문 조항을 제공한다. C2는 평가 gold의 해석을 추가 제공하므로 구조화 형식과 정답 해석 제공의 효과를 분리하지 못한다. C3는 자동 추출 구조를 사용하는 확장 조건이다. 실제 검색 성능은 평가하지 않는다.
+C1 and C2 receive the same source clause. C2 additionally receives the interpretation used in the evaluation gold, so it does not separate the effect of structured formatting from the effect of providing the gold interpretation. C3 is an extension using automatically extracted structure. Actual retrieval performance is not evaluated.
 
-## 검증된 결과와 한계
+## Verified results and limitations
 
-최초 72건의 적격성을 사후 감사하고, 재평가 전에 처리 기준을 동결했다. 주 분석은 49건·33개 조항이며, 민감도 분석은 서로 겹치는 50/50/51건으로 구성했다. 아래는 동일 AI의 지연 재검토와 불일치 조정을 반영한 한국어 설명의 완전 보존 결과다.
+The eligibility of the original 72 cases was audited post hoc, and treatment rules were frozen before reevaluation. The main analysis covers 49 cases from 33 clauses; sensitivity analyses cover overlapping sets of 50/50/51 cases. The table below reports complete preservation in Korean explanations after delayed rereview and disagreement adjudication by the same AI.
 
-| 조건 | 보존 P | 위반 F | 미확정 U | 미생성 NG | 완전 보존 범위 |
+| Condition | Preserved P | Violated F | Unresolved U | Not generated NG | Complete preservation range |
 |---|---:|---:|---:|---:|---:|
 | C0 | 0 | 49 | 0 | 0 | 0.00% |
 | C1 | 38 | 10 | 1 | 0 | 77.55–79.59% |
@@ -37,32 +39,32 @@ C1과 C2에는 동일한 원문 조항을 제공한다. C2는 평가 gold의 해
 | C3 | 41 | 5 | 2 | 1 | 83.67–87.76% |
 | C1M | 43 | 4 | 2 | 0 | 87.76–91.84% |
 
-범위는 `P/N ~ (P+U)/N`으로 계산한 미확정의 논리적 범위이며 **95% 신뢰구간이 아니다**. 미생성은 분모에 포함한다. 사후 표본 처리와 동일 AI 평가의 한계가 있고, 통계적 우월성이나 3GPP 전체로의 일반화를 주장하지 않는다. [집계·계산 근거](notes/28_v2_cohort_results_2026-09-09.md)
+These are logical bounds for unresolved cases, calculated as `P/N ~ (P+U)/N`, **not 95% confidence intervals**. Cases without a generated explanation remain in the denominator. Post hoc sample treatment and evaluation by the same AI are limitations; no statistical superiority or generalization to all of 3GPP is claimed. [Aggregation and calculation evidence](notes/28_v2_cohort_results_2026-09-09.md)
 
-별도 개발 원문 3개에서 추가 생성된 설명 8개를 지정 요구사항에 따라 재검토해 완전 보존 3개·불완전 보존 5개를 확인했다. 규범 강도 변경과 조건·예외 누락이 남았으며, 메타데이터의 정답 여부와 설명의 의미 보존은 구분해야 한다. 이는 기존 사례의 반복 관찰로, 새 독립 표본의 성능 추정은 아니다. [8개 응답 재검토](results/outputs/review/error_recheck_v2_20260914/review.md)
+A further review of 8 explanations generated from 3 separate development sources, against the designated requirements, found 3 with complete preservation and 5 with incomplete preservation. Changes in normative strength and omissions of conditions and exceptions remained. Correct metadata must be distinguished from preservation of meaning in the explanation. These are repeated observations on existing cases, not a performance estimate on a new independent sample. [Review of 8 responses](results/outputs/review/error_recheck_v2_20260914/review.md)
 
-의미 판단은 동일 AI의 지연 재검토·불일치 조정을 포함하며 독립 전문가 검증을 대신하지 않는다. 데이터·코드 해시와 집계가 일치한다는 검증도 의미 판단의 참·거짓을 자동으로 보증하지 않는다. 선정 표준·버전·표본·모델·프롬프트 조건 밖으로 일반화하지 않는다.
+Semantic judgments include delayed rereview and disagreement adjudication by the same AI and do not replace independent expert validation. Matching data/code hashes and aggregates does not automatically establish whether semantic judgments are correct. Results are not generalized beyond the selected standards, versions, samples, models, and prompt conditions.
 
-## 폴더 구조
+## Repository structure
 
-| 경로 | 내용 |
+| Path | Contents |
 |---|---|
-| `notes/` | 연구 계획·표본 프로토콜·검토 및 해석 기록 |
-| `references/` | 표준 원문 보관 위치와 출처 색인; 원문 PDF는 로컬 보관 |
-| `code/tools/` | 표본·검토·집계·해시 검증 도구 |
-| `data/` | 표본·주석·선정 및 동결 매니페스트 |
-| `results/` | 실행·검토·집계 결과; 일부는 Git 외부 로컬 산출물 |
-| `paper/` | 그림·표 등 원고 편집 자료 |
-| `submissions/2026_ACK/` | 최종 제출 PDF·검증용 SHA-256 |
-| `experiments/` | 동결된 Node 실행 묶음·프롬프트·프로토콜 |
+| `notes/` | Research plans, sampling protocols, reviews, and interpretation records |
+| `references/` | Source-standard storage locations and source index; source PDFs are kept locally |
+| `code/tools/` | Sampling, review, aggregation, and hash-verification tools |
+| `data/` | Samples, annotations, selection manifests, and freeze manifests |
+| `results/` | Execution, review, and aggregation results; some are local artifacts outside Git |
+| `paper/` | Manuscript editing materials, including figures and tables |
+| `submissions/2026_ACK/` | Final submitted PDF and verification SHA-256 |
+| `experiments/` | Frozen Node execution bundles, prompts, and protocols |
 
-`code/experiments`는 기존 실행 진입조건과 동결 코드 해시를 보존하기 위한 연결이다. `experiments/runs`의 실제 위치는 `results/runs`다. `docs`, `tools`, `outputs` 등의 기존 경로와 `code/`의 입력·결과 경로는 호환 링크로 유지한다. 자료를 수정할 때는 위 실제 분류 경로를 기준으로 한다.
+`code/experiments` is a link that preserves existing execution entry conditions and frozen code hashes. The actual location of `experiments/runs` is `results/runs`. Existing paths such as `docs`, `tools`, and `outputs`, along with input/output paths under `code/`, remain as compatibility links. Use the actual categorized paths above when editing materials.
 
-핵심 안내: [연구 계획](notes/01_research_plan.md), [데이터셋 규약](notes/02_dataset_protocol.md), [평가 규약](notes/03_evaluation_protocol.md), [선행연구](notes/04_related_work_and_novelty.md), [데이터 안내](data/README.md), [실험 안내](experiments/README.md).
+Key guides: [Research plan](notes/01_research_plan.md), [dataset protocol](notes/02_dataset_protocol.md), [evaluation protocol](notes/03_evaluation_protocol.md), [related work](notes/04_related_work_and_novelty.md), [data guide](data/README.md), and [experiment guide](experiments/README.md).
 
-## 환경과 재현 방법
+## Environment and reproduction
 
-저장소 루트에서 Python 3와 Node.js를 사용한다. 아래 검사는 새 모델 API를 호출하지 않는다.
+Use Python 3 and Node.js from the repository root. The following checks do not make new model API calls.
 
 ```bash
 python3 -B code/tools/verify_main_freeze.py
@@ -70,93 +72,93 @@ node experiments/test_c3_contract.mjs
 node experiments/test_c1m_contract.mjs
 ```
 
-로컬 결과 묶음까지 보유한 환경에서는 제출 근거와 집계를 추가 대조할 수 있다.
+If the local results bundle is also available, submission evidence and aggregates can be cross-checked further.
 
 ```bash
 python3 -B code/tools/package_submission_evidence_20260914.py verify
 python3 -B code/tools/summarize_v2_cohorts_20260909.py verify
 ```
 
-`results/outputs/`의 검토 결과·제출 근거와 표준 원문 PDF 등은 Git 복제만으로 모두 확보되지 않는다. 누락된 파일은 별도 보관 자료와 해당 매니페스트를 확인해야 한다. 문서 렌더링·새 실험은 추가 로컬 의존성이나 인증 설정이 필요할 수 있다. 생성 실험은 API 비용이 발생하며 위 오프라인 검증과 구분한다.
+Cloning Git does not provide all review results and submission evidence under `results/outputs/`, or the source-standard PDFs. For missing files, consult the separately stored materials and their manifests. Document rendering and new experiments may require additional local dependencies or authentication settings. Generation experiments incur API costs and are distinct from the offline checks above.
 
-로컬 근거 색인: [표본 구성](results/outputs/submission_evidence_v7_20260914/01_samples.md), [평가표](results/outputs/submission_evidence_v7_20260914/02_evaluation.md), [재현 안내](results/outputs/submission_evidence_v7_20260914/03_reproduction.md), [v7 최종 대조](results/outputs/final_crosscheck_v7_20260914/REPORT.md). v7 대조 99항목은 당시 파일 간 일관성 기록이며 이후 최종 제출본의 독립 심사를 뜻하지 않는다.
+Local evidence index: [Sample composition](results/outputs/submission_evidence_v7_20260914/01_samples.md), [evaluation table](results/outputs/submission_evidence_v7_20260914/02_evaluation.md), [reproduction guide](results/outputs/submission_evidence_v7_20260914/03_reproduction.md), and [final v7 cross-check](results/outputs/final_crosscheck_v7_20260914/REPORT.md). The 99 v7 cross-check items document consistency among files at that time; they do not constitute an independent review of the later final submission.
 
-## 논문 및 제출 상태
+## Paper and submission status
 
-이 논문은 ACK 2026 발표 명단에 편성되었으며, 논문·발표 영상 제출 완료는 사용자 확인에 따른 상태다. 수상은 발표 편성·제출 완료와 별개이며 확인된 수상 정보는 기재하지 않는다.
+The paper is listed in the ACK 2026 presentation program. Completion of the paper and presentation-video submissions is based on the user's confirmation. Awards are separate from presentation scheduling and submission completion; no confirmed award information is stated.
 
-최종 제출 PDF와 원본의 SHA-256이 같음을 확인했다. 제출 PDF 바이트는 변경하지 않았다. 영상과 발표 자료는 공개 저장소에 포함하지 않는 로컬 보관 자료다.
+The final submitted PDF and the original were confirmed to have the same SHA-256. The submitted PDF bytes were not changed. Videos and presentation materials are stored locally and are not included in the public repository.
 
-- [최종 제출 PDF](submissions/2026_ACK/KIPS_C2026B0055%28김태훈%29.pdf)
-- [최종 PDF SHA-256](submissions/2026_ACK/SHA256SUMS)
-- 이전 v7 원고: `results/outputs/paper/ACK2026_3GPP_normative_fidelity_validated_v7.pdf` 및 같은 이름의 DOCX. 이는 이력 자료이며 최종 제출 PDF를 대체하지 않는다.
+- [Final submitted PDF](submissions/2026_ACK/KIPS_C2026B0055%28김태훈%29.pdf)
+- [Final PDF SHA-256](submissions/2026_ACK/SHA256SUMS)
+- Earlier v7 manuscript: `results/outputs/paper/ACK2026_3GPP_normative_fidelity_validated_v7.pdf` and the DOCX with the same base name. These are historical materials and do not replace the final submitted PDF.
 
-## 연구 이력과 보존 원칙
+## Research history and preservation principles
 
-### 보존과 공개 범위
+### Preservation and public scope
 
-Git에 기록된 연구 이력과 동결 실험 자료를 보존한다. 자격 증명 원문·가상환경·영상·미추적 발표 자료·개인 작업 기록·백업은 공개 저장소에 포함하지 않는다. 표준 원문 PDF는 별도로 확보해야 하며, Git에 포함되지 않은 로컬 산출물은 해당 매니페스트와 대조해 준비한다.
+Research history recorded in Git and frozen experimental materials are preserved. Raw credentials, virtual environments, videos, untracked presentation materials, personal work records, and backups are excluded from the public repository. Source-standard PDFs must be obtained separately; local artifacts absent from Git should be prepared against their manifests.
 
-새 라이선스를 부여하지 않았다. 제3자 표준·양식·참고자료의 이용 조건은 각 출처를 확인한다. 폴더 구조를 변경할 때는 호환 경로와 동결 자료의 해시를 함께 검증한다.
+No new license has been granted. Check each source for the terms governing third-party standards, templates, and reference materials. When changing the folder structure, verify both compatibility paths and the hashes of frozen materials.
 
 <details>
-<summary>날짜별 설계·실행·평가 기록 펼치기</summary>
+<summary>Expand dated design, execution, and evaluation records</summary>
 
-아래 기록의 상태와 수치는 해당 날짜 기준이다. 최신 주 분석은 위 결과 표를, 최종 제출 파일은 아래 제출 상태의 PDF를 따른다. 아래 원고 버전·진행 상태는 해당 날짜의 이력이다.
+Statuses and figures below are as of the dates stated. Use the results table above for the latest main analysis and the PDF linked in the submission-status section for the final submitted file. Manuscript versions and progress statuses below are historical records for their respective dates.
 
-**2026-09-14 의미 요소별 대조 검증 완료:** 동일 초안 6개에 기존·세분화 대조 12회를 실행했다. 알려진 결함 탐지는 3/8 대 2/8로 개선을 확인하지 못했다. 강도 항목 자체의 오판, 다른 조건의 인용 전용, 메타데이터를 설명 근거로 사용한 사례를 확인했다. 비용은 $0.0895215이며 새 설명 생성 없이 기존 판정과 HOLD를 유지했다. [대조 검증·근거 경계 진단](notes/41_atomic_audit_results_2026-09-14.md).
+**2026-09-14 atomic comparison validation completed:** The same 6 drafts underwent 12 comparisons using the existing and finer-grained methods. Detection of known defects was 3/8 versus 2/8, providing no evidence of improvement. Cases included misjudgment of the strength item itself, reuse of citations from other conditions, and use of metadata as evidence for an explanation. Cost was $0.0895215; existing judgments and HOLD were retained without generating new explanations. [Comparison validation and evidence-boundary diagnosis](notes/41_atomic_audit_results_2026-09-14.md).
 
-**2026-09-14 명제 대조 후 수정 시험 완료:** 기존 P1 초안 6개 모두에 직접 재작성과 대조 후 수정을 적용해 최종 설명 12개·대조 6개를 생성했다. 진행 AI 1차 완수는 1/6 대 2/6(각 미확정 1)이며 보수적 개선 기준은 미충족이다. 요구사항 3건이 복원됐지만 대조의 규범 강도 오류 누락·잘못된 수정 지시도 확인했다. 비용은 $0.0795678, 기존 판정과 HOLD는 유지했다. [실행·평가·대조 진단](notes/39_preservation_repair_results_2026-09-14.md).
+**2026-09-14 comparison-then-revision trial completed:** Direct rewriting and revision after proposition comparison were applied to all 6 existing P1 drafts, producing 12 final explanations and 6 comparisons. Initial task completion judged by the conducting AI was 1/6 versus 2/6 (1 unresolved in each), below the conservative improvement criterion. Although 3 requirements were restored, the comparison also missed normative-strength errors and gave incorrect revision instructions. Cost was $0.0795678; existing judgments and HOLD were retained. [Execution, evaluation, and comparison diagnosis](notes/39_preservation_repair_results_2026-09-14.md).
 
-**2026-09-13 원문 명제 추출→설명 시험 완료:** 새 A2와 추출→설명 방식으로 최종 설명 12개·추출 6개를 생성했다. 진행 AI 1차 완수는 각각 0/6(미확정 2)·1/6(미확정 1)로 개선을 확정하지 못했고, 추출된 요구사항이 설명에서 소실된 6건을 확인했다. 생성 API 비용은 $0.05711625이며 기존 동결·판정은 보존했다. [실행·1차 평가·단계 진단](notes/37_proposition_pipeline_results_2026-09-13.md).
+**2026-09-13 source-proposition extraction → explanation trial completed:** A fresh A2 run and an extraction → explanation method produced 12 final explanations and 6 extractions. Initial task completion judged by the conducting AI was 0/6 (2 unresolved) and 1/6 (1 unresolved), respectively, so improvement could not be established. In 6 cases, extracted requirements were lost from the explanation. Generation API cost was $0.05711625; existing freezes and judgments were preserved. [Execution, initial evaluation, and stage diagnosis](notes/37_proposition_pipeline_results_2026-09-13.md).
 
-**2026-09-13 제한된 원인 분석 완료:** 공통 실패 4건에서 실제 입력의 저장 권고 또는 망의 검증 설정 조건이 설명에 빠진 경로를 확인했다. 전달 실패·강제 잘림의 흔적은 없으며, 정보 선택과 문장 제한의 영향은 미검증 가설로 남겼다. 평가자 차이가 진행 기준을 막은 경로도 분리했다. 기존 동결·판정을 유지했고 새 생성은 0회다. [원인 분석과 근거](notes/35_generation_preservation_bounded_cause_analysis_2026-09-13.md).
+**2026-09-13 bounded cause analysis completed:** In 4 shared failures, the analysis traced how storage recommendations or network verification-configuration conditions present in the actual input were omitted from explanations. No signs of delivery failure or forced truncation were found; the effects of information selection and sentence limits remain untested hypotheses. The analysis also separated how evaluator differences blocked the progression criterion. Existing freezes and judgments were retained, with 0 new generations. [Cause analysis and evidence](notes/35_generation_preservation_bounded_cause_analysis_2026-09-13.md).
 
-**2026-09-13 두 AI 의미 평가 완료:** 동결 생성 응답 18개를 각각 평가·봉인했다. A2는 두 평가자 모두 완수 2/6이며, 긴급 등록·eCall 삭제 예외는 각각 2/2 보존했지만 저장 권고·망의 검증 설정 조건이 남았다. 평가자별 해석 차이와 미확정을 고려하면 두 평가자 모두 통과해야 하는 진행 기준을 충족하지 못해 `HOLD_FOR_METHOD_REVISION`이다. 일부 메타 진단은 정의 혼용을 확인해 집계를 보류하고 원판정을 보존했다. [전체 결과·판정 차이·진행 기준](notes/34_generation_preservation_semantic_review_2026-09-13.md).
+**2026-09-13 semantic evaluation by two AIs completed:** Each evaluated and sealed judgments for 18 frozen generated responses. Both evaluators found A2 task completion of 2/6. Emergency registration and eCall deletion exceptions were each preserved in 2/2, but storage recommendations and network verification-configuration conditions remained unresolved problems. Given interpretation differences and unresolved judgments, the criterion requiring both evaluators to pass was unmet: `HOLD_FOR_METHOD_REVISION`. Some meta-diagnostic aggregates were withheld because definitions were mixed; original judgments were preserved. [Full results, judgment differences, and progression criteria](notes/34_generation_preservation_semantic_review_2026-09-13.md).
 
-**2026-09-13 동결 요청 18회 실행 완료:** A0/A1/A2 조건별 6회씩 모두 정상 응답을 받았고 재시도·전달 실패는 없었다. 생성 API 비용 추정은 $0.043119이며 원본 요청·응답·usage·회계표를 봉인했다. 익명 평가 패킷 18개를 준비했고 현재 `GENERATION_COMPLETE_SEMANTICS_PENDING`으로 의미 평가는 아직 하지 않았다. [실행 결과·비용·검증 근거](notes/33_generation_preservation_execution_2026-09-13.md).
+**2026-09-13 execution of 18 frozen requests completed:** All 6 requests per A0/A1/A2 condition returned normal responses, with no retries or delivery failures. Estimated generation API cost was $0.043119; original requests, responses, usage, and accounting tables were sealed. The 18 anonymized evaluation packets were prepared. Status at this point was `GENERATION_COMPLETE_SEMANTICS_PENDING`; semantic evaluation had not yet occurred. [Execution results, costs, and verification evidence](notes/33_generation_preservation_execution_2026-09-13.md).
 
-**2026-09-09 생성 보존 실험 설계 검토·동결 완료:** 진행 AI의 설계 검토 후 실행·평가 처리 규칙을 보완하고 18개 요청과 관련 파일 53개를 `FROZEN_BEFORE_GENERATION`으로 동결했다. 생성 프롬프트·평가 요구사항·진행 기준은 초안과 동일하다. 오프라인 오류 시험과 해시 검증을 통과했으며 새 API 생성은 0회다. [설계 검토·동결 시각·검증 근거](notes/32_generation_preservation_design_review_and_freeze_2026-09-09.md).
+**2026-09-09 generation-preservation experiment design reviewed and frozen:** Following design review by the conducting AI, execution and evaluation handling rules were refined, and 18 requests plus 53 related files were frozen as `FROZEN_BEFORE_GENERATION`. Generation prompts, evaluation requirements, and progression criteria remained identical to the draft. Offline error tests and hash checks passed, with 0 new API generations. [Design review, freeze time, and verification evidence](notes/32_generation_preservation_design_review_and_freeze_2026-09-09.md).
 
-**2026-09-09 다음 생성 실험 계획 준비:** 동일한 FULL 문맥에서 기존 생성 지시, 구체적 규범 강도 보존 지시 추가, 명제 누락 점검 지시까지 추가한 세 조건을 비교한다. 개발 원문 3개×3조건×2회인 18개 요청 미리보기와 평가·비용·진행 기준을 작성하고 오프라인 검증했다. 현재는 `DRAFT_READY_FOR_REVIEW`이며 새 API 생성은 0회다. [실험 계획·프롬프트·조건부 새 조항 평가](notes/31_generation_preservation_experiment_plan_2026-09-09.md).
+**2026-09-09 next generation experiment plan prepared:** Three conditions compare existing generation instructions, added instructions explicitly preserving normative strength, and further instructions to check for omitted propositions, all with the same FULL context. Previews for 18 requests (3 development sources × 3 conditions × 2 repetitions), evaluation, cost, and progression criteria were prepared and checked offline. Status was `DRAFT_READY_FOR_REVIEW`, with 0 new API generations. [Experiment plan, prompts, and conditional evaluation of new clauses](notes/31_generation_preservation_experiment_plan_2026-09-09.md).
 
-**2026-09-09 별도 AI 검토·문맥 개발 실험 완료:** 별도 AI의 기존 응답 15건 판정은 모두 기존 결과와 일치해 미확정 8건을 유지했다. 이어 선정 원문 3건×문맥 2수준×힌트 2수준×반복 2회의 실제 생성 24건을 실행하고 두 AI가 평가했다. 두 AI의 전체 과제 완수 판정은 모두 일치했으며 문맥 추가에 따른 전체 완수 향상은 확인되지 않았다. SUPI 조건·위성 접속 범위는 일부 더 보존됐지만 규범 강도 오류와 삭제 조건 누락이 남았다. [실행·두 평가·세부 차이·반영 범위](notes/30_separate_ai_review_and_context_microstudy_2026-09-09.md). 개발 증거로 보고하며 기존 v2 성능 수치와 원고는 유지한다.
+**2026-09-09 separate-AI review and context development experiment completed:** A separate AI's judgments on 15 existing responses all matched previous results, retaining 8 unresolved cases. Next, 24 actual generations (3 selected sources × 2 context levels × 2 hint levels × 2 repetitions) were run and evaluated by two AIs. Their overall task-completion judgments all agreed; additional context did not establish improved overall completion. SUPI conditions and satellite-access scope were better preserved in some cases, but normative-strength errors and omitted deletion conditions remained. [Execution, both evaluations, detailed differences, and scope of incorporation](notes/30_separate_ai_review_and_context_microstudy_2026-09-09.md). These are development findings; existing v2 performance figures and the manuscript are retained.
 
-**2026-09-09 현재 결과 보고·후속 근거 검토 완료:** 미확정 범위를 포함한 v2 결과를 보고 기준으로 유지했다. 관련 PDF 10쪽과 보관 요청 9건을 추가 대조했지만 점수를 바꿀 새 의미 근거는 확인하지 못해 미확정 8건을 유지한다. 세 원문×전체 다섯 조건의 다음 검토 자료 15건과 문맥 후보를 준비했으며, 독립 검토·새 모델 실험은 아직 수행하지 않았다. [보고 내용·후속 확인·결과 반영 기준](notes/29_report_and_followup_review_2026-09-09.md).
+**2026-09-09 current-results report and follow-up evidence review completed:** The v2 results, including bounds for unresolved cases, remained the reporting basis. An additional 10 related PDF pages and 9 archived requests were cross-checked, but no new semantic evidence warranted score changes, leaving 8 cases unresolved. The next review set of 15 items (three sources × all five conditions) and candidate contexts were prepared; independent review and new model experiments had not yet been performed. [Report, follow-up checks, and incorporation criteria](notes/29_report_and_followup_review_2026-09-09.md).
 
-**2026-09-09 v2 조건별 집계 완료:** 주 분석 49건과 세 민감도 50/50/51건을 모두 보고했다. 주 분석의 C2−C1 논리적 범위는 +10.20~+16.33%p이며 세 민감도에서도 방향이 유지된다. C2−C1M은 0을 포함해 우열을 확정할 수 없다. [전체 결과·계산 검증·해석 한계](notes/28_v2_cohort_results_2026-09-09.md). 모든 지정 비교에 미확정이 있어 통계 검정은 보류했으며, 범위는 신뢰구간이 아니다. 원고 수치와 기존 자료는 보존했다.
+**2026-09-09 v2 aggregation by condition completed:** All 49 main-analysis cases and the three sensitivity sets of 50/50/51 were reported. The main-analysis logical bounds for C2−C1 were +10.20~+16.33 percentage points, with the same direction in all three sensitivity analyses. C2−C1M includes 0, so superiority cannot be established. [Full results, calculation checks, and interpretation limits](notes/28_v2_cohort_results_2026-09-09.md). Statistical testing was withheld because every specified comparison included unresolved judgments; these bounds are not confidence intervals. Manuscript figures and existing materials were preserved.
 
-**2026-09-09 v2 불일치 조정 완료:** 5건을 PASS 2·FAIL 2·UNRESOLVED 1로 처리하고 관련 60개 응답의 대칭 적용을 확인했다. 조정 반영 255건은 PASS 167·FAIL 79·UNRESOLVED 8·설명 미생성 1이다. [조정 근거와 남은 미확정](notes/27_v2_disagreement_adjudication_2026-09-09.md). 기존 두 차수와 동결 기준은 보존했으며, 동일 평가자의 사후 조정이다. 다음 조건별 집계에는 미확정 범위와 동결 분모를 함께 보고해야 한다. 아래 기록은 각 단계 완료 당시의 이력이다.
+**2026-09-09 v2 disagreement adjudication completed:** The 5 cases were resolved as PASS 2, FAIL 2, and UNRESOLVED 1; symmetric application to 60 related responses was checked. After adjudication, the 255 cases comprised PASS 167, FAIL 79, UNRESOLVED 8, and 1 explanation not generated. [Adjudication evidence and remaining unresolved cases](notes/27_v2_disagreement_adjudication_2026-09-09.md). Both previous passes and frozen criteria were preserved; this was post hoc adjudication by the same evaluator. Subsequent aggregation by condition must report unresolved bounds alongside frozen denominators. The records below describe each stage at completion.
 
-**2026-09-09 v2 2차 의미 검토 완료·봉인:** 24시간 간격을 충족한 뒤 255개 슬롯을 새 순서로 검토해 PASS 165·FAIL 81·UNRESOLVED 8·설명 미생성 1로 기록했다. 두 차수 봉인 후 대조 결과 250건 동일·5건 불일치이며, 현재는 조정 대기 상태다. [2차 근거와 불일치 기록](notes/26_v2_semantic_review_pass2_2026-09-09.md). 동일 평가자의 반복 검토이며 독립 전문가 검증이나 조건별 최종 성능이 아니다. 기존 분모·원본·1차 결과를 유지했고 새 모델 생성 API 호출은 0건이다. 아래 상태 설명은 각 단계 완료 당시의 이력이다.
+**2026-09-09 v2 second semantic review completed and sealed:** After the required 24-hour interval, 255 slots were reviewed in a new order, yielding PASS 165, FAIL 81, UNRESOLVED 8, and 1 explanation not generated. Comparison after sealing both passes found 250 agreements and 5 disagreements; adjudication was pending at this point. [Second-pass evidence and disagreement records](notes/26_v2_semantic_review_pass2_2026-09-09.md). This was repeated review by the same evaluator, not independent expert validation or final condition-level performance. Existing denominators, originals, and first-pass results were preserved, with 0 new model-generation API calls. Status descriptions below are historical records at each stage's completion.
 
-**2026-09-08 v2 1차 의미 검토 완료·봉인:** 255개 슬롯 전체를 검토해 PASS 169·FAIL 78·UNRESOLVED 7·생성 보류 1로 기록했다. [판정 근거와 완료 기록](notes/25_v2_semantic_review_pass1_2026-09-08.md). 이는 1차 결과이며 조건별 최종 비교·원고 수치는 아직 갱신하지 않았다. 기존 자료와 분모를 유지했고 새 모델 API 호출은 0건이다. 2차는 최소 24시간 뒤인 **2026-09-09 12:31:23.646276 KST 이후** 별도 순서로 진행한다. 아래 상태 설명은 각 단계 완료 당시의 이력이다.
+**2026-09-08 v2 first semantic review completed and sealed:** All 255 slots were reviewed, yielding PASS 169, FAIL 78, UNRESOLVED 7, and 1 generation withheld. [Judgment evidence and completion record](notes/25_v2_semantic_review_pass1_2026-09-08.md). These were first-pass results; final comparisons by condition and manuscript figures had not yet been updated. Existing materials and denominators were preserved, with 0 new model API calls. The second pass was to use a separate order at least 24 hours later, **on or after 2026-09-09 12:31:23.646276 KST**. Status descriptions below are historical records at each stage's completion.
 
-**2026-09-08 v2 source/gold 사전 확인 완료:** 합집합 51건 중 원문·동결 규칙으로 기준 지지 49건, 미확정 2건(G023 저장 예외·G028 NR 위성 접속 문맥)이다. 주 분석 49건에는 미확정 2건이 그대로 포함되며 모든 동결 분모를 유지한다. [사전 확인 결과](notes/24_v2_gold_preflight_2026-09-08.md). 실제 응답 재채점·새 모델 호출은 아직 0건이고, 다음은 전체 255개 슬롯의 v2 pass 1이다.
+**2026-09-08 v2 source/gold preflight completed:** Of the union of 51 cases, the source and frozen rules supported the criteria for 49; 2 were unresolved (G023 storage exception and G028 NR satellite-access context). Both unresolved cases remained in the 49-case main analysis, and all frozen denominators were retained. [Preflight results](notes/24_v2_gold_preflight_2026-09-08.md). There had been 0 actual response rescoring or new model calls; the next step was v2 pass 1 for all 255 slots.
 
-**2026-09-08 v2 검토 패키지 준비 완료:** 51개 source/gold 기준과 255개 응답 슬롯(설명 254·생성 보류 1)을 조건명·이전 점수를 가린 별도 자료로 구성했다. 상태는 `PREPARED_PREFLIGHT_PENDING`이며 gold 사전 확인·재채점·새 모델 호출은 아직 0건이다. [패키지와 사용 순서](notes/23_v2_review_package_2026-09-08.md), [검토 안내](results/outputs/review/v2_20260908/REVIEW_GUIDE.md). 다음 단계는 51개 기준의 source/gold 사전 확인이다.
+**2026-09-08 v2 review package prepared:** The 51 source/gold criteria and 255 response slots (254 explanations and 1 generation withheld) were assembled separately with condition names and previous scores masked. Status was `PREPARED_PREFLIGHT_PENDING`, with 0 gold preflight checks, rescoring, or new model calls so far. [Package and sequence](notes/23_v2_review_package_2026-09-08.md), [review guide](results/outputs/review/v2_20260908/REVIEW_GUIDE.md). The next step was source/gold preflight for the 51 criteria.
 
-**2026-09-08 처리 기준 동결 완료:** 사후 재평가 기준 `posthoc_treatment_v1_20260908`을 `FROZEN_NOT_APPLIED`로 고정했다. 주 분석 49건, gold 정정·사전 목록 예외 포함 여부에 따른 민감도 50/50/51건을 C0·C1·C2·C3·C1M에 대칭 적용한다. MAY-001은 원문 적격성을 유지하되 C2 입력 gold 오염 때문에 주 분석에서 제외하고 지정 민감도에서만 검토한다. [동결 규칙과 근거](notes/22_posthoc_treatment_freeze_2026-09-08.md), [채점 기준 v2 동결본](experiments/scoring_v2_frozen_20260908.md). 재채점·새 모델 실행·과거 점수 변경은 아직 수행하지 않았다. 확인 명령: `python3 code/tools/verify_posthoc_treatment_v1.py --self-test`.
+**2026-09-08 treatment criteria frozen:** The post hoc reevaluation criteria `posthoc_treatment_v1_20260908` were fixed as `FROZEN_NOT_APPLIED`. The main set of 49 and sensitivity sets of 50/50/51, varying gold corrections and inclusion of prespecified list exceptions, apply symmetrically to C0, C1, C2, C3, and C1M. MAY-001 retained source eligibility but was excluded from the main analysis because of gold contamination in the C2 input; it is assessed only in designated sensitivity analyses. [Frozen rules and rationale](notes/22_posthoc_treatment_freeze_2026-09-08.md), [frozen scoring criteria v2](experiments/scoring_v2_frozen_20260908.md). Rescoring, new model runs, and changes to historical scores had not yet occurred. Check command: `python3 code/tools/verify_posthoc_treatment_v1.py --self-test`.
 
-**2026-09-08 표본 적격성 전수 감사 완료:** 72건의 원본 51쪽을 확인해 일반 적격 50건, 사전 기록 예외 조건부 적격 1건, 부적격 10건(NOTE 3·목록 7), 보류 11건으로 구분했다. CAN-005의 실제 조항은 4.2.8.1A이며 문맥 누락·의미 중복·대응 미확정도 별도 기록했다. [감사 결과와 사례별 근거](notes/21_main72_eligibility_audit_2026-09-08.md), [보고서](results/outputs/analysis/main72_eligibility_20260908/report.html). 이는 Codex 감사이며 독립 전문가 검증이 아니다. 아래 기존 점수는 재계산하지 않았고, 남은 50/51건을 새 동결 표본으로 확정하지 않았다.
+**2026-09-08 complete sample-eligibility audit finished:** Reviewing 51 source pages for 72 cases yielded 50 generally eligible cases, 1 conditionally eligible case under a previously recorded exception, 10 ineligible cases (3 NOTE and 7 list cases), and 11 on hold. CAN-005's actual clause is 4.2.8.1A; missing context, semantic duplication, and unresolved correspondence were also recorded. [Audit results and case evidence](notes/21_main72_eligibility_audit_2026-09-08.md), [report](results/outputs/analysis/main72_eligibility_20260908/report.html). This was a Codex audit, not independent expert validation. The older scores below were not recalculated, and the remaining 50/51 cases were not finalized as a new frozen sample.
 
-**2026-09-07 경계 검토:** MAY-001의 gold 표현·적용 범위 수정 필요, CAN-004/MAY-005의 NOTE 제외 규약 위반, SD-009의 대응 관계 미확정을 확인했다. [원문 대조와 처리안](notes/20_gold_boundary_review_2026-09-07.md), [채점 기준 v2 후보](experiments/scoring_v2_candidate.md). 아래 수치는 기존 평가 이력이며 새 기준으로 재채점하지 않았다. 적격성·gold 쟁점 정리가 우선이고, v4를 확정 성능 검증본으로 표시하지 않는다.
+**2026-09-07 boundary review:** Identified necessary corrections to MAY-001's gold wording and scope, violations of the NOTE-exclusion protocol for CAN-004/MAY-005, and unresolved correspondence for SD-009. [Source comparison and proposed handling](notes/20_gold_boundary_review_2026-09-07.md), [candidate scoring criteria v2](experiments/scoring_v2_candidate.md). Figures below are historical evaluations and were not rescored under the new criteria. Eligibility and gold issues take priority; v4 is not labeled as a finalized performance validation.
 
-Main 72개×3조건의 생성과 동일 Codex 평가자의 지연 재검토·불일치 조정이 끝났다. 설명 완전 보존은 C0 0/72, C1 65/72, C2 72/72이다. 독립 전문가 검증은 미실시이며, 모호한 gold 3건 제외 시 C1-C2 exact McNemar p=0.125이다.
+Generation for the main 72 cases × 3 conditions, followed by delayed rereview and disagreement adjudication by the same Codex evaluator, was completed. Complete explanation preservation was C0 0/72, C1 65/72, and C2 72/72. Independent expert validation had not been performed; excluding 3 ambiguous gold cases gave C1-C2 exact McNemar p=0.125.
 
-위 수치는 이전 동결 평가의 기록이다. **2026-09-06 새 의미 검토 pass 1**은 C1 61/72, C2 71/72, C3 65/72이며 기존 C1/C2 판정과 9건이 다르다. 9월 7일 24시간 지연 재검토·조정에서도 이 점수가 유지됐다. [지연 검토 완료](notes/16_c3_delayed_review_2026-09-07.md). [의미 평가 보고서](notes/13_c3_semantic_review_pass1_2026-09-06.md). 기존 동결 점수는 이력으로 보존하고 최신 원고는 새 지연 조정 결과를 사용한다.
+Those figures record the earlier frozen evaluation. **2026-09-06 new semantic review pass 1** yielded C1 61/72, C2 71/72, and C3 65/72, differing from previous C1/C2 judgments in 9 cases. The 24-hour delayed rereview and adjudication on September 7 retained these scores. [Delayed review completed](notes/16_c3_delayed_review_2026-09-07.md). [Semantic evaluation report](notes/13_c3_semantic_review_pass1_2026-09-06.md). Existing frozen scores are preserved as history; the manuscript current at that stage uses the new delayed-adjudication results.
 
-- 현재 논문: `results/outputs/paper/ACK2026_3GPP_normative_fidelity_draft_v4.docx`, 2쪽 PDF 및 동기화된 Markdown. C1/C2/C3 지연 조정 결과와 C1M 첫 평가 68/72를 반영했다. C1M은 잠정치이며 v1/v2/v3는 보존한다. [v3 반영·확장 기록](notes/15_paper_v3_and_priority_extensions_2026-09-06.md), [KIPS 양식 검증](notes/11_kips_template_validation_2026-09-06.md).
-- [검토 보고서](notes/08_project_review_2026-09-06.md), [평가·방법 정정](notes/09_reporting_errata_2026-09-06.md).
-- 동결 검증: `python3 code/tools/verify_main_freeze.py`.
-- 집계·민감도 재계산: `python3 code/tools/review_project_20260906.py`.
-- 자동 구조 추출 확장 C3: 72건 추출, 71건 설명 생성, 1건 보류 및 의미 평가 pass 1을 완료했다. 추정 API 비용은 $0.13229325이며 이번 의미 검토의 추가 API 호출은 없다. [실행·검증 기록](notes/12_c3_execution_2026-09-06.md).
-- 조항 단위 민감도: 44개 조항 cluster bootstrap 20,000회 완료. C3−C1 +5.56%p의 95% 구간은 −2.53~+15.52%p로 개선을 확정하지 못한다.
-- C1M 확장: 72건 생성·파싱 및 입력·출력 무결성 검증 완료, 추정 비용 $0.08409. JSON 규범 유형·인용 ID는 각각 72/72지만 설명 첫 평가를 완료해 C1M 68/72(94.44%)다. C1 대비 +9.72%p, exact p=0.06543이며 지연 재검토 전 잠정치다. [의미 평가](notes/17_c1m_semantic_review_pass1_2026-09-07.md). [설계](notes/14_modal_hint_extension_protocol.md), [완료 기록](notes/15_paper_v3_and_priority_extensions_2026-09-06.md).
-- 다음 연구 단계: C1M은 9월 8일 14:56:16 KST 이후 지연 재검토·조정. C3 지연 검토는 완료했다. 추출기 v2 프롬프트·스키마·원문 연결 검증기 및 오프라인 검사는 준비됐으며 모델 실행은 미실시다. [v2 준비](notes/18_scope_extractor_v2_staging_2026-09-07.md). 사용자의 요청에 따라 Codex 검토를 수행하며 독립 전문가 검증으로 표현하지 않는다. 본 실험의 동결 입력·응답은 유지한다.
+- Manuscript current at that stage: `results/outputs/paper/ACK2026_3GPP_normative_fidelity_draft_v4.docx`, a 2-page PDF, and synchronized Markdown. It incorporated delayed-adjudication results for C1/C2/C3 and C1M's initial evaluation of 68/72. C1M was provisional; v1/v2/v3 are preserved. [v3 incorporation and extension record](notes/15_paper_v3_and_priority_extensions_2026-09-06.md), [KIPS template validation](notes/11_kips_template_validation_2026-09-06.md).
+- [Review report](notes/08_project_review_2026-09-06.md), [evaluation and methodology corrections](notes/09_reporting_errata_2026-09-06.md).
+- Freeze verification: `python3 code/tools/verify_main_freeze.py`.
+- Recompute aggregates and sensitivity analyses: `python3 code/tools/review_project_20260906.py`.
+- Automatic structure extraction extension C3: Completed 72 extractions, 71 generated explanations, 1 withheld case, and semantic evaluation pass 1. Estimated API cost was $0.13229325, with no additional API calls for this semantic review. [Execution and verification record](notes/12_c3_execution_2026-09-06.md).
+- Clause-level sensitivity: Completed 20,000 cluster-bootstrap repetitions over 44 clauses. The 95% interval for C3−C1's +5.56 percentage points was −2.53~+15.52 percentage points, which does not establish improvement.
+- C1M extension: Completed generation and parsing for 72 cases and input/output integrity checks, at an estimated cost of $0.08409. JSON normative types and citation IDs were each correct in 72/72, while the completed first explanation evaluation gave C1M 68/72 (94.44%). The difference versus C1 was +9.72 percentage points, exact p=0.06543; this was provisional before delayed rereview. [Semantic evaluation](notes/17_c1m_semantic_review_pass1_2026-09-07.md). [Design](notes/14_modal_hint_extension_protocol.md), [completion record](notes/15_paper_v3_and_priority_extensions_2026-09-06.md).
+- Next research steps at that stage: C1M delayed rereview and adjudication after September 8, 14:56:16 KST. The C3 delayed review was complete. Extractor v2 prompts, schema, source-link validator, and offline checks were ready; model execution had not occurred. [v2 preparation](notes/18_scope_extractor_v2_staging_2026-09-07.md). Codex reviews are conducted at the user's request and are not described as independent expert validation. Frozen inputs and responses for this experiment are retained.
 
-### 완료 경계
+### Scope of completion
 
-이 연구는 모델이 3GPP 전체를 이해한다는 것을 입증하지 않는다. 선정한 표준·버전·문장 표본·모델·프롬프트 조건에서 한국어 규범 의미 보존 오류를 관찰하는 통제 실험으로 한정한다.
+This study does not demonstrate that a model understands all of 3GPP. It is limited to a controlled experiment observing errors in preserving Korean normative meaning under the selected standards, versions, sentence samples, models, and prompt conditions.
 
 </details>
